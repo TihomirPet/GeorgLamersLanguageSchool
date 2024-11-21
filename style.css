@@ -1,0 +1,96 @@
+body,
+html {
+  width: 100%;
+  margin: 0;
+  font-family: 'MontserratRegular', 'sans-serif';
+  line-height: 0.92;
+}
+
+:root {
+  --main-bg-color: hsl(25, 100%, 53%);
+  --second-bg-color: hsl(266, 100%, 39%);
+  --text-white-color: #fdf7f8;
+  --third-bg-color: hsl(245, 9%, 27%);
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+.letterSpacingTitle {
+  letter-spacing: -0.04em;
+}
+.letterSpacingTitleSmall {
+ line-height: 1.05;
+}
+
+.lineheightTitle {
+  line-height: 0.92;
+}
+
+/* ######################### class Fonts ######################################################## */
+
+.Thin {
+  font-family: 'Thin';
+}
+.Light {
+  font-family: 'Light';
+}
+.Regular {
+  font-family: 'MontserratRegular';
+}
+.Medium {
+  font-family: 'MontserratMedium';
+}
+.Semibold {
+  font-family: 'MontserratSemiBold';
+}
+.Bold {
+  font-family: 'MontserratBold';
+}
+
+.ExtraBold {
+  font-family: 'ExtraBold';
+}
+
+/* ######################### class Fonts end ######################################################## */
+
+.fontSizeH1 {
+  font-size: 5.573rem;
+}
+/* .fontSizeH1 {
+  font-size: 2.986rem;
+} */
+
+.fontSizeH2 {
+  font-size: 3.584rem;
+}
+/* .fontSizeH2 {
+  font-size: 1.074rem;
+} */
+.fontSizeH3 {
+ font-size:2.489rem;
+}
+.fontSizeH4 {
+  font-size:2.074rem;
+}
+.fontSizeH5 {
+  font-size: 1.728rem;
+}
+.fontSizeP {
+  font-size: 1rem;
+}
