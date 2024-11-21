@@ -133,10 +133,22 @@
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
 }
+.filter{
+    mix-blend-mode:soft-light;
 
+    background-color: hsl(25, 100%, 53%,0.4);
+    height: 100%;
+    width: 100%;
+}
 
 .card-one {
-  background-image: url(/images/istockphoto-1362613670-1024x1024\(1\).jpg);
+  background-image:
+   /* linear-gradient(
+      to bottom,
+      hsl(25, 100%, 53%, 0.2),
+      hsl(25, 100%, 53%, 0.2)
+    ), */
+    url(/images/istockphoto-1362613670-1024x1024\(1\).jpg);
 
   height: 61vh;
   background-size: 44.2vw auto;
@@ -175,4 +187,3 @@
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
 }
-
