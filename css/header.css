@@ -1,16 +1,24 @@
-.col-1 {
-    height: 56vh ;
-    /* background-color: rgb(253, 176, 176); */
-}
+
 
 .header{
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
+    padding-bottom: 5vh;
 }
 .header h1{
 
-text-shadow: 1px 2px 0px var(--second-bg-color) !important;
+text-shadow: 2px 2px 0px var(--second-bg-color) !important;
 
+}
+.ColHeightTitle {
+    height: 56vh ;
+    /* background-color: rgb(253, 176, 176); */
+}
+.HeaderColImage{
+    width: 20vw !important;
+    height: 70vh;
+    border-radius: 0.9vw;
+    border: 1px solid black;
 }
 .btn-contact{
   --bs-btn-color:  var(--text-white-color) !important;
@@ -29,11 +37,11 @@ text-shadow: 1px 2px 0px var(--second-bg-color) !important;
   --bs-btn-disabled-border-color:  var( --second-bg-color) !important;
 }
 .btn {
-  --bs-btn-padding-x: 2.8rem;
+  --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family:'Montserrat';
   --bs-btn-font-size: 1rem;
-  --bs-btn-font-weight: 700;
+  --bs-btn-font-weight:700;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: var(--bs-body-color);
   --bs-btn-bg: transparent;
