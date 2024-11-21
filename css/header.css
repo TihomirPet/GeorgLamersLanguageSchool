@@ -14,7 +14,7 @@
   width: 20.4vw !important;
   height: 79vh;
   border-radius: 0.9vw;
-  border: 1px solid var(--second-bg-color);
+  /* border: 1px solid var(--second-bg-color); */
 }
 
 /* button contakt start*/
