@@ -10,7 +10,7 @@ html {
   --main-bg-color: hsl(25, 100%, 53%);
   --second-bg-color: hsl(266, 100%, 39%);
   --text-white-color: #fdf7f8;
-  --third-bg-color: hsl(245, 9%, 27%);
+  --h5:1.728rem;
 }
 
 @font-face {
@@ -31,18 +31,24 @@ html {
   src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
-.letterSpacingTitle {
+/*  font face rock-3d*/
+@font-face {
+  font-family: 'Rock3D';
+  src: url('/fonts/Rock3D-Regular.ttf') format('truetype');
+}
+/* ######################### class letter spacing  ######################################################## */
+.letter-spacing-title {
   letter-spacing: -0.04em;
 }
-.letterSpacingTitleSmall {
+.line-height-titleSmall {
  line-height: 1.05;
 }
 
-.lineheightTitle {
+.line-height-title {
   line-height: 0.92;
 }
 
-/* ######################### class Fonts ######################################################## */
+/* ######################### class Font family start ######################################################## */
 
 .Thin {
   font-family: 'Thin';
@@ -66,31 +72,47 @@ html {
 .ExtraBold {
   font-family: 'ExtraBold';
 }
-
-/* ######################### class Fonts end ######################################################## */
-
-.fontSizeH1 {
-  font-size: 5.573rem;
+.rock-3D {
+  font-family: 'Rock3D';
+  font-size: 6.193rem;
 }
-.fontSizeH1 {
+
+/* ######################### class Font family end ######################################################## */
+
+/* .fontSizeH1 {
+  font-size: 5.573rem;
+} */
+.font-size-h1 {
   font-size: 6rem;
 }
 
-.fontSizeH2 {
+.font-size-h2 {
   font-size: 3.584rem;
 }
 /* .fontSizeH2 {
   font-size: 1.074rem;
 } */
-.fontSizeH3 {
+.font-size-h3 {
  font-size:2.489rem;
 }
-.fontSizeH4 {
+.font-size-h4 {
   font-size:2.074rem;
 }
-.fontSizeH5 {
+.font-size-h5 {
   font-size: 1.728rem;
 }
-.fontSizeP {
+.font-size-p {
   font-size: 1rem;
+}
+
+/* ######################### class colors end ######################################################## */
+.main-colour{
+  color:var( --main-bg-color) ;
+}
+
+.second-colour{
+    color:var( --second-bg-color) ;
+}
+.third-colour{
+    color:var( --text-white-color) ;
 }

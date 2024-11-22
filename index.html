@@ -12,42 +12,47 @@
     />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/courses.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   </head>
   <body>
     <!-- https://georg-lamers-language-school.vercel.app/ -->
-    <div class="container-fluid header ">
-      <!-- row Title start -->
-      <div class="row">
-        <div class="col-1 ColHeightTitle"></div>
+
+    <!--******************************************************** section header start ************************************************-->
+    <div class="container-fluid header">
+      <!-- ================= row Title start ======================================-->
+      <div class="row d-flex justify-content-center row-height-title">
         <div class="col-5 mt-5">
-          <h3 class="Bold letterSpacingTitle fontSizeH4 mb-0">Georg Lamers</h3>
-          <h3 class="Bold letterSpacingTitle fontSizeH3">Sprachenschule</h3>
+          <h3 class="Bold letter-spacing-title font-size-h4 mb-0">
+            Georg Lamers
+          </h3>
+          <h3 class="Bold letter-spacing-title font-size-h3">Sprachenschule</h3>
           <h5 class="Semibold mt-4">
             Kompetenz und Erfahrung <br />seit über 25 Jahren
           </h5>
-          <!-- button start -->
+          <!-- ============== button start =============-->
           <button type="button" class="btn btn-contact mt-3">Kontakt</button>
-          <!-- button end -->
+          <!-- ============== button end ===============-->
         </div>
         <div class="col-5 d-flex align-items-center">
           <h1
-            class="fontSizeH1 Bold lineheightTitle letterSpacingTitle text-lg-end"
+            class="font-size-h1 Bold line-height-titleSmall letter-spacing-title text-lg-end"
           >
             Welcher Sprachkurs passt zu Ihnen?
           </h1>
         </div>
-        <div class="col-1 ColHeightTitle"></div>
       </div>
-      <!-- row Title end -->
-      <div class="row">
-        <div class="col-1"></div>
-        <!-- card holder start -->
+      <!-- ============== row Title end =============================================-->
+      <!--=========================================================================  -->
+      <!-- ============== row card holder start =====================================-->
+      <div class="row d-flex justify-content-center">
+        <!--=============== card holder start ===============================-->
         <div class="col-10">
           <div class="row d-flex justify-content-between p-0">
-            <!-- card one  -->
+            <!--=============== card one  ===============-->
             <div class="header-col-image p-0">
               <a href="#" class="card btn-card text-start"
-                ><h4 class="fontSizeH4 Bold text-start">Nachhilfe</h4>
+                ><h4 class="font-size-h4 Bold text-start letter-spacing-title">Nachhilfe</h4>
                 <p class="Regular">
                   Kostenlose Nachhilfe mit Bildung und Teilhabe
                 </p></a
@@ -56,42 +61,64 @@
                 <div class="filter"></div>
               </div>
             </div>
-            <!-- card two  -->
+            <!-- =============== card two  ==================-->
             <div class="header-col-image p-0">
               <a href="#" class="card btn-card text-start"
-                ><h4 class="fontSizeH4 Bold text-start">Deutschkurse</h4>
+                ><h4 class="font-size-h4 Bold text-start letter-spacing-title">Deutschkurse</h4>
                 <p class="Regular">Für Jugendliche und Studierende</p></a
               >
               <div class="header-img-holder card-two">
                 <div class="filter"></div>
               </div>
             </div>
-            <!-- card three  -->
+            <!-- =============== card three =============== -->
             <div class="header-col-image p-0">
               <a href="#" class="card btn-card text-start"
-                ><h4 class="fontSizeH4 Bold text-start">Beruf</h4>
+                ><h4 class="font-size-h4 Bold text-start letter-spacing-title">Beruf</h4>
                 <p class="Regular">Berufs und Firmenkurse</p></a
               >
               <div class="header-img-holder card-three">
                 <div class="filter"></div>
               </div>
             </div>
-            <!-- card four  -->
+            <!--=============== card four  ===============-->
             <div class="header-col-image p-0">
               <a href="#" class="card btn-card text-start"
-                ><h4 class="fontSizeH4 Bold text-start">Alphabetisierung</h4>
-                <p></p
-              ></a>
+                ><h4 class="font-size-h4 Bold text-start letter-spacing-title">Alphabetisierung</h4>
+                <!-- <p class="Regular">Berufs und Firmenkurse</p> -->
+                </a
+              >
               <div class="header-img-holder card-four">
                 <div class="filter"></div>
               </div>
             </div>
           </div>
         </div>
-        <!-- card holder end -->
-        <div class="col-1"></div>
+      </div>
+      <!-- ========================== card holder end =========================== -->
+    </div>
+    <!--******************************************************************* section header end **********************************************************-->
+    <!-- *********************************************************************************************************************************************** -->
+    <!--******************************************************************* section courses start *******************************************************-->
+    <div
+      class="container-fluid courses d-flex justify-content-center  align-items-center p-0"
+    >
+      <div class="row d-flex flex-column align-items-center  w-100">
+        <div class="col-10 d-flex justify-content-between align-items-center ps-0 pe-0">
+          <h2 class="font-size-h2 Bold third-colour courses-title line-height-titleSmall letter-spacing-title">
+            Wir bieten eine große Auswahl<br />
+            an Kursen
+          </h2>
+          <h2 class="rock-3D main-colour ">01</h2>
+        </div>
+        <div class="col-10  d-flex align-items-center justify-content-between ">
+          <a class="btnc btn-courses letter-spacing-title" href="#" role="button">Alphabetisierung</a>
+          <i class="bi bi-arrow-right-circle font-size-h4" ></i>
+        </div>
       </div>
     </div>
+    <!--******************************************************************* section courses end *********************************************************-->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

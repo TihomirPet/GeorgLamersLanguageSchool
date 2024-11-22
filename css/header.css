@@ -2,11 +2,12 @@
   background-color: var(--main-bg-color);
   color: var(--text-white-color);
   padding-bottom: 5vh;
+  height: auto;
 }
 .header h1 {
   text-shadow: 2px 2px 0px var(--second-bg-color) !important;
 }
-.ColHeightTitle {
+.row-height-title {
   height: 56vh;
   /* background-color: rgb(253, 176, 176); */
 }
