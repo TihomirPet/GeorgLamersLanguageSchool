@@ -17,7 +17,24 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  padding:  1rem 1.25rem 1rem 0rem !important;
+  font-size: 1.44rem;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: var(--bg-bright-color);
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+    letter-spacing: -0.04em;
+    font-family: 'MontserratSemiBold';
+}
+.accordion-button:hover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.6rem 1rem 1.6rem !important;
   font-size: 1.44rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
@@ -46,7 +63,7 @@
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/></svg>');
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-accordion-btn-focus-box-shadow: transparent !important;
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: #000;
