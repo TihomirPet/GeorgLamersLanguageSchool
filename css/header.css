@@ -1,7 +1,7 @@
 .header {
   background-color: var(--main-bg-color);
   color: var(--text-white-color);
-  padding-bottom: 5vh;
+  padding-bottom: 11vh;
   height: auto;
 }
 .header h1 {
