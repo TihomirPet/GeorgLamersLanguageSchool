@@ -2,7 +2,7 @@
  .forms-of-teaching{
     background-color: var(--bg-bright-color );
    height:auto;
-  padding: 20vh 0vw 24vh 0vw !important;
+  padding: 20vh 0vw 35vh 0vw !important;
  }
  .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding:  1rem 1.25rem 1rem 0rem !important;
+  padding:  1.3rem 1.25rem 1.3rem 0rem !important;
   font-size: 1.44rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.6rem 1rem 1.6rem !important;
+  padding: 1.3rem 1.6rem 1.3rem 1.6rem !important;
   font-size: 1.44rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
@@ -47,10 +47,11 @@
     font-family: 'MontserratSemiBold';
 }
 .accordion {
+    border-bottom: 1px solid hsl(0, 0%, 1%,0.5);
   --bs-accordion-color: #0b0b0b;
   --bs-accordion-bg:var(--bg-bright-color) !important;
   --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
-  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-color: #FFFDF6;
   --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: var(--bs-border-radius);
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
@@ -83,3 +84,8 @@
 
 }
 
+.accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: var(--bs-accordion-bg);
+  border: solid 1px hsl(0, 0%, 1%,0.5);
+}
