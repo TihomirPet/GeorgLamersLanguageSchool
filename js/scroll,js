@@ -44,7 +44,7 @@ gsap.utils.toArray('.section').forEach(function (elem) {
     trigger: elem,
     start: 'top 5%',
     end: 'bottom 5%',
-    markers: true,
+    markers: false,
     onEnter: () =>
       gsap.to('main', {
         backgroundColor: color,
