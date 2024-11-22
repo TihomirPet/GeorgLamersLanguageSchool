@@ -1,7 +1,7 @@
 .courses {
-  background-color: var(--second-bg-color);
+  /* background-color: var(--second-bg-color); */
   height:auto;
-  padding: 20vh 0vw 24vh 0vw !important;
+  padding: 29vh 0vw 20vh 0vw !important;
 }
 /* .courses-title{
     width: 40vw;

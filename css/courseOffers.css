@@ -1,6 +1,6 @@
 .course-offers {
   position: relative;
-  background-color: var(--second-bg-color);
+  /* background-color: var(--second-bg-color); */
   height: auto;
   padding: 10vh 0vw 10vh 0vw !important;
 }

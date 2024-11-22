@@ -8,7 +8,7 @@ html {
 
 :root {
   --main-bg-color: hsl(25, 100%, 53%);
-  --second-bg-color: hsl(266, 100%, 39%);
+  --second-bg-color: #5600c7;
   --text-white-color: #fdf7f8;
   --bg-bright-color: #FFFDF6;
   --text-black-color: #020202;
@@ -107,7 +107,7 @@ html {
   font-size: 1.44rem;
 }
 .font-size-h7 {
-  font-size: 1.2rem;
+  font-size: 1.rem;
 }
 .font-size-p {
   font-size: 1rem;
