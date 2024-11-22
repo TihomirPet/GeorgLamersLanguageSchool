@@ -54,7 +54,7 @@ gsap.utils.toArray('.section').forEach(function (elem) {
       gsap.to('main', {
         backgroundColor: '#FFFDF6',
         duration: 1.4,
-        ease: 'power1.out',
+        
       }),
     onLeaveBack: () =>
       gsap.to('main', {

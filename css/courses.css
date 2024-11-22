@@ -19,7 +19,7 @@
 }
 .courses-link:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
-  padding: 0.6rem 0rem 0.6rem 1.9rem;
+  padding: 0.6rem 1rem 0.6rem 1.9rem !important;
 }
 .btnc {
   --bs-btn-padding-x: ;
@@ -40,7 +40,7 @@
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem
     rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
   display: inline-block;
-  padding: 0.6rem 1rem 0.6rem 0rem;
+  padding: 0.6rem 1rem 0.6rem 0rem !important;
   font-family: var(--bs-btn-font-family);
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
