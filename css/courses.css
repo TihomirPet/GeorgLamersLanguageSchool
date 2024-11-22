@@ -1,6 +1,7 @@
 .courses {
   background-color: var(--second-bg-color);
-  height: 100vh;
+  height:auto;
+  padding: 20vh 0vw 24vh 0vw !important;
 }
 /* .courses-title{
     width: 40vw;

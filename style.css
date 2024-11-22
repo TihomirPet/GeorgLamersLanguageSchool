@@ -10,6 +10,8 @@ html {
   --main-bg-color: hsl(25, 100%, 53%);
   --second-bg-color: hsl(266, 100%, 39%);
   --text-white-color: #fdf7f8;
+  --bg-bright-color: #FFFDF6;
+  --text-black-color: #020202;
   --h5:1.728rem;
 }
 
@@ -101,6 +103,9 @@ html {
 .font-size-h5 {
   font-size: 1.728rem;
 }
+.font-size-h6 {
+  font-size: 1.44rem;
+}
 .font-size-p {
   font-size: 1rem;
 }
@@ -115,4 +120,7 @@ html {
 }
 .third-colour{
     color:var( --text-white-color) ;
+}
+.text-black{
+  color:var(--text-black-color);
 }
