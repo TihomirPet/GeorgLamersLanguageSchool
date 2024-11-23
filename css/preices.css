@@ -7,7 +7,7 @@
   padding: 29vh 0vw 20vh 0vw !important;
 }
 .price-image-holder {
-  background-image: url(/images/SectonPric.jpg);
+  background-image: url(/images/SectonPricA.jpg);
   height: var(--height-col-price);
   background-size: 75vw auto;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
   border-radius: 0.5vw;
 }
 .price-image-holder-second {
-  background-image: url(/images/SectonPric.jpg);
+  background-image: url(/images/SectonPricA.jpg);
   height: var(--height-col-price);
   background-size: 75vw auto;
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
   border-radius: 0.5vw;
 }
 .price-title-holder {
-  background-image: url(/images/SectonPricB.jpg);
+  background-image: url(/images/SectionPricAf.png);
   height: var(--height-col-price);
   background-size: 75vw auto;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 }
 .price-links-holder {
     height: var(--height-col-price);
-  background-image: url('/images/SectonPricBf.jpg');
+  background-image: url(/images/SectionPric.png);
 
   background-size: 75vw auto;
   background-repeat: no-repeat;
@@ -86,6 +86,7 @@
   border-bottom: hsl(0, 0%, 1%, 0.4) solid 1px !important;
   border-radius: 0px !important;
   background-color: var(--bs-btn-bg);
+  backdrop-filter: blur(10px);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -108,4 +109,5 @@
 .icon-price {
   color: var(--main-bg-color);
   color: var(--text-black-color);
+  /* color: var(--second-bg-color); */
 }
