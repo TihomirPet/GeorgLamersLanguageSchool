@@ -10,11 +10,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- ******************* CSS start********************** -->
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/courses.css" />
     <link rel="stylesheet" href="/css/formsOfTeaching.css" />
     <link rel="stylesheet" href="/css/courseOffers.css" />
+    <link rel="stylesheet" href="/css/preices.css" />
+
+    <!-- ******************* CSS end ********************** -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -24,7 +29,10 @@
     <!-- https://georg-lamers-language-school.vercel.app/ -->
     <main class="root">
       <!--******************************************************** section header start ************************************************-->
-      <div class="container-fluid header section s-1" data-color='hsl(25, 100%, 53%)'>
+      <div
+        class="container-fluid header section s-1"
+        data-color="hsl(25, 100%, 53%)"
+      >
         <!-- ================= row Title start ======================================-->
         <div class="row d-flex justify-content-center row-height-title">
           <div class="col-5 mt-5">
@@ -123,7 +131,8 @@
       <!-- *********************************************************************************************************************************************** -->
       <!--******************************************************************* section courses start *******************************************************-->
       <div
-        class="container-fluid courses d-flex justify-content-center align-items-center p-0 section s-2" data-color='#5600c7'
+        class="container-fluid courses d-flex justify-content-center align-items-center p-0 section s-2"
+        data-color="#5600c7"
       >
         <div class="row d-flex flex-column align-items-center w-100">
           <div
@@ -210,7 +219,8 @@
       <!--*************************************************************************************************************************************************-->
       <!--******************************************************************* forms of teaching start *****************************************************-->
       <div
-        class="container-fluid forms-of-teaching d-flex justify-content-center align-items-center section s-3"data-color='#FFFDF6'
+        class="container-fluid forms-of-teaching d-flex justify-content-center align-items-center section s-3"
+        data-color="#FFFDF6"
       >
         <div class="row d-flex justify-content-center w-100">
           <div class="col-4">
@@ -328,7 +338,8 @@
       <!--******************************************************************* course offers start *********************************************************-->
 
       <div
-        class="container-fluid course-offers d-flex justify-content-center align-items-center p-0 section " data-color='#5600c7'
+        class="container-fluid course-offers d-flex justify-content-center align-items-center p-0 section s-4"
+        data-color="#5600c7"
       >
         <div class="row w-100 d-flex align-items-center justify-content-center">
           <div class="col-5 d-flex">
@@ -369,6 +380,87 @@
         </div>
       </div>
       <!--******************************************************************* course offers end ***********************************************************-->
+      <!--*************************************************************************************************************************************************-->
+      <!--******************************************************************* preices start ***********************************************************-->
+      <div
+        class="container-fluid preices d-flex justify-content-center align-items-center section s-5"
+        data-color="#FFFDF6"
+      >
+        <div
+          class="row w-100 d-flex justify-content-center align-items-center "
+        >
+          <div class="col-4  d-flex flex-column">
+            <!-- =========== row Title start ============ -->
+            <div class="row price-title-holder">
+              <!-- =========== col Title start ============ -->
+              <div
+                class="col-7 d-flex align-items-center justify-content-between "
+              >
+                <h2
+                  class="font-size-h2 Bold second-colour line-height-titleSmall letter-spacing-title"
+                >
+                  Preise
+                </h2>
+                <h2 class="rock-3D second-colour">04</h2>
+              </div>
+              <!-- =========== col Title end ============ -->
+              <div class="col-8">
+                <h5
+                  class="Semibold letter-spacing-title font-size-h5 w-75 second-colour"
+                >
+                  Zuerst ausprobieren, dann festlegen!
+                </h5>
+              </div>
+            </div>
+            <!-- =========== row Title end ============ -->
+            <!-- =========== row image start ============ -->
+            <div class="row price-image-holder"></div>
+            <!-- =========== row image end ============ -->
+          </div>
+          <div class="col-4 ">
+            <div class="row price-image-holder-second"></div>
+            <div class="row price-links-holder ">
+              <div class="col-12 courses-holder ps-4 d-flex flex-column justify-content-center">
+                <!-- ================ Link one =============================== -->
+                <a
+                  class="preices-link btnp btn-preices letter-spacing-title w-100 d-flex align-items-center justify-content-between"
+                  href="#"
+                  role="button"
+                  ><h6 class="Semibold letter-spacing-title font-size-h6">
+                    Gruppenkurse
+                  </h6>
+
+                  <i class="bi bi-arrow-right-circle icon-price font-size-h5 Bold"></i
+                ></a>
+                <!-- ================ Link two =============================== -->
+                <a
+                  class="preices-link btnp btn-preices letter-spacing-title w-100 d-flex align-items-center justify-content-between"
+                  href="#"
+                  role="button"
+                  ><h6 class="Semibold letter-spacing-title font-size-h6">
+                    Private Gruppen-und Einzelkurse
+                  </h6>
+
+                  <i class="bi bi-arrow-right-circle icon-price font-size-h5 Bold"></i
+                ></a>
+                <!-- ================ Link three =============================== -->
+                <a
+                  class="preices-link btnp btn-preices letter-spacing-title w-100 d-flex align-items-center justify-content-between"
+                  href="#"
+                  role="button"
+                  ><h6 class="Semibold letter-spacing-title  font-size-h6">
+                    Firmenkurse und Berufscoaching
+                  </h6>
+
+                  <i class="bi bi-arrow-right-circle icon-price font-size-h5 Bold"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--******************************************************************* preices end  ***********************************************************-->
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

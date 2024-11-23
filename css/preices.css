@@ -1,27 +1,57 @@
-.courses {
-  /* background-color: var(--second-bg-color); */
-  height:auto;
+:root {
+  --height-col-price: 35vh;
+}
+
+.preices {
+  height: auto;
   padding: 29vh 0vw 20vh 0vw !important;
 }
-/* .courses-title{
-    width: 40vw;
-} */
-.courses-holder{
-   border-bottom: 1px solid hsl(350, 60%, 98%,0.6); 
+.price-image-holder {
+  background-image: url(/images/SectonPric.jpg);
+  height: var(--height-col-price);
+  background-size: 75vw auto;
+  background-repeat: no-repeat;
+  background-position: 0vw -40vh;
+  border-radius: 0.5vw;
 }
-.bi-arrow-right-circle {
-  color: var(--main-bg-color);
+.price-image-holder-second {
+  background-image: url(/images/SectonPric.jpg);
+  height: var(--height-col-price);
+  background-size: 75vw auto;
+  background-repeat: no-repeat;
+  background-position: -33vw -52px;
+  border-radius: 0.5vw;
 }
-.btnc:hover {
+.price-title-holder {
+  background-image: url(/images/SectonPricB.jpg);
+  height: var(--height-col-price);
+  background-size: 75vw auto;
+  background-repeat: no-repeat;
+  background-position: 0vw -49px;
+  border-radius: 0.5vw;
+  height: var(--height-col-price);
+}
+.price-links-holder {
+    height: var(--height-col-price);
+  background-image: url('/images/SectonPricBf.jpg');
+
+  background-size: 75vw auto;
+  background-repeat: no-repeat;
+  background-position: -33vw -40vh;
+  border-radius: 0.5vw;
+
+}
+.btnp:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
+  border-bottom: hsl(0, 0%, 1%, 0.4) solid 1px !important;
 }
-.courses-link:hover {
+.preices-link:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
   padding: 0.6rem 0rem 0.6rem 1.9rem !important;
 }
-.btnc {
+.btnp {
   --bs-btn-padding-x: ;
   --bs-btn-padding-y: ;
   --bs-btn-font-family: 'Montserrat';
@@ -53,17 +83,17 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  border-bottom: var(--bs-btn-border-width) solid 1px;
+  border-bottom: hsl(0, 0%, 1%, 0.4) solid 1px !important;
   border-radius: 0px !important;
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn-courses {
-  --bs-btn-color: var(--text-white-color) !important;
+.btn-preices {
+  --bs-btn-color: var(--text-black-color) !important;
   --bs-btn-bg: transparent !important;
   --bs-btn-border-color: transparent !important;
-  --bs-btn-hover-color: var(--text-white-color) !important;
+  --bs-btn-hover-color: var(--text-black-color) !important;
   --bs-btn-hover-bg: transparent !important;
   --bs-btn-hover-border-color: transparent !important;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
@@ -74,4 +104,8 @@
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: transparent !important;
   --bs-btn-disabled-border-color: transparent !important;
+}
+.icon-price {
+  color: var(--main-bg-color);
+  color: var(--text-black-color);
 }

@@ -2,69 +2,37 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   gsap.registerPlugin(ScrollTrigger);
   // gsap code here!
-  
- 
-});
- 
-  
- 
-// ScrollTrigger.create({
-//   trigger: '.courses',
-//   markers: true,
-//   start: 'top 50%',
-//   end: 'bottom 0%',
+  gsap.utils.toArray('.section').forEach(function (elem) {
+    let color = elem.getAttribute('data-color');
 
-//   onEnter: () => {
-//     gsap.to('body', { duration: 1.0, backgroundColor: 'hsl(266, 100%, 39%)' });
-//   },
-
-//   onLeaveBack: () => {
-//     gsap.to('body', { duration: 1.0, backgroundColor: 'hsl(25, 100%, 53%)' });
-//   },
-// });
-
-// ScrollTrigger.create({
-//   trigger: 'section.three',
-//   markers: true,
-//   start: 'top 50%',
-//   end: 'bottom 0%',
-
-//   onEnter: () => {
-//     gsap.to('body', { duration: 1.0, backgroundColor: '#000000' });
-//   },
-
-//   onLeaveBack: () => {
-//     gsap.to('body', { duration: 1.0, backgroundColor: '#ff0000' });
-//   },
-// });
-gsap.utils.toArray('.section').forEach(function (elem) {
-  let color = elem.getAttribute('data-color');
-
-  ScrollTrigger.create({
-    trigger: elem,
-    start: 'top 5%',
-    end: 'bottom 5%',
-    markers: false,
-    onEnter: () =>
-      gsap.to('main', {
-        backgroundColor: color,
-        duration: 1.4,
-      }),
-    onLeave: () =>
-      gsap.to('main', {
-        backgroundColor: '#FFFDF6',
-        duration: 1.4,
-        
-      }),
-    onLeaveBack: () =>
-      gsap.to('main', {
-        backgroundColor: '#FFFDF6',
-        duration: 1.4,
-      }),
-    onEnterBack: () =>
-      gsap.to('main', {
-        backgroundColor: color,
-        duration: 1.4,
-      }),
+    ScrollTrigger.create({
+      trigger: elem,
+      start: 'top 15%',
+      end: 'bottom 15%',
+      markers: true,
+      onEnter: () =>
+        gsap.to('main', {
+          backgroundColor: color,
+          duration: 1.4,
+        }),
+      onLeave: () =>
+        gsap.to('main', {
+          backgroundColor: '#FFFDF6',
+          duration: 1.4,
+        }),
+      onLeaveBack: () =>
+        gsap.to('main', {
+          backgroundColor: '#FFFDF6',
+          duration: 1.4,
+        }),
+      onEnterBack: () =>
+        gsap.to('main', {
+          backgroundColor: color,
+          duration: 1.4,
+        }),
+    });
   });
+ 
 });
+ 
+  
