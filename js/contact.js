@@ -1,14 +1,14 @@
-function el(css) {
+function elm(css) {
   return document.querySelector(css);
 }
 
-let nav = el('.contact');
+let nav = elm('.contact');
 // const nav = document.querySelector('.nav-holder');
 
 fetch('./contact.html')
   .then((res) => res.text())
   .then((data) => {
     nav.innerHTML = data;
-    //   nav.insertAdjacentHTML('beforeend', data);
+      // nav.insertAdjacentHTML('beforeend', data);
   });
-// console.log(nav);
+console.log(contact);
