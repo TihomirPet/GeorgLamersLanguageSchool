@@ -25,7 +25,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
- 
   </head>
   <body>
     <!-- https://georg-lamers-language-school.vercel.app/ -->
@@ -34,7 +33,6 @@
       <!--******************************************************** section header start ************************************************-->
       <section
         class="container-fluid header section s-1"
-       
         data-bg-class="bg-main-orange"
       >
         <!-- ================= Row Title start ======================================-->
@@ -99,20 +97,21 @@
                 <div
                   class="header-img-holder card-two d-flex align-items-center justify-content-center"
                 >
-                  <div class="filter"></div>
 
-                  <!-- <video
-                    width=""
+                   <video
+                    width="auto"
                     height="100%"
-                    class="header-video-content"
-                    autoplay
+                    class="video-container"
+                    id="myVid"
                     loop
+                    autoplay
                   >
                     <source
-                      src="/video/istockphoto-1266824528-640_adpp_is.mp4"
+                      src="/video/istockphoto-2019404781-640_adpp_is.mp4"
                       type="video/mp4"
                     />
-                  </video> -->
+                  </video>
+                  <!-- <div class="filter"></div> -->
                 </div>
               </div>
               <!-- =============== Card three =============== -->
@@ -125,12 +124,27 @@
                   </h4>
                   <p class="Regular">Berufs und Firmenkurse</p></a
                 >
-                <div class="header-img-holder card-three">
+                <div class="header-img-holder card-three d-flex align-items-center justify-content-center">
+                  
+                   <video
+                    width="auto"
+                    height="100%"
+                    class="video-container"
+                    id="myVid"
+                    loop
+                    autoplay
+                  >
+                    <source
+                      src="/video/istockphoto-1135666573-640_adpp_is.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                   <div class="filter"></div>
+                 
                 </div>
               </div>
               <!--=============== Card four  ===============-->
-              <div class="header-col-image p-0">
+              <div class="header-col-image p-0 video-container">
                 <a href="#" class="card btn-card text-start"
                   ><h4
                     class="font-size-h4 Bold text-start letter-spacing-title"
@@ -139,8 +153,23 @@
                   </h4>
                   <!-- <p class="Regular">Berufs und Firmenkurse</p> -->
                 </a>
-                <div class="header-img-holder card-four">
-                  <div class="filter"></div>
+                <div
+                  class="header-img-holder card-four d-flex align-items-center justify-content-center"
+                >
+                  <!-- <div class="filter"></div> -->
+                  <video
+                    width="auto"
+                    height="100%"
+                    class="video-container"
+                    id="myVid"
+                    loop
+                    autoplay
+                  >
+                    <source
+                      src="/video/istockphoto-1129461772-640_adpp_is.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
                 </div>
               </div>
             </div>
@@ -153,7 +182,6 @@
       <!--******************************************************************* Section courses start *******************************************************-->
       <section
         class="container-fluid courses d-flex justify-content-center align-items-center p-0 section s-2"
-       
         data-bg-class="bg-second-purple"
       >
         <div class="row d-flex flex-column align-items-center w-100">
@@ -244,7 +272,6 @@
       <!--******************************************************************* Forms of teaching start *****************************************************-->
       <section
         class="container-fluid forms-of-teaching d-flex justify-content-center align-items-center section s-3"
-      
         data-bg-class="bg-third-white"
       >
         <div class="row d-flex justify-content-center w-100">
@@ -409,7 +436,7 @@
       <!--******************************************************************* Preices start ***********************************************************-->
       <section
         class="container-fluid preices d-flex justify-content-center align-items-center section s-5"
-         data-bg-class="bg-third-white"
+        data-bg-class="bg-third-white"
       >
         <div class="row w-100 d-flex justify-content-center align-items-center">
           <div class="col-4 d-flex flex-column">
@@ -509,6 +536,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/js/scroll.js" type=""></script>
-       <script src="/js/contact.js" type=""></script>
+    <script src="/js/contact.js"></script>
+    <script src="/js/playvideo.js"></script>
   </body>
 </html>

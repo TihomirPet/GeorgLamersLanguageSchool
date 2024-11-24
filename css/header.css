@@ -192,12 +192,15 @@
   border-bottom-right-radius: 0.9vw;
 }
 .card-four {
-  background-image: url(/images/istockphoto-890698790-1024x1024.png);
+  /* background-image: url(/images/istockphoto-890698790-1024x1024.png); */
 
   height: 61vh;
-  background-size: 70vw auto;
+  /* background-size: 70vw auto;
   background-repeat: no-repeat;
   background-position: -41vw 0px;
   border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw; */
+  
 }
+
+
