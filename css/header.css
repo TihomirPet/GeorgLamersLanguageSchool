@@ -1,18 +1,16 @@
 .main {
   overflow: hidden;
 
-  transition-duration: 1400ms ;
+  transition-duration: 1400ms;
 
   /* transition-delay: 150ms; */
   transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
-
 }
-
 
 .header {
   /* background-color: var(--main-bg-color); */
   color: var(--text-white-color);
- 
+
   padding-bottom: 20vh;
   height: auto;
 }
@@ -147,51 +145,42 @@
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
 }
-.filter{
-    mix-blend-mode:soft-light;
-
-    background-color: hsl(25, 100%, 53%,0.4);
-    height: 100%;
-    width: 100%;
-}
 
 .card-one {
-  background-image:
-   /* linear-gradient(
-      to bottom,
-      hsl(25, 100%, 53%, 0.2),
-      hsl(25, 100%, 53%, 0.2)
-    ), */
-    url(/images/istockphoto-1362613670-1024x1024\(1\).jpg);
+  position: relative;
+  /* background-image:url(/images/istockphoto-1362613670-1024x1024\(1\).jpg); */
 
   height: 61vh;
-  background-size: 44.2vw auto;
+  /* background-size: 44.2vw auto;
   background-repeat: no-repeat;
   background-position: -11vw 0;
   border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw; */
 }
 .card-two {
-  background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg);
+  position: relative;
+  /* background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg); */
 
   height: 61vh;
-  background-size: 44.2vw auto;
+  /* background-size: 44.2vw auto;
   background-repeat: no-repeat;
   background-position: -11vw 0;
   border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw; */
 }
 .card-three {
-  background-image: url(/images/istockphoto-1041148794-1024x1024\(1\).jpg);
+  position: relative;
+  /* background-image: url(/images/istockphoto-1041148794-1024x1024\(1\).jpg); */
 
   height: 61vh;
-  background-size: 45vw auto;
+  /* background-size: 45vw auto;
   background-repeat: no-repeat;
   background-position: -9.5vw 0;
   border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw; */
 }
 .card-four {
+  position: relative;
   /* background-image: url(/images/istockphoto-890698790-1024x1024.png); */
 
   height: 61vh;
@@ -200,7 +189,15 @@
   background-position: -41vw 0px;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw; */
-  
 }
-
-
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: soft-light;
+  background-color: hsl(25, 100%, 53%, 0.2);
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  z-index: 4;
+}
