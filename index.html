@@ -69,7 +69,7 @@
           <div class="col-10">
             <div class="row d-flex justify-content-between p-0">
               <!--=============== Card one  ===============-->
-              <div class="header-col-image p-0">
+              <div class="header-col-image p-0 video-container-one">
                 <a href="#" class="card btn-card text-start"
                   ><h4
                     class="font-size-h4 Bold text-start letter-spacing-title"
@@ -80,21 +80,22 @@
                     Kostenlose Nachhilfe mit Bildung und Teilhabe
                   </p></a
                 >
-                <div class="header-img-holder card-one d-flex align-items-center justify-content-center ps-5">
-                       <video
+                <div
+                  class="header-img-holder card-one d-flex align-items-center justify-content-center ps-5"
+                >
+                  <video
                     width="auto"
                     height="100%"
-                    class="video-container"
+                    class="video"
                     id="myVid"
                     loop
-                    autoplay
                   >
                     <source
                       src="/video/istockphoto-2181326581-640_adpp_is.mp4"
                       type="video/mp4"
                     />
                   </video>
-                  <div class="filter"></div>
+                  <!-- <div class="filter"></div> -->
                 </div>
               </div>
               <!-- =============== Card two  ==================-->
@@ -110,14 +111,12 @@
                 <div
                   class="header-img-holder card-two d-flex align-items-center justify-content-center"
                 >
-
-                   <video
+                  <video
                     width="auto"
                     height="100%"
-                    class="video-container"
+                    class="video"
                     id="myVid"
                     loop
-                    autoplay
                   >
                     <source
                       src="/video/istockphoto-2019404781-640_adpp_is.mp4"
@@ -137,54 +136,63 @@
                   </h4>
                   <p class="Regular">Berufs und Firmenkurse</p></a
                 >
-                <div class="header-img-holder card-three d-flex align-items-center justify-content-center">
-                  
-                   <video
-                    width=""
+                <div
+                  class="header-img-holder card-three d-flex align-items-center justify-content-center"
+                >
+                  <video
+                    width="auto"
                     height="100%"
-                    class="video-container"
+                    class="video"
                     id="myVid"
                     loop
-                    autoplay
                   >
                     <source
                       src="/video/istockphoto-962939844-640_adpp_is.mp4"
                       type="video/mp4"
                     />
                   </video>
-                  <div class="filter"></div>
-                 
+                  <!-- <div class="filter"></div> -->
                 </div>
               </div>
               <!--=============== Card four  ===============-->
-              <div class="header-col-image p-0 video-container">
-                <a href="#" class="card btn-card text-start"
-                  ><h4
-                    class="font-size-h4 Bold text-start letter-spacing-title"
+
+              <a
+                href="/courses.html"
+                class="video-container d-flex align-items-center justify-content-center"
+              >
+                <div class="header-image-test show p-0">
+                  <div class="header-video-text-holder third-colour">
+                    <h4
+                      class="font-size-h4 Bold text-start letter-spacing-title"
+                    >
+                      Alphabetisierung
+                    </h4>
+                    <p class="Regular"></p>
+                  </div>
+
+                  <div class="header-video-img-holder"></div>
+                </div>
+
+                <video
+                  src="/video/istockphoto-1129461772-640_adpp_is.mp4"
+                  height="100%"
+                  loop
+                ></video>
+                <div class="hover-text">
+                  <h4
+                    class="font-size-h4 Bold text-start letter-spacing-title third-colour"
                   >
                     Alphabetisierung
                   </h4>
-                  <!-- <p class="Regular">Berufs und Firmenkurse</p> -->
-                </a>
-                <div
-                  class="header-img-holder card-four d-flex align-items-center justify-content-center"
-                >
-                  <div class="filter"></div>
-                  <video
-                    width="auto"
-                    height="100%"
-                    class="video-container"
-                    id="myVid"
-                    loop
-                    autoplay
-                  >
-                    <source
-                      src="/video/istockphoto-1129461772-640_adpp_is.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
+
+                  <div class="Regular d-flex third-colour mt-3">
+                    <p class="Regular">Mehr erfahren</p>
+                    <i
+                      class="bi bi-arrow-right-circle course-offers-icon ms-3"
+                    ></i>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -213,7 +221,6 @@
             <a
               class="courses-link btnc btn-courses letter-spacing-title w-100 d-flex align-items-center justify-content-between"
               href="/pages/courses.html"
-              target="_blank"
               role="button"
               ><h6 class="Semibold letter-spacing-title font-size-h6">
                 Kostenlose Nachhilfe mit Bildung und Teilhabe
@@ -226,7 +233,6 @@
             <a
               class="courses-link btnc btn-courses letter-spacing-title w-100 d-flex align-items-center justify-content-between"
               href="/pages/courses.html"
-              target="_blank"
               role="button"
               ><h6 class="Semibold letter-spacing-title font-size-h6">
                 Deutschkurse
@@ -548,8 +554,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/scroll.js" type=""></script>
-    <script src="/js/contact.js"></script>
-    <script src="/js/playvideo.js"></script>
+    <script src="/js/scroll.js"  type="module"></script>
+    <script src="/js/contact.js" type="module"></script>
+    <script src="/js/playvideo.js"  type="module"></script>
   </body>
 </html>

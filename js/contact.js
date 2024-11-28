@@ -2,13 +2,13 @@ function elm(css) {
   return document.querySelector(css);
 }
 
-let nav = elm('.contact');
+let contact = elm('.contact');
 // const nav = document.querySelector('.nav-holder');
-
-fetch('./contact.html')
+console.log(contact);
+fetch('/pages/contact.html')
   .then((res) => res.text())
   .then((data) => {
-    nav.innerHTML = data;
+    contact.innerHTML = data;
       // nav.insertAdjacentHTML('beforeend', data);
   });
-console.log(contact);
+

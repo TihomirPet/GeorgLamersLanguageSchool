@@ -8,15 +8,26 @@
 
 // ######
 
-// const video = document.querySelector('.video-container  video');
-// const hoverText = document.querySelector('.video-container .hover-text');
+const video = document.querySelector('.video-container ');
+const videoPlay = document.querySelector('.video-container video');
+const hoverText = document.querySelector('.video-container .hover-text');
+const hoverCard = document.querySelector(
+  '.video-container  .header-image-test '
+);
+console.log(hoverCard);
 
-// video.addEventListener('mouseenter', () => {
-//   video.play();
-//   hoverText.classList.remove('active');
-// });
+video.addEventListener('mouseenter', () => {
+  hoverCard.classList.remove('show');
+  videoPlay.play();
 
-// video.addEventListener('mouseleave', () => {
-//   video.pause();
-//   hoverText.classList.add('active');
-// });
+  hoverText.classList.add('active');
+});
+
+video.addEventListener('mouseleave', () => {
+  hoverCard.classList.add('show');
+  videoPlay.pause();
+
+  hoverText.classList.remove('active');
+});
+
+// **********************************
