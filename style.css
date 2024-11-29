@@ -6,17 +6,13 @@ html {
   line-height: 0.92;
 }
 
-
-
-
-
 :root {
   --main-bg-color: hsl(25, 100%, 53%);
   --second-bg-color: #5600c7;
   --text-white-color: #fdf7f8;
-  --bg-bright-color: #FFFDF6;
+  --bg-bright-color: #fffdf6;
   --text-black-color: hsl(0, 0%, 1%);
-  --h5:1.728rem;
+  --h5: 1.728rem;
 }
 
 @font-face {
@@ -47,7 +43,7 @@ html {
   letter-spacing: -0.04em;
 }
 .line-height-titleSmall {
- line-height: 1.05;
+  line-height: 1.05;
 }
 
 .line-height-title {
@@ -90,6 +86,7 @@ html {
 } */
 .font-size-h1 {
   font-size: 6rem;
+  font-size: clamp(min(2.488125rem, 2.488125rem), 5vw, max(6rem, 6rem));
 }
 
 .font-size-h2 {
@@ -99,47 +96,51 @@ html {
   font-size: 1.074rem;
 } */
 .font-size-h3 {
- font-size:2.489rem;
+  /* font-size:2.489rem; */
+  font-size: clamp(min(1.44rem, 1.44rem), 2.5vw, max(2.489rem, 2.489rem));
 }
 .font-size-h4 {
-  font-size:2.074rem;
+  /* font-size:2.074rem; */
+  /* font-size:clamp(1.2rem, 2.5vw, 2.074rem); */
+  font-size: clamp(min(1.2rem, 1.2rem), 2.5vw, max(2.074rem, 2.074rem));
 }
 .font-size-h5 {
   font-size: 1.728rem;
+  /* font-size: clamp(min(10vw, 20rem), 300px, max(90vw, 55rem)); */
 }
 .font-size-h6 {
   font-size: 1.44rem;
 }
 .font-size-h7 {
-  font-size: 1.rem;
+  font-size: 1.2rem;
+  font-size: clamp(min(1rem, 1rem), 2.5vw, max(1.2rem, 1.2rem));
 }
 .font-size-p {
   font-size: 1rem;
 }
 
 /* ######################### class colors end ######################################################## */
-.main-colour{
-  color:var( --main-bg-color) ;
+.main-colour {
+  color: var(--main-bg-color);
 }
 
-.second-colour{
-    color:var( --second-bg-color) ;
+.second-colour {
+  color: var(--second-bg-color);
 }
-.third-colour{
-    color:var( --text-white-color) ;
+.third-colour {
+  color: var(--text-white-color);
 }
-.text-black{
-  color:var(--text-black-color);
+.text-black {
+  color: var(--text-black-color);
 }
 /* ============================= classes data colours ===============================*/
 
-.bg-main-orange{
+.bg-main-orange {
   background-color: var(--main-bg-color);
 }
-.bg-second-purple{
+.bg-second-purple {
   background-color: var(--second-bg-color);
 }
-.bg-third-white{
-  background-color: var( --bg-bright-color);
+.bg-third-white {
+  background-color: var(--bg-bright-color);
 }
-
