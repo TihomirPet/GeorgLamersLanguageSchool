@@ -85,8 +85,10 @@ html {
   font-size: 5.573rem;
 } */
 .font-size-h1 {
-  font-size: 6rem;
-  font-size: clamp(min(2.488125rem, 2.488125rem), 5vw, max(6rem, 6rem));
+  /* font-size: 6rem; */
+   font-size: clamp(min(2.488125rem, 2.488125rem), 4vw, max(6rem, 6rem)); 
+  /* font-size: clamp(2.4881rem, 0.8475rem + 5.25vw, 5.5725rem); */
+
 }
 
 .font-size-h2 {
@@ -97,12 +99,16 @@ html {
 } */
 .font-size-h3 {
   /* font-size:2.489rem; */
-  font-size: clamp(min(1.44rem, 1.44rem), 2.5vw, max(2.489rem, 2.489rem));
+  /* font-size: clamp(min(1.44rem, 1.44rem), 2.5vw, max(2.489rem, 2.489rem)); */
+  font-size: clamp(1.44rem, 0.8825rem + 1.784vw, 2.4881rem);
 }
 .font-size-h4 {
   /* font-size:2.074rem; */
   /* font-size:clamp(1.2rem, 2.5vw, 2.074rem); */
   font-size: clamp(min(1.2rem, 1.2rem), 2.5vw, max(2.074rem, 2.074rem));
+  font-size: clamp(1.2rem, 0.7352rem + 1.4872vw, 2.0738rem);
+
+ 
 }
 .font-size-h5 {
   font-size: 1.728rem;
@@ -114,9 +120,13 @@ html {
 .font-size-h7 {
   font-size: 1.2rem;
   font-size: clamp(min(1rem, 1rem), 2.5vw, max(1.2rem, 1.2rem));
+  font-size: clamp(1rem, 0.766rem + 0.7489vw, 1.44rem);
 }
 .font-size-p {
   font-size: 1rem;
+}
+.font-size-p-small {
+  font-size: 0.833rem;
 }
 
 /* ######################### class colors end ######################################################## */
