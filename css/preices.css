@@ -29,17 +29,15 @@
   background-repeat: no-repeat;
   background-position: 0vw -49px;
   border-radius: 0.5vw;
-  height: var(--height-col-price);
 }
 .price-links-holder {
-    height: var(--height-col-price);
+  height: var(--height-col-price);
   background-image: url(/images/SectionPric.png);
 
   background-size: 75vw auto;
   background-repeat: no-repeat;
   background-position: -33vw -40vh;
   border-radius: 0.5vw;
-
 }
 .btnp:hover {
   color: var(--bs-btn-hover-color);
@@ -55,8 +53,8 @@
   --bs-btn-padding-x: ;
   --bs-btn-padding-y: ;
   --bs-btn-font-family: 'Montserrat';
-  --bs-btn-font-size: var(--h5);
-  --bs-btn-font-weight: 600;
+  --bs-btn-font-size: var(--h6) !important;
+  --bs-btn-font-weight: 500;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: var(--bs-body-color);
   --bs-btn-bg: transparent;
@@ -110,4 +108,53 @@
   color: var(--main-bg-color);
   color: var(--text-black-color);
   /* color: var(--second-bg-color); */
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  :root {
+    --height-col-price: 28vh;
+  }
+  .preices {
+  height: auto;
+  padding: 20vh 0vw 20vh 0vw !important;
+}
+  .price-title-holder {
+    background-image: none;
+    height: var(--height-col-price);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0vw -49px;
+    border-radius: 0.5vw;
+    height: var(--height-col-price);
+  }
+  .prices-mobile-img-holder-one {
+    background-image: url(/images/SectonPricA.jpg);
+    height: 17vh;
+   width: 50vw;
+    background-size: 159vw auto;
+    background-repeat: no-repeat;
+    background-position: -40vw -0px;
+    border-radius: 5vw;
+  }
+  .prices-mobile-img-holder-two {
+    background-image: url(/images/SectonPricA.jpg);
+    height: 10vh;
+    width: 29.9vw;
+    background-size: 159vw auto;
+    background-repeat: no-repeat;
+    background-position: -104vw -53px;
+    border-radius: 5vw;
+  }
 }
