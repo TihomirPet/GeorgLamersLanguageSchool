@@ -1,13 +1,14 @@
 .courses {
   /* background-color: var(--second-bg-color); */
-  height:auto;
+  height: auto;
   padding: 29vh 0vw 20vh 0vw !important;
 }
-/* .courses-title{
-    width: 40vw;
+/* .courses-title {
+
+width: clamp(10vw, 20em, 100vw) !important;
 } */
-.courses-holder{
-   border-bottom: 1px solid hsl(350, 60%, 98%,0.6); 
+.courses-holder {
+  border-bottom: 1px solid hsl(350, 60%, 98%, 0.6);
 }
 .bi-arrow-right-circle {
   color: var(--main-bg-color);
@@ -76,12 +77,22 @@
   --bs-btn-disabled-border-color: transparent !important;
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) { }
+@media (max-width: 1399.98px) {
+}
 /* // `xl` applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { }
+@media (max-width: 1199.98px) {
+}
 /* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { }
+@media (max-width: 991.98px) {
+}
 /* // `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { }
+@media (max-width: 767.98px) {
+}
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { }
+@media (max-width: 575.98px) {
+ .courses {
+  /* background-color: var(--second-bg-color); */
+  height: auto;
+  padding: 5vh 0vw 5vh 0vw !important;
+}
+}

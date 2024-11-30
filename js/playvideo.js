@@ -15,19 +15,29 @@ const hoverCard = document.querySelector(
   '.video-container  .header-image-test '
 );
 console.log(hoverCard);
-
+// video.forEach(element => {
+  
+// });
 video.addEventListener('mouseenter', () => {
   hoverCard.classList.remove('show');
   videoPlay.play();
-
-  hoverText.classList.add('active');
+hoverText.classList.add('active');
 });
 
 video.addEventListener('mouseleave', () => {
   hoverCard.classList.add('show');
   videoPlay.pause();
-
-  hoverText.classList.remove('active');
+ hoverText.classList.remove('active');
 });
 
 // **********************************
+// const videos = document.querySelectorAll('video');
+
+// videos.forEach((video) => {
+//   video.addEventListener('mouseover', function () {
+//     this.play();
+//     video.addEventListener('mouseout', function () {
+//       this.pause();
+//     });
+//   });
+// });
