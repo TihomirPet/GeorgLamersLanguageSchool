@@ -1,8 +1,11 @@
 .course-offers {
-  position: relative;
+  /* position: relative; */
   /* background-color: var(--second-bg-color); */
   height: auto;
   padding: 10vh 0vw 10vh 0vw !important;
+}
+.course-offers-filter-holder{
+  position: relative;
 }
 .course-offers-icon {
   color: var(--text-white-color);
@@ -54,7 +57,7 @@
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: 8vw !important;
+  width: clamp(10rem, 20em, 10vw) !important;
 }
 .btn-course-offers {
   --bs-btn-color: var(--text-white-color) !important;
@@ -76,8 +79,9 @@
   position: relative;
 } */
 .course-offers-video {
-  /* position: absolute; */
+  position: relative;
   height: 88vh;
+
   border-radius: 0.5vw;
   z-index: 1;
 }
@@ -90,4 +94,41 @@
   width: 24vw;
   border-radius: 0.5vw;
   z-index: 3;
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { }
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { }
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .course-offers {
+  /* position: relative; */
+  /* background-color: var(--second-bg-color); */
+  height: auto;
+  padding: 5vh 0vw 10vh 0vw !important;
+}
+.course-offers-video {
+  /* position: absolute; */
+  height: auto;
+  width: 100%;
+
+  border-radius: 3vw;
+  z-index: 1;
+}
+.course-offers-filter {
+  position: absolute;
+  mix-blend-mode: soft-light;
+top:0;
+
+  background-color: hsl(25, 100%, 53%, 0.4);
+  height: auto;
+  width: 85vw;
+  border-radius: 3vw;
+  z-index: 3;
+}
+ 
 }
