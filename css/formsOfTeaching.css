@@ -12,6 +12,11 @@
 [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled), button:not(:disabled) {
   cursor: pointer;
 }
+.forms-of-tesching-subtitle{
+  /* width: 30vw; */
+  /* width: clamp(90vw, 20em, 40vw); */
+  width: clamp(min(90vw, 90vw), 30vw, max(30vw, 30vw));
+}
 .accordion-button {
   position: relative;
   display: flex;
