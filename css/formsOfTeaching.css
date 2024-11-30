@@ -18,7 +18,7 @@
   align-items: center;
   width: 100%;
   padding:  1.3rem 1.25rem 1.3rem 0rem !important;
-  font-size: 1.44rem;
+  font-size:  var(--h6) !important;
   color: var(--bs-accordion-btn-color);
   text-align: left;
   background-color: transparent !important;
@@ -35,7 +35,7 @@
   align-items: center;
   width: 100%;
   padding: 1.3rem 1.6rem 1.3rem 1.6rem !important;
-  font-size: 1.44rem;
+  font-size: var(--h6) !important;
   color: var(--bs-accordion-btn-color);
   text-align: left;
   background-color:transparent !important;
@@ -98,4 +98,10 @@
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) { }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { }
+@media (max-width: 575.98px) { 
+   .forms-of-teaching{
+    /* background-color: var(--bg-bright-color ); */
+   height:auto;
+  padding: 20vh 0vw 30vh 0vw !important;
+ }
+}
