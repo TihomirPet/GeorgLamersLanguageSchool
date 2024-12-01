@@ -12,8 +12,8 @@ html {
   --text-white-color: #fdf7f8;
   --bg-bright-color: #fffdf6;
   --text-black-color: hsl(0, 0%, 1%);
-  --h5:  clamp(min(1.44rem, 1.44rem), 1.49vw, max(1.728rem, 1.728rem));
-  --h6: clamp(min(1.2rem, 1.2rem), 1.1vw, max(1.44rem, 1.44rem));
+  --h5: clamp(min(1.44rem, 1.44rem), 1.49vw, max(1.728rem, 1.728rem));
+  --h6: clamp(1.17rem, 0.1165rem + 0.4174vw, 1.44rem);
 }
 
 @font-face {
@@ -78,8 +78,12 @@ html {
 .rock-3D {
   font-family: 'Rock3D';
   font-size: 6.193rem;
-  font-size:  clamp(3.5494rem, 2.6299rem + 4.5976vw, 6.193rem);
-    font-size: clamp(min(3.5494rem, 3.5494rem), 4.5976vw, max( 6.193rem,  6.193rem)); 
+  font-size: clamp(3.5494rem, 2.6299rem + 4.5976vw, 6.193rem);
+  font-size: clamp(
+    min(3.5494rem, 3.5494rem),
+    4.5976vw,
+    max(6.193rem, 6.193rem)
+  );
 }
 
 /* ######################### class Font family end ######################################################## */
@@ -97,9 +101,7 @@ html {
 .font-size-h2 {
   /* font-size: 3.584rem;  */
   /* font-size: clamp(2.074rem, 1.5484rem + 2.6265vw, 3.584rem);  */
-  font-size: clamp(min(2.074rem, 2.074rem), 2.6265vw, max( 3.584rem,  3.584rem)); 
-
-
+  font-size: clamp(min(2.074rem, 2.074rem), 2.6265vw, max(3.584rem, 3.584rem));
 }
 /* .fontSizeH2 {
   font-size: 1.074rem;
@@ -112,22 +114,23 @@ html {
 .font-size-h4 {
   /* font-size:2.074rem; */
   /* font-size:clamp(1.2rem, 2.5vw, 2.074rem); */
-  font-size: clamp(min(1.2rem, 1.2rem), 1.4872vw, max(2.074rem, 2.074rem));
-  /* font-size: clamp(1.2rem, 0.7352rem + 1.4872vw, 2.0738rem); */
+  /* font-size: clamp(min(1.2rem, 1.2rem), 1.4872vw, max(2.074rem, 2.074rem)); */
+  font-size: clamp(1.1rem, 0.1352rem + 1.2872vw, 2.0738rem);
 }
 .font-size-h5 {
   /* font-size: 1.728rem;
   font-size: clamp(1.44rem, 1.3398rem + 0.5009vw, 1.728rem); */
-      font-size: clamp(min(1.44rem, 1.44rem), 1.49vw, max(1.728rem, 1.728rem));
+  font-size: clamp(min(1.44rem, 1.44rem), 1.49vw, max(1.728rem, 1.728rem));
 }
 .font-size-h6 {
   font-size: 1.44rem;
-  /* font-size: clamp(1.2rem, 1.1165rem + 0.4174vw, 1.44rem); */
-    font-size: clamp(min(1.2rem, 1.2rem), 1.1vw, max(1.44rem, 1.44rem));
+    font-size: clamp(1.17rem, 0.1165rem + 0.4174vw, 1.44rem);
+  /* font-size: clamp(min(1.2rem, 1.2rem), 1.1vw, max(1.44rem, 1.44rem)); */
 }
 .font-size-h7 {
   font-size: 1.2rem;
-  font-size: clamp(min(1rem, 1rem), 0.7489vw, max(1.2rem, 1.2rem));
+  /* font-size: clamp(min(1rem, 1rem), 0.7489vw, max(1.2rem, 1.2rem)); */
+  font-size: clamp(0.75rem, 0.51rem + 1.2vw, 1.44rem);
   /* font-size: clamp(1rem, 0.766rem + 0.7489vw, 1.44rem); */
 }
 .font-size-p {

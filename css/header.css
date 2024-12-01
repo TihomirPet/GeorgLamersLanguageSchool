@@ -152,39 +152,7 @@
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
-.card-one {
-  position: relative;
-  /* background-image:url(/images/istockphoto-1362613670-1024x1024\(1\).jpg); */
 
-  height: 61vh;
-  /* background-size: 44.2vw auto;
-  background-repeat: no-repeat;
-  background-position: -11vw 0;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw; */
-}
-.card-two {
-  position: relative;
-  /* background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg); */
-
-  height: 61vh;
-  /* background-size: 44.2vw auto;
-  background-repeat: no-repeat;
-  background-position: -11vw 0;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw; */
-}
-.card-three {
-  position: relative;
-  /* background-image: url(/images/istockphoto-1041148794-1024x1024\(1\).jpg); */
-
-  height: 61vh;
-  /* background-size: 45vw auto;
-  background-repeat: no-repeat;
-  background-position: -9.5vw 0;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw; */
-}
 .header-video-img-holder {
   position: relative;
   background-image: url(/images/Screenshot\ 2024-11-28\ 131125.jpg);
@@ -242,8 +210,12 @@ background-position: -21vw -87px;
 .video-container {
   position: relative;
   overflow: hidden;
-  width: 20.4vw !important;
+  /* width: 20.5vw !important; */
+    /* width: clamp(20vw, 30vw, 20vw ); */
+    /* width: clamp(20vw, 1.1165rem + 0.4174vw, 20vw ); */
+        width: clamp(10.9rem, 0.022rem + 20vw, 26.75rem);
   height: 79vh;
+
   border-radius: 0.9vw;
   /* border: 1px solid var(--main-bg-color)  */
 }
@@ -316,12 +288,99 @@ background-position: -21vw -87px;
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .header {
+  /* background-color: var(--main-bg-color); */
+  color: var(--text-white-color);
+
+  padding-bottom: 0vh;
+  height: auto;
+}
+.row-height-title {
+    height: 65vh;
+    /* background-color: rgb(253, 176, 176); */
+}
+  .video-container {
+  position: relative;
+  overflow: hidden;
+  /* width: 20.5vw !important; */
+    /* width: clamp(20vw, 30vw, 20vw ); */
+    /* width: clamp(20vw, 1.1165rem + 0.4174vw, 20vw ); */
+        width: clamp(10.9rem, 0.022rem + 20vw, 26.75rem);
+  height: 73vh;
+
+  border-radius: 0.9vw;
+  /* border: 1px solid var(--main-bg-color)  */
+}
+.video-container .header-image-test.show {
+  position: absolute;
+  transition: all 400ms ease;
+
+  width: 100%;
+  height: 100%;
+  transform: translate(0% 0px);
+  opacity: 1;
+}
+  .header-video-img-holder {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-11-28\ 131125.jpg);
+
+  height: 61vh;
+  background-size: 70vw auto;
+  background-repeat: no-repeat;
+  background-position: -32vw 0vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-one {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 145027.jpg);
+
+  height: 61vh;
+  background-size: 70vw auto;
+  background-repeat: no-repeat;
+background-position: -21vw 0px;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-two {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144838.jpg);
+
+  height: 61vh;
+  background-size: 70vw auto;
+  background-repeat: no-repeat;
+background-position: -21vw 0px;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-three {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144643.jpg);
+
+  height: 61vh;
+  background-size: 70vw auto;
+  background-repeat: no-repeat;
+background-position: -21vw 0px;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+      .header-video-text-holder {
+  background-color: var(--second-bg-color);
+  padding: 0.8rem ;
+  height: 26vh;
+}
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
   .row-height-title {
     height: auto;
   }

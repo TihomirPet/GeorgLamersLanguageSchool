@@ -117,7 +117,37 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  :root {
+    --height-col-price: 44vh;
+  }
+  .price-image-holder {
+    background-image: url(/images/SectonPricA.jpg);
+    height: var(--height-col-price);
+    background-size: 90vw auto;
+    background-repeat: no-repeat;
+    background-position: 0vw -37vh;
+    border-radius: 0.5vw;
+  }
+
+  .price-image-holder-second {
+    background-image: url(/images/SectonPricA.jpg);
+    height: var(--height-col-price);
+    background-size: 90vw auto;
+    background-repeat: no-repeat;
+    background-position: -39vw -1px;
+    border-radius: 0.5vw;
+  }
+
+  .price-title-holder {
+    background-image: url(/images/SectionPricAf.png);
+    height: var(--height-col-price);
+    background-size: 90vw auto;
+    background-repeat: no-repeat;
+    background-position: -1vw 19px;
+    border-radius: 0.5vw;
+  }
 }
+
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 }
@@ -127,9 +157,9 @@
     --height-col-price: 28vh;
   }
   .preices {
-  height: auto;
-  padding: 20vh 0vw 20vh 0vw !important;
-}
+    height: auto;
+    padding: 20vh 0vw 20vh 0vw !important;
+  }
   .price-title-holder {
     background-image: none;
     height: var(--height-col-price);
@@ -142,7 +172,7 @@
   .prices-mobile-img-holder-one {
     background-image: url(/images/SectonPricA.jpg);
     height: 17vh;
-   width: 50vw;
+    width: 50vw;
     background-size: 159vw auto;
     background-repeat: no-repeat;
     background-position: -40vw -0px;
