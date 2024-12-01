@@ -57,7 +57,7 @@
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  width: clamp(10rem, 20em, 10vw) !important;
+  width: clamp(10rem, 20em, 8vw) !important;
 }
 .btn-course-offers {
   --bs-btn-color: var(--text-white-color) !important;
