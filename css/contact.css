@@ -1,6 +1,6 @@
 .contact{
       height:100vh;
-  padding: 15vh 0vw 20vh 0vw !important;
+  padding: 15vh 0vw 15vh 0vw !important;
   background-color:var(--second-bg-color);
 }
 .btncontact:hover {
