@@ -93,6 +93,6 @@ width: clamp(10vw, 20em, 100vw) !important;
  .courses {
   /* background-color: var(--second-bg-color); */
   height: auto;
-  padding: 5vh 0vw 5vh 0vw !important;
+  padding: 25vh 0vw 15vh 0vw !important;
 }
 }

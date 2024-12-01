@@ -95,14 +95,49 @@
   background-color:transparent !important;
   border: solid 1px hsl(0, 0%, 1%,0.5);
 }
+ .main-colour-large{
+    display: block !important;
+    color: var(  --main-bg-color);
+  }
+     .main-colour-small{
+    display: none !important;}
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) { }
+@media (max-width: 1399.98px) { 
+   .main-colour-small{
+    display: none !important;
+  }
+  .main-colour-large{
+    display: block !important;
+    color: var(  --main-bg-color);
+  }
+}
 /* // `xl` applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { }
+@media (max-width: 1199.98px) { 
+  .main-colour-small{
+    display: block !important;
+     color: var(  --main-bg-color);
+  }
+  .main-colour-large{
+    display: none !important;
+  }
+}
 /* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { }
+@media (max-width: 991.98px) {
+    .main-colour-small{
+    display: block !important;
+     color: var(  --main-bg-color);
+  }
+  .main-colour-large{
+    display: none !important;
+  }
+ }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { }
+@media (max-width: 767.98px) {
+    .main-colour-small{
+    display: none !important;
+     color: var(  --main-bg-color);
+  }
+ }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
    .forms-of-teaching{
