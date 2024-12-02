@@ -13,7 +13,7 @@ html {
   --bg-bright-color: #fffdf6;
   --text-black-color: hsl(0, 0%, 1%);
   --h5: clamp(min(1.44rem, 1.44rem), 1.49vw, max(1.728rem, 1.728rem));
-  --h6: clamp(1.17rem, 0.1165rem + 0.4174vw, 1.44rem);
+  --h6: clamp(1.1rem, 0.1165rem + 0.4174vw, 1.44rem);
 }
 
 @font-face {
@@ -124,7 +124,7 @@ html {
 }
 .font-size-h6 {
   font-size: 1.44rem;
-    font-size: clamp(1.17rem, 0.1165rem + 0.4174vw, 1.44rem);
+    font-size: clamp(1.1rem, 0.1165rem + 0.4174vw, 1.44rem);
   /* font-size: clamp(min(1.2rem, 1.2rem), 1.1vw, max(1.44rem, 1.44rem)); */
 }
 .font-size-h7 {
