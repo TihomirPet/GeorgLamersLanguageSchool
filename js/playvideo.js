@@ -10,7 +10,6 @@
 
 // const video = document.querySelectorAll('.video-container ');
 
-
 // video.forEach(video => {
 //   const videoPlay = document.querySelector('.video-container video');
 //   const hoverText = document.querySelector('.video-container .hover-text');
@@ -29,7 +28,7 @@
 //     videoPlay.pause();
 //     hoverText.classList.remove('active');
 //   });
- 
+
 // });
 // **********************************
 const videoContainers = document.querySelectorAll('.video-container');
@@ -37,7 +36,7 @@ const videoContainers = document.querySelectorAll('.video-container');
 // Iteriere über alle video-container
 videoContainers.forEach((container) => {
   // Selektiere Elemente relativ zum aktuellen Container
-  const videoPlay = container.querySelector('video'); // Video im aktuellen Container
+  const videoPlay = container.querySelector(' video'); // Video im aktuellen Container
   const hoverText = container.querySelector('.hover-text'); // Hover-Text im aktuellen Container
   const hoverCard = container.querySelector('.header-image-test'); // Header-Card im aktuellen Container
 
@@ -58,20 +57,16 @@ videoContainers.forEach((container) => {
 });
 // ********************************************************************
 // for (let i = 0; i < video.length; i++) {
-   
+
 //   video[i].addEventListener('mouseenter', function (e) {
 
 //     video[i].play();
-     
+
 //   });
 //   video[i].addEventListener('mouseleave', function (e) {
 //     video[i].pause();
-   
-      
+
 //   });
 // }
 
-
 // ********************************************************************
-
-

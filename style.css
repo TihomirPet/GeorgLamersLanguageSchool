@@ -118,9 +118,9 @@ html {
   font-size: clamp(1.1rem, 0.1352rem + 1.2872vw, 2.0738rem);
 }
 .font-size-h5 {
-  /* font-size: 1.728rem;
-  font-size: clamp(1.44rem, 1.3398rem + 0.5009vw, 1.728rem); */
-  font-size: clamp(min(1.44rem, 1.44rem), 1.49vw, max(1.728rem, 1.728rem));
+   font-size: 1.728rem;
+   font-size: clamp(1.44rem, 1.2398rem + 0.5009vw, 1.728rem); 
+  /* font-size: clamp(min(1.44rem, 1.44rem), 1.49vw, max(1.728rem, 1.728rem)); */
 }
 .font-size-h6 {
   font-size: 1.44rem;
