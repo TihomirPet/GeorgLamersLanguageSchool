@@ -406,14 +406,14 @@
     position: relative;
     overflow: hidden;
     width: auto !important;
-    height: 11vh;
+    height: 15vh;
     border-radius: 3vw;
     /* border: 1px solid var(--second-bg-color); */
   }
   .header-mobile-img-holder{
 
     overflow: hidden;
-     height: 11vh;
+     height: 15vh;
   }
   .header-mobile-text-holder{
 
