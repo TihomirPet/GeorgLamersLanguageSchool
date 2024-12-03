@@ -151,7 +151,7 @@
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     :root {
-    --height-col-price: 30vh;
+    --height-col-price: 24vh;
   }
   .price-title-holder {
   background-image: none;
@@ -172,7 +172,7 @@
   }
   .prices-mobile-img-holder-one {
     background-image: url(/images/SectonPricA.jpg);
-    height: 17vh;
+    height:   21.4vh;
     width: 55vw;
     background-size: 159vw auto;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@
   }
   .prices-mobile-img-holder-two {
     background-image: url(/images/SectonPricA.jpg);
-    height: 10vh;
+    height: 15vh;
     width: 32vw;
     background-size: 159vw auto;
     background-repeat: no-repeat;
