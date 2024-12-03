@@ -330,6 +330,37 @@
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .header a{
+    text-decoration: none;
+    color: var( --main-bg-color);
+  }
+
+  .row-height-title {
+    height: auto;
+  }
+  .header-col-mobile-card{
+    position: relative;
+    overflow: hidden;
+    width: auto !important;
+    /* height: 12vh; */
+    border-radius: 3vw;
+    /* border: 1px solid var(--second-bg-color); */
+  }
+  .header-mobile-img-holder{
+
+    overflow: hidden;
+     height: 20vh;
+  }
+  .header-mobile-text-holder{
+
+  padding: 0.6rem;
+  background-color: var( --second-bg-color);
+  }
+   .header-mobile-text-holder{
+
+  padding: 2rem;
+  background-color: var( --second-bg-color);
+  }
 
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
@@ -350,7 +381,7 @@
     width: auto !important;
     /* height: 12vh; */
     border-radius: 3vw;
-    /* border: 1px solid var(--second-bg-color); */
+    border: 1px solid var(--second-bg-color);
   }
   .header-mobile-img-holder{
 
