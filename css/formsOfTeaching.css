@@ -2,7 +2,7 @@
  .forms-of-teaching{
     /* background-color: var(--bg-bright-color ); */
    height:auto;
-  padding: 25vh 0vw 35vh 0vw !important;
+  padding: 10vh 0vw 35vh 0vw !important;
  }
  .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
