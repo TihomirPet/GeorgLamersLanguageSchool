@@ -93,9 +93,9 @@ html {
 } */
 .font-size-h1 {
   /* font-size: 6rem; */
-  font-size: clamp(min(2.488rem, 2.488rem), 4.25vw, max(6rem, 6rem));
+  /* font-size: clamp(min(2.488rem, 2.488rem), 4.25vw, max(6rem, 6rem)); */
   /* font-size: clamp(2.4881rem, 0.8475rem + 4.25vw, 5.5725rem); */
-  /* font-size: clamp(2.4881rem, 1.6334vw + 2.0797rem, 6rem); */
+  font-size: clamp(2.4881rem, 1.6334vw + 2.0797rem, 6rem) !important;
 }
 
 .font-size-h2 {
