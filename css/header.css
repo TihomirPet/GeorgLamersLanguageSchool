@@ -327,6 +327,33 @@
   /* border: 1px solid var(--main-bg-color)  */
 }
 
+  .header a{
+    text-decoration: none;
+    color: var( --main-bg-color);
+  }
+
+  .row-height-title {
+    height: auto;
+  }
+  .header-col-mobile-card{
+    position: relative;
+    overflow: hidden;
+    width: 45vw;
+    height: 30vh;
+    border-radius: 2vw;
+    /* border: 1px solid var(--second-bg-color); */
+  }
+  .header-mobile-img-holder{
+
+    overflow: hidden;
+     height: 30vh;
+  }
+  .header-mobile-text-holder{
+
+  padding: 0.9rem;
+  background-color: var( --second-bg-color);
+  }
+
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -342,14 +369,14 @@
     position: relative;
     overflow: hidden;
     width: auto !important;
-    /* height: 12vh; */
+    height: 12vh;
     border-radius: 3vw;
     /* border: 1px solid var(--second-bg-color); */
   }
   .header-mobile-img-holder{
 
     overflow: hidden;
-     height: 20vh;
+     height: 12vh;
   }
   .header-mobile-text-holder{
 
@@ -379,14 +406,14 @@
     position: relative;
     overflow: hidden;
     width: auto !important;
-    /* height: 12vh; */
+    height: 11vh;
     border-radius: 3vw;
-    border: 1px solid var(--second-bg-color);
+    /* border: 1px solid var(--second-bg-color); */
   }
   .header-mobile-img-holder{
 
     overflow: hidden;
-     height: 13vh;
+     height: 11vh;
   }
   .header-mobile-text-holder{
 
