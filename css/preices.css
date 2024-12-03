@@ -150,6 +150,9 @@
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    :root {
+    --height-col-price: 30vh;
+  }
   .price-title-holder {
   background-image: none;
   height: var(--height-col-price);
@@ -158,6 +161,33 @@
   background-position: 0vw -49px;
   border-radius: 0.5vw;
 }
+ .price-title-holder {
+    background-image: none;
+    height: var(--height-col-price);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0vw -49px;
+    border-radius: 0.5vw;
+    height: var(--height-col-price);
+  }
+  .prices-mobile-img-holder-one {
+    background-image: url(/images/SectonPricA.jpg);
+    height: 17vh;
+    width: 55vw;
+    background-size: 159vw auto;
+    background-repeat: no-repeat;
+    background-position: -40vw -0px;
+    border-radius: 5vw;
+  }
+  .prices-mobile-img-holder-two {
+    background-image: url(/images/SectonPricA.jpg);
+    height: 10vh;
+    width: 32vw;
+    background-size: 159vw auto;
+    background-repeat: no-repeat;
+    background-position: -104vw -53px;
+    border-radius: 5vw;
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
