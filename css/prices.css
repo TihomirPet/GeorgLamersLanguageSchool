@@ -1,44 +1,79 @@
 :root {
   --height-col-price: 35vh;
+  --height-priceimg-bg: 70vh;
 }
 
 .preices {
   height: auto;
   padding: 29vh 0vw 20vh 0vw !important;
 }
-.price-image-holder {
+
+.price-img-bg {
   background-image: url(/images/SectonPricA.jpg);
+  height: var(--height-priceimg-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.5vw;
+}
+.price-image-holder {
+  border-radius: 0.5vw;
+  /* border: 1px solid var(--bg-bright-color); */
+  /* background-image: url(/images/SectonPricA.jpg); */
   height: var(--height-col-price);
-  background-size: 75vw auto;
+  /* background-size: 75vw auto;
   background-repeat: no-repeat;
   background-position: 0vw -40vh;
+*/
+}
+.price-image-holder::before {
+  content: ' ';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid hsl(47, 100%, 98%);
   border-radius: 0.5vw;
 }
 .price-image-holder-second {
-  background-image: url(/images/SectonPricA.jpg);
+  position: relative;
   height: var(--height-col-price);
-  background-size: 75vw auto;
-  background-repeat: no-repeat;
-  background-position: -33vw -52px;
+}
+
+.price-image-holder-second::before {
+  content: ' ';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 1px solid hsl(47, 100%, 98%, 0.5);
   border-radius: 0.5vw;
 }
 .price-title-holder {
-  background-image: url(/images/SectionPricAf.png);
+  background-color: hsl(47, 100%, 98%, 0.9);
   height: var(--height-col-price);
-  background-size: 75vw auto;
-  background-repeat: no-repeat;
-  background-position: 0vw -49px;
-  border-radius: 0.5vw;
+  background: rgb(255, 253, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 253, 246, 1) 0%,
+    rgba(255, 253, 246, 1) 60%,
+    rgba(255, 253, 246, 0.82) 100%
+  );
 }
+
 .price-links-holder {
   height: var(--height-col-price);
-  background-image: url(/images/SectionPric.png);
-
-  background-size: 75vw auto;
-  background-repeat: no-repeat;
-  background-position: -33vw -40vh;
-  border-radius: 0.5vw;
+  background: rgb(255, 253, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 253, 246, 0.82) 0%,
+    rgba(255, 253, 246, 1) 20%,
+    rgba(255, 253, 246, 1) 100%
+  );
 }
+
 .btnp:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
@@ -112,9 +147,10 @@
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 }
+
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  :root {
+  /* :root {
     --height-col-price: 40vh;
   }
   .price-image-holder {
@@ -142,44 +178,44 @@
     background-repeat: no-repeat;
     background-position: -1vw -30px;
     border-radius: 0.5vw;
-  }
+  } */
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  :root {
+  /* :root {
     --height-col-price: 44vh;
   }
   .price-image-holder {
     background-image: url(/images/SectonPricA.jpg);
     height: var(--height-col-price);
-         background-size: 100vw auto;
-        background-repeat: no-repeat;
-        background-position: 0vw -43vh;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-position: 0vw -43vh;
     border-radius: 0.5vw;
   }
 
   .price-image-holder-second {
     background-image: url(/images/SectonPricA.jpg);
     height: var(--height-col-price);
-          background-size: 100vw auto;
-        background-repeat: no-repeat;
-        background-position: -43vw -2vh;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-position: -43vw -2vh;
     border-radius: 0.5vw;
   }
 
   .price-title-holder {
     background-image: url(/images/SectionPricAf.png);
     height: var(--height-col-price);
-              background-size: 100vw auto;
-        background-repeat: no-repeat;
-        background-position: -0.9vw -3px;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-position: -0.9vw -3px;
     border-radius: 0.5vw;
-  }
+  } */
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  :root {
+  /* :root {
     --height-col-price: 24vh;
   }
   .price-title-holder {
@@ -216,7 +252,7 @@
     background-repeat: no-repeat;
     background-position: -104vw -53px;
     border-radius: 5vw;
-  }
+  } */
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
