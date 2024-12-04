@@ -26,31 +26,13 @@
   background-position: 0vw -40vh;
 */
 }
-.price-image-holder::before {
-  content: ' ';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 3px;
-  bottom: 3px;
-  border: 1px solid hsl(47, 100%, 98%);
-  border-radius: 0.5vw;
-}
+
 .price-image-holder-second {
   position: relative;
   height: var(--height-col-price);
 }
 
-.price-image-holder-second::before {
-  content: ' ';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  border: 1px solid hsl(47, 100%, 98%, 0.5);
-  border-radius: 0.5vw;
-}
+
 .price-title-holder {
   background-color: hsl(47, 100%, 98%, 0.9);
   height: var(--height-col-price);
@@ -61,6 +43,7 @@
     rgba(255, 253, 246, 1) 60%,
     rgba(255, 253, 246, 0.82) 100%
   );
+
 }
 
 .price-links-holder {
@@ -256,22 +239,24 @@
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+ 
+  
   :root {
     --height-col-price: 28vh;
+      --height-priceimg-bg: 50vh;
   }
   .preices {
     height: auto;
     padding: 20vh 0vw 20vh 0vw !important;
   }
-  .price-title-holder {
-    background-image: none;
-    height: var(--height-col-price);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 0vw -49px;
-    border-radius: 0.5vw;
-    height: var(--height-col-price);
-  }
+.price-img-bg {
+  background-image: none;
+  height: var(--height-priceimg-bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.5vw;
+}
   .prices-mobile-img-holder-one {
     background-image: url(/images/SectonPricA.jpg);
     height: 17vh;
@@ -290,4 +275,17 @@
     background-position: -104vw -53px;
     border-radius: 5vw;
   }
+  .price-title-holder {
+  background-color:none;
+  height: var(--height-col-price);
+  background: none;
+
+
+}
+
+.price-links-holder {
+  height: var(--height-col-price);
+  background: none;
+
+}
 }
