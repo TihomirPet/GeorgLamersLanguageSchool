@@ -16,7 +16,7 @@
   /* width: 30vw; */
   /* width: clamp(90vw, 20em, 40vw); */
   /* width: clamp(min(90vw, 90vw), 30vw, max(30vw, 30vw)); */
-    width: clamp(18.9rem, 5.022rem + 20vw, 26.75rem);
+    width: clamp(18.9rem, 9.022rem + 17vw, 26.75rem);
 }
 .accordion-button {
   position: relative;
