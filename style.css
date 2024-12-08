@@ -12,9 +12,11 @@ html {
   --text-white-color: #fdf7f8;
   --bg-bright-color: #fffdf6;
   --text-black-color: hsl(0, 0%, 1%);
+  --nav-title:clamp(1.7281rem, 0.8336rem + 4.4728vw, 4.3rem);
+  --h1: clamp(2.4rem, 0.1622rem + 4.4326vw, 6rem) ;
   --h5: clamp(1.4rem, 1.1rem + 0.5009vw, 1.728rem);
   --h6: clamp(1.1rem, 0.1165rem + 0.4174vw, 1.44rem);
-  --h2: clamp(min(2.074rem, 2.074rem), 2.6265vw, max(3.584rem, 3.584rem));;
+  --h2: clamp(min(2.074rem, 2.074rem), 2.6265vw, max(3.584rem, 3.584rem));
 }
 
 @font-face {
