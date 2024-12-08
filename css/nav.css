@@ -70,6 +70,7 @@
   letter-spacing: -0.04em;
   width: 100% !important;
   font-size: var(--nav-title);
+  font-size: var(--h2);
 }
 .nav a:hover {
   text-decoration: none;
@@ -81,6 +82,7 @@
   font-size: var(--nav-title);
   padding-left: 1.2rem;
   color: var(--main-bg-color);
+   font-size: var(--h2);
 }
 
 .nav-toggle {
