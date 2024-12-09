@@ -33,7 +33,7 @@
 
   width: 100%;
 
-  z-index: 1;
+  z-index: 5;
 }
 
 .nav.expanded {
@@ -104,7 +104,7 @@
 
   width: 2.5vw;
 
-  z-index: 2;
+  z-index: 6;
 
   display: flex;
   align-items: center;
@@ -227,6 +227,9 @@
 .nav-icon {
   color: var(--main-bg-color) !important;
 }
+.overlay {
+  z-index: 4;
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -289,6 +292,40 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  /* Standardmäßig Dropdown verstecken */
+.dropdown-index-content-mobile {
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Dropdown anzeigen, wenn die Klasse "expanded" vorhanden ist */
+.dropdown-index-content-mobile.expanded {
+     transition:  0.5s ease;
+  display: block;
+  opacity: 1;
+  max-height: 500px; /* Ausreichend für den Inhalt */
+}
+  .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 8.3vw;
+    position: fixed;
+    left: 84vw;
+
+    top: 2rem;
+    width: 8.5vw;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--text-white-color);
+  }
   .nav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
@@ -305,7 +342,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
   }
   .nav ul {
     position: absolute;
@@ -319,20 +356,20 @@
     height: auto;
     width: 100%;
   }
-  .a-mobile{
+  .a-mobile {
     font-size: var(--h6) !important;
   }
-  .btn-mobile{
+  .btn-mobile {
     background-color: transparent;
     border: none;
   }
-  .dropdown-index-content-mobile{
-    width:100vw;
+  .dropdown-index-content-mobile {
+    width: 100vw;
   }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .nav {
+  .nav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
     -ms-transition: left 0.5s ease;
@@ -348,9 +385,45 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
+  }
+  .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 8.3vw;
+    position: fixed;
+    height: 8.3vw;
+    left: 84vw;
+    top: 2rem;
+    width: 8.5vw;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--text-white-color);
   }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 8.3vw;
+    height: 8.3vw;
+    position: fixed;
+    top: 2rem;
+    width: 8.5vw;
+    left: 84vw;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--text-white-color);
+  }
 }

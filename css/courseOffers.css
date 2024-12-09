@@ -88,57 +88,54 @@
 .course-offers-filter {
   position: absolute;
   mix-blend-mode: soft-light;
-
   background-color: hsl(25, 100%, 53%, 0.4);
   height: 88vh;
   width: 24vw;
   border-radius: 0.5vw;
-  z-index: 3;
+  /* z-index: 3; */
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-   .course-offers-video {
+  .course-offers-video {
     position: relative;
     height: 70vh;
     border-radius: 0.5vw;
     z-index: 1;
   }
   .course-offers-filter {
-  position: absolute;
-  mix-blend-mode: soft-light;
+    position: absolute;
+    mix-blend-mode: soft-light;
 
-  background-color: hsl(25, 100%, 53%, 0.4);
-  height: 70vh;
-  width: 29.6vw;
-  border-radius: 0.5vw;
-  z-index: 3;
-}
+    background-color: hsl(25, 100%, 53%, 0.4);
+    height: 70vh;
+    width: 29.6vw;
+    border-radius: 0.5vw;
+    /* z-index: 3; */
+  }
 }
 
 /* Landscape Ipad pro 12.9 inch */
 @media only screen and (min-width: 1366px) and (orientation: landscape) {
- 
 }
 
 /*Portrait pro 12.9 inch*/
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
-
   .course-offers-video {
     position: relative;
     height: 50vh;
     border-radius: 0.5vw;
-    z-index: 1;
+    /* z-index: 1; */
   }
-   .course-offers-filter {
-  position: absolute;
-  mix-blend-mode: soft-light;
+  .course-offers-filter {
+    position: absolute;
+    mix-blend-mode: soft-light;
 
-  background-color: hsl(25, 100%, 53%, 0.4);
-  height: 50vh;
-  width: 37vw;
-  border-radius: 0.5vw;
-  z-index: 3;
-}
+    background-color: hsl(25, 100%, 53%, 0.4);
+    height: 50vh;
+    width: 37vw;
+    border-radius: 0.5vw;
+    /* z-index: 1; */
+  }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
@@ -164,7 +161,7 @@
     width: 100%;
 
     border-radius: 3vw;
-    z-index: 1;
+    /* z-index: 1; */
   }
   .course-offers-filter {
     position: absolute;
@@ -175,6 +172,6 @@
     height: auto;
     width: 85vw;
     border-radius: 3vw;
-    z-index: 3;
+    /* z-index: 3; */
   }
 }
