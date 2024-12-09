@@ -3,26 +3,27 @@
 </div>
 
 <nav class="nav">
-  <ul class="d-flex flex-column align-items-start justify-content-between">
-    <li><a href="#">Home</a></li>
+  <!-- ============== Nav ul decktop visable start =============================== -->
+  <ul
+    class="d-flex flex-column  d-none d-lg-block"
+  >
+    <li ><a href="../index.html#header">Home</a></li>
 
-    <li class="dropdown-index ">
-      <a class="d-flex" href="">
+    <li class="dropdown-index mt-3">
+      <a class="d-flex" href="../index.html#courses">
         Kurse
         <!-- <i
                       class="bi bi-arrow-right-circle course-offers-icon ms-3 "  
                     ></i> -->
       </a>
-      <div class="dropdown-index-content p-3">
-        <div
-          class="container d-flex  dropdown-index-link p-3"
-        >
-          <div class="col-2 ">
-            <i
-              class="bi bi-arrow-right-circle nav-icon font-size-h2 "
-            ></i>
+      <div class="dropdown-index-content  pt-0">
+        <div class="container d-flex dropdown-index-link p-3 pt-0">
+          <div class="col-2 col-lg-1 col-xl-2">
+            <i class="bi bi-arrow-right-circle nav-icon font-size-h2"></i>
           </div>
-          <div class="col-10   d-flex flex-column justify-content-between">
+          <div
+            class="col-10 col-lg-11 col-xl-10 d-flex flex-column justify-content-between ps-lg-3 ps-xl-0"
+          >
             <a class="" href="">Alphabetisierung</a>
 
             <a class="" href="">Deutschkurse</a>
@@ -39,39 +40,97 @@
       </div>
     </li>
 
-    <li><a href="#">Unterrichtsformen</a></li>
+    <li class="mt-3"><a href="../index.html#forms-of-teaching">Unterrichtsformen</a></li>
 
-    <li class="dropdown-index  ">
-      <a class="" href="">Preise</a>
-      <div class="dropdown-index-content p-3">
-        <div
-          class="container d-flex  dropdown-index-link p-3"
-        >
-
-		<div class="col-2 ">
-            <i
-              class="bi bi-arrow-right-circle nav-icon font-size-h2 "
-            ></i>
+    <li class="dropdown-index mt-3">
+      <a class="" href="../index.html#preices">Preise</a>
+      <div class="dropdown-index-content  pt-0">
+        <div class="container d-flex dropdown-index-link p-3 pt-0">
+          <div class="col-2 col-lg-1 col-xl-2">
+            <i class="bi bi-arrow-right-circle nav-icon font-size-h2"></i>
           </div>
-          <div class="col-10   d-flex flex-column ">
-          
+          <div
+            class="col-12 d-flex flex-column ps-lg-3 ps-xl-0"
+          >
+            <a class="" href="">Gruppenkurse</a>
 
-          <a class="" href="">Gruppenkurse</a>
+            <a class="mt-2" href="">Private Gruppen-und Einzelkurse</a>
 
-          <a class="mt-2" href="">Private Gruppen-und Einzelkurse</a>
+            <a class="mt-2" href="">Firmenkurse und Berufscoaching</a>
 
-          <a class="mt-2" href="">Firmenkurse und Berufscoaching</a>
-
-          <a class="mt-2" href="">Firmenkurse</a>
+            <a class="mt-2" href="">Firmenkurse</a>
           </div>
-       
         </div>
       </div>
     </li>
-    <li><a href="#">Kursangebote</a></li>
-    <li><a href="#">Kontakt</a></li>
+    <li class="mt-3"><a href="../index.html#curs-offers">Kursangebote</a></li>
+    <li class="mt-3"><a href="../index.html#contact">Kontakt</a></li>
   </ul>
-   <div
+
+  <!-- ============== Nav ul decktop visable end =============================== -->
+  <!-- ============== ========================================================== -->
+  <!-- ============== Nav ul mobile visable start =============================== -->
+  <ul
+    class="d-flex flex-column align-items-start justify-content-between d-block d-lg-none "
+  >
+    <li><a href="../index.html#header">Home</a></li>
+
+
+
+        <li class="dropdown-index">
+      <a class="" href="../index.html#preices">Kurse</a>
+      <button class="col-2 col-lg-1 col-xl-2 btn-mobile">
+
+        <i class="bi bi-arrow-down-circle nav-icon font-size-h3"></i>
+      </button>
+      <div class="dropdown-index-content-mobile p-3 pt-0">
+        <div class="container d-flex dropdown-index-link p-3 ">
+          <div class="col-12 col-lg-11 col-xl-10 d-flex flex-column ">
+          <a class=" a-mobile" href="">Alphabetisierung</a>
+
+            <a class="mt-2 a-mobile" href="">Deutschkurse</a>
+
+            <a class="mt-2 a-mobile" href="">Fremdsprachkurse</a>
+
+            <a class="mt-2 a-mobile" href="">Firmenkurse</a>
+
+            <a class="mt-2 a-mobile" href="">Sprachkurse für den Beruf-Berufscoaching</a>
+
+            <a class="mt-2 a-mobile" href=""> Prüfung-und Studienvorbereitung</a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+
+    <li><a href="../index.html#forms-of-teaching">Unterrichtsformen</a></li>
+
+    <li class="dropdown-index">
+      <a class="" href="../index.html#preices">Preise</a>
+      <button class="col-2 col-lg-1 col-xl-2 btn-mobile">
+        
+         <i class="bi bi-arrow-down-circle nav-icon font-size-h3"></i>
+      </button>
+      <div class="dropdown-index-content-mobile p-3 pt-0">
+        <div class="container d-flex dropdown-index-link p-3 ">
+          <div class="col-12 col-lg-11 col-xl-10 d-flex flex-column ">
+            <a class="a-mobile" href="">Gruppenkurse</a>
+
+            <a class="mt-2 a-mobile" href="">Private Gruppen-und Einzelkurse</a>
+
+            <a class="mt-2 a-mobile" href="">Firmenkurse und Berufscoaching</a>
+
+            <a class="mt-2 a-mobile" href="">Firmenkurse</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li><a href="../index.html#curs-offers">Kursangebote</a></li>
+    <li><a href="../index.html#contact">Kontakt</a></li>
+  </ul>
+  <!-- ============== Nav ul mobile visable end =============================== -->
+
+  <div
     class="col-11 col-lg-10 col-xl-4 d-flex flex-column flex-md-row align-self-end column-gap-3 mt-5 mt-md-5 mt-xl-0"
   >
     <a

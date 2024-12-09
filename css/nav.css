@@ -17,7 +17,7 @@
 
   color: #fff;
 
-  /* cursor: pointer; */
+  cursor: pointer;
 
   font-size: 2.5vw;
 
@@ -82,7 +82,7 @@
   font-size: var(--nav-title);
   padding-left: 1.2rem;
   color: var(--main-bg-color);
-   font-size: var(--h2);
+  font-size: var(--h2);
 }
 
 .nav-toggle {
@@ -117,8 +117,6 @@
   /* opacity: 0.8; */
   background-color: var(--second-bg-color);
 }
-
-
 
 .nav-toggle .nav-toggle-bar,
 .nav-toggle .nav-toggle-bar::after,
@@ -203,12 +201,9 @@
   position: absolute;
   top: 0;
   left: 32vw;
-  /* background-color: #ffffff; */
-
   height: 20vh;
   width: 30vw;
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4); */
-  z-index: 1;
+  /* z-index: 1; */
   font-size: var(--h6) !important;
   text-decoration: none;
 }
@@ -216,12 +211,10 @@
   font-size: var(--h6) !important;
   text-decoration: none;
   width: 100%;
-  /* color: var( --second-bg-color); */
 }
 
 .dropdown-index:hover .dropdown-index-content {
   display: block;
-  /* background-color:   var( --main-bg-color) ; */
   border-radius: 0.5vw;
 }
 .dropdown-index-link {
@@ -233,4 +226,131 @@
 }
 .nav-icon {
   color: var(--main-bg-color) !important;
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .dropdown-index-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 32vw;
+    height: 20vh;
+    width: 50vw;
+    z-index: 1;
+    font-size: var(--h6) !important;
+    text-decoration: none;
+  }
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 46vh;
+    width: 50vw;
+  }
+  .dropdown-index {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-index-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 32vw;
+    height: 20vh;
+    width: 50vw;
+    z-index: 1;
+    font-size: var(--h6) !important;
+    text-decoration: none;
+  }
+  .dropdown-index-content a {
+    font-size: var(--h6) !important;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .dropdown-index:hover .dropdown-index-content {
+    display: block;
+    border-radius: 0.5vw;
+  }
+  .dropdown-index-content a {
+    font-size: var(--h6) !important;
+    text-decoration: none;
+    width: 100%;
+  }
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: var(--second-bg-color);
+    color: #fff;
+    /* cursor: pointer; */
+    font-size: 2.5vw;
+    height: 100vh;
+    /* left: -110%; */
+    padding: 6rem 2rem 2rem 5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .nav ul {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .a-mobile{
+    font-size: var(--h6) !important;
+  }
+  .btn-mobile{
+    background-color: transparent;
+    border: none;
+  }
+  .dropdown-index-content-mobile{
+    width:100vw;
+  }
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: var(--second-bg-color);
+    color: #fff;
+    /* cursor: pointer; */
+    font-size: 2.5vw;
+    height: 100vh;
+    /* left: -110%; */
+    padding: 6rem 2rem 2rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 }
