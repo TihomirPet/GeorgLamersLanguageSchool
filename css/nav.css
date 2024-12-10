@@ -23,7 +23,7 @@
 
   height: 100vh;
 
-  left: -110%;
+  /* left: -110%; */
 
   padding: 6rem 2rem 2rem 6rem;
 
@@ -42,19 +42,12 @@
 
 .nav ul {
   position: absolute;
-
   top: 50%;
-
   -webkit-transform: translateY(-50%);
-
   -ms-transform: translateY(-50%);
-
   transform: translateY(-50%);
-
   list-style: none;
-
   margin: 0;
-
   padding: 0;
   height: 50vh;
   width: 50vw;
@@ -84,28 +77,30 @@
   color: var(--main-bg-color);
   font-size: var(--h2);
 }
+.nav a:active {
+  text-decoration: none;
+  font-weight: 500;
+  /* color: var(--text-white-color); */
+  font-family: 'MontserratBold';
+  letter-spacing: -0.04em;
+  width: 100% !important;
+  font-size: var(--nav-title);
+  padding-left: 0rem;
+  color: var(--text-white-color);
+  font-size: var(--h2);
+}
 
 .nav-toggle {
   -webkit-user-select: none;
-
   -moz-user-select: none;
-
   user-select: none;
-
   cursor: pointer;
-
   height: 2.3vw;
-
   left: 2rem;
-
   position: fixed;
-
   top: 2rem;
-
   width: 2.5vw;
-
   z-index: 6;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,31 +117,18 @@
 .nav-toggle .nav-toggle-bar::after,
 .nav-toggle .nav-toggle-bar::before {
   position: absolute;
-
   top: 50%;
-
   -webkit-transform: translateY(-50%);
-
   -ms-transform: translateY(-50%);
-
   transform: translateY(-50%);
-
   -webkit-transition: all 0.5s ease;
-
   -moz-transition: all 0.5s ease;
-
   -ms-transition: all 0.5s ease;
-
   -o-transition: all 0.5s ease;
-
   transition: all 0.5s ease;
-
   background: var(--second-bg-color);
-
   content: '';
-
   height: 0.1rem;
-
   width: 70%;
 }
 
@@ -172,7 +154,6 @@
 .nav-toggle.expanded .nav-toggle-bar::before {
   background: var(--text-white-color);
   background: var(--second-bg-color);
-
   margin-top: 0;
 }
 
@@ -186,9 +167,7 @@
 
 .nav-toggle.expanded .nav-toggle-bar::before {
   -ms-transform: rotate(-45deg);
-
   -webkit-transform: rotate(-45deg);
-
   transform: rotate(-45deg);
 }
 /* ============= dropdown :hover ============================= */
@@ -292,33 +271,55 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .nav a:hover {
+    text-decoration: none;
+    font-weight: 500;
+    /* color: var(--text-white-color); */
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+    font-size: var(--nav-title);
+    padding-left: 0rem;
+    color: var(--text-white-color);
+    font-size: var(--h2);
+  }
+  .nav a:active {
+    text-decoration: none;
+    font-weight: 500;
+    /* color: var(--text-white-color); */
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+    font-size: var(--nav-title);
+    padding-left: 0rem;
+    color: var(--text-white-color);
+    font-size: var(--h2);
+  }
   /* Standardmäßig Dropdown verstecken */
-.dropdown-index-content-mobile {
-  display: none;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, opacity 0.3s ease;
-}
+  .dropdown-index-content-mobile {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
 
-/* Dropdown anzeigen, wenn die Klasse "expanded" vorhanden ist */
-.dropdown-index-content-mobile.expanded {
-     transition:  0.5s ease;
-  display: block;
-  opacity: 1;
-  max-height: 500px; /* Ausreichend für den Inhalt */
-}
+  /* Dropdown anzeigen, wenn die Klasse "expanded" vorhanden ist */
+  .dropdown-index-content-mobile.expanded {
+    /* transition: 0.5s ease; */
+    max-height: 300px; /* Passe dies an die maximale Höhe deines Menüs an */
+    opacity: 1;
+  }
+
   .nav-toggle {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    height: 8.3vw;
+    height: 4.3vw;
     position: fixed;
     left: 84vw;
-
     top: 2rem;
-    width: 8.5vw;
+    width: 4.5vw;
     z-index: 6;
     display: flex;
     align-items: center;
@@ -353,7 +354,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    height: auto;
+    height: 75%;
     width: 100%;
   }
   .a-mobile {
