@@ -1,44 +1,44 @@
-const main = document.querySelector('.main');
+// const main = document.querySelector('.main');
 
-// Variablen zur Verwaltung der Scroll-Position
-let currentScroll = 0; // Die aktuelle Scrollposition
-let targetScroll = 0.1; // Die Zielposition
-const easeFactor = 0.1; // Kontrolliert die "Glätte" des Scrollens (kleiner = langsamer)
-const sections = document.querySelectorAll('section');
+// // Variablen zur Verwaltung der Scroll-Position
+// let currentScroll = 0; // Die aktuelle Scrollposition
+// let targetScroll = 0.1; // Die Zielposition
+// const easeFactor = 0.1; // Kontrolliert die "Glätte" des Scrollens (kleiner = langsamer)
+// const sections = document.querySelectorAll('section');
 
-// Ausgabe der Höhen jedes Abschnitts
-sections.forEach((section) => {
-  console.log(section.offsetHeight);
-});
+// // Ausgabe der Höhen jedes Abschnitts
+// sections.forEach((section) => {
+//   console.log(section.offsetHeight);
+// });
 
-// 1. Smooth-Scroll-Funktion
-function smoothScroll() {
-  // Berechne den nächsten Schritt der Annäherung
-  currentScroll += (targetScroll - currentScroll) * easeFactor;
+// // 1. Smooth-Scroll-Funktion
+// function smoothScroll() {
+//   // Berechne den nächsten Schritt der Annäherung
+//   currentScroll += (targetScroll - currentScroll) * easeFactor;
 
-  // Wende die transformierte Position an
-  main.style.transform = `translateY(-${currentScroll}px)`;
+//   // Wende die transformierte Position an
+//   main.style.transform = `translateY(-${currentScroll}px)`;
 
-  // Beende die Animation, wenn die Bewegung minimal ist (Optimierung)
-  if (Math.abs(targetScroll - currentScroll) > 0.5) {
-    requestAnimationFrame(smoothScroll);
-  }
-}
+//   // Beende die Animation, wenn die Bewegung minimal ist (Optimierung)
+//   if (Math.abs(targetScroll - currentScroll) > 0.5) {
+//     requestAnimationFrame(smoothScroll);
+//   }
+// }
 
-// 2. Event-Listener für Scroll-Eingaben (Mausrad oder Touchpad)
-window.addEventListener('wheel', (event) => {
-  // Aktualisiere die Zielposition basierend auf der Scrollrichtung
-  targetScroll += event.deltaY;
+// // 2. Event-Listener für Scroll-Eingaben (Mausrad oder Touchpad)
+// window.addEventListener('wheel', (event) => {
+//   // Aktualisiere die Zielposition basierend auf der Scrollrichtung
+//   targetScroll += event.deltaY;
 
-  // Begrenze die Zielposition, damit sie nicht über den Inhalt hinausgeht
-  targetScroll = Math.max(
-    0,
-    Math.min(targetScroll, main.scrollHeight - window.innerHeight)
-  );
+//   // Begrenze die Zielposition, damit sie nicht über den Inhalt hinausgeht
+//   targetScroll = Math.max(
+//     0,
+//     Math.min(targetScroll, main.scrollHeight - window.innerHeight)
+//   );
 
-  // Starte die Animation (einmaliger Aufruf)
-  requestAnimationFrame(smoothScroll);
-});
+//   // Starte die Animation (einmaliger Aufruf)
+//   requestAnimationFrame(smoothScroll);
+// });
 // ######################################################################################
 // // Wähle das Haupt-Element aus
 // const main = document.querySelector('.main');

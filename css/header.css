@@ -413,13 +413,13 @@
     position: relative;
     overflow: hidden;
     width: auto !important;
-    height: 14vh;
+    height: 16vh;
     border-radius: 3vw;
     /* border: 1px solid var(--second-bg-color); */
   }
   .header-mobile-img-holder {
     overflow: hidden;
-    height: 14vh;
+    height: 16vh;
   }
   .header-mobile-text-holder {
     padding: 0.6rem;
