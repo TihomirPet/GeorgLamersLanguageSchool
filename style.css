@@ -4,7 +4,18 @@ html {
   margin: 0;
   font-family: 'MontserratRegular', 'sans-serif';
   line-height: 1;
+   overflow: hidden;
 }
+.main {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+/* section {
+    min-height: 50vh; 
+
+    margin: 10px 0;
+} */
 
 :root {
   --main-bg-color: hsl(25, 100%, 53%);
