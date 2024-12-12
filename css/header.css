@@ -53,7 +53,7 @@
 .btn {
   --bs-btn-padding-x: 1.5rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-family: 'Montserrat';
+  --bs-btn-font-family: var(--montserat-regular) !important;
   --bs-btn-font-size: clamp(min(0.9rem, 0.9rem), 2.5vw, max(1rem, 1rem));
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;
@@ -95,7 +95,7 @@
 .card {
   --bs-btn-padding-x: 2rem;
   --bs-btn-padding-y: ;
-  --bs-btn-font-family: 'Montserrat';
+  --bs-btn-font-family:  var(--montserat-regular) !important;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;

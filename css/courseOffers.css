@@ -23,7 +23,7 @@
 .btnco {
   --bs-btn-padding-x: ;
   --bs-btn-padding-y: ;
-  --bs-btn-font-family: 'Montserrat';
+  --bs-btn-font-family:  var(--montserat-regular) !important;
   --bs-btn-font-size: var(--h5);
   --bs-btn-font-weight: 200;
   --bs-btn-line-height: 1.5;

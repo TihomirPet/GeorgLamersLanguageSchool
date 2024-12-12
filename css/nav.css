@@ -23,7 +23,7 @@
 
   height: 100vh;
 
-  left: -110%;
+  /* left: -110%; */
 
   padding: 6rem 2rem 2rem 6rem;
 
@@ -41,8 +41,8 @@
 }
 
 .nav ul {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 40%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -55,7 +55,11 @@
 .nav li {
   width: 50vw;
 }
-.nav a {
+.nav a{
+  text-decoration: none;
+    color: var(--text-white-color);
+}
+.nav .nav-link {
   text-decoration: none;
   font-weight: 500;
   color: var(--text-white-color);
@@ -65,7 +69,7 @@
   font-size: var(--nav-title);
   font-size: var(--h2);
 }
-.nav a:hover {
+ .nav-link:hover {
   text-decoration: none;
   font-weight: 500;
   /* color: var(--text-white-color); */
@@ -223,6 +227,19 @@
 .overlay {
   z-index: 4;
 }
+.nav-contact{
+  position: relative;
+  font-size: var(--h5) !important;
+}
+.nav-contact{
+  position: relative;
+  font-size: var(--h5) !important;
+}
+.nav-contact:hover{
+  position: relative;
+  font-size: var(--h5) !important;
+
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -285,6 +302,17 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text-white-color);
+  font-family: 'MontserratBold';
+  letter-spacing: -0.04em;
+  width: 100% !important;
+  font-size: var(--nav-title);
+  font-size: var(--h2);
+}
+
   .nav a:hover {
     text-decoration: none;
     font-weight: 500;
