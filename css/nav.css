@@ -23,9 +23,9 @@
 
   height: 100vh;
 
-  left: -110%;
+  /* left: -110%; */
 
-  padding: 6rem 2rem 2rem 6rem;
+  padding: 6rem 2rem 2rem 6rem !important;
 
   position: fixed;
 
@@ -42,24 +42,25 @@
 
 .nav ul {
   position: relative;
-  top: 40%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 50vh;
+  height: 75vh;
   width: 50vw;
 }
 .nav li {
   width: 50vw;
+  height: 10%;
 }
-.nav a{
+.nav a {
   text-decoration: none;
-    color: var(--text-white-color);
+  color: var(--text-white-color);
 }
-.nav .nav-link {
+.nav .nav-link-desktop {
   text-decoration: none;
   font-weight: 500;
   color: var(--text-white-color);
@@ -68,8 +69,9 @@
   width: 100% !important;
   font-size: var(--nav-title);
   font-size: var(--h2);
+  /* border: 1px solid red; */
 }
- .nav-link:hover {
+.nav-link-decktop:hover {
   text-decoration: none;
   font-weight: 500;
   /* color: var(--text-white-color); */
@@ -78,7 +80,7 @@
   width: 100% !important;
   font-size: var(--nav-title);
   padding-left: 1.2rem;
-  color: var(--main-bg-color);
+  color: var(--main-bg-color) !important;
   font-size: var(--h2);
 }
 .nav a:active {
@@ -113,9 +115,8 @@
 }
 .nav-toggle:hover .nav-toggle-bar {
   /* opacity: 0.8; */
-  background-color: var(  --main-bg-color);
+  background-color: var(--main-bg-color);
 }
-
 
 .nav-toggle .nav-toggle-bar,
 .nav-toggle .nav-toggle-bar::after,
@@ -180,13 +181,13 @@
   background-color: var(--second-bg-color);
 }
 
-.nav-toggle:hover  .nav-toggle-bar::after{
+.nav-toggle:hover .nav-toggle-bar::after {
   /* opacity: 0.8; */
-  background-color: var(  --main-bg-color);
+  background-color: var(--main-bg-color);
 }
-.nav-toggle:hover  .nav-toggle-bar::before{
+.nav-toggle:hover .nav-toggle-bar::before {
   /* opacity: 0.8; */
-  background-color: var(  --main-bg-color);
+  background-color: var(--main-bg-color);
 }
 /* ============= dropdown :hover ============================= */
 .dropdown-index {
@@ -198,7 +199,7 @@
   position: absolute;
   top: 0;
   left: 32vw;
-  height: 20vh;
+  height: auto;
   width: 30vw;
   /* z-index: 1; */
   font-size: var(--h6) !important;
@@ -227,18 +228,17 @@
 .overlay {
   z-index: 4;
 }
-.nav-contact{
+.nav-contact {
   position: relative;
   font-size: var(--h5) !important;
 }
-.nav-contact{
+.nav-contact {
   position: relative;
   font-size: var(--h5) !important;
 }
-.nav-contact:hover{
+.nav-contact:hover {
   position: relative;
   font-size: var(--h5) !important;
-
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -258,8 +258,8 @@
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .nav ul {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 30%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -302,16 +302,34 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+    background: var(--second-bg-color);
+    color: #fff;
+    /* cursor: pointer; */
+    font-size: 2.5vw;
+    height: 100vh;
+    /* left: -110%; */
+    padding: 6rem 2rem 2rem 2rem !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
   .nav a {
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--text-white-color);
-  font-family: 'MontserratBold';
-  letter-spacing: -0.04em;
-  width: 100% !important;
-  font-size: var(--nav-title);
-  font-size: var(--h2);
-}
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-white-color);
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+    font-size: var(--nav-title);
+    font-size: var(--h2);
+  }
 
   .nav a:hover {
     text-decoration: none;
@@ -381,7 +399,7 @@
     font-size: 2.5vw;
     height: 100vh;
     /* left: -110%; */
-    padding: 6rem 2rem 2rem 5rem;
+    padding: 6rem 2rem 2rem 1.6rem !important;
     position: fixed;
     top: 0;
     width: 100%;
