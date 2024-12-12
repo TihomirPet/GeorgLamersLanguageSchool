@@ -42,7 +42,7 @@
 
 .nav ul {
   position: relative;
-  top: 52%;
+  top: 52% !important;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -314,7 +314,7 @@
     font-size: 2.5vw;
     height: 100vh;
     /* left: -110%; */
-    padding: 6rem 2rem 2rem 2rem !important;
+    padding: 6rem 2rem 2rem 2rem ;
     position: fixed;
     top: 0;
     width: 100%;
@@ -407,14 +407,14 @@
   }
   .nav ul {
     position: absolute;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     list-style: none;
     margin: 0;
     padding: 0;
-    height: 75%;
+    height: auto;
     width: 100%;
   }
   .a-mobile {

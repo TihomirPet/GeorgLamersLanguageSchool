@@ -374,6 +374,10 @@
     text-decoration: none;
     color: var(--main-bg-color);
   }
+  .video{
+    width: 100% !important;
+    height: auto;
+  }
 
   .row-height-title {
     height: auto;
@@ -401,6 +405,10 @@
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .video{
+    width: auto !important;
+    height: 100%;
+  }
   .header a {
     text-decoration: none;
     color: var(--main-bg-color);
