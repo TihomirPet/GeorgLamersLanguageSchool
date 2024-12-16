@@ -1,20 +1,25 @@
-
-.courses-info{
-      height: auto;
-  padding: 29vh 0vw 20vh 0vw !important;
-}
-
-.courses-info-header{
-      height: auto;
+.courses-info-header {
+  height: auto;
   padding: 10vh 0vw 20vh 0vw !important;
 }
-.courses-info-img{
-    position: relative;
+.courses-info {
+  height: auto;
+  padding: 20vh 0vw 26vh 0vw !important;
+}
+.courses-info-text{
+  border: 1px solid rgb(0, 0, 0);
+ border-radius: 0.9vw;
+ padding: 0.5rem 1.1rem 0.5rem 1.1rem;
+
+}
+
+.courses-info-img {
+  position: relative;
   /* background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg); */
 
-  height:50vw;
+  height: 50vw;
   width: auto;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -22,7 +27,6 @@
   transition: all 400ms ease;
   border: 1px solid red;
 }
-
 
 .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
@@ -77,7 +81,7 @@ button:not(:disabled) {
   font-family: 'MontserratSemiBold';
 }
 .accordion {
-  border-bottom: 1px solid hsl(0, 0%, 1%, 0.1) ;
+  border-bottom: 1px solid hsl(0, 0%, 1%, 0.1);
   --bs-accordion-color: #0b0b0b;
   --bs-accordion-bg: transparent !important;
   --bs-accordion-transition: color 0.15s ease-in-out,
