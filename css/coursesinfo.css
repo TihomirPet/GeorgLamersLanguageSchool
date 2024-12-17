@@ -161,6 +161,47 @@ button:not(:disabled) {
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .courses-info-header {
+  height: auto;
+  padding: 10vh 0vw 5vh 0vw !important;
+  /* background-color: var( --bg-bright-color); */
+}
+  .courses-info-img {
+  position: relative;
+  background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg);
+  height: 100vw;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.9vw;
+  transition: all 400ms ease;
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+  .accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.3rem 0rem 1.3rem 0rem !important;
+  font-size: var(--h6) !important;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: transparent !important;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+  letter-spacing: -0.04em;
+  font-family: 'MontserratSemiBold';
+}
+  .accordion-info {
+
+  --bs-accordion-body-padding-x: 0rem;
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: #000;
+  --bs-accordion-active-bg: transparent !important;
+}
   .courses-info-text {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 4.9vw;
