@@ -1,16 +1,21 @@
 .courses-info-header {
   height: auto;
   padding: 10vh 0vw 20vh 0vw !important;
+  background-color: var( --bg-bright-color);
 }
 .courses-info {
   height: auto;
   padding: 20vh 0vw 26vh 0vw !important;
+   background-color: var( --bg-bright-color);
 }
 .courses-info-text{
   border: 1px solid rgb(0, 0, 0);
  border-radius: 0.9vw;
  padding: 0.5rem 1.1rem 0.5rem 1.1rem;
 
+}
+.courses-info-list{
+  height: 12rem !important;
 }
 
 .courses-info-img {
@@ -80,7 +85,7 @@ button:not(:disabled) {
   letter-spacing: -0.04em;
   font-family: 'MontserratSemiBold';
 }
-.accordion {
+.accordion-info {
   border-bottom: 1px solid hsl(0, 0%, 1%, 0.1);
   --bs-accordion-color: #0b0b0b;
   --bs-accordion-bg: transparent !important;
@@ -97,11 +102,11 @@ button:not(:disabled) {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: #000000;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="hsl(25, 100%, 53%)" class="bi bi-arrow-down-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/></svg>') !important;
+  --bs-accordion-btn-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="hsl(25, 100%, 53%)" class="bi bi-arrow-down-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/></svg>') !important;
   --bs-accordion-btn-icon-width: 1.7rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/></svg>') !important;
+  --bs-accordion-btn-active-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/></svg>') !important;
   --bs-accordion-btn-focus-box-shadow: transparent !important;
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
@@ -121,8 +126,42 @@ button:not(:disabled) {
   transition: var(--bs-accordion-btn-icon-transition);
 }
 
-.accordion-item {
+.accordion-item-info {
   color: var(--bs-accordion-color);
   background-color: transparent !important;
-  border: solid 1px hsl(0, 0%, 1%, 0.5);
+  border-bottom: solid 1px hsl(0, 0%, 1%, 0.5);
+}
+
+
+
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .courses-info-text {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4.9vw;
+  padding: 0.5rem 1.1rem 0.5rem 1.1rem;
+}
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .courses-info-text {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 4.9vw;
+  padding: 0.5rem 1.1rem 0.5rem 1.1rem;
+}
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+ .courses {
+  /* background-color: var(--second-bg-color); */
+  height: auto;
+  padding: 25vh 0vw 15vh 0vw !important;
+}
 }
