@@ -52,11 +52,13 @@
     </div>
 
     <div
-      class="container-fluid courses-info d-flex justify-content-center align-items-center section "
+      class="container-fluid courses-info d-flex justify-content-center align-items-center section  "
       data-bg-class="bg-third-white"
     >
       <div class="row d-flex justify-content-center w-100">
-        <div class="col-10 col-md-11 col-lg-10 col-xl-4 d-flex flex-column flex-md-row p-0">
+        <div
+          class="col-10 col-md-11 col-lg-10 col-xl-4 d-flex flex-column flex-md-row p-0"
+        >
           <h2
             class="font-size-h2 Bold text-black line-height-titleSmall letter-spacing-title"
           >
@@ -76,7 +78,61 @@
             class="accordion-info accordion-flush mt-5"
             id="accordionFlushExample"
           >
-            <div class="accordion-item-info">
+            <div class="accordion-item-info" >
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-black"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Kostenlose Nachhilfe mit Bildung und Teilhabe
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <div class="col-xl-8 font-size-p">
+                    <ul class="list-unstyled text-black">
+                      <li class="mt-4 ">
+                        <span class="courses-info-text ">
+                          Gruppenkurse von A1 bis B2</span
+                        >
+                      </li>
+                      <li class="mt-3">
+                        Lerne Deutsch Schritt für Schritt von den Grundlagen bis
+                        zum fortgeschrittenen Niveau. Unsere erfahrenen
+                        Lehrkräfte begleiten dich auf deinem Weg.
+                      </li>
+                      <li class="mt-5">
+                        <span class="courses-info-text">
+                          Flexible Kurszeiten</span
+                        >
+                      </li>
+                      <li class="mt-3">
+                        Unsere Kurse finden von morgens bis abends statt. So
+                        kannst du die Zeit wählen, die am besten in deinen
+                        Alltag passt. Für die individuellste Betreuung
+                      </li>
+                      <li class="mt-5">
+                        <span class="courses-info-text">
+                          Einzelkurse von A1 bis C1</span
+                        >
+                      </li>
+                      <li class="mt-3">Für die individuellste Betreuung</li>
+                    </ul>
+
+                    <!-- Melde dich noch heute an! -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item-info" >
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -84,7 +140,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo"
                   aria-expanded="false"
-                  aria-controls="flush-collapseOne"
+                  aria-controls="flush-collapseTwo"
                 >
                   Deutschkurse
                 </button>
@@ -199,7 +255,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour"
                   aria-expanded="false"
-                  aria-controls="flush-collapseOne"
+                  aria-controls="flush-collapseFour"
                 >
                   Alphabetisierung
                 </button>
@@ -269,7 +325,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFive"
                   aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
+                  aria-controls="flush-collapseFive"
                 >
                   Fremdsprachkurse
                 </button>
@@ -316,7 +372,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseSix"
                   aria-expanded="false"
-                  aria-controls="flush-collapseFour"
+                  aria-controls="flush-collapseSix"
                 >
                   Sprachkurse für den Beruf Karrierechancen verbessern
                 </button>
@@ -358,7 +414,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseSeven"
                   aria-expanded="false"
-                  aria-controls="flush-collapseFour"
+                  aria-controls="flush-collapseSeven"
                 >
                   Prüfungsvorbereitung gezielt und individuell
                 </button>
@@ -385,23 +441,12 @@
                         <span class="courses-info-text">
                           Niederländischprüfungen
                         </span>
-
-                     
                       </li>
-                      <li class="mt-3">
-                    
-
-                        für das BIG-Register
-                      </li>
+                      <li class="mt-3">für das BIG-Register</li>
                       <li class="mt-5">
                         <span class="courses-info-text"> Deutschprüfungen</span>
-
                       </li>
-                      <li class="mt-3">
-                     
-
-                        mit Fachwortschatz für Eisenbahner
-                      </li>
+                      <li class="mt-3">mit Fachwortschatz für Eisenbahner</li>
                       <li class="mt-5">
                         <span class="courses-info-text">
                           Niederländischprüfungen</span
@@ -431,6 +476,9 @@
     <script src="/js/contact.js" type="module"></script>
 
     <script src="/js/nav.js"></script>
-    <script src="/js/fetchnav.js" type="module"></script>
+  
+     <script src="/js/fetchcardId.js"  defer ></script>
+    <script src="/js/fetchAccordionId.js" defer ></script>
+   
   </body>
 </html>

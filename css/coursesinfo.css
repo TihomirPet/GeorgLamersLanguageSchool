@@ -5,7 +5,7 @@
 }
 .courses-info {
   height: auto;
-  padding: 20vh 0vw 26vh 0vw !important;
+  padding: 20vh 0vw 40vh 0vw !important;
    background-color: var( --bg-bright-color);
 }
 .courses-info-text{
