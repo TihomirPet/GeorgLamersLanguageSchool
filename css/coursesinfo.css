@@ -1,12 +1,22 @@
+
+
+.main {
+  overflow: hidden;
+
+  transition-duration: 1400ms;
+
+  /* transition-delay: 150ms; */
+  transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
+}
 .courses-info-header {
   height: auto;
   padding: 10vh 0vw 20vh 0vw !important;
-  background-color: var( --bg-bright-color);
+  /* background-color: var( --bg-bright-color); */
 }
 .courses-info {
   height: auto;
   padding: 20vh 0vw 40vh 0vw !important;
-   background-color: var( --bg-bright-color);
+   /* background-color: var( --bg-bright-color); */
 }
 .courses-info-text{
   border: 1px solid rgb(0, 0, 0);
@@ -20,9 +30,9 @@
 
 .courses-info-img {
   position: relative;
-  /* background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg); */
+  background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg);
 
-  height: 50vw;
+  height: 40vw;
   width: auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +40,7 @@
 
   border-radius: 0.9vw;
   transition: all 400ms ease;
-  border: 1px solid red;
+  /* border: 1px solid rgb(255, 255, 255); */
 }
 
 .accordion-button:not(.collapsed) {
