@@ -153,6 +153,18 @@ button:not(:disabled) {
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+   .courses-info-img {
+  position: relative;
+  background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg);
+  height: 50vw;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.9vw;
+  transition: all 400ms ease;
+
+}
     .courses-info-text {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 4.9vw;
