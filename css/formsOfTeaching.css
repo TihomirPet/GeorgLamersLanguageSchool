@@ -133,6 +133,23 @@
  }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.3rem 0rem 1.3rem 0rem !important;
+  font-size: var(--h6) !important;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: transparent !important;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+  letter-spacing: -0.04em;
+  font-family: 'MontserratSemiBold';
+}
     .main-colour-small{
     display: none !important;
      color: var(  --main-bg-color);
