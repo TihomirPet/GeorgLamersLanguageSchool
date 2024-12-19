@@ -1,6 +1,3 @@
-
-
-
 // function elme(css) {
 //   return document.querySelector(css);
 // }
@@ -30,7 +27,6 @@
 //   .catch((err) => console.error('Fehler beim Laden der Navigation:', err));
 
 // ================================================================================================
-
 
 // function elme(css) {
 //   return document.querySelector(css);
@@ -99,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then((res) => res.text())
     .then((data) => {
       navigation.innerHTML = data; // Navigation wird eingefügt
-
+     console.log('Navigation erfolgreich geladen.');
       // Hamburger-Menü initialisieren
       let navToggle = document.querySelector('.nav-toggle');
       let nav = document.querySelector('.nav');
@@ -145,6 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       });
+         const navLoadedEvent = new Event('navLoaded');
+         document.dispatchEvent(navLoadedEvent);
     })
     .catch((err) => console.error('Fehler beim Laden der Navigation:', err));
 });
