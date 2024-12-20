@@ -262,6 +262,9 @@
   letter-spacing: 0;
   transform: translate(-50%, -50%);
 }
+   .video{
+    width: auto !important;
+    height: 100% !important; }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -320,6 +323,9 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .video{
+    width: auto !important;
+    height: 100%;}
   .header {
     /* background-color: var(--main-bg-color); */
     color: var(--text-white-color);
