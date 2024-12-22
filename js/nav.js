@@ -95,7 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
     .then((res) => res.text())
     .then((data) => {
       navigation.innerHTML = data; // Navigation wird eingefügt
-     console.log('Navigation erfolgreich geladen.');
+      console.log('Navigation erfolgreich geladen.');
+      const navLoadedEvent = new Event('navLoaded');
+      document.dispatchEvent(navLoadedEvent);
       // Hamburger-Menü initialisieren
       let navToggle = document.querySelector('.nav-toggle');
       let nav = document.querySelector('.nav');
@@ -141,8 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
       });
-         const navLoadedEvent = new Event('navLoaded');
-         document.dispatchEvent(navLoadedEvent);
     })
     .catch((err) => console.error('Fehler beim Laden der Navigation:', err));
 });

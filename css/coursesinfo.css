@@ -33,7 +33,7 @@
   background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg);
 
   height: 40vw;
-  width: auto;
+  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
