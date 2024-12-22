@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const accordionId = localStorage.getItem('accordionToOpen'); // Holt sich die gespeicherte Accordion-ID
-  console.log('Geladene Accordion-ID:', accordionId);
+  console.log('Geladene Accordion-ID Link Nav:', accordionId);
 
   if (accordionId) {
     // Das entsprechende Accordion-Element suchen

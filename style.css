@@ -18,7 +18,7 @@ html {
 }
 
 :root {
-  --main-bg-color: hsl(25, 100%, 53%);
+  --main-bg-color: #ff730f;
   --second-bg-color: #5600c7;
   --text-white-color: #fdf7f8;
   --bg-bright-color: #fffdf6;

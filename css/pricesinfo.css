@@ -1,0 +1,17 @@
+.prices-info {
+      height: auto;
+  padding: 4vh 0vw 6vh 0vw !important;
+}
+.prices-info-img {
+  background-image: url(/images/SectonPricA.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 0.5vw;
+}
+
+
+.prices-info-accordion{  height: auto;
+  padding: 33vh 0vw 40vh 0vw !important;
+   /* background-color: var( --bg-bright-color); */}
