@@ -1,5 +1,5 @@
 .prices-info {
-      height: auto;
+  height: auto;
   padding: 4vh 0vw 6vh 0vw !important;
 }
 .prices-info-img {
@@ -11,7 +11,41 @@
   border-radius: 0.5vw;
 }
 
-
-.prices-info-accordion{  height: auto;
+.prices-info-accordion {
+  height: auto;
   padding: 33vh 0vw 40vh 0vw !important;
-   /* background-color: var( --bg-bright-color); */}
+  /* background-color: var( --bg-bright-color); */
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .prices-info {
+    height: auto;
+    padding: 4vh 0vw 3vh 0vw !important;
+  }
+  .prices-info-accordion {
+    height: auto;
+    padding: 20vh 0vw 40vh 0vw !important;
+    /* background-color: var( --bg-bright-color); */
+  }
+  .prices-info-img {
+    background-image: url(/images/SectonPricA.jpg);
+    height: 72vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -171vw -8vh;
+    border-radius: 0.5vw;
+  }
+}
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
