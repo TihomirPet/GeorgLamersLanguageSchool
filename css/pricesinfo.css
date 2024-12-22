@@ -41,7 +41,7 @@
     height: 72vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:right ;
+    background-position:right -15vh;
     border-radius: 0.5vw;
   }
 }
