@@ -30,6 +30,8 @@ html {
   --h2: clamp(min(2.074rem, 2.074rem), 2.6265vw, max(3.584rem, 3.584rem)); 
   --montserat-regular: 'MontserratRegular';
   --font-p: 'MontserratRegular', 1rem;
+  /* --font-ptb: clamp(0.833rem, 0.7749rem + 0.2904vw, 1rem); */
+  --font-ptb:clamp(0.8125rem, 0.7473rem + 0.3261vw, 1rem);
 }
 
 @font-face {
