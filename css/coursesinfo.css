@@ -142,8 +142,36 @@ button:not(:disabled) {
   border-bottom: solid 1px hsl(0, 0%, 1%, 0.5);
 }
 
+.courses-link-form {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 10.5vw;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+}
+.courses-link-form:hover {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 11vw;
+  padding: 0.5rem 0rem 0.5rem 0.7rem;
+}
 
 
+
+.courses-link-test{
+  margin-top: 0;
+  margin-bottom: 0.4rem !important;
+  margin-left: 7erm !important;
+    font-size: var(  --font-ptb) !important;
+}
+/* .courses-link-form .courses-link-test{
+  margin-right: 0.5rem;
+} */
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -190,6 +218,24 @@ button:not(:disabled) {
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .courses-link-form {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 50vw;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+}
+.courses-link-form:hover {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 60vw;
+  padding: 0.5rem 0rem 0.5rem 0.7rem;
+}
   .courses-info-header {
   height: auto;
   padding: 10vh 0vw 5vh 0vw !important;
