@@ -133,109 +133,19 @@
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  /* :root {
-    --height-col-price: 40vh;
-  }
-  .price-image-holder {
-    background-image: url(/images/SectonPricA.jpg);
-    height: var(--height-col-price);
-    background-size: 90vw auto;
-    background-repeat: no-repeat;
-    background-position: -0.9vw -45vh;
-    border-radius: 0.5vw;
-  }
 
-  .price-image-holder-second {
-    background-image: url(/images/SectonPricA.jpg);
-    height: var(--height-col-price);
-    background-size: 90vw auto;
-    background-repeat: no-repeat;
-    background-position: -39vw -1px;
-    border-radius: 0.5vw;
-  }
-
-  .price-title-holder {
-    background-image: url(/images/SectionPricAf.png);
-    height: var(--height-col-price);
-    background-size: 90vw auto;
-    background-repeat: no-repeat;
-    background-position: -1vw -30px;
-    border-radius: 0.5vw;
-  } */
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  /* :root {
-    --height-col-price: 44vh;
-  }
-  .price-image-holder {
-    background-image: url(/images/SectonPricA.jpg);
-    height: var(--height-col-price);
-    background-size: 100vw auto;
-    background-repeat: no-repeat;
-    background-position: 0vw -43vh;
-    border-radius: 0.5vw;
-  }
-
-  .price-image-holder-second {
-    background-image: url(/images/SectonPricA.jpg);
-    height: var(--height-col-price);
-    background-size: 100vw auto;
-    background-repeat: no-repeat;
-    background-position: -43vw -2vh;
-    border-radius: 0.5vw;
-  }
-
-  .price-title-holder {
-    background-image: url(/images/SectionPricAf.png);
-    height: var(--height-col-price);
-    background-size: 100vw auto;
-    background-repeat: no-repeat;
-    background-position: -0.9vw -3px;
-    border-radius: 0.5vw;
-  } */
+.preices-link:hover {
+  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+  padding:  0.6rem 0.7rem 0.6rem 0rem  !important;
+}
 }
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* :root {
-    --height-col-price: 24vh;
-  }
-  .price-title-holder {
-    background-image: none;
-    height: var(--height-col-price);
-    background-size: 75vw auto;
-    background-repeat: no-repeat;
-    background-position: 0vw -49px;
-    border-radius: 0.5vw;
-  }
-  .price-title-holder {
-    background-image: none;
-    height: var(--height-col-price);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: 0vw -49px;
-    border-radius: 0.5vw;
-    height: var(--height-col-price);
-  }
-  .prices-mobile-img-holder-one {
-    background-image: url(/images/SectonPricA.jpg);
-    height: 21.4vh;
-    width: 55vw;
-    background-size: 159vw auto;
-    background-repeat: no-repeat;
-    background-position: -40vw -0px;
-    border-radius: 5vw;
-  }
-  .prices-mobile-img-holder-two {
-    background-image: url(/images/SectonPricA.jpg);
-    height: 15vh;
-    width: 32vw;
-    background-size: 159vw auto;
-    background-repeat: no-repeat;
-    background-position: -104vw -53px;
-    border-radius: 5vw;
-  } */
+
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
