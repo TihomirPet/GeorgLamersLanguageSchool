@@ -139,7 +139,7 @@
 @media (max-width: 991.98px) {
 .preices-link:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
-  padding:  0.6rem 0.7rem 0.6rem 0rem  !important;
+  padding:  0.6rem 0rem 0.6rem 0rem  !important;
 }
 }
 
