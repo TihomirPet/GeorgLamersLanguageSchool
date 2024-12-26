@@ -22,6 +22,15 @@ document.getElementById('link6').addEventListener('click', function () {
 document.getElementById('link7').addEventListener('click', function () {
   saveAccordionState('flush-collapseSeven');
 });
+document.getElementById('link8').addEventListener('click', function () {
+  saveAccordionState('flush-collapseEight');
+});
+document.getElementById('link9').addEventListener('click', function () {
+  saveAccordionState('flush-collapseNine');
+});
+document.getElementById('link10').addEventListener('click', function () {
+  saveAccordionState('flush-collapseTen');
+});
 
 // Funktion, um die Accordion-ID in localStorage zu speichern
 function saveAccordionState(targetId) {
