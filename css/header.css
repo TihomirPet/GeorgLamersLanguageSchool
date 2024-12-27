@@ -323,6 +323,22 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .btn-contact-header {
+  --bs-btn-color: var(--text-white-color) !important;
+  --bs-btn-bg: var(--second-bg-color) !important;
+  --bs-btn-border-color: var(--second-bg-color);
+  --bs-btn-hover-color: var(--text-white-color) !important;
+  --bs-btn-hover-bg: var(--second-bg-color) !important;
+  --bs-btn-hover-border-color:var(--second-bg-color);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--text-white-color) !important;
+  --bs-btn-active-bg: var(--text-white-color) !important;
+  --bs-btn-active-border-color:var(--second-bg-color);
+  --bs-btn-active-shadow: inset 0 3px 5px var(--second-bg-color) !important;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--second-bg-color) !important;
+  --bs-btn-disabled-border-color: var(--second-bg-color) !important;
+}
     .video{
     width: auto !important;
     height: 100%;}
