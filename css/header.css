@@ -2,7 +2,7 @@
   overflow: hidden;
 
   transition-duration: 1400ms;
-
+ height: auto;
   /* transition-delay: 150ms; */
   transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
 }
@@ -14,6 +14,7 @@
   padding-bottom: 20vh;
   height: auto;
 }
+
 .header h1 {
   text-shadow: 2px 2px 0px var(--second-bg-color) !important;
 }

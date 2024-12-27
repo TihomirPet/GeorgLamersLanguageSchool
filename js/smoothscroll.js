@@ -1,93 +1,54 @@
-// const main = document.querySelector('.main');
+// Wähle das Haupt-Element (oder das Scroll-Element) aus
+const main = document.querySelector('.main'); // Passe dies an dein Scroll-Element an!
 
-// // Variablen zur Verwaltung der Scroll-Position
-// let currentScroll = 0; // Die aktuelle Scrollposition
-// let targetScroll = 0.1; // Die Zielposition
-// const easeFactor = 0.1; // Kontrolliert die "Glätte" des Scrollens (kleiner = langsamer)
-// const sections = document.querySelectorAll('section');
+// Variablen zur Steuerung des Scroll-Verhaltens
+let currentScroll = 0; // Die aktuelle Scrollposition
+let targetScroll = 0;  // Die Zielposition
+const easeFactor = 0.2; // Kontrolliert die "Glätte" des Scrollens (kleiner = glatter)
 
-// // Ausgabe der Höhen jedes Abschnitts
-// sections.forEach((section) => {
-//   console.log(section.offsetHeight);
-// });
+// Funktion für das sanfte Scrollen
+function smoothScroll() {
+  // Berechne die nächste Scrollposition
+  currentScroll += (targetScroll - currentScroll) * easeFactor;
 
-// // 1. Smooth-Scroll-Funktion
-// function smoothScroll() {
-//   // Berechne den nächsten Schritt der Annäherung
-//   currentScroll += (targetScroll - currentScroll) * easeFactor;
+  // Wende die Scrollposition an
+  main.style.transform = `translateY(-${currentScroll}px)`;
 
-//   // Wende die transformierte Position an
-//   main.style.transform = `translateY(-${currentScroll}px)`;
+  // Beende die Animation, wenn der Unterschied minimal ist
+  if (Math.abs(targetScroll - currentScroll) > 6) {
+    requestAnimationFrame(smoothScroll); // Wiederhole die Animation
+  }
+}
 
-//   // Beende die Animation, wenn die Bewegung minimal ist (Optimierung)
-//   if (Math.abs(targetScroll - currentScroll) > 0.5) {
-//     requestAnimationFrame(smoothScroll);
-//   }
-// }
+// Event-Listener für Scroll-Ereignisse (z. B. Mausrad)
+window.addEventListener('wheel', (event) => {
+  // Berechne die neue Zielposition basierend auf der Scrollrichtung
+  targetScroll += event.deltaY;
 
-// // 2. Event-Listener für Scroll-Eingaben (Mausrad oder Touchpad)
-// window.addEventListener('wheel', (event) => {
-//   // Aktualisiere die Zielposition basierend auf der Scrollrichtung
-//   targetScroll += event.deltaY;
+  // Begrenze die Zielposition, damit sie nicht über den Inhalt hinausgeht
+  targetScroll = Math.max(0, Math.min(targetScroll, main.scrollHeight - window.innerHeight));
 
-//   // Begrenze die Zielposition, damit sie nicht über den Inhalt hinausgeht
-//   targetScroll = Math.max(
-//     0,
-//     Math.min(targetScroll, main.scrollHeight - window.innerHeight)
-//   );
+  // Starte die Animation
+  requestAnimationFrame(smoothScroll);
+});
 
-//   // Starte die Animation (einmaliger Aufruf)
-//   requestAnimationFrame(smoothScroll);
-// });
-// ######################################################################################
-// // Wähle das Haupt-Element aus
-// const main = document.querySelector('.main');
+let touchStartY = 0;
 
-// // Variablen zur Verwaltung der Scroll-Position
-// let currentScroll = 0; // Die aktuelle Scrollposition
-// let targetScroll = 0;  // Die Zielposition
-// let easeFactor = 0.1;  // Kontrolliert die "Glätte" des Scrollens
+window.addEventListener('touchstart', (event) => {
+  touchStartY = event.touches[0].clientY;
+});
 
-// // Funktion zur dynamischen Anpassung der Geschwindigkeit
-// function updateEaseFactor() {
-//     // Berechne die Gesamthöhe des Inhalts abzüglich der Fensterhöhe
-//     const totalHeight = main.scrollHeight - window.innerHeight;
+window.addEventListener('touchmove', (event) => {
+  const deltaY = touchStartY - event.touches[0].clientY;
+  targetScroll += deltaY;
+  targetScroll = Math.max(
+    0,
+    Math.min(targetScroll, main.scrollHeight - window.innerHeight)
+  );
+  touchStartY = event.touches[0].clientY;
+  requestAnimationFrame(smoothScroll);
+});
 
-//     // Dynamische Anpassung: Relativer Geschwindigkeitsfaktor
-//     const relativeSpeed = Math.min(1, 1000 / totalHeight); // Maximal 1 (schnell), minimal langsamer bei großen Seiten
+// ==================================================================================================================================================
 
-//     // Aktualisiere den Ease-Faktor basierend auf dem relativen Geschwindigkeitsfaktor
-//     easeFactor = 0.1 * relativeSpeed;
-// }
 
-// // Smooth-Scroll-Funktion
-// function smoothScroll() {
-//     // Berechne den nächsten Schritt der Annäherung
-//     currentScroll += (targetScroll - currentScroll) * easeFactor;
-
-//     // Wende die transformierte Position an
-//     main.style.transform = `translateY(-${currentScroll}px)`;
-
-//     // Beende die Animation, wenn die Bewegung minimal ist
-//     if (Math.abs(targetScroll - currentScroll) > 0.5) {
-//         requestAnimationFrame(smoothScroll);
-//     }
-// }
-
-// // Event-Listener für Scroll-Eingaben (Mausrad oder Touchpad)
-// window.addEventListener('wheel', (event) => {
-//     // Aktualisiere die Zielposition basierend auf der Scrollrichtung
-//     targetScroll += event.deltaY;
-
-//     // Begrenze die Zielposition
-//     targetScroll = Math.max(0, Math.min(targetScroll, main.scrollHeight - window.innerHeight));
-
-//     // Aktualisiere die Geschwindigkeit bei jeder Scroll-Eingabe
-//     updateEaseFactor();
-
-//     // Starte die Animation
-//     requestAnimationFrame(smoothScroll);
-// });
-
-// // Initiale Berechnung des Ease-Faktors (beim Laden der Seite)
-// updateEaseFactor();
