@@ -1,11 +1,4 @@
-.main {
-  overflow: hidden;
 
-  transition-duration: 1400ms;
- height: auto;
-  /* transition-delay: 150ms; */
-  transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
-}
 
 .header {
   /* background-color: var(--main-bg-color); */
@@ -14,7 +7,14 @@
   padding-bottom: 20vh;
   height: auto;
 }
+.main {
+  /* overflow: hidden; */
 
+  transition-duration: 1400ms;
+  /* height: auto; */
+  transition-delay: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
+}
 .header h1 {
   text-shadow: 2px 2px 0px var(--second-bg-color) !important;
 }
@@ -96,7 +96,7 @@
 .card {
   --bs-btn-padding-x: 2rem;
   --bs-btn-padding-y: ;
-  --bs-btn-font-family:  var(--montserat-regular) !important;
+  --bs-btn-font-family: var(--montserat-regular) !important;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 1.5;
@@ -226,13 +226,13 @@
   width: 100%;
   height: 79vh;
   transform: translate(0% 0px);
-    transform: translateZ( 0rem);
+  transform: translateZ(0rem);
   opacity: 1;
 }
 .video-container .header-image-test {
   position: absolute;
   transform: translate3d(calc(-50% - 24px), -50%);
-  transform: translateZ( 0rem);
+  transform: translateZ(0rem);
   opacity: 0;
 }
 
@@ -263,14 +263,13 @@
   letter-spacing: 0;
   transform: translate(-50%, -50%);
 }
-   .video{
-    width: auto !important;
-    height: 100% !important; }
+.video {
+  width: auto !important;
+  height: 100% !important;
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-
-  
 }
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -290,7 +289,7 @@
     position: absolute;
     transition: all 400ms ease;
     width: 100%;
-       height: 70vh;
+    height: 70vh;
     transform: translate(0% 0px);
     opacity: 1;
   }
@@ -325,24 +324,25 @@
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .btn-contact-header {
-  --bs-btn-color: var(--text-white-color) !important;
-  --bs-btn-bg: var(--second-bg-color) !important;
-  --bs-btn-border-color: var(--second-bg-color);
-  --bs-btn-hover-color: var(--text-white-color) !important;
-  --bs-btn-hover-bg: var(--second-bg-color) !important;
-  --bs-btn-hover-border-color:var(--second-bg-color);
-  --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: var(--text-white-color) !important;
-  --bs-btn-active-bg: var(--text-white-color) !important;
-  --bs-btn-active-border-color:var(--second-bg-color);
-  --bs-btn-active-shadow: inset 0 3px 5px var(--second-bg-color) !important;
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: var(--second-bg-color) !important;
-  --bs-btn-disabled-border-color: var(--second-bg-color) !important;
-}
-    .video{
+    --bs-btn-color: var(--text-white-color) !important;
+    --bs-btn-bg: var(--second-bg-color) !important;
+    --bs-btn-border-color: var(--second-bg-color);
+    --bs-btn-hover-color: var(--text-white-color) !important;
+    --bs-btn-hover-bg: var(--second-bg-color) !important;
+    --bs-btn-hover-border-color: var(--second-bg-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--text-white-color) !important;
+    --bs-btn-active-bg: var(--text-white-color) !important;
+    --bs-btn-active-border-color: var(--second-bg-color);
+    --bs-btn-active-shadow: inset 0 3px 5px var(--second-bg-color) !important;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--second-bg-color) !important;
+    --bs-btn-disabled-border-color: var(--second-bg-color) !important;
+  }
+  .video {
     width: auto !important;
-    height: 100%;}
+    height: 100%;
+  }
   .header {
     /* background-color: var(--main-bg-color); */
     color: var(--text-white-color);
@@ -398,7 +398,7 @@
     text-decoration: none;
     color: var(--text-white-color);
   }
-  .video{
+  .video {
     width: 100% !important;
     height: auto;
   }
@@ -429,7 +429,7 @@
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    .video{
+  .video {
     width: auto !important;
     height: 100%;
   }
