@@ -264,8 +264,8 @@
   transform: translate(-50%, -50%);
 }
 .video {
-  width: auto !important;
-  height: 100% !important;
+  width: auto ;
+  height: 100% ;
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -340,7 +340,7 @@
     --bs-btn-disabled-border-color: var(--second-bg-color) !important;
   }
   .video {
-    width: auto !important;
+    width: auto ;
     height: 100%;
   }
   .header {
@@ -349,6 +349,23 @@
 
     padding-bottom: 0vh;
     height: auto;
+  }
+    .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    height: 4.3vw;
+    position: fixed;
+    left: 89vw;
+    top: 2rem;
+    width: 4.5vw;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--text-white-color);
   }
   .row-height-title {
     height: 65vh;
