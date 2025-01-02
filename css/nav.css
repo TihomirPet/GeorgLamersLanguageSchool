@@ -255,6 +255,57 @@
     text-decoration: none;
   }
 }
+
+/* iPad Pro 12th Gen - 2022.
+/* Landscape: */
+
+@media only screen and (min-width: 1366px) and (orientation: landscape) {   .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.5vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.5vh;
+    width: 100% !important;
+  } }
+
+@media only screen and (min-width: 1024px) and (orientation: portrait) {   .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.3vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.3vh;
+    width: 100% !important;
+  }}
+
+/* Portrait: */ 
+
+
+/* @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5)  {
+  .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.5vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.5vh;
+    width: 100% !important;
+  }
+} */
+
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .nav ul {
@@ -302,7 +353,7 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .nav {
+  .nav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
     -ms-transition: left 0.5s ease;
@@ -314,7 +365,7 @@
     font-size: 2.5vw;
     height: 100vh;
     /* left: -110%; */
-    padding: 6rem 2rem 2rem 2rem ;
+    padding: 6rem 2rem 2rem 2rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -427,6 +478,19 @@
   .dropdown-index-content-mobile {
     width: 100vw;
   }
+  .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.9vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.9vh;
+    width: 100% !important;
+  }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -453,18 +517,31 @@
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    height: 8.3vw;
+    height: 5.3vw;
     position: fixed;
-    height: 8.3vw;
+ 
     left: 84vw;
     top: 2rem;
-    width: 8.5vw;
+    width: 5.5vw;
     z-index: 6;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: var(--text-white-color);
+  }
+    .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.7vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.7vh;
+    width: 100% !important;
   }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
