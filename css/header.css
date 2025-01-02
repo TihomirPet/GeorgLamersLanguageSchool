@@ -269,30 +269,24 @@
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 }
-
+/* iPad Pro 12.9 */
 @media only screen and (min-width: 1366px) and (orientation: landscape) {
 }
-
+/* iPad Pro 12.9 */
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
-
-/* .nav-mobile{
+  /* .nav-mobile{
   display: block ;
 }
 .nav-display{
   display: none ;
 } */
 
-
   .header {
-  /* background-color: var(--main-bg-color); */
-  /* color: var(--text-white-color); */
-
-  padding-bottom: 5vh !important;
-  height: auto;
-}
+    padding-bottom: 5vh !important;
+    height: auto;
+  }
   .row-height-title {
     height: 29vh;
-
   }
 
   .video-container {
@@ -312,7 +306,7 @@
 
     border: 1px solid var(--main-bg-color);
   }
-    .video-container .header-image-test.show {
+  .video-container .header-image-test.show {
     position: absolute;
     transition: all 400ms ease;
     width: 100%;
@@ -320,13 +314,11 @@
     transform: translate(0% 0px);
     opacity: 1;
   }
-    .header-video-text-holder {
+  .header-video-text-holder {
     background-color: var(--second-bg-color);
     padding: 1rem;
     height: 9vh !important;
   }
-
-
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
