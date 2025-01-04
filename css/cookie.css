@@ -1,4 +1,6 @@
-     /* Banner-Design */
+
+              /* Banner-Design */
+        
         #cookie-banner {
             position: fixed;
             bottom: 0;
@@ -29,3 +31,6 @@
              color:var(  --second-bg-color);
              font-weight: 700;
         }
+
+       
+    
