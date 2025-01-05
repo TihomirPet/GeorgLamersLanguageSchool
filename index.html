@@ -7,6 +7,29 @@
       name="description"
       content="Georg Lamers Sprachenschule in Köln bietet exzellenten Unterricht, erfahrene Lehrer und individuelle Betreuung für effektives Sprachenlernen."
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Georg Lamers Sprachenschule",
+        "description": "Eine Sprachenschule in Köln mit über 25 Jahren Erfahrung in Deutsch- und Fremdsprachenkursen.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Severinstrasse 129",
+          "addressLocality": "Köln",
+          "postalCode": "50678",
+          "addressCountry": "DE"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "125"
+        },
+        "url": "https://www.sprachkursekoeln.com/",
+        "telephone": "+49 221 3318191"
+      }
+    </script>
+
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Georg Lamers Sprachenschule in Köln Sprachkurse für alle</title>
     <link
@@ -39,7 +62,7 @@
     <div class="navigation"></div>
 
     <main class="main" data-bg-scroll>
-      <div id="cookie-banner" >
+      <div id="cookie-banner">
         Diese Website verwendet Cookies. Stimmen Sie der Nutzung zu?
         <button id="accept-cookies">Akzeptieren</button>
         <button id="decline-cookies">Ablehnen</button>
@@ -55,21 +78,21 @@
           id="header"
         >
           <div class="col-11 col-lg-5 mt-4 mt-lg-5 d-flex flex-column">
-            <h3 class="Bold letter-spacing-title font-size-h4 mb-0">
-              Georg Lamers
+            <h3 id="line1" class="Bold letter-spacing-title font-size-h4 mb-0"
+            >Georg Lamers
             </h3>
-            <h3 class="Bold letter-spacing-title font-size-h3">
-              Sprachenschule
+            <h3 id="line2" class="Bold letter-spacing-title font-size-h3"
+            >Sprachenschule
             </h3>
             <h7
+              id="line3"
               class="Semibold mt-2 mt-lg-4 font-size-h7 line-height-titleSmall letter-spacing-title"
-            >
-              Kompetenz und Erfahrung<br />seit über 25 Jahren
+              >Kompetenz und Erfahrung <br />seit über 25 Jahren
             </h7>
             <!-- ============== Button start =============-->
             <a
               type="button"
-              class="btn btn-contact-header mt-3"
+              class="btn btn-contact-header mt-3 animated-button"
               href="#contact"
             >
               Kontakt
@@ -77,11 +100,9 @@
             <!-- ============== Button end ===============-->
           </div>
           <div class="col-11 col-lg-5 d-flex align-items-center">
-            <h1
+            <h1 id="animated-title"
               class="font-size-h1 Bold line-height-titleSmall letter-spacing-title text-end w-100"
-            >
-              Welcher<br />Sprachkurs passt<br />zu Ihnen?
-            </h1>
+            >Welcher<br />Sprachkurs passt<br />zu Ihnen?</h1>
           </div>
         </div>
         <!-- ============== Row Title end =============================================-->
@@ -97,7 +118,7 @@
             >
               <!--=============== Card one  ===============-->
               <!-- <a class="btn btn-primary" href="#" role="button"></a> -->
-              <div class="col-12 col-md-6 d-flex header-col-mobile-card p-0">
+              <div class="col-12 col-md-6 d-flex header-col-mobile-card p-0 animated-item">
                 <a
                   href="/pages/courses.html#accordionFlushExample"
                   role="button"
@@ -119,18 +140,22 @@
                   <div
                     class="col-4 col-sm-5 header-mobile-img-holder d-flex align-items-center justify-content-center"
                   >
-                    <video class="video" loop>
+                    <video
+                      class="video"
+                      loop
+                      poster="/images/fallback-image.jpg"
+                    >
                       <source
                         src="/video/istockphoto-2181326581-640_adpp_is.mp4"
                         type="video/mp4"
-                        alt="Jünge Menschen stzen zusammen und gucken auf einen Laptop"
+                        aria-label="Jünge Menschen stzen zusammen und gucken auf einen Laptop"
                       />
                     </video>
                   </div>
                 </a>
               </div>
               <!-- =============== Card two  ==================-->
-              <div class="col-12 col-md-6 d-flex header-col-mobile-card p-0">
+              <div class="col-12 col-md-6 d-flex header-col-mobile-card p-0 animated-item">
                 <a
                   href="/pages/courses.html#accordionFlushExample"
                   role="button"
@@ -152,18 +177,22 @@
                   <div
                     class="col-4 col-sm-5 header-mobile-img-holder d-flex align-items-center justify-content-center"
                   >
-                    <video class="video" loop>
+                    <video
+                      class="video"
+                      loop
+                      poster="/images/fallback-image.jpg"
+                    >
                       <source
                         src="/video/istockphoto-1478801039-640_adpp_is.mp4"
                         type="video/mp4"
-                        alt="Jünge Menschen lachen"
+                        aria-label="Jünge Menschen lachen"
                       />
                     </video>
                   </div>
                 </a>
               </div>
               <!-- =============== Card three =============== -->
-              <div class="col-12 col-md-6 d-flex header-col-mobile-card p-0">
+              <div class="col-12 col-md-6 d-flex header-col-mobile-card p-0 animated-item">
                 <a
                   href="/pages/courses.html#accordionFlushExample"
                   role="button"
@@ -183,11 +212,15 @@
                   <div
                     class="col-4 col-sm-5 header-mobile-img-holder d-flex align-items-center justify-content-center"
                   >
-                    <video class="video" loop>
+                    <video
+                      class="video"
+                      loop
+                      poster="/images/fallback-image.jpg"
+                    >
                       <source
                         src="/video/istockphoto-962939844-640_adpp_is.mp4"
                         type="video/mp4"
-                        alt="Jünge Ärztin lernt"
+                        aria-label="Jünge Ärztin lernt"
                       />
                     </video>
                   </div>
@@ -195,7 +228,7 @@
               </div>
               <!--=============== Card four  ===============-->
 
-              <div class="col-12 d-flex header-col-mobile-card p-0">
+              <div class="col-12 d-flex header-col-mobile-card p-0 animated-item">
                 <a
                   href="/pages/courses.html#accordionFlushExample"
                   role="button"
@@ -215,11 +248,15 @@
                   <div
                     class="col-4 col-sm-5 header-mobile-img-holder d-flex align-items-center justify-content-center pe-md-5"
                   >
-                    <video class="video" loop>
+                    <video
+                      class="video"
+                      loop
+                      poster="/images/fallback-image.jpg"
+                    >
                       <source
                         src="/video/istockphoto-1129461772-640_adpp_is.mp4"
                         type="video/mp4"
-                        alt="Ein junger Mann lacht"
+                        aria-label="Ein junger Mann lacht"
                       />
                     </video>
                   </div>
@@ -239,7 +276,7 @@
 
               <a
                 href="/pages/courses.html#accordionFlushExample"
-                class="video-container d-flex align-items-center justify-content-center"
+                class="video-container d-flex align-items-center justify-content-center animated-item"
                 role="button"
                 data-accordion="flush-collapseOne"
               >
@@ -252,9 +289,7 @@
                     >
                       Nachhilfe
                     </h4>
-                    <p class="font-size-p third-colour">
-                      Kostenlose Nachhilfe mit <br />Bildung und Teilhabe
-                    </p>
+                    <p class="font-size-p third-colour">Kostenlose Nachhilfe mit <br />Bildung und Teilhabe</p>
                   </div>
 
                   <!-- <div class="header-video-img-holder-one"></div> -->
@@ -263,15 +298,14 @@
                 <video
                   src="/video/istockphoto-2181326581-640_adpp_is.mp4"
                   class="video"
-                  alt="Jünge Menschen stzen zusammen und gucken auf einen Laptop"
+                  aria-label="Jünge Menschen stzen zusammen und gucken auf einen Laptop"
                   loop
+                  poster="/images/fallback-image.jpg"
                 ></video>
                 <div class="hover-text">
                   <h4
                     class="font-size-h4 Bold text-start letter-spacing-title third-colour"
-                  >
-                    Kostenlose Nachhilfe mit Bildung und Teilhabe
-                  </h4>
+                  >Kostenlose Nachhilfe mit Bildung und Teilhabe</h4>
                   <p class="Regular third-colour letter-spacing-title"></p>
                   <div class="Regular d-flex third-colour mt-3">
                     <p class="Regular">Mehr erfahren</p>
@@ -285,7 +319,7 @@
 
               <a
                 href="/pages/courses.html#accordionFlushExample"
-                class="video-container d-flex align-items-center justify-content-center"
+                class="video-container d-flex align-items-center justify-content-center animated-item"
                 role="button"
                 data-accordion="flush-collapseTwo"
               >
@@ -307,8 +341,9 @@
                 <video
                   src="/video/istockphoto-1478801039-640_adpp_is.mp4"
                   class="video"
-                  alt="Jünge Menschen lachen"
+                  aria-label="Jünge Menschen lachen"
                   loop
+                  poster="/images/fallback-image.jpg"
                 ></video>
                 <div class="hover-text">
                   <h4
@@ -328,7 +363,7 @@
               <!-- =============== Card three =============== -->
               <a
                 href="/pages/courses.html#accordionFlushExample"
-                class="video-container d-flex align-items-center justify-content-center"
+                class="video-container d-flex align-items-center justify-content-center animated-item"
                 role="button"
                 data-accordion="flush-collapseThree"
               >
@@ -350,8 +385,9 @@
                 <video
                   src="/video/istockphoto-962939844-640_adpp_is.mp4"
                   class="video"
-                  alt="Eine jünge Ärztin lernt"
+                  aria-label="Eine jünge Ärztin lernt"
                   loop
+                  poster="/images/fallback-image.jpg"
                 ></video>
                 <div class="hover-text">
                   <h4
@@ -372,7 +408,7 @@
 
               <a
                 href="/pages/courses.html#accordionFlushExample"
-                class="video-container d-flex align-items-center justify-content-center"
+                class="video-container d-flex align-items-center justify-content-center animated-item"
                 role="button"
                 data-accordion="flush-collapseFour"
               >
@@ -392,8 +428,9 @@
                 <video
                   src="/video/istockphoto-1129461772-640_adpp_is.mp4"
                   class="video"
-                  alt="Ein jünger Mann lacht"
+                  aria-label="Ein jünger Mann lacht"
                   loop
+                  poster="/images/fallback-image.jpg"
                 ></video>
                 <div class="hover-text">
                   <h4
@@ -965,7 +1002,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -985,5 +1022,6 @@
     <script src="/js/sendCardId.js" type="module"></script>
     <script src="/js/sendAccordionId.js" type="module"></script>
     <script src="/js/cookie.js" type="module"></script>
+    <script src="/js/onloadAnimation.js" type="module"></script>
   </body>
 </html>

@@ -13,6 +13,34 @@
   transition-delay: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
 }
+.animated-item{
+  transform: translateX(-0px); /* Starten außerhalb des Viewports */
+  opacity: 0;  /* Starten unsichtbar */
+  transition: transform 1.5s ease, opacity 1.5s ease; /* Für Animationseffekt */
+}
+
+.char {
+  display: inline-block;
+}
+
+/* .char.space {
+  width: 0.5em; 
+} */
+
+h1, p {
+  overflow: hidden;
+}
+.char {
+  display: inline-block;
+}
+
+ .char.space {
+  width: 0.5em; /* Platzhalter für Leerzeichen */
+}
+
+h1, p {
+  overflow: hidden; /* Verhindert, dass animierte Elemente über das Element hinausragen */
+}
 .header h1 {
   text-shadow: 2px 2px 0px var(--second-bg-color) !important;
 }
