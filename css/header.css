@@ -18,11 +18,11 @@
 /* Starten außerhalb des Viewports */
 /* Starten unsichtbar */
  /* Für Animationseffekt */
-/* .animated-item{
-  transform: translateX(-0px); 
-  opacity: 0;  
-  transition: transform 1.5s ease, opacity 1.5s ease;
-} */
+.animated-card{
+  /* transform: translateX(0px);  */
+  /* opacity: 0;   */
+  /* transition: transform 1.5s ease, opacity 1.5s ease; */
+}
 
 .char {
   display: inline-block;
