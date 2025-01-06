@@ -13,11 +13,16 @@
   transition-delay: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
 }
-.animated-item{
-  transform: translateX(-0px); /* Starten außerhalb des Viewports */
-  opacity: 0;  /* Starten unsichtbar */
-  transition: transform 1.5s ease, opacity 1.5s ease; /* Für Animationseffekt */
-}
+
+/* ================================ Anumation header start ====================================  */
+/* Starten außerhalb des Viewports */
+/* Starten unsichtbar */
+ /* Für Animationseffekt */
+/* .animated-item{
+  transform: translateX(-0px); 
+  opacity: 0;  
+  transition: transform 1.5s ease, opacity 1.5s ease;
+} */
 
 .char {
   display: inline-block;
@@ -33,17 +38,20 @@ h1, p {
 .char {
   display: inline-block;
 }
-
+ /* Platzhalter für Leerzeichen */
  .char.space {
-  width: 0.5em; /* Platzhalter für Leerzeichen */
+  width: 0.5em;
 }
-
+/* Verhindert, dass animierte Elemente über das Element hinausragen */
 h1, p {
-  overflow: hidden; /* Verhindert, dass animierte Elemente über das Element hinausragen */
+  overflow: hidden; 
 }
+/* ================================ Anumation header end ====================================  */
 .header h1 {
   text-shadow: 2px 2px 0px var(--second-bg-color) !important;
 }
+
+
 .row-height-title {
   height: 56vh;
   /* background-color: rgb(253, 176, 176); */
