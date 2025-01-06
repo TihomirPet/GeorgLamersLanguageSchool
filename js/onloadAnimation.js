@@ -106,20 +106,20 @@ window.addEventListener('load', () => {
   gsap.registerPlugin(ScrollTrigger);
 
   // Überprüfen, ob die Animation bereits abgespielt wurde
-  // if (localStorage.getItem('animationPlayed')) {
-  //   // Animation wurde bereits ausgeführt, Inhalte direkt anzeigen
-  //   document
-  //     .querySelectorAll('.char, .animated-card, .animated-text')
-  //     .forEach((el) => {
-  //       el.style.opacity = 1;
-  //       el.style.transform = 'none';
-  //     });
-  //   document.querySelectorAll('.animated-button').forEach((button) => {
-  //     button.style.opacity = 1;
-  //     button.style.transform = 'none';
-  //   });
-  //   return; // Keine weiteren Animationen ausführen
-  // }
+  if (localStorage.getItem('animationPlayed')) {
+    // Animation wurde bereits ausgeführt, Inhalte direkt anzeigen
+    document
+      .querySelectorAll('.char, .animated-card, .animated-text')
+      .forEach((el) => {
+        el.style.opacity = 1;
+        el.style.transform = 'none';
+      });
+    document.querySelectorAll('.animated-button').forEach((button) => {
+      button.style.opacity = 1;
+      button.style.transform = 'none';
+    });
+    return; // Keine weiteren Animationen ausführen
+  }
 
   // Text-Animationen (Titel und Zeilen)
   gsap.fromTo(
