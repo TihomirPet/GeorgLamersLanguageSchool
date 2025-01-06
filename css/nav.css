@@ -247,12 +247,12 @@
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-  /* .nav-mobile {
+  .nav-mobile {
     display: none ;
   }
   .nav-decktop {
     display: block ;
-  } */
+  }
   .dropdown-index-content {
     display: none;
     position: absolute;
@@ -857,6 +857,12 @@
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .nav-mobile {
+    display: block !important;
+  }
+  .nav-decktop {
+    display: none !important;
+  }
   .nav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
