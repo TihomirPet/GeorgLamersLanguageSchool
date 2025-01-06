@@ -20,7 +20,6 @@
   cursor: pointer;
 
   font-size: 2.5vw;
-
   height: 100vh;
 
   left: -110%;
@@ -28,7 +27,7 @@
   position: fixed;
   top: 0;
   width: 100%;
- z-index: 5;
+  z-index: 5;
 }
 
 .nav.expanded {
@@ -243,10 +242,10 @@
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
   .nav-mobile {
-    display: none ;
+    display: none;
   }
   .nav-decktop {
-    display: block ;
+    display: block;
   }
   .dropdown-index-content {
     display: none;
@@ -263,11 +262,7 @@
 
 /* iPad Pro 12th Gen - 2022.
 /* Landscape: */
-@media only screen 
-  and (min-device-width: 1366px) 
-  and (max-device-width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .a-mobile {
     font-size: var(--h6) !important;
   }
@@ -336,10 +331,8 @@
     transition: max-height 0.3s ease, opacity 0.3s ease;
   }
 
-
   .dropdown-index-content-mobile.expanded {
-   
-    max-height: 300px; 
+    max-height: 300px;
     opacity: 1;
   }
   .nav-mobile {
@@ -364,10 +357,7 @@
 }
 /* iPad Pro 12th Gen - 2022.
 /* Portrait: */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .a-mobile {
     font-size: var(--h6) !important;
   }
@@ -389,7 +379,7 @@
   .nav a:hover {
     text-decoration: none;
     font-weight: 500;
-  
+
     font-family: 'MontserratBold';
     letter-spacing: -0.04em;
     width: 100% !important;
@@ -401,7 +391,7 @@
   .nav a:active {
     text-decoration: none;
     font-weight: 500;
-  
+
     font-family: 'MontserratBold';
     letter-spacing: -0.04em;
     width: 100% !important;
@@ -426,9 +416,9 @@
     display: none;
   }
   .nav-mobile {
-    display: block ;
+    display: block;
   }
- 
+
   .dropdown-index-content-mobile {
     max-height: 0;
     opacity: 0;
@@ -436,10 +426,8 @@
     transition: max-height 0.3s ease, opacity 0.3s ease;
   }
 
-
   .dropdown-index-content-mobile.expanded {
-   
-    max-height: 300px; 
+    max-height: 300px;
     opacity: 1;
   }
   .nav-mobile {
@@ -462,7 +450,6 @@
     width: 100% !important;
   }
 }
-
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 /* @media (max-width: 1199.98px) {
@@ -664,7 +651,7 @@
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .nav-mobile {
+  .nav-mobile {
     display: block !important;
   }
   .nav-decktop {
