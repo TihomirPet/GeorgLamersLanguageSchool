@@ -1,36 +1,57 @@
+/* Banner-Design */
 
-              /* Banner-Design */
-        
-        #cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background:var(  --second-bg-color);
-           color: var(--bg-bright-color);
-            padding: 15px;
-            text-align: center;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-        #cookie-banner button {
-            padding: 10px 15px;
-            background-color:var(  --main-bg-color);
-            border: none;
-            color: var(--bg-bright-color);
-            font-size:var( --font-p);
-            cursor: pointer;
-            border-radius: 5px;
-             font-weight: 700;
-        }
-        #cookie-banner button:hover {
-            background-color: var(--bg-bright-color);
-             color:var(  --second-bg-color);
-             font-weight: 700;
-        }
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--second-bg-color);
+  color: var(--bg-bright-color);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#cookie-banner button {
+  padding: 10px 15px;
+  background-color: var(--main-bg-color);
+  border: none;
+  color: var(--bg-bright-color);
+  font-size: var(--font-p);
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+}
+#cookie-banner button:hover {
+  background-color: var(--bg-bright-color);
+  color: var(--second-bg-color);
+  font-weight: 700;
+}
 
-       
-    
+@media (max-width: 991.98px) {
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--second-bg-color);
+  color: var(--bg-bright-color);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
