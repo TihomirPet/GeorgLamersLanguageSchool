@@ -8,6 +8,29 @@
 
   border-radius: 0.5vw;
 }
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+.course-offers-video {
+  position: relative;
+  height: 50vh;
+
+  border-radius: 0.5vw;
+  z-index: 1;
+}
+}
+
+/* Landscape Ipad pro 12.9 inch */
+
+
+/*Portrait pro 12.9 inch*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .course-offers-video {
+    position: relative;
+    height: 60vh ;
+    border-radius: 0.5vw;
+    /* z-index: 1; */
+  }
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {

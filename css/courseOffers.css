@@ -122,17 +122,16 @@
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
   .course-offers-video {
     position: relative;
-    height: 50vh;
+    height: 40vh;
     border-radius: 0.5vw;
     /* z-index: 1; */
   }
-  .course-offers-filter {
-    position: absolute;
-    mix-blend-mode: soft-light;
-
-    background-color: hsl(25, 100%, 53%, 0.4);
-    height: 50vh;
-    width: 37vw;
+ 
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .course-offers-video {
+    position: relative;
+    height: 40vh;
     border-radius: 0.5vw;
     /* z-index: 1; */
   }
