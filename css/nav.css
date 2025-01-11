@@ -461,6 +461,19 @@
   .nav-decktop {
     display: none !important;
   }
+    .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.7vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.7vh;
+    width: 100% !important;
+  }
 }
 
 /* Portrait */
