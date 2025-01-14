@@ -190,15 +190,14 @@ h1, p {
 .header-video-img-holder {
   position: relative;
   background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
-
   height: 79vh;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: 0vw 1vh;
+  background-position: -3vw 12vh;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
-  /* border: 1px solid red; */
+
 }
 .header-video-img-holder-one {
   position: relative;
@@ -215,11 +214,10 @@ h1, p {
 .header-video-img-holder-two {
   position: relative;
   background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
-
   height: 79vh;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: -3vw 1vh;
+  background-position: -3vw 9vh;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
@@ -227,11 +225,10 @@ h1, p {
 .header-video-img-holder-three {
   position: relative;
   background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
-
   height: 79vh;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: -4vw 1vh;
+  background-position: -7vw 13vh;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
