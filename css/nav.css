@@ -233,19 +233,19 @@
   font-size: var(--h5) !important;
 }
 .nav-mobile {
-  display: none ;
+  display: none;
 }
 .nav-decktop {
-  display: block ;
+  display: block;
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
   .nav-mobile {
-    display: none !important;
+    display: none;
   }
   .nav-decktop {
-    display: block !important;
+    display: block;
   }
   .dropdown-index-content {
     display: none;
@@ -260,24 +260,22 @@
   }
 }
 
-
-
-
 /* Querformat für iPad Pro 12.9 */
 @media only screen 
-and (min-width: 1024px) 
-and (max-width: 1366px) 
-
-and (orientation: landscape) {
+and (orientation: landscape) 
+and (min-height: 1024px)  {
   /* CSS-Regeln für Querformat */
-    .nav-mobile {
+  .nav-mobile {
     display: block !important ;
   }
   .nav-decktop {
     display: none !important;
   }
-.btn-mobile {
-    background-color: transparent;
+   .a-mobile {
+    font-size: var(--h6) !important;
+  }
+  .btn-mobile {
+    background-color: transparent ;
     border: none;
   }
   .nav a {
@@ -289,6 +287,7 @@ and (orientation: landscape) {
     width: 100%;
     font-size: var(--nav-title);
     font-size: var(--h2);
+  
   }
 
   .nav a:hover {
@@ -328,7 +327,6 @@ and (orientation: landscape) {
     width: 100%;
   }
 
-
   .dropdown-index-content-mobile {
     max-height: 0;
     opacity: 0;
@@ -362,19 +360,15 @@ and (orientation: landscape) {
 }
 
 /* Hochformat für iPad Pro 12.9 */
-@media only screen 
-and (min-width: 1024px) 
-and (max-width: 1366px) 
-
-and (orientation: portrait) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   /* CSS-Regeln für Hochformat */
-      .nav-mobile {
+  .nav-mobile {
     display: block !important;
   }
   .nav-decktop {
     display: none !important;
   }
- .a-mobile {
+  .a-mobile {
     font-size: var(--h6) !important;
   }
   .btn-mobile {
@@ -468,17 +462,14 @@ and (orientation: portrait) {
 }
 
 /* Hochformat für iPad Pro 11 Zoll */
-@media only screen 
-and (min-width: 834px) 
-and (max-width: 1194px) 
-and (orientation: portrait) {
+@media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
   .nav-mobile {
     display: block !important;
   }
   .nav-decktop {
     display: none !important;
   }
-    .nav-toggle .nav-toggle-bar {
+  .nav-toggle .nav-toggle-bar {
     margin-top: 0;
   }
 
@@ -494,11 +485,8 @@ and (orientation: portrait) {
 }
 
 /* Querformat für iPad Pro 11 Zoll */
-@media only screen 
-and (min-width: 834px) 
-and (max-width: 1194px) 
-and (orientation: landscape)  {
-   .nav a {
+@media only screen and (min-height: 834px)and (orientation: landscape){
+  .nav a {
     text-decoration: none;
     font-weight: 500;
     color: var(--text-white-color);
@@ -508,7 +496,7 @@ and (orientation: landscape)  {
     font-size: var(--nav-title);
     font-size: var(--h2);
   }
-      .nav-mobile {
+  .nav-mobile {
     display: block !important ;
   }
   .nav-decktop {
@@ -525,13 +513,11 @@ and (orientation: landscape)  {
     max-height: 300px;
     opacity: 1;
   }
-   .btn-mobile {
+  .btn-mobile {
     background-color: transparent;
     border: none;
   }
 }
-
-
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 /* @media (max-width: 1199.98px) {
@@ -587,7 +573,7 @@ and (orientation: landscape)  {
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .nav-mobile {
-    display: block  !important;
+    display: block !important;
   }
   .nav-decktop {
     display: none !important;
@@ -697,7 +683,7 @@ and (orientation: landscape)  {
   }
   .nav ul {
     position: absolute;
-    top: 50% ;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -791,7 +777,7 @@ and (orientation: landscape)  {
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    /* .nav-mobile {
+  /* .nav-mobile {
     display: block !important;
   }
   .nav-decktop {

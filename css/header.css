@@ -518,6 +518,9 @@ h1, p {
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .second-video{
+  margin-right:10vw;
+}
   .video-container {
     position: relative;
     overflow: hidden;
@@ -568,6 +571,9 @@ h1, p {
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .second-video{
+  margin-right:10vw;
+}
   .btn-contact-header {
     --bs-btn-color: var(--text-white-color) !important;
     --bs-btn-bg: var(--second-bg-color) !important;
@@ -656,6 +662,9 @@ h1, p {
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .second-video{
+  margin-right:0vw;
+}
   .header a {
     text-decoration: none;
     color: var(--text-white-color);
