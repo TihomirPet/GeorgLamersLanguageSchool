@@ -259,105 +259,7 @@
     text-decoration: none;
   }
 }
-
-/* iPad Pro 12th Gen - 2022.
-/* Landscape: */
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .a-mobile {
-    font-size: var(--h6) !important;
-  }
-  .btn-mobile {
-    background-color: transparent;
-    border: none;
-  }
-  .nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--text-white-color);
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100%;
-    font-size: var(--nav-title);
-    font-size: var(--h2);
-  }
-
-  .nav a:hover {
-    text-decoration: none;
-    font-weight: 500;
-
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100% !important;
-    font-size: var(--nav-title);
-    padding-left: 0rem;
-    color: var(--text-white-color);
-    font-size: var(--h2);
-  }
-  .nav a:active {
-    text-decoration: none;
-    font-weight: 500;
-
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100% !important;
-    font-size: var(--nav-title);
-    padding-left: 0rem;
-    color: var(--text-white-color);
-    font-size: var(--h2);
-  }
-  .nav ul {
-    position: absolute;
-    top: 60% !important;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100%;
-  }
-  .nav-decktop {
-    display: none !important ;
-  }
-  .nav-mobile {
-    display: block !important;
-  }
-
-  .dropdown-index-content-mobile {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-  }
-
-  .dropdown-index-content-mobile.expanded {
-    max-height: 300px;
-    opacity: 1;
-  }
-  .nav-mobile {
-    display: block;
-  }
-  .nav-decktop {
-    display: none;
-  }
-  .nav-toggle .nav-toggle-bar {
-    margin-top: 0;
-  }
-
-  .nav-toggle .nav-toggle-bar::after {
-    margin-top: 0.5vh;
-    width: 100% !important;
-  }
-
-  .nav-toggle .nav-toggle-bar::before {
-    margin-top: -0.5vh;
-    width: 100% !important;
-  }
-}
-/* iPad Pro 12th Gen - 2022.
-/* Portrait: */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 1366.98px) {
   .a-mobile {
     font-size: var(--h6) !important;
   }
@@ -450,8 +352,199 @@
     width: 100% !important;
   }
 }
+
+/* iPad Pro 12th Gen - 2022.
+/* Landscape: */
+/* @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .a-mobile {
+    font-size: var(--h6) !important;
+  }
+  .btn-mobile {
+    background-color: transparent;
+    border: none;
+  }
+  .nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-white-color);
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100%;
+    font-size: var(--nav-title);
+    font-size: var(--h2);
+  }
+
+  .nav a:hover {
+    text-decoration: none;
+    font-weight: 500;
+
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+    font-size: var(--nav-title);
+    padding-left: 0rem;
+    color: var(--text-white-color);
+    font-size: var(--h2);
+  }
+  .nav a:active {
+    text-decoration: none;
+    font-weight: 500;
+
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+    font-size: var(--nav-title);
+    padding-left: 0rem;
+    color: var(--text-white-color);
+    font-size: var(--h2);
+  }
+  .nav ul {
+    position: absolute;
+    top: 60% !important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .nav-decktop {
+    display: none !important ;
+  }
+  .nav-mobile {
+    display: block !important;
+  }
+
+  .dropdown-index-content-mobile {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .dropdown-index-content-mobile.expanded {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .nav-decktop {
+    display: none;
+  }
+  .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.5vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.5vh;
+    width: 100% !important;
+  }
+} */
+/* iPad Pro 12th Gen - 2022.
+/* Portrait: */
+/* @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .a-mobile {
+    font-size: var(--h6) !important;
+  }
+  .btn-mobile {
+    background-color: transparent;
+    border: none;
+  }
+  .nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-white-color);
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100%;
+    font-size: var(--nav-title);
+    font-size: var(--h2);
+  }
+
+  .nav a:hover {
+    text-decoration: none;
+    font-weight: 500;
+
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+    font-size: var(--nav-title);
+    padding-left: 0rem;
+    color: var(--text-white-color);
+    font-size: var(--h2);
+  }
+  .nav a:active {
+    text-decoration: none;
+    font-weight: 500;
+
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+    font-size: var(--nav-title);
+    padding-left: 0rem;
+    color: var(--text-white-color);
+    font-size: var(--h2);
+  }
+  .nav ul {
+    position: absolute;
+    top: 40% !important;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .nav-decktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+
+  .dropdown-index-content-mobile {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .dropdown-index-content-mobile.expanded {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .nav-mobile {
+    display: block !important;
+  }
+  .nav-decktop {
+    display: none !important;
+  }
+  .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+  }
+
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.3vh;
+    width: 100% !important;
+  }
+
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.3vh;
+    width: 100% !important;
+  }
+} */
 /* Portrait and Landscape */
-@media only screen 
+/* @media only screen 
   and (min-device-width: 83px) 
   and (max-device-width: 1194px) 
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -474,16 +567,16 @@
     margin-top: -0.7vh;
     width: 100% !important;
   }
-}
+} */
 
 /* Portrait */
-@media only screen 
+/* @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
 
-}
+} */
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 /* @media (max-width: 1199.98px) {
