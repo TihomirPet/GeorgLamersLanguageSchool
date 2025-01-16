@@ -587,10 +587,10 @@ and (orientation: landscape)  {
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .nav-mobile {
-    display: block  ;
+    display: block  !important;
   }
   .nav-decktop {
-    display: none ;
+    display: none !important;
   }
   .nav {
     -webkit-transition: left 0.5s ease;
@@ -733,12 +733,12 @@ and (orientation: landscape)  {
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* .nav-mobile {
+  .nav-mobile {
     display: block !important;
   }
   .nav-decktop {
     display: none !important;
-  } */
+  }
   .nav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
