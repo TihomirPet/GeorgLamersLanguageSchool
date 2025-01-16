@@ -193,7 +193,7 @@ h1, p {
   height: 79vh;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: -3vw 12vh;
+  background-position: -4vw 12vh !important;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
@@ -227,7 +227,8 @@ h1, p {
   height: 79vh;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: -7vw 13vh;
+  /* background-position: -7vw 13vh; */
+  background-position: center 13vh;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
@@ -308,7 +309,7 @@ h1, p {
 @media (max-width: 1399.98px) {
 
 }
-@media (max-width: 1366.98px) {
+/* @media (max-width: 1366.98px) {
   .video-container .header-image-test.show {
   position: absolute;
   transition: all 400ms ease;
@@ -370,12 +371,58 @@ h1, p {
     transition: all 400ms ease;
   }
 
-}
-/* iPad Pro 12.9 */
-/* @media only screen and (min-width: 1366px) and (orientation: landscape) {
 } */
 /* iPad Pro 12.9 */
-/* @media only screen and (min-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 1366px) and (orientation: landscape) {
+  .header-video-img-holder {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: -7vw 12vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+
+}
+.header-video-img-holder-one {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: -4vw 13vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-two {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: -3vw 9vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-three {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  /* background-position: -7vw 13vh; */
+  background-position: center 13vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+}
+/* iPad Pro 12.9 */
+@media only screen and (min-width: 1024px) and (orientation: portrait) {
   .nav-mobile{
   display: block ;
 }
@@ -421,7 +468,53 @@ h1, p {
     padding: 1rem;
     height: 9vh !important;
   }
-} */
+   .header-video-img-holder {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position:center 8vh !important;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+
+}
+.header-video-img-holder-one {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center 8vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-two {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center 6vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-three {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  /* background-position: -7vw 13vh; */
+  background-position: center 8vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+}
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
