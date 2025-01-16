@@ -242,10 +242,10 @@
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
   .nav-mobile {
-    display: none;
+    display: none !important;
   }
   .nav-decktop {
-    display: block;
+    display: block !important;
   }
   .dropdown-index-content {
     display: none;
@@ -271,10 +271,10 @@ and (max-width: 1366px)
 and (orientation: landscape) {
   /* CSS-Regeln für Querformat */
     .nav-mobile {
-    display: block ;
+    display: block !important ;
   }
   .nav-decktop {
-    display: none ;
+    display: none !important;
   }
 .btn-mobile {
     background-color: transparent;
@@ -341,10 +341,10 @@ and (orientation: landscape) {
     opacity: 1;
   }
   .nav-mobile {
-    display: block;
+    display: block !important;
   }
   .nav-decktop {
-    display: none;
+    display: none !important;
   }
   .nav-toggle .nav-toggle-bar {
     margin-top: 0;
@@ -369,10 +369,10 @@ and (max-width: 1366px)
 and (orientation: portrait) {
   /* CSS-Regeln für Hochformat */
       .nav-mobile {
-    display: block ;
+    display: block !important;
   }
   .nav-decktop {
-    display: none ;
+    display: none !important;
   }
  .a-mobile {
     font-size: var(--h6) !important;
@@ -429,10 +429,10 @@ and (orientation: portrait) {
     width: 100%;
   }
   .nav-decktop {
-    display: none;
+    display: none !important;
   }
   .nav-mobile {
-    display: block;
+    display: block !important;
   }
 
   .dropdown-index-content-mobile {
@@ -447,10 +447,10 @@ and (orientation: portrait) {
     opacity: 1;
   }
   .nav-mobile {
-    display: block ;
+    display: block !important;
   }
   .nav-decktop {
-    display: none ;
+    display: none !important;
   }
   .nav-toggle .nav-toggle-bar {
     margin-top: 0;
@@ -473,10 +473,10 @@ and (min-width: 834px)
 and (max-width: 1194px) 
 and (orientation: portrait) {
   .nav-mobile {
-    display: block ;
+    display: block !important;
   }
   .nav-decktop {
-    display: none ;
+    display: none !important;
   }
     .nav-toggle .nav-toggle-bar {
     margin-top: 0;
@@ -509,10 +509,10 @@ and (orientation: landscape)  {
     font-size: var(--h2);
   }
       .nav-mobile {
-    display: block ;
+    display: block !important ;
   }
   .nav-decktop {
-    display: none ;
+    display: none !important;
   }
   .dropdown-index-content-mobile {
     max-height: 0;
