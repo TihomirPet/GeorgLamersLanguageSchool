@@ -271,10 +271,10 @@ and (max-width: 1366px)
 and (orientation: landscape) {
   /* CSS-Regeln für Querformat */
     .nav-mobile {
-    display: block !important;
+    display: block ;
   }
   .nav-decktop {
-    display: none !important;
+    display: none ;
   }
 .btn-mobile {
     background-color: transparent;
@@ -369,10 +369,10 @@ and (max-width: 1366px)
 and (orientation: portrait) {
   /* CSS-Regeln für Hochformat */
       .nav-mobile {
-    display: block !important;
+    display: block ;
   }
   .nav-decktop {
-    display: none !important;
+    display: none ;
   }
  .a-mobile {
     font-size: var(--h6) !important;
@@ -473,10 +473,10 @@ and (min-width: 834px)
 and (max-width: 1194px) 
 and (orientation: portrait) {
   .nav-mobile {
-    display: block !important;
+    display: block ;
   }
   .nav-decktop {
-    display: none !important;
+    display: none ;
   }
     .nav-toggle .nav-toggle-bar {
     margin-top: 0;
@@ -509,10 +509,10 @@ and (orientation: landscape)  {
     font-size: var(--h2);
   }
       .nav-mobile {
-    display: block !important;
+    display: block ;
   }
   .nav-decktop {
-    display: none !important;
+    display: none ;
   }
   .dropdown-index-content-mobile {
     max-height: 0;
@@ -587,10 +587,10 @@ and (orientation: landscape)  {
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .nav-mobile {
-    display: block !important ;
+    display: block  ;
   }
   .nav-decktop {
-    display: none !important;
+    display: none ;
   }
   .nav {
     -webkit-transition: left 0.5s ease;
