@@ -304,7 +304,7 @@
   }
   .nav ul {
     position: absolute;
-    top: 40% !important;
+    top: 50% ;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -742,7 +742,7 @@
   }
   .nav ul {
     position: absolute;
-    top: 40%;
+    top: 50% ;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
