@@ -485,7 +485,7 @@ and (min-height: 1024px)  {
 }
 
 /* Querformat für iPad Pro 11 Zoll */
-@media only screen and (min-height: 834px)and (orientation: landscape){
+@media only screen and (min-height: 834px) and (max-width: 1194px) and (orientation: landscape){
   .nav a {
     text-decoration: none;
     font-weight: 500;
