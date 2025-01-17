@@ -55,6 +55,22 @@ videoContainers.forEach((container) => {
     hoverText.classList.remove('active'); // Hover-Text deaktivieren
   });
 });
+window.addEventListener('DOMContentLoaded', () => {
+  const videos = document.querySelectorAll('video');
+  videos.forEach((video) => {
+    video.muted = true; // Stumm schalten
+    video.load(); // Programmatisch laden
+  });
+});
+window.addEventListener('DOMContentLoaded', () => {
+  const videos = document.querySelectorAll('.video-container video');
+  videos.forEach((video) => {
+    video.muted = true;
+    if (video.closest('.video-container:hover')) {
+      video.load(); // Nur Videos in der Nähe des Mauszeigers laden
+    }
+  });
+});
 // ********************************************************************
 // for (let i = 0; i < video.length; i++) {
 

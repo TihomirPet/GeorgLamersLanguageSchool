@@ -53,6 +53,7 @@
 .nav a {
   text-decoration: none;
   color: var(--text-white-color);
+  /* border: 1px solid red; */
 }
 .nav .nav-link-desktop {
   text-decoration: none;
@@ -485,7 +486,7 @@ and (min-height: 1024px)  {
 }
 
 /* Querformat für iPad Pro 11 Zoll */
-@media only screen and (min-height: 834px) and (max-width: 1194px) and (orientation: landscape){
+@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape){
   .nav a {
     text-decoration: none;
     font-weight: 500;
@@ -495,7 +496,9 @@ and (min-height: 1024px)  {
     width: 100%;
     font-size: var(--nav-title);
     font-size: var(--h2);
+ 
   }
+
   .nav-mobile {
     display: block !important ;
   }
