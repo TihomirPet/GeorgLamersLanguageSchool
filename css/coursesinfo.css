@@ -200,9 +200,9 @@ button:not(:disabled) {
 }
    .courses-info-img {
   position: relative;
-  background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg);
+  background-image: url(/images/iStock-1384618716.jpg);
   height: 50vw;
-  width: auto;
+  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -243,9 +243,9 @@ button:not(:disabled) {
 }
   .courses-info-img {
   position: relative;
-  background-image: url(/images/istockphoto-1384618716-1024x1024\(1\).jpg);
+   background-image: url(/images/iStock-1384618716.jpg);
   height: 100vw;
-  width: auto;
+  /* width: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
