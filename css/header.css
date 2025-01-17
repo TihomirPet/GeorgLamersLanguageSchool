@@ -568,6 +568,52 @@ h1, p {
     letter-spacing: 0.8px;
     transition: all 400ms ease;
   }
+  .header-video-img-holder {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: -4vw 12vh !important;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+
+}
+.header-video-img-holder-one {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position:center 13vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-two {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: -3vw 9vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
+.header-video-img-holder-three {
+  position: relative;
+  background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
+  height: 79vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  /* background-position: -7vw 13vh; */
+  background-position: center 13vh;
+  border-bottom-left-radius: 0.9vw;
+  border-bottom-right-radius: 0.9vw;
+  transition: all 400ms ease;
+}
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {

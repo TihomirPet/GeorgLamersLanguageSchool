@@ -233,10 +233,10 @@
   font-size: var(--h5) !important;
 }
 .nav-mobile {
-  display: none;
+  display: none !important;
 }
 .nav-decktop {
-  display: block;
+  display: block !important;
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
