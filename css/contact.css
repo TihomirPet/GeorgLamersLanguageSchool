@@ -75,6 +75,9 @@
   --bs-btn-disabled-bg: transparent !important;
   --bs-btn-disabled-border-color: transparent !important;
 }
+.contact-arrow-right-circle{
+  color: #fff;
+}
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 }

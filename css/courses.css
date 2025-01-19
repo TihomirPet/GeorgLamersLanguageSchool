@@ -10,9 +10,7 @@ width: clamp(10vw, 20em, 100vw) !important;
 .courses-holder {
   border-bottom: 1px solid hsl(350, 60%, 98%, 0.6);
 }
-.bi-arrow-right-circle {
-  color: var(--main-bg-color);
-}
+
 .btnc:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
