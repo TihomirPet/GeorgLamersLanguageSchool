@@ -304,6 +304,9 @@ h1, p {
 .alpha-video{
   margin-right:10vw;
 }
+.video {
+  pointer-events: none; /* Verhindert Klicks auf das Video */
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {

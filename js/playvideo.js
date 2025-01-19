@@ -33,44 +33,61 @@
 // **********************************
 const videoContainers = document.querySelectorAll('.video-container');
 
-// Iteriere über alle video-container
+// Füge Event-Listener für jeden Video-Container hinzu
 videoContainers.forEach((container) => {
-  // Selektiere Elemente relativ zum aktuellen Container
-  const videoPlay = container.querySelector(' video'); // Video im aktuellen Container
-  const hoverText = container.querySelector('.hover-text'); // Hover-Text im aktuellen Container
-  const hoverCard = container.querySelector('.header-image-test'); // Header-Card im aktuellen Container
+  // Selektiere Video und verwandte Elemente innerhalb des Containers
+  const videoPlay = container.querySelector('video');
+  const hoverText = container.querySelector('.hover-text');
+  const hoverCard = container.querySelector('.header-image-test');
 
   // Wenn die Maus über den Container fährt
   container.addEventListener('mouseenter', () => {
-    hoverCard.classList.remove('show'); // Header-Card ausblenden
-    videoPlay.play(); // Nur dieses Video abspielen
-    hoverText.classList.add('active'); // Hover-Text aktivieren
+    if (hoverCard) hoverCard.classList.remove('show'); // Header-Card ausblenden
+    if (videoPlay) videoPlay.play(); // Video abspielen
+    if (hoverText) hoverText.classList.add('active'); // Hover-Text anzeigen
   });
 
   // Wenn die Maus den Container verlässt
   container.addEventListener('mouseleave', () => {
-    hoverCard.classList.add('show'); // Header-Card wieder einblenden
-    videoPlay.pause(); // Nur dieses Video stoppen
-    videoPlay.currentTime = 0; // Video zurücksetzen
-    hoverText.classList.remove('active'); // Hover-Text deaktivieren
+    if (hoverCard) hoverCard.classList.add('show'); // Header-Card wieder einblenden
+    if (videoPlay) {
+      videoPlay.pause(); // Video stoppen
+      videoPlay.currentTime = 0; // Video zurücksetzen
+    }
+    if (hoverText) hoverText.classList.remove('active'); // Hover-Text ausblenden
   });
 });
+
+// Stumm schalten und Videos programmatisch laden
 window.addEventListener('DOMContentLoaded', () => {
   const videos = document.querySelectorAll('video');
   videos.forEach((video) => {
-    video.muted = true; // Stumm schalten
+    video.muted = true; // Alle Videos stumm schalten
     video.load(); // Programmatisch laden
   });
 });
-window.addEventListener('DOMContentLoaded', () => {
-  const videos = document.querySelectorAll('.video-container video');
-  videos.forEach((video) => {
-    video.muted = true;
-    if (video.closest('.video-container:hover')) {
-      video.load(); // Nur Videos in der Nähe des Mauszeigers laden
-    }
+
+// Klickevents auf Videos abfangen, um Verlinkung zu verhindern
+document.querySelectorAll('.video-container video').forEach((video) => {
+  video.addEventListener('click', (event) => {
+    event.stopPropagation(); // Verhindert, dass das Ereignis den Container-Link erreicht
   });
 });
+
+// Opera-spezifische Anpassungen
+if (
+  navigator.userAgent.includes('Opera') ||
+  navigator.userAgent.includes('OPR')
+) {
+  document.querySelectorAll('video').forEach((video) => {
+    video.disablePictureInPicture = true; // Bild-in-Bild deaktivieren
+    video.setAttribute(
+      'controlsList',
+      'nodownload nofullscreen noremoteplayback'
+    ); // Zusätzliche Steuerungen deaktivieren
+  });
+}
+
 // ********************************************************************
 // for (let i = 0; i < video.length; i++) {
 
