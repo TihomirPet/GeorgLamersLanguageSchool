@@ -32,7 +32,7 @@
 // });
 // **********************************
 const videoContainers = document.querySelectorAll('.video-container');
-
+document.querySelector('video').canPlayType('video/mp4; codecs="avc1.42E01E"');
 // Füge Event-Listener für jeden Video-Container hinzu
 videoContainers.forEach((container) => {
   // Selektiere Video und verwandte Elemente innerhalb des Containers
@@ -73,7 +73,13 @@ document.querySelectorAll('.video-container video').forEach((video) => {
     event.stopPropagation(); // Verhindert, dass das Ereignis den Container-Link erreicht
   });
 });
-
+// document.addEventListener('click', () => {
+//   document.querySelectorAll('video').forEach((video) => {
+//     if (video.paused) {
+//       video.play();
+//     }
+//   });
+// });
 // Opera-spezifische Anpassungen
 if (
   navigator.userAgent.includes('Opera') ||
