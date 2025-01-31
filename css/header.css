@@ -530,14 +530,12 @@ h1, p {
   .video-container {
     position: relative;
     overflow: hidden;
-    /* width: 20.5vw !important; */
-    /* width: clamp(20vw, 30vw, 20vw ); */
-    /* width: clamp(20vw, 1.1165rem + 0.4174vw, 20vw ); */
+ 
     width: clamp(10.9rem, 0.022rem + 20vw, 26.75rem);
     height: 70vh;
 
     border-radius: 0.9vw;
-    /* border: 1px solid var(--main-bg-color)  */
+  
   }
   .video-container .header-image-test.show {
     position: absolute;
@@ -614,7 +612,7 @@ h1, p {
   height: 79vh;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  /* background-position: -7vw 13vh; */
+
   background-position: center 7vh;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
@@ -622,9 +620,7 @@ h1, p {
 }
 }
 
-@media only screen 
-and (orientation: landscape) 
-and (min-height: 1024px){
+@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape){
 
 .video-container {
   position: relative;
