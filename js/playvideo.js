@@ -93,6 +93,8 @@ if (
     ); // Zusätzliche Steuerungen deaktivieren
   });
 }
+  document.getElementById('customVideo').controlsList =
+    'nodownload nofullscreen noremoteplayback';
 
 // ********************************************************************
 // for (let i = 0; i < video.length; i++) {
