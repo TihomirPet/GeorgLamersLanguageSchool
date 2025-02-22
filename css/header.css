@@ -242,7 +242,7 @@ h1, p {
 .video-container {
   position: relative;
   overflow: hidden;
-  width: clamp(10.9rem, 0.022rem + 20vw, 26.75rem);
+  width: clamp(10.9rem, 0.022rem + 20vw, 32rem);
   height: 79vh;
   border-radius: 0.9vw;
 }

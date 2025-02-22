@@ -262,16 +262,15 @@
 }
 
 /* Querformat für iPad Pro 12.9 */
-@media only screen 
+/* @media only screen 
+and (min-width:1024px) 
+and (max-width:1366px) 
 and (orientation: landscape) 
-and (min-height: 1024px)  {
-  /* CSS-Regeln für Querformat */
-  .nav-mobile {
-    display: block !important ;
-  }
-  .nav-decktop {
-    display: none !important;
-  }
+and (-webkit-min-device-pixel-ratio: 2)
+{
+
+ 
+
    .a-mobile {
     font-size: var(--h6) !important;
   }
@@ -326,6 +325,7 @@ and (min-height: 1024px)  {
     padding: 0;
     height: auto;
     width: 100%;
+      border: 1px solid red;
   }
 
   .dropdown-index-content-mobile {
@@ -358,7 +358,7 @@ and (min-height: 1024px)  {
     margin-top: -0.5vh;
     width: 100% !important;
   }
-}
+} */
 
 /* Hochformat für iPad Pro 12.9 */
 @media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -523,7 +523,7 @@ and (min-height: 1024px)  {
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
-/* @media (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .nav-mobile {
     display: none ;
   }
@@ -572,7 +572,7 @@ and (min-height: 1024px)  {
     text-decoration: none;
     width: 100%;
   }
-} */
+}
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .nav-mobile {

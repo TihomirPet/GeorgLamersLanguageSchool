@@ -111,9 +111,7 @@
 }
 
 
-/* Landscape Ipad pro 12.9 inch */
-@media only screen and (min-width: 1366px) and (orientation: landscape) {
-}
+
 
 /*Portrait pro 12.9 inch*/
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
@@ -125,6 +123,7 @@
   }
  
 }
+/* Landscape Ipad pro 12.9 inch */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .course-offers-video {
     position: relative;
