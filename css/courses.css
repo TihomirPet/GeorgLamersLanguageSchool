@@ -74,6 +74,24 @@ width: clamp(10vw, 20em, 100vw) !important;
   --bs-btn-disabled-bg: transparent !important;
   --bs-btn-disabled-border-color: transparent !important;
 }
+.courses-link-tutoring {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+
+  padding: 0.1rem 0rem 0rem 0.1rem;
+}
+.courses-link-tutoring:hover {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratSemiBold';
+  border-radius: 0.9vw;
+
+  padding: 0.1rem 0rem 0rem 0.1rem;
+}
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 }
