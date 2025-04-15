@@ -160,8 +160,30 @@ button:not(:disabled) {
   width: 11vw;
   padding: 0.5rem 0rem 0.5rem 0.7rem;
 }
+.courses-link-plan {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 7vw;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+}
+.courses-link-plan:hover {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 8vw;
+  padding: 0.5rem 0rem 0.5rem 0.7rem;
+}
 
-
+.icon-coursesinfo {
+  color: var(--main-bg-color);
+  /* color: var(--text-black-color); */
+  color: var(--second-bg-color);
+}
 
 .courses-link-test{
   margin-top: 0;
@@ -234,6 +256,24 @@ button:not(:disabled) {
   font-family: 'MontserratMedium';
   border-radius: 0.9vw;
   width: 60vw;
+  padding: 0.5rem 0rem 0.5rem 0.7rem;
+}
+  .courses-link-plan {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 17vw;
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+}
+.courses-link-plan:hover {
+  text-decoration: none;
+  color: var( --second-bg-color);
+  /* border: 1px solid var( --second-bg-color); */
+  font-family: 'MontserratMedium';
+  border-radius: 0.9vw;
+  width: 19vw;
   padding: 0.5rem 0rem 0.5rem 0.7rem;
 }
   .courses-info-header {
