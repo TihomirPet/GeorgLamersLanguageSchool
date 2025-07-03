@@ -17,8 +17,8 @@
 /* ================================ Anumation header start ====================================  */
 /* Starten außerhalb des Viewports */
 /* Starten unsichtbar */
- /* Für Animationseffekt */
-.animated-card{
+/* Für Animationseffekt */
+.animated-card {
   /* transform: translateX(0px);  */
   /* opacity: 0;   */
   /* transition: transform 1.5s ease, opacity 1.5s ease; */
@@ -32,25 +32,26 @@
   width: 0.5em; 
 } */
 
-h1, p {
+h1,
+p {
   overflow: hidden;
 }
 .char {
   display: inline-block;
 }
- /* Platzhalter für Leerzeichen */
- .char.space {
+/* Platzhalter für Leerzeichen */
+.char.space {
   width: 0.5em;
 }
 /* Verhindert, dass animierte Elemente über das Element hinausragen */
-h1, p {
-  overflow: hidden; 
+h1,
+p {
+  overflow: hidden;
 }
 /* ================================ Anumation header end ====================================  */
 .header h1 {
   text-shadow: 2px 2px 0px var(--second-bg-color) !important;
 }
-
 
 .row-height-title {
   height: 56vh;
@@ -123,7 +124,26 @@ h1, p {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
-  width: clamp(7rem, 20em, 10vw) !important;
+  width: clamp(10rem, 20em, 10vw) !important;
+}
+
+.btn-course {
+  background-color: var(--text-white-color);
+  text-decoration: none;
+  color: var(--second-bg-color) !important;
+  font-size: clamp(0.75rem, 0.51rem + 1.2vw, 1.44rem);
+  width: 15vw;
+  padding: 1.6rem 2rem 1.6rem 2rem;
+  border-radius: 0.5vw;
+}
+.btn-course:hover {
+  background-color: var(--second-bg-color);
+  text-decoration: none;
+  color: var(--text-white-color) !important;
+  font-size: clamp(0.75rem, 0.51rem + 1.2vw, 1.44rem);
+
+  padding: 1.6rem 2rem 1.6rem 2rem;
+  border-radius: 0.5vw;
 }
 
 /* button card start*/
@@ -197,7 +217,6 @@ h1, p {
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
-
 }
 .header-video-img-holder-one {
   position: relative;
@@ -298,11 +317,11 @@ h1, p {
   width: auto;
   height: 100%;
 }
-.second-video{
-  margin-right:20vw;
+.second-video {
+  margin-right: 20vw;
 }
-.alpha-video{
-  margin-right:10vw;
+.alpha-video {
+  margin-right: 10vw;
 }
 .video {
   pointer-events: none; /* Verhindert Klicks auf das Video */
@@ -313,7 +332,6 @@ h1, p {
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-
 }
 /* @media (max-width: 1366.98px) {
   .video-container .header-image-test.show {
@@ -381,60 +399,59 @@ h1, p {
 /* iPad Pro 12.9 */
 @media only screen and (min-width: 1366px) and (orientation: landscape) {
   .header-video-img-holder {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -7vw 12vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-
-}
-.header-video-img-holder-one {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -4vw 13vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
-.header-video-img-holder-two {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -3vw 9vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
-.header-video-img-holder-three {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  /* background-position: -7vw 13vh; */
-  background-position: center 13vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -7vw 12vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-one {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -4vw 13vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-two {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -3vw 9vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-three {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    /* background-position: -7vw 13vh; */
+    background-position: center 13vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
 }
 /* iPad Pro 12.9 */
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
-  .nav-mobile{
-  display: block ;
-}
-.nav-display{
-  display: none ;
-}
+  .nav-mobile {
+    display: block;
+  }
+  .nav-display {
+    display: none;
+  }
 
   .header {
     padding-bottom: 5vh !important;
@@ -474,68 +491,84 @@ h1, p {
     padding: 1rem;
     height: 9vh !important;
   }
-   .header-video-img-holder {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position:center 8vh !important;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-
-}
-.header-video-img-holder-one {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center 8vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
-.header-video-img-holder-two {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center 6vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
-.header-video-img-holder-three {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  /* background-position: -7vw 13vh; */
-  background-position: center 8vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
+  .header-video-img-holder {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center 8vh !important;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-one {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center 8vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-two {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center 6vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-three {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    /* background-position: -7vw 13vh; */
+    background-position: center 8vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  .second-video{
-  margin-right:10vw;
-}
+  .btn-course {
+    background-color: var(--text-white-color);
+    text-decoration: none;
+    color: var(--second-bg-color) !important;
+    font-size: clamp(0.75rem, 0.51rem + 1.2vw, 1.44rem);
+    width: 27vw;
+    padding: 1.6rem 2rem 1.6rem 2rem;
+    border-radius: 0.5vw;
+  }
+  .btn-course:hover {
+    background-color: var(--second-bg-color);
+    text-decoration: none;
+    color: var(--text-white-color) !important;
+    font-size: clamp(0.75rem, 0.51rem + 1.2vw, 1.44rem);
+
+    padding: 1.6rem 2rem 1.6rem 2rem;
+    border-radius: 0.5vw;
+  }
+  .second-video {
+    margin-right: 10vw;
+  }
   .video-container {
     position: relative;
     overflow: hidden;
- 
+
     width: clamp(10.9rem, 0.022rem + 20vw, 26.75rem);
     height: 70vh;
 
     border-radius: 0.9vw;
-  
   }
   .video-container .header-image-test.show {
     position: absolute;
@@ -573,82 +606,94 @@ h1, p {
     transition: all 400ms ease;
   }
   .header-video-img-holder {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -4vw 7vh !important;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-11-28\ 131125-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -4vw 7vh !important;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-one {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center 6vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-two {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: -3vw 9vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
+  .header-video-img-holder-three {
+    position: relative;
+    background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
+    height: 79vh;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 
-}
-.header-video-img-holder-one {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position:center 6vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
-.header-video-img-holder-two {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -3vw 9vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
-.header-video-img-holder-three {
-  position: relative;
-  background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.jpg);
-  height: 79vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-
-  background-position: center 7vh;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease;
-}
-}
-
-@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape){
-
-.video-container {
-  position: relative;
-  overflow: hidden;
-  width: clamp(10.9rem, 0.022rem + 20vw, 26.75rem);
-  height:60vh;
-  border-radius: 0.9vw;
-
-}
-.video-container .header-image-test.show {
-  position: absolute;
-  transition: all 400ms ease;
-  width: 100%;
-  height: 60vh;
-  transform: translate(0% 0px);
-  transform: translateZ(0rem);
-  opacity: 1;
+    background-position: center 7vh;
+    border-bottom-left-radius: 0.9vw;
+    border-bottom-right-radius: 0.9vw;
+    transition: all 400ms ease;
+  }
 }
 
+@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: clamp(10.9rem, 0.022rem + 20vw, 26.75rem);
+    height: 60vh;
+    border-radius: 0.9vw;
+  }
+  .video-container .header-image-test.show {
+    position: absolute;
+    transition: all 400ms ease;
+    width: 100%;
+    height: 60vh;
+    transform: translate(0% 0px);
+    transform: translateZ(0rem);
+    opacity: 1;
+  }
 }
-
-
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .second-video{
-  margin-right:10vw;
-}
+  .btn-course {
+    background-color: var(--text-white-color);
+    text-decoration: none;
+    color: var(--second-bg-color) !important;
+    font-size: clamp(0.75rem, 0.51rem + 1.2vw, 1.44rem);
+    width: 32vw;
+    padding: 1.6rem 2rem 1.6rem 2rem;
+    border-radius: 0.5vw;
+  }
+  .btn-course:hover {
+    background-color: var(--second-bg-color);
+    text-decoration: none;
+    color: var(--text-white-color) !important;
+    font-size: clamp(0.75rem, 0.51rem + 1.2vw, 1.44rem);
+
+    padding: 1.6rem 2rem 1.6rem 2rem;
+    border-radius: 0.5vw;
+  }
+  .second-video {
+    margin-right: 10vw;
+  }
   .btn-contact-header {
     --bs-btn-color: var(--text-white-color) !important;
     --bs-btn-bg: var(--second-bg-color) !important;
@@ -737,9 +782,19 @@ h1, p {
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    .second-video{
-  margin-right:0vw;
-}
+  .btn-course {
+    width: 50vw;
+
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.9vw;
+  }
+  .btn-course:hover {
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.9vw;
+  }
+  .second-video {
+    margin-right: 0vw;
+  }
   .header a {
     text-decoration: none;
     color: var(--text-white-color);
