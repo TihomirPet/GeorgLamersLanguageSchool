@@ -1,5 +1,5 @@
 .contact {
-  height: 100vh;
+  height: auto;
   padding: 15vh 0vw 15vh 0vw !important;
   background-color: var(--second-bg-color);
 }
@@ -78,6 +78,9 @@
 .contact-arrow-right-circle{
   color: #fff;
 }
+
+
+
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 }
