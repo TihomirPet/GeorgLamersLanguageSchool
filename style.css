@@ -112,6 +112,7 @@ html,body {
 .font-size-h1 {
 
   font-size: clamp(2.0738rem, 0.4081rem + 4vw, 6rem);
+  font-size: clamp(2.0738rem, 0.4081rem + 5vw, 7rem);
 }
 
 .font-size-h2 {
