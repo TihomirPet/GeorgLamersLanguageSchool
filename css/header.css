@@ -54,7 +54,7 @@ p {
 }
 
 .row-height-title {
-  height: 56vh;
+  height:33vh;
   /* background-color: rgb(253, 176, 176); */
 }
 .row-card-holder {
@@ -256,13 +256,13 @@ p {
 .header-video-text-holder {
   background-color: var(--second-bg-color);
   padding: 2rem;
-  height: 18vh;
+  height: 12vh;
 }
 .video-container {
   position: relative;
   overflow: hidden;
-  width: clamp(10.9rem, 0.022rem + 20vw, 32rem);
-  height: 79vh;
+  width: clamp(10.9rem, 0.022rem + 36vw, 50rem);
+  height: 50vh;
   border-radius: 0.9vw;
 }
 .video-container .header-image-test {
@@ -274,7 +274,7 @@ p {
   position: absolute;
   transition: all 400ms ease;
   width: 100%;
-  height: 79vh;
+  height: 50vh;
   transform: translate(0% 0px);
   transform: translateZ(0rem);
   opacity: 1;
