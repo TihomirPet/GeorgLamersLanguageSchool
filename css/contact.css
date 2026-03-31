@@ -22,7 +22,7 @@
 .btncontact {
   --bs-btn-padding-x: ;
   --bs-btn-padding-y: ;
-  --bs-btn-font-family:  var(--montserat-regular) !important;
+  --bs-btn-font-family: var(--montserat-regular) !important;
   --bs-btn-font-size: var(--h5) !important;
   --bs-btn-font-weight: 200;
   --bs-btn-line-height: 1.5;
@@ -32,8 +32,8 @@
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: var(--bs-border-radius);
   --bs-btn-hover-border-color: transparent;
-  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
-    0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   --bs-btn-disabled-opacity: 0.65;
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem
     rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
@@ -54,8 +54,11 @@
   border-bottom: var(--bs-btn-border-width) solid 1px;
   border-radius: 0px !important;
   background-color: var(--bs-btn-bg);
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
   width: auto !important;
   gap: 0.9vw !important;
 }
@@ -75,11 +78,38 @@
   --bs-btn-disabled-bg: transparent !important;
   --bs-btn-disabled-border-color: transparent !important;
 }
-.contact-arrow-right-circle{
+.contact-arrow-right-circle {
   color: #fff;
 }
-
-
+.contact-titleholder {
+  background-color: var(--main-bg-color);
+}
+.text-contact-title {
+  text-shadow:
+    5px 5px 0px var(--main-bg-color),
+    9px 8px 0px var(--second-bg-color);
+}
+.contact-telephone {
+  height: 5.5vh;
+  width: 5.5vh;
+  background-color: var(--text-white-color);
+  border-radius: 0.3vh;
+}
+.bi-telephone-fill {
+  color: var(--second-bg-color);
+}
+.bi-compass-fill {
+  color: var(--second-bg-color);
+}
+.bi-box-arrow-up-right{
+  color: var(--second-bg-color);
+}
+.bi-instagram{
+  color: var(--second-bg-color);
+}
+.bi-whatsapp{
+  color: var(--second-bg-color);
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
@@ -100,7 +130,6 @@
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -113,7 +142,7 @@
   .btncontact {
     --bs-btn-padding-x: ;
     --bs-btn-padding-y: ;
-    --bs-btn-font-family:  var(--montserat-regular) !important;
+    --bs-btn-font-family: var(--montserat-regular) !important;
     --bs-btn-font-size: var(--h5) !important;
     --bs-btn-font-weight: 200;
     --bs-btn-line-height: 1.5;
@@ -123,8 +152,8 @@
     --bs-btn-border-color: transparent;
     --bs-btn-border-radius: var(--bs-border-radius);
     --bs-btn-hover-border-color: transparent;
-    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
-      0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
     --bs-btn-disabled-opacity: 0.65;
     --bs-btn-focus-box-shadow: 0 0 0 0.25rem
       rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
@@ -145,8 +174,11 @@
     border-bottom: var(--bs-btn-border-width) solid 1px;
     border-radius: 0px !important;
     background-color: var(--bs-btn-bg);
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition:
+      color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
     width: auto !important;
     gap: 3vw !important;
   }
