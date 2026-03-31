@@ -1,0 +1,13 @@
+.language-card {
+  width: 65%;
+}
+.language-card-number {
+  background-color: var(--main-bg-color);
+  color: var(--text-white-color);
+  width: 4vh;
+  height:4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

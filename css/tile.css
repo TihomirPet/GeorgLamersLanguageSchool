@@ -1,0 +1,10 @@
+.card-tile {
+  height: 26vh;
+  width: 20.2vw !important;
+  background-color: var(--bg-bright-color);
+  border-radius: 20px;
+  color: var(--second-bg-color);
+}
+.card-tile-titleholder{
+    height: 53%;
+}

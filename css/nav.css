@@ -97,9 +97,9 @@
   user-select: none;
   cursor: pointer;
   height: 2.3vw;
-  left: 2rem;
+  right: 10.3rem;
   position: fixed;
-  top: 2rem;
+  top: 7rem;
   width: 2.5vw;
   z-index: 6;
   display: flex;
@@ -434,7 +434,9 @@ and (-webkit-min-device-pixel-ratio: 2)
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
   }
 
   .dropdown-index-content-mobile.expanded {
@@ -486,7 +488,7 @@ and (-webkit-min-device-pixel-ratio: 2)
 }
 
 /* Querformat für iPad Pro 11 Zoll */
-@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape){
+@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
   .nav a {
     text-decoration: none;
     font-weight: 500;
@@ -496,7 +498,6 @@ and (-webkit-min-device-pixel-ratio: 2)
     width: 100%;
     font-size: var(--nav-title);
     font-size: var(--h2);
- 
   }
 
   .nav-mobile {
@@ -509,7 +510,9 @@ and (-webkit-min-device-pixel-ratio: 2)
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
   }
 
   .dropdown-index-content-mobile.expanded {
@@ -525,7 +528,7 @@ and (-webkit-min-device-pixel-ratio: 2)
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .nav-mobile {
-    display: none ;
+    display: none;
   }
   .nav-decktop {
     display: block;
@@ -639,7 +642,9 @@ and (-webkit-min-device-pixel-ratio: 2)
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
   }
 
   /* Dropdown anzeigen, wenn die Klasse "expanded" vorhanden ist */

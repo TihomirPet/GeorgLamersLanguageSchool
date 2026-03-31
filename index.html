@@ -86,6 +86,8 @@
     <link rel="stylesheet" href="/css/contact.css" />
     <link rel="stylesheet" href="/css/nav.css" />
     <link rel="stylesheet" href="/css/cookie.css" />
+    <link rel="stylesheet" href="/css/tile.css" />
+    <link rel="stylesheet" href="/css/languageTest.css" />
 
     <!-- ******************* CSS end ********************** -->
     <link
@@ -115,11 +117,11 @@
       >
         <!-- ================= Row Title start ======================================-->
         <div
-          class="row d-flex justify-content-center align-items-center row-height-title border flex-column"
+          class="row d-flex justify-content-center align-items-center row-height-title flex-column"
           id="header"
         >
           <div
-            class="col-11 col-lg-11 col-xl-10 d-flex align-items-center mt-5 mt-md-0 border border-danger"
+            class="col-11 col-lg-11 col-xl-10 d-flex align-items-center mt-5 mt-md-0"
           >
             <h1
               id="animated-title"
@@ -129,7 +131,7 @@
             </h1>
           </div>
           <div
-            class="col-11 col-lg-5 col-xl-10 mt-4 mt-lg-2 d-flex flex-column border border-danger"
+            class="col-11 col-lg-5 col-xl-10 mt-4 mt-lg-2 d-flex flex-column"
           >
             <h4
               id="line1"
@@ -341,7 +343,7 @@
 
           <!-- ========================== card holder mobile end =========================== -->
           <!--=============== card holder desktop start  ===============================-->
-          <div class="col-lg-5 border border-danger">
+          <div class="col-lg-5">
             <h3
               class="Bold letter-spacing-title font-size-h3 mb-0 animated-text"
             >
@@ -359,13 +361,11 @@
               class="btn btn-contact-header mt-xl-5 animated-button"
               href="#contact"
             >
-            Lass uns starten
+              Lass uns starten
             </a>
             <!-- ============== Button end ===============-->
           </div>
-          <div
-            class="col-11 col-lg-5 d-none d-md-none d-lg-block border border-danger"
-          >
+          <div class="col-11 col-lg-5 d-none d-md-none d-lg-block">
             <!-- ================= Row card holder desktop start -->
             <div class="row d-flex justify-content-end p-0">
               <!--=============== Card one  ===============-->
@@ -379,11 +379,13 @@
                 <div
                   class="header-image-test show p-0 header-video-img-holder-one"
                 >
-                  <div class="header-video-text-holder">
+                  <div
+                    class="header-video-text-holder d-flex justify-content-center"
+                  >
                     <h4
                       class="font-size-h4 Bold text-start letter-spacing-title third-colour"
                     >
-                    Nachhilfe mit BuT-Förderung
+                      Nachhilfe mit BuT-Förderung
                     </h4>
                     <p class="font-size-p third-colour"></p>
                   </div>
@@ -406,12 +408,14 @@
                 </video>
                 <div class="hover-text">
                   <h4
-                    class="font-size-h4 Bold text-start letter-spacing-title third-colour"
+                    class="font-size-h4 Bold text-start letter-spacing-title third-colour d-flex justify-content-center"
                   >
-                 Nachhilfe mit BuT-Förderung
+                    Nachhilfe mit BuT-Förderung
                   </h4>
                   <p class="Regular third-colour letter-spacing-title"></p>
-                  <div class="Regular d-flex third-colour mt-3">
+                  <div
+                    class="Regular d-flex third-colour mt-3 d-flex justify-content-center"
+                  >
                     <p class="Regular">Mehr erfahren</p>
                     <i
                       class="bi bi-arrow-right-circle course-offers-icon ms-3"
@@ -578,7 +582,180 @@
       </section>
       <!--******************************************************************* Section header end **********************************************************-->
       <!-- *********************************************************************************************************************************************** -->
-      <!--******************************************************************* Section courses start *******************************************************-->
+      <!--******************************************************************* Section Tile start *******************************************************-->
+      <section
+        id="tile"
+        class="container-fluid tile d-flex flex-column justify-content-center align-items-center p-0 section"
+        data-bg-class="bg-main-orange"
+      >
+        <div class="row d-flex flex-column align-items-center w-100">
+          <div
+            class="col-11 col-md-11 col-lg-10 d-flex flex-column flex-md-row justify-content-md-between align-items-md-center align-items-end ps-md-0 pe-0 mb-5"
+          >
+            <h2
+              class="font-size-h2 Bold third-colour letter-spacing-title d-block d-md-none"
+            >
+              Kommt dir das bekannt vor?
+            </h2>
+            <h2
+              class="font-size-h2 Bold third-colour letter-spacing-title d-none d-md-block"
+            >
+              Kommt dir das bekannt vor?
+            </h2>
+          </div>
+        </div>
+        <div
+          class="row d-flex align-items-center justify-content-center w-100 gap-3 mt-xl-5 mb-xl-5"
+        >
+          <!-- Card one start -->
+          <div class="card-tile p-xl-5">
+            <div class="card-tile-titleholder">
+              <h4 class="font-size-h5 Bold second-colour letter-spacing-title">
+                Du hältst dich im Unterricht zurück
+              </h4>
+            </div>
+            <p class="Semibold second-colour">
+              Du meldest dich selten, weil du unsicher bist. Oft verstehst du
+              den Stoff, aber es fällt dir schwer, dich auszudrücken.
+            </p>
+          </div>
+          <!-- Card one end -->
+          <!-- Card two start -->
+          <div class="card-tile p-xl-5">
+            <div class="card-tile-titleholder">
+              <h4 class="font-size-h5 Bold second-colour letter-spacing-title">
+                Du kommst nicht richtig mit
+              </h4>
+            </div>
+            <p class="Semibold second-colour">
+              Im Unterricht geht vieles zu schnell auf Deutsch. Du weißt, dass
+              du es kannst, aber es fällt dir schwer dranzubleiben.
+            </p>
+          </div>
+          <!-- Card two ent -->
+          <!-- Card three start-->
+          <div class="card-tile p-xl-5">
+            <div class="card-tile-titleholder">
+              <h4 class="font-size-h5 Bold second-colour letter-spacing-title">
+                Ankommen fällt dir schwer
+              </h4>
+            </div>
+            <p class="Semibold second-colour">
+              Im Alltag fehlt dir oft die Sicherheit auf Deutsch und du weichst
+              auf Englisch aus. Das kann sich einschränkend anfühlen.
+            </p>
+          </div>
+          <!-- Card three end-->
+          <!-- Card four start-->
+          <div class="card-tile p-xl-5">
+            <div class="card-tile-titleholder">
+              <h4 class="font-size-h5 Bold second-colour letter-spacing-title">
+                Schreiben ist anstrengend
+              </h4>
+            </div>
+            <p class="Semibold second-colour">
+              Selbst kurze Texte kosten dich viel Zeit. Du weißt, was du sagen
+              willst, aber findest nicht die richtigen Worte.
+            </p>
+          </div>
+          <!-- Card four end-->
+        </div>
+        <div class="row d-flex justify-content-center w-100 mt-xl-5">
+          <div
+            class="col-11 col-md-11 col-lg-5 d-flex flex-column ps-md-0 pe-0 mb-5"
+          >
+            <h3
+              class="font-size-h3 Bold third-colour courses-title line-height-titleSmall letter-spacing-title"
+            >
+              Das muss nicht so bleiben
+            </h3>
+            <h5
+              class="font-size-h5 mt-4 Semibold third-colour courses-title line-height-titleSmall letter-spacing-title"
+            >
+              Mit unseren Sprachkursen und gezielter Lernförderung unterstützen
+              wir dich dabei, sicher und selbstbewusst<br />
+              Deutsch zu sprechen.
+            </h5>
+          </div>
+          <div class="col-11 col-lg-5 d-flex align-items-center">
+            <!-- ============== Button start =============-->
+            <a class="btn btn-contact-header animated-button" href="#contact">
+              Lass uns starten
+            </a>
+            <!-- ============== Button end ===============-->
+          </div>
+        </div>
+      </section>
+      <!--******************************************************************* Section Tile end *********************************************************-->
+      <!--******************************************************************* Section language test start *******************************************************-->
+      <section
+        id="language-test"
+        class="container-fluid tile d-flex flex-column justify-content-center align-items-center p-0 section"
+        data-bg-class="bg-third-white"
+      >
+        <div class="row d-flex justify-content-center align-items-center w-100">
+          <div class="col-11 col-md-11 col-lg-5 d-flex flex-column border">
+            <h2 class="font-size-h2 Bold letter-spacing-title">
+              Prüfe deinen Anspruch auf Förderung
+            </h2>
+            <!-- Card one start -->
+            <div class="language-card d-flex  mt-xl-5">
+              <div class="col-1 language-card-number mt-xl-3">
+                <h5 class="font-size-h5 Semibold mb-0">1</h5>
+              </div>
+              <div class="language-card-text ps-xl-3">
+                <h4 class="font-size-h5 Bold text-black letter-spacing-title">
+                  Du gehst zur Schule und bist unter 25 Jahre alt
+                </h4>
+                <p class="Semibold text-black">
+                  Du besuchst eine allgemeinbildende oder berufsbildende Schule
+                  in Köln.
+                </p>
+              </div>
+            </div>
+            <!-- Card one end -->
+            <!-- Card two start -->
+            <div class="language-card d-flex  mt-xl-5">
+              <div class="col-1 language-card-number mt-xl-3">
+                <h5 class="font-size-h5 Semibold mb-0">2</h5>
+              </div>
+              <div class="language-card-text ps-xl-3">
+                <h4 class="font-size-h5 Bold text-black letter-spacing-title">
+                  Du erhältst staatliche Unterstützung
+                </h4>
+                <p class="Semibold text-black">
+                  Zum Beispiel Bürgergeld, Wohngeld oder Kinderzuschlag.
+                </p>
+              </div>
+            </div>
+            <!-- Card two ent -->
+            <!-- Card three start-->
+            <div class="language-card d-flex  mt-xl-5">
+              <div class="col-1 language-card-number mt-xl-3">
+                <h5 class="font-size-h5 Semibold mb-0">3</h5>
+              </div>
+              <div class="language-card-text ps-xl-3">
+                <h4 class="font-size-h5 Bold text-black letter-spacing-title">
+                  Deine Schule empfiehlt Nachhilfe
+                </h4>
+                <p class="Semibold text-black">
+                  Die Schule stellt fest, dass du Unterstützung in Deutsch
+                  brauchst.
+                </p>
+              </div>
+            </div>
+            <!-- Card three end-->
+          </div>
+          <div
+            class="col-11 col-md-11 col-lg-5 d-flex flex-column flex-md-row justify-content-md-between align-items-md-center align-items-end ps-md-0 pe-0 mb-5 border"
+          ></div>
+        </div>
+        <div
+          class="row d-flex align-items-center justify-content-center w-100 gap-3 mt-xl-5 mb-xl-5"
+        ></div>
+      </section>
+      <!--******************************************************************* Section language test end *********************************************************-->
+      <!--******************************************************************* Section courses start *********************************************************-->
       <section
         id="courses"
         class="container-fluid courses d-flex justify-content-center align-items-center p-0 section"
