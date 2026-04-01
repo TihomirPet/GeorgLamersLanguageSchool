@@ -1,6 +1,6 @@
 .contact {
   height: auto;
-  padding: 15vh 0vw 15vh 0vw !important;
+  padding: 0vh 0vw 15vh 0vw !important;
   background-color: var(--second-bg-color);
 }
 .btncontact:hover {
@@ -101,13 +101,13 @@
 .bi-compass-fill {
   color: var(--second-bg-color);
 }
-.bi-box-arrow-up-right{
+.bi-box-arrow-up-right {
   color: var(--second-bg-color);
 }
-.bi-instagram{
+.bi-instagram {
   color: var(--second-bg-color);
 }
-.bi-whatsapp{
+.bi-whatsapp {
   color: var(--second-bg-color);
 }
 

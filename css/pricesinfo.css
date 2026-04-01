@@ -1,6 +1,6 @@
 .prices-info {
   height: auto;
-  padding: 4vh 0vw 6vh 0vw !important;
+  padding: 2vh 0vw 6vh 0vw !important;
 }
 .prices-info-img {
   background-image: url(/images/SectonPricA.jpg);
@@ -13,7 +13,7 @@
 
 .prices-info-accordion {
   height: auto;
-  padding: 33vh 0vw 40vh 0vw !important;
+  padding: 3vh 0vw 10vh 0vw !important;
   /* background-color: var( --bg-bright-color); */
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
