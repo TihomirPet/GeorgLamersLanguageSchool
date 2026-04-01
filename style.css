@@ -131,7 +131,7 @@ html,body {
 }
 .font-size-h5 {
 
-       font-size: clamp(1.4rem, 1.1rem + 0.5009vw, 1.728rem);
+       font-size: clamp(1.1rem, 0.3961rem + 0.5009vw, 1.728rem);
  
 }
 .font-size-h6 {
