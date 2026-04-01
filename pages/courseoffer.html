@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -20,7 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="/style.css" />
-   <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/pricesinfo.css" />
     <link rel="stylesheet" href="/css/table.css" />
     <link rel="stylesheet" href="/css/prices.css" />
@@ -38,21 +38,56 @@
         class="container-fluid corse-offer-info d-flex justify-content-center align-items-center p-0 section"
         data-bg-class="bg-main-orange"
       >
-        <div class="container-fluid corse-offer-info">
-          <div class="row d-flex justify-content-center">
+        <div
+          class="container-fluid corse-offer-info d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="row d-flex w-100 align-items-center justify-content-center">
             <div class="col-11 col-lg-10 pb-xl-5">
               <h1
-                class="font-size-h1 Bold line-height-titleSmall letter-spacing-title Bold third-colour text-start"
+                class="font-size-h1 Bold line-height-titleSmall letter-spacing-title Bold third-colour text-start title-courseoffer-info"
               >
-                Entdecken Sie die Kurse der Georg Lamers Sprachenschule in Köln!
+                Entdecken Sie die Kurse<br> der Georg Lamers Sprachenschule<br> in Köln!
               </h1>
             </div>
           </div>
           <div
-            class="row d-flex justify-content-center justify-content-center pt-5 pt-xl-5"
+            class="row d-flex justify-content-center justify-content-center pt-5 pt-xl-5 w-100"
           >
+        
+            <div class="col col-xl-5">
+              <h2
+                class="font-size-h2 Bold line-height-titleSmall letter-spacing-title third-colour "
+              >
+                Kursplan
+              </h2>
+              <h5
+                class="Semibold letter-spacing-title font-size-h5 mt-3 mt-xl-2 forms-of-tesching-subtitle third-colour "
+              >
+                Melde dich noch heute an!
+              </h5>
+
+              <p
+                class="Semibold letter-spacing-title font-size-p mt-3 mt-xl-3 forms-of-tesching-subtitle third-colour"
+              >
+                Unsere Kursplanung wird individuell auf die Bedürfnisse unserer
+                Teilnehmer abgestimmt. Daher veröffentlichen wir keinen festen
+                Kursplan online.
+                <br /><br />
+                Wenn Sie sich für unsere aktuellen Kurse interessieren oder
+                weitere Informationen wünschen, freuen wir uns, von Ihnen zu
+                hören.<br /><br />Rufen Sie uns einfach an oder schreiben Sie
+                uns eine E-Mail – wir beraten Sie gerne persönlich und finden
+                gemeinsam den passenden Kurs für Sie.
+              </p>
+              <a
+                class="btn btn-contact-header mt-3 animated-button"
+                href="#cursoffer-contact"
+              >
+                Kontakt
+              </a>
+            </div>
             <div
-              class="col-10 d-flex justify-content-center justify-content-center"
+              class="col-10 col-xl-5 d-flex justify-content-center justify-content-center"
             >
               <video class="course-offers-video" autoplay loop>
                 <source
@@ -63,9 +98,20 @@
               </video>
             </div>
           </div>
+          <!-- <div
+            class="col-10 col-xl-5 d-flex justify-content-center justify-content-center"
+          >
+            <video class="course-offers-video" autoplay loop>
+              <source
+                src="/video/7033737-uhd_2160_3840_24fps.mp4"
+                type="video/mp4"
+                alt="Eine jünge Frau hält viele Bücher und lächelt"
+              />
+            </video>
+          </div> -->
         </div>
       </section>
-      <section
+      <!-- <section
         class="container-fluid d-flex justify-content-center align-items-center section"
         data-bg-class="bg-third-white"
         id="course-schedule"
@@ -83,16 +129,13 @@
               >
                 Kursplan
               </h2>
-              <!-- <h5 class="Semibold letter-spacing-title font-size-h5 w-75 mt-5">
-            Sprachkurse für Einsteiger und Fortgeschrittene.
-          </h5> -->
             </div>
 
-            <!-- ======================== col accordion ================================================================================= -->
+       
             <div class="col-11 col-md-11 col-lg-10 col-xl-6 p-0">
-              <!-- <h2 class="rock-3D main-colour">02</h2> -->
+              <h2 class="rock-3D main-colour">02</h2>
 
-              <!-- ============================== Accordion start ====================================================================== -->
+          
 
               <h5
                 class="Semibold letter-spacing-title font-size-h5 mt-3 mt-xl-2 forms-of-tesching-subtitle"
@@ -113,18 +156,20 @@
                 uns eine E-Mail – wir beraten Sie gerne persönlich und finden
                 gemeinsam den passenden Kurs für Sie.
               </p>
-                 <a
-              class="btn btn-contact-header mt-3 animated-button"
-              href="#cursoffer-contact"
-            >
-              Kontakt
-            </a>
+              <a
+                class="btn btn-contact-header mt-3 animated-button"
+                href="#cursoffer-contact"
+              >
+                Kontakt
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <div class="container-fluid contact d-flex justify-content-center" id="cursoffer-contact"></div>
+      <div
+        class="container-fluid contact d-flex flex-column justify-content-center align-items-center"
+      ></div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

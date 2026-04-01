@@ -3,30 +3,43 @@
   padding: 4vh 0vw 6vh 0vw !important;
 }
 .course-offers-video {
-
   height: 110vh;
 
   border-radius: 0.5vw;
 }
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 .course-offers-video {
   position: relative;
-  height: 50vh;
+  height: 70vh;
 
   border-radius: 0.5vw;
   z-index: 1;
+  touch-action: none; /* Verhindert Gesten wie Pinch-to-Zoom */
+  -webkit-user-select: none; /* Deaktiviert Textauswahl auf iOS */
+  user-select: none;
+  pointer-events: none; /* Optional: Deaktiviert alle Maus-/Touch-Interaktionen */
 }
+.title-courseoffer-info {
+  text-shadow: 2px 2px 0px var(--second-bg-color) !important;
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .course-offers-video {
+    position: relative;
+    height: 50vh;
+
+    border-radius: 0.5vw;
+    z-index: 1;
+  }
 }
 
 /* Landscape Ipad pro 12.9 inch */
-
 
 /*Portrait pro 12.9 inch*/
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
   .course-offers-video {
     position: relative;
-    height: 60vh ;
+    height: 60vh;
     border-radius: 0.5vw;
     /* z-index: 1; */
   }
@@ -43,12 +56,11 @@
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-.course-offers-video {
-
-  height:auto;
-width: 100%;
-  border-radius: 0.9vw;
-}
+  .course-offers-video {
+    height: auto;
+    width: 100%;
+    border-radius: 0.9vw;
+  }
 }
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
