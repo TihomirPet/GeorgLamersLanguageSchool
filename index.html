@@ -121,7 +121,7 @@
           id="header"
         >
           <div
-            class="col-11 col-lg-11 col-xl-10 d-flex flex-column flex-md-row align-items-md-center  mt-4 mt-xl-5 mt-md-0"
+            class="col-11 col-lg-11 col-xl-10 d-flex flex-column flex-md-row align-items-md-center mt-4 mt-xl-5"
           >
             <h4
               id="line1"
@@ -139,18 +139,18 @@
           <div
             class="col-11 col-lg-5 col-xl-10 mt-4 mt-lg-2 d-flex flex-column d-none d-md-block"
           >
-            <h4
+            <h5
               id="line1"
-              class="Bold letter-spacing-title font-size-h5 mb-0 text-end animated-text"
+              class="Bold letter-spacing-title font-size-h5 mb-0 text-end animated-text d-md-none"
             >
               Georg Lamers
-            </h4>
-            <h4
+            </h5>
+            <h5
               id="line2"
-              class="Bold letter-spacing-title font-size-h5 mb-0 text-end animated-text"
+              class="Bold letter-spacing-title font-size-h5 mb-0 text-end animated-text d-md-none"
             >
               Sprachenschule
-            </h4>
+            </h5>
             <!-- <h6
               id="line3"
               class="Semibold mt-2 mt-lg-4 font-size-h7 line-height-titleSmall letter-spacing-title animated-text"
@@ -182,40 +182,58 @@
           class="row d-flex justify-content-center ps-2 pe-2 ps-md-0 pe-md-0 pt-0 pt-md-4 pt-lg-0"
         >
           <!--=============== card holder mobile start  ===============================-->
-          <div class="col-11 d-block d-md-block d-lg-none mt-4 mt-md-0">
+          <div class="col-11 d-block d-lg-none mt-2 mt-lg-4 mt-md-0">
             <div
               class="row d-flex flex-column flex-md-row justify-content-between p-0 row-gap-2"
             >
-               <h3
-                  class="Bold letter-spacing-title font-size-h3 mb-0 animated-text ps-0 d-block d-md-none"
+              <div class="col">
+                <h4
+                  class="Bold letter-spacing-title font-size-h5 mb-0 animated-text ps-0 d-block d-lg-none"
                 >
                   Wir helfen dir, Deutsch im Alltag besser zu verstehen, sicher
                   zu sprechen und im Unterricht mitzukommen.
-                </h3>
+                </h4>
+                <h6
+                  class="Semibold letter-spacing-title font-size-h6 mb-0 animated-text mt-3 mt-xl-5 header-subtext d-none d-md-block d-lg-none"
+                >
+                  Kleine Gruppen, individuelle Unterstützung und eine entspannte
+                  Lernatmosphäre – zentral in Köln und einfach erreichbar.
+                </h6>
+                <a
+                  class="btn btn-contact-header mt-4 mt-xl-5 animated-button d-none d-md-block d-lg-none"
+                  href="#contact"
+                >
+                  Lass uns starten
+                </a>
+              </div>
+
               <!--=============== Card one  ===============-->
-              <!-- <a class="btn btn-primary" href="#" role="button"></a> -->
+
               <div
-                class="col-12 col-md-6 d-flex  flex-md-row header-col-mobile-card p-0 animated-card"
+                class="col-12 col-md-3 d-flex flex-column header-col-mobile-card p-0 animated-card"
               >
-             
+                <h5
+                  id="line1"
+                  class="Bold letter-spacing-title font-size-h5 mb-0 text-end animated-text mb-3 d-none d-md-block d-lg-none"
+                >
+                  Georg Lamers<br />Sprachenschule
+                </h5>
                 <a
                   href="/pages/courses.html#accordionFlushExample"
                   role="button"
                   data-accordion="flush-collapseOne"
-                  class="video-container d-flex flex-column flex-md-row w-100"
+                  class="video-container d-flex flex-column w-100"
                 >
-                  <div
-                    class="col-12 col-sm-7 header-mobile-text-holder text-start"
-                  >
-                    <h4
-                      class="font-size-h4 Bold text-center letter-spacing-title third-colour mt-2"
+                  <div class="col-12 header-mobile-text-holder text-start">
+                    <h6
+                      class="font-size-h6 Bold text-center letter-spacing-title third-colour mt-2"
                     >
-                       Nachhilfe mit BuT-Förderung
-                    </h4>
+                      Nachhilfe mit BuT-Förderung
+                    </h6>
                     <p class="Regular third-colour"></p>
                   </div>
                   <div
-                    class="col-12 col-sm-5 header-mobile-img-holder d-flex align-items-center justify-content-center"
+                    class="col-12 header-mobile-img-holder d-flex align-items-center justify-content-center"
                   >
                     <video class="video" muted loop playsinline>
                       <source
@@ -357,21 +375,21 @@
           <!-- ========================== card holder mobile end =========================== -->
           <!--=============== card holder desktop start  ===============================-->
           <div class="col-lg-5">
-            <h3
-              class="Bold letter-spacing-title font-size-h3 mb-0 animated-text d-none d-md-block"
+            <h4
+              class="Bold letter-spacing-title font-size-h4 mb-0 animated-text d-none d-lg-block"
             >
               Wir helfen dir, Deutsch im Alltag besser zu verstehen, sicher zu
               sprechen und im Unterricht mitzukommen.
-            </h3>
-            <h5
-              class="Semibold letter-spacing-title font-size-h5 mb-0 animated-text mt-3 mt-xl-5  header-subtext"
+            </h4>
+            <h6
+              class="Semibold letter-spacing-title font-size-h6 mb-0 animated-text mt-3 mt-xl-5 header-subtext d-block d-md-none d-lg-block"
             >
               Kleine Gruppen, individuelle Unterstützung und eine entspannte
               Lernatmosphäre – zentral in Köln und einfach erreichbar.
-            </h5>
+            </h6>
             <!-- ============== Button start =============-->
             <a
-              class="btn btn-contact-header mt-4 mt-xl-5 animated-button"
+              class="btn btn-contact-header mt-4 mt-xl-5 animated-button d-block d-md-none d-lg-block"
               href="#contact"
             >
               Lass uns starten
