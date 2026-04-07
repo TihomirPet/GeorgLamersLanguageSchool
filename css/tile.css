@@ -2,15 +2,22 @@
   height: 26vh;
   width: 20.2vw !important;
   background-color: var(--bg-bright-color);
-  border-radius: 20px;
+  border-radius: 8px;
   color: var(--second-bg-color);
 }
 .card-tile-titleholder {
   height: 53%;
 }
+.tile-text {
+  width: 90%;
+}.tile-title{text-shadow: 2px 2px 0px var(--second-bg-color);}
+
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+  .tile-text {
+  width: 100%;
+}
 }
 
 /* Hochformat für iPad Pro 12.9 */
