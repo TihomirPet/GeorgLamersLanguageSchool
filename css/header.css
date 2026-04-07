@@ -1,5 +1,6 @@
 .header {
-  /* background-color: var(--main-bg-color); */
+  
+
   color: var(--text-white-color);
 
   padding-bottom: 20vh;
@@ -224,7 +225,7 @@ p {
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
 }
-.header-video-img-holder-one {
+/* .header-video-img-holder-one {
   position: relative;
   background-image: url(/images/Screenshot\ 2024-12-01\ 145027-small.webp);
   height: 79vh;
@@ -234,8 +235,8 @@ p {
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
-}
-.header-video-img-holder-two {
+} */
+/* .header-video-img-holder-two {
   position: relative;
   background-image: url(/images/Screenshot\ 2024-12-01\ 144838-small.webp);
   height: 79vh;
@@ -245,19 +246,19 @@ p {
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
-}
-.header-video-img-holder-three {
+} */
+/* .header-video-img-holder-three {
   position: relative;
   background-image: url(/images/Screenshot\ 2024-12-01\ 144643-small.webp);
   height: 79vh;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  /* background-position: -7vw 13vh; */
+ 
   background-position: center 13vh;
   border-bottom-left-radius: 0.9vw;
   border-bottom-right-radius: 0.9vw;
   transition: all 400ms ease;
-}
+} */
 
 .header-video-text-holder {
   background-color: var(--second-bg-color);
