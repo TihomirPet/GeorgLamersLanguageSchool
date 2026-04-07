@@ -5,6 +5,82 @@
   border-radius: 20px;
   color: var(--second-bg-color);
 }
-.card-tile-titleholder{
-    height: 53%;
+.card-tile-titleholder {
+  height: 53%;
+}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* Hochformat für iPad Pro 12.9 */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Hochformat für iPad Pro 11 Zoll */
+@media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
+}
+
+/* Querformat für iPad Pro 11 Zoll */
+@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .tile-holder {
+    padding: 0vh 0vw 8vh 0vw !important;
+  }
+  .card-tile {
+    height: 45vh;
+    width: 20.2vw !important;
+    background-color: var(--bg-bright-color);
+    border-radius: 20px;
+    color: var(--second-bg-color);
+  }
+  .card-tile-titleholder {
+    height: 39%;
+  }
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .tile-holder {
+    padding: 10vh 0vw 20vh 0vw !important;
+  }
+  .card-tile-titleholder {
+    height: 45%;
+  }
+  .card-tile {
+    height: 25vh;
+    width: 90% !important;
+    background-color: var(--bg-bright-color);
+    border-radius: 20px;
+    color: var(--second-bg-color);
+  }
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .tile-holder {
+    padding: 0vh 0vw 0vh 0vw !important;
+  }
+  .card-tile {
+    height: 26vh;
+    width: 90% !important;
+    background-color: var(--bg-bright-color);
+    border-radius: 20px;
+    color: var(--second-bg-color);
+  }
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .card-tile {
+    padding: 1rem;
+    height: 18vh;
+    width: 100% !important;
+    background-color: var(--bg-bright-color);
+    border-radius: 20px;
+    color: var(--second-bg-color);
+  }
+  .card-tile-titleholder {
+    height: 48%;
+  }
 }
