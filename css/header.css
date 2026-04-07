@@ -824,26 +824,29 @@ p {
   .row-height-title {
     height: auto;
   }
-  .header-col-mobile-card {
+ 
+    .header-col-mobile-card {
     position: relative;
     overflow: hidden;
     width: auto !important;
-    height: 12vh;
+    height: 52vh;
     border-radius: 3vw;
     /* border: 1px solid var(--second-bg-color); */
   }
-  .header-mobile-img-holder {
+ 
+    .header-mobile-img-holder {
     overflow: hidden;
-    height: 12vh;
+    height: 55vh;
   }
   /* .header-mobile-text-holder {
     padding: 0.6rem;
     background-color: var(--second-bg-color);
   } */
-  .header-mobile-text-holder {
+
+    .header-mobile-text-holder {
     padding: 2rem;
     background-color: var(--second-bg-color);
-    height: 8vh;
+    height: 18vh;
   }
   /* .header-video-text-holder {
     background-color: var(--second-bg-color);
@@ -877,8 +880,10 @@ p {
     overflow: hidden;
     height: 25vh;
   }
-  .header-mobile-text-holder {
-    padding: 0.6rem;
+  
+   .header-mobile-text-holder {
+    padding: 1rem;
     background-color: var(--second-bg-color);
+    height: 8vh;
   }
 }
