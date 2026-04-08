@@ -1,3 +1,4 @@
+
 .language-card {
   width: 65%;
 }
@@ -12,8 +13,8 @@
   border-radius: 50%;
 }
 .language-test-content {
-    height: auto;
-  padding: 14vh 0vw 0vh 0vw ;
+  height: auto;
+  padding: 14vh 0vw 0vh 0vw;
 }
 
 @media (max-width: 1399.98px) {
@@ -51,7 +52,7 @@
   .language-test-content {
     height: auto;
     padding: 0vh 0vw 0vh 0vw;
-}
+  }
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);

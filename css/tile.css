@@ -44,37 +44,38 @@
   .tile-holder {
     padding: 0vh 0vw 8vh 0vw !important;
   }
-  .card-tile {
-    height: 45vh;
-    width: 20.2vw !important;
-    background-color: var(--bg-bright-color);
-    border-radius: 20px;
-    color: var(--second-bg-color);
-  }
+     .card-tile {
+        height: 34vh;
+        width: 41.2vw !important;
+        background-color: var(--bg-bright-color);
+        border-radius: 9px;
+        color: var(--second-bg-color);
+    }
   .card-tile-titleholder {
     height: 39%;
   }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .card-tile {
-    height: 20vh;
-    width: 20.2vw !important;
-    background-color: var(--bg-bright-color);
-    border-radius: 20px;
-    color: var(--second-bg-color);
-  }
+  
   .tile-holder {
     padding: 10vh 0vw 20vh 0vw !important;
   }
   .card-tile-titleholder {
     height: 45%;
   }
-  .card-tile {
+  /* .card-tile {
     height: 25vh;
     width: 90% !important;
     background-color: var(--bg-bright-color);
-    border-radius: 20px;
+    border-radius: 8px;
+    color: var(--second-bg-color);
+  } */
+   .card-tile {
+    height: 31vh;
+    width: 45% !important;
+    background-color: var(--bg-bright-color);
+    border-radius: 8px;
     color: var(--second-bg-color);
   }
 }
@@ -87,7 +88,7 @@
     height: 20vh;
     width: 90% !important;
     background-color: var(--bg-bright-color);
-    border-radius: 20px;
+    border-radius: 8px;
     color: var(--second-bg-color);
   }
 }
@@ -98,7 +99,7 @@
     height: 18vh !important;
     width: 100% !important;
     background-color: var(--bg-bright-color);
-    border-radius: 20px;
+    border-radius: 10px;
     color: var(--second-bg-color);
   }
   .card-tile-titleholder {
