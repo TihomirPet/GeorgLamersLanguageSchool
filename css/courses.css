@@ -98,9 +98,19 @@ width: clamp(10vw, 20em, 100vw) !important;
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .courses {
+    /* background-color: var(--second-bg-color); */
+    height: auto;
+    padding: 9vh 0vw 20vh 0vw !important;
+}
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .courses {
+    /* background-color: var(--second-bg-color); */
+    height: auto;
+    padding: 9vh 0vw 20vh 0vw !important;
+}
   .courses-link:hover {
   --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
   padding: 0.6rem 0rem 0.6rem 0rem !important;

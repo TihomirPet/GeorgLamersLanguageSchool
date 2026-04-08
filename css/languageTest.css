@@ -5,15 +5,18 @@
   background-color: var(--main-bg-color);
   color: var(--text-white-color);
   width: 4vh;
-  height:4vh;
+  height: 4vh;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 }
+.language-test-content {
+    height: auto;
+  padding: 14vh 0vw 0vh 0vw ;
+}
 
 @media (max-width: 1399.98px) {
-
 }
 
 /* Hochformat für iPad Pro 12.9 */
@@ -28,9 +31,8 @@
 @media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
 }
 
-
 @media (max-width: 1199.98px) {
-.language-card-number {
+  .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
     width: 6vh;
@@ -39,14 +41,18 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-}
-.language-card {
+  }
+  .language-card {
     width: 85%;
-}
+  }
 }
 
 @media (max-width: 991.98px) {
-.language-card-number {
+  .language-test-content {
+    height: auto;
+    padding: 0vh 0vw 0vh 0vw;
+}
+  .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
     width: 5vh;
@@ -55,11 +61,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-}
+  }
 }
 
 @media (max-width: 767.98px) {
-.language-card-number {
+  .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
     width: 4vh;
@@ -68,11 +74,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-}
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-.language-card {
-  width: 95%;
-}
+  .language-card {
+    width: 95%;
+  }
 }

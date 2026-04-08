@@ -857,6 +857,9 @@ p {
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+      .header {
+        padding: 0vh 0vw 20vh 0vw;
+    }
   .video {
     width: auto !important;
     height: 100%;
