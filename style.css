@@ -15,7 +15,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0.1, 0.2, 1);
 }
 .section {
-  min-height: 100vh; /* Mindestens eine Fensterhöhe */
+  /* min-height: 100vh; */
+   /* Mindestens eine Fensterhöhe */
 }
 
 :root {

@@ -146,9 +146,9 @@ width: clamp(10vw, 20em, 100vw) !important;
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
- .courses {
-  /* background-color: var(--second-bg-color); */
-  height: auto;
-  padding: 25vh 0vw 15vh 0vw !important;
-}
+    .courses {
+        /* background-color: var(--second-bg-color); */
+        height: auto;
+        padding: 0vh 0vw 10vh 0vw !important;
+    }
 }

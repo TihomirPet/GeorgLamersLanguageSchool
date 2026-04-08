@@ -1,6 +1,6 @@
 .card-tile {
   height: 26vh;
-  width: 20.2vw !important;
+  width: 20.2vw ;
   background-color: var(--bg-bright-color);
   border-radius: 8px;
   color: var(--second-bg-color);
@@ -15,6 +15,13 @@
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+    .card-tile {
+  height: 44vh ;
+  width: 20.2vw !important;
+  background-color: var(--bg-bright-color);
+  border-radius: 20px;
+  color: var(--second-bg-color);
+}
   .tile-text {
   width: 100%;
 }
@@ -50,6 +57,13 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    .card-tile {
+    height: 20vh;
+    width: 20.2vw !important;
+    background-color: var(--bg-bright-color);
+    border-radius: 20px;
+    color: var(--second-bg-color);
+  }
   .tile-holder {
     padding: 10vh 0vw 20vh 0vw !important;
   }
@@ -67,10 +81,10 @@
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .tile-holder {
-    padding: 0vh 0vw 0vh 0vw !important;
+    padding: 0vh 0vw 10vh 0vw !important;
   }
   .card-tile {
-    height: 26vh;
+    height: 20vh;
     width: 90% !important;
     background-color: var(--bg-bright-color);
     border-radius: 20px;
@@ -81,7 +95,7 @@
 @media (max-width: 575.98px) {
   .card-tile {
     padding: 1rem;
-    height: 18vh;
+    height: 18vh !important;
     width: 100% !important;
     background-color: var(--bg-bright-color);
     border-radius: 20px;

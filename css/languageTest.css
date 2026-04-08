@@ -11,3 +11,68 @@
   justify-content: center;
   border-radius: 50%;
 }
+
+@media (max-width: 1399.98px) {
+
+}
+
+/* Hochformat für iPad Pro 12.9 */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Hochformat für iPad Pro 11 Zoll */
+@media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
+}
+
+/* Querformat für iPad Pro 11 Zoll */
+@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
+}
+
+
+@media (max-width: 1199.98px) {
+.language-card-number {
+    background-color: var(--main-bg-color);
+    color: var(--text-white-color);
+    width: 6vh;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.language-card {
+    width: 85%;
+}
+}
+
+@media (max-width: 991.98px) {
+.language-card-number {
+    background-color: var(--main-bg-color);
+    color: var(--text-white-color);
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+}
+
+@media (max-width: 767.98px) {
+.language-card-number {
+    background-color: var(--main-bg-color);
+    color: var(--text-white-color);
+    width: 4vh;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+.language-card {
+  width: 95%;
+}
+}

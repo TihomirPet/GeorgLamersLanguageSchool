@@ -342,13 +342,7 @@ p {
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-  .card-tile {
-  height: 44vh !important;
-  width: 20.2vw !important;
-  background-color: var(--bg-bright-color);
-  border-radius: 20px;
-  color: var(--second-bg-color);
-}
+
 }
 /* @media (max-width: 1366.98px) {
   .video-container .header-image-test.show {
