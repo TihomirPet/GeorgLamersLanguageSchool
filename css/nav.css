@@ -1,6 +1,7 @@
 /* body {
     background-color: darkblue;
 } */
+/* Standard */
 
 .nav {
   -webkit-transition: left 0.5s ease;
@@ -183,6 +184,19 @@
 .nav-toggle:hover .nav-toggle-bar::before {
   /* opacity: 0.8; */
   background-color: var(--main-bg-color);
+}
+/* .nav-toggle {
+  background-color: white;
+} */
+
+/* auf dunklem Hintergrund */
+.nav-toggle.nav-white {
+  background-color: white;
+}
+
+/* auf hellem Hintergrund */
+.nav-toggle.nav-dark {
+  background-color: black;
 }
 /* ============= dropdown :hover ============================= */
 .dropdown-index {
