@@ -1,6 +1,6 @@
 .corse-offer-info {
   height: auto;
-  padding: 4vh 0vw 6vh 0vw !important;
+  padding: 4vh 0vw 16vh 0vw !important;
 }
 .course-offers-video {
   height: 110vh;
@@ -8,8 +8,9 @@
   border-radius: 0.5vw;
 }
 .course-offers-video {
+  margin-top: 10vh;
   position: relative;
-  height: 70vh;
+  height: 55vh;
 
   border-radius: 0.5vw;
   z-index: 1;
