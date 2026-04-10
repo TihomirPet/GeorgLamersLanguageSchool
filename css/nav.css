@@ -92,29 +92,136 @@
   font-size: var(--h2);
 }
 
+/* auf dunklem Hintergrund */
+.nav-toggle.nav-white {
+  background-color: var(--text-white-color);
+}
+
+/* =========================
+   BUTTON BASE
+   ========================= */
 .nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   cursor: pointer;
   height: 2.3vw;
-  right: 10.3rem;
+  width: 2.5vw;
   position: fixed;
   top: 7rem;
-  width: 2.5vw;
+  right: 10.3rem;
   z-index: 6;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   border-radius: 50%;
   background-color: var(--text-white-color);
 }
-.nav-toggle:hover .nav-toggle-bar {
-  /* opacity: 0.8; */
-  background-color: var(--main-bg-color);
+
+/* =========================
+   BACKGROUND MODES
+   ========================= */
+.nav-toggle.nav-white {
+  background-color: var(--text-white-color);
 }
 
+.nav-toggle.nav-dark {
+  background-color: var(--second-bg-color);
+}
+
+/* =========================
+   BARS BASE (alle gleich!)
+   ========================= */
 .nav-toggle .nav-toggle-bar,
+.nav-toggle .nav-toggle-bar::before,
+.nav-toggle .nav-toggle-bar::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 2px;
+
+  transition: all 0.3s ease;
+
+  left: 50%;
+}
+
+/* =========================
+   POSITION (perfekt zentriert)
+   ========================= */
+.nav-toggle .nav-toggle-bar {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-toggle .nav-toggle-bar::before {
+  top: 50%;
+  transform: translate(-50%, -8px);
+}
+
+.nav-toggle .nav-toggle-bar::after {
+  top: 50%;
+  transform: translate(-50%, 8px);
+}
+
+/* =========================
+   COLORS (DEINE LOGIK)
+   ========================= */
+
+/* nav-white → dunkle Balken */
+.nav-toggle.nav-white .nav-toggle-bar,
+.nav-toggle.nav-white .nav-toggle-bar::before,
+.nav-toggle.nav-white .nav-toggle-bar::after {
+  background: var(--second-bg-color);
+}
+
+/* nav-dark → helle Balken */
+.nav-toggle.nav-dark .nav-toggle-bar,
+.nav-toggle.nav-dark .nav-toggle-bar::before,
+.nav-toggle.nav-dark .nav-toggle-bar::after {
+  background: var(--text-white-color);
+}
+
+/* =========================
+   HOVER (nur wenn geschlossen)
+   ========================= */
+.nav-toggle:not(.expanded):hover .nav-toggle-bar,
+.nav-toggle:not(.expanded):hover .nav-toggle-bar::before,
+.nav-toggle:not(.expanded):hover .nav-toggle-bar::after {
+  background: var(--main-bg-color);
+}
+
+/* =========================
+   EXPANDED (X)
+   ========================= */
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent; /* mittlerer Balken weg */
+}
+
+.nav-toggle.expanded .nav-toggle-bar::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.nav-toggle.expanded .nav-toggle-bar::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+/* =========================
+   HOVER (immer aktiv)
+   ========================= */
+.nav-toggle:hover .nav-toggle-bar::before,
+.nav-toggle:hover .nav-toggle-bar::after {
+  background: var(--main-bg-color);
+}
+
+/* mittlerer Balken bleibt IMMER unsichtbar wenn expanded */
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent;
+}
+
+/* .nav-toggle:hover .nav-toggle-bar {
+ background-color: var(--main-bg-color);
+} */
+
+/* .nav-toggle .nav-toggle-bar,
 .nav-toggle .nav-toggle-bar::after,
 .nav-toggle .nav-toggle-bar::before {
   position: absolute;
@@ -173,31 +280,20 @@
 }
 
 .nav-toggle:hover {
-  /* opacity: 0.8; */
+
   background-color: var(--second-bg-color);
 }
 
 .nav-toggle:hover .nav-toggle-bar::after {
-  /* opacity: 0.8; */
+ 
   background-color: var(--main-bg-color);
 }
 .nav-toggle:hover .nav-toggle-bar::before {
-  /* opacity: 0.8; */
+
   background-color: var(--main-bg-color);
-}
-/* .nav-toggle {
-  background-color: white;
 } */
 
-/* auf dunklem Hintergrund */
-.nav-toggle.nav-white {
-  background-color: white;
-}
 
-/* auf hellem Hintergrund */
-.nav-toggle.nav-dark {
-  background-color: black;
-}
 /* ============= dropdown :hover ============================= */
 .dropdown-index {
   position: relative;
