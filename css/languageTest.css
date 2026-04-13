@@ -1,6 +1,6 @@
 
 .language-card {
-  width: 65%;
+  width: 70%;
 }
 .language-card-number {
   background-color: var(--main-bg-color);
@@ -16,7 +16,15 @@
   height: auto;
   padding: 14vh 0vw 0vh 0vw;
 }
-
+.language-test-video{
+  width: 100%;
+  border-radius: 20px;
+  
+}
+.language-test-video::-webkit-media-controls-timeline {
+  background-color: #555;
+ 
+}
 @media (max-width: 1399.98px) {
 }
 
@@ -75,6 +83,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+  }
+    .language-test-content {
+    height: auto;
+    padding: 5vh 0vw 5vh 0vw;
   }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
