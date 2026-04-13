@@ -883,12 +883,12 @@ and (-webkit-min-device-pixel-ratio: 2)
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    height: 5.3vw;
+    height: 7.3vw;
     position: fixed;
 
     left: 84vw;
     top: 2rem;
-    width: 5.5vw;
+    width: 7.5vw;
     z-index: 6;
     display: flex;
     align-items: center;
@@ -901,12 +901,12 @@ and (-webkit-min-device-pixel-ratio: 2)
   }
 
   .nav-toggle .nav-toggle-bar::after {
-    margin-top: 0.7vh;
+    margin-top: 0vh;
     width: 100% !important;
   }
 
   .nav-toggle .nav-toggle-bar::before {
-    margin-top: -0.7vh;
+    margin-top: -0vh;
     width: 100% !important;
   }
 }
@@ -923,11 +923,11 @@ and (-webkit-min-device-pixel-ratio: 2)
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    height: 8.3vw;
-    height: 8.3vw;
+
+    height: 10.2vw;
     position: fixed;
     top: 2rem;
-    width: 8.5vw;
+    width: 10.5vw;
     left: 84vw;
     z-index: 6;
     display: flex;
