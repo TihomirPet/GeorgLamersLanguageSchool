@@ -36,6 +36,19 @@
     border-radius: 50%;
   }
 @media (max-width: 1399.98px) {
+  .language-card-number {
+  background-color: var(--main-bg-color);
+  color: var(--text-white-color);
+  width: 5.2vh;
+  height: 5.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.language-card {
+    width: 100%;
+}
 }
 
 /* Hochformat für iPad Pro 12.9 */
@@ -63,7 +76,7 @@
     border-radius: 50%;
   }
   .language-card {
-    width: 85%;
+    width: 90%;
   }
 }
 
