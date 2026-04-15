@@ -133,6 +133,13 @@
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .contact-titleholder {
+  background-color: var(--main-bg-color);
+  height: 10vh;
+}
+.text-contact-title {
+  text-shadow: 3px 3px 0px var(--main-bg-color), 5px 5px 0px var(--second-bg-color);
+}
   .contact {
     height: auto;
     padding: 10vh 0vw 10vh 0vw !important;
