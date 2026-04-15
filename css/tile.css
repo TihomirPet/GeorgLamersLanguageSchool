@@ -72,7 +72,7 @@
     color: var(--second-bg-color);
   } */
    .card-tile {
-    height: 31vh;
+    height: 35vh;
     width: 45% !important;
     background-color: var(--bg-bright-color);
     border-radius: 8px;

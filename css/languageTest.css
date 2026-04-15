@@ -75,8 +75,8 @@
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
-    width: 5.9vh;
-    height: 5.9vh;
+    width: 7vh;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,8 +98,8 @@
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
-    width: 4vh;
-    height: 4vh;
+    width: 7vh;
+    height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,6 +112,16 @@
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .language-card-number-fake {
+    /* background-color: var(--main-bg-color);
+    color: var(--text-white-color); */
+    width: 3.9vh;
+    height: 5.9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
   .language-card {
     width: 95%;
   }

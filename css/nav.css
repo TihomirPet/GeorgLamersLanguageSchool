@@ -293,7 +293,6 @@
   background-color: var(--main-bg-color);
 } */
 
-
 /* ============= dropdown :hover ============================= */
 .dropdown-index {
   position: relative;
@@ -838,23 +837,23 @@ and (-webkit-min-device-pixel-ratio: 2)
   .dropdown-index-content-mobile {
     width: 100vw;
   }
- /* =========================
+  /* =========================
    POSITION (perfekt zentriert)
    ========================= */
-.nav-toggle .nav-toggle-bar {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+  .nav-toggle .nav-toggle-bar {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.nav-toggle .nav-toggle-bar::before {
-  top: 50%;
-  transform: translate(-50%, -9px);
-}
+  .nav-toggle .nav-toggle-bar::before {
+    top: 50%;
+    transform: translate(-50%, -9px);
+  }
 
-.nav-toggle .nav-toggle-bar::after {
-  top: 50%;
-  transform: translate(-50%, 8px);
-}
+  .nav-toggle .nav-toggle-bar::after {
+    top: 50%;
+    transform: translate(-50%, 8px);
+  }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -887,12 +886,11 @@ and (-webkit-min-device-pixel-ratio: 2)
     -moz-user-select: none;
     user-select: none;
     cursor: pointer;
-    height: 7.5vw;
+    height: 6vw;
     position: fixed;
-
-    left: 84vw;
+    left: 86vw;
     top: 2rem;
-    width: 7.5vw;
+    width: 6vw;
     z-index: 6;
     display: flex;
     align-items: center;
@@ -900,23 +898,23 @@ and (-webkit-min-device-pixel-ratio: 2)
     border-radius: 50%;
     background-color: var(--text-white-color);
   }
-/* =========================
+  /* =========================
    POSITION (perfekt zentriert)
    ========================= */
-.nav-toggle .nav-toggle-bar {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
+  .nav-toggle .nav-toggle-bar {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.nav-toggle .nav-toggle-bar::before {
-  top: 50%;
-  transform: translate(-50%, -8px);
-}
+  .nav-toggle .nav-toggle-bar::before {
+    top: 50%;
+    transform: translate(-50%, -8px);
+  }
 
-.nav-toggle .nav-toggle-bar::after {
-  top: 50%;
-  transform: translate(-50%, 7px);
-}
+  .nav-toggle .nav-toggle-bar::after {
+    top: 50%;
+    transform: translate(-50%, 7px);
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
