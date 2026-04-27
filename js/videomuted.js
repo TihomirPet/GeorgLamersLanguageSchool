@@ -18,7 +18,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   video.muted = false;
   video.volume = 1;
 
-  let captionsEnabled = true;
+  // 🔥 CC Zustand laden (Standard = AUS)
+  let captionsEnabled = localStorage.getItem('captionsEnabled') === 'true';
+
+  // UI synchronisieren
+  if (captionsEnabled) {
+    captionsBtn.classList.add('active');
+  } else {
+    captions.textContent = '';
+    captionsBtn.classList.remove('active');
+  }
 
   // ======================
   // 📥 LOAD VTT FILE
@@ -66,11 +75,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // ======================
-  // 🎬 PLAY / PAUSE (MIT SOUND FIX 🔥)
+  // 🎬 PLAY / PAUSE
   // ======================
   playPauseBtn.addEventListener('click', () => {
     if (video.paused) {
-      // 🔥 WICHTIG: Ton beim Start erzwingen
+      // 🔥 Ton beim Start sicherstellen
       video.muted = false;
       video.volume = 1;
 
@@ -114,6 +123,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // ======================
   muteBtn.addEventListener('click', () => {
     video.muted = !video.muted;
+
     muteBtn.textContent = video.muted ? '🔇' : '🔊';
   });
 
@@ -136,14 +146,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // ======================
-  // 🧾 CC BUTTON (ON/OFF)
+  // 🧾 CC BUTTON (MIT SPEICHER)
   // ======================
   captionsBtn.addEventListener('click', () => {
     captionsEnabled = !captionsEnabled;
 
-    // 🔥 Klasse setzen/entfernen
+    // 🔥 Zustand speichern
+    localStorage.setItem('captionsEnabled', captionsEnabled);
+
+    // UI aktualisieren
     captionsBtn.classList.toggle('active', captionsEnabled);
 
+    // Text löschen wenn AUS
     if (!captionsEnabled) {
       captions.textContent = '';
     }

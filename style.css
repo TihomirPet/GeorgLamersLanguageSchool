@@ -31,9 +31,12 @@ body {
   --h6: clamp(1.1rem, 0.1165rem + 0.4174vw, 1.44rem);
   --h2: clamp(min(2.074rem, 2.074rem), 2.6265vw, max(3.584rem, 3.584rem));
   --montserat-regular: 'MontserratRegular';
+    --montserat-bold:'MontserratBold';
   --font-p: 'MontserratRegular', 1rem;
   /* --font-ptb: clamp(0.833rem, 0.7749rem + 0.2904vw, 1rem); */
   --font-ptb: clamp(0.8125rem, 0.7473rem + 0.3261vw, 1rem);
+  --font-video:clamp(1.2rem, calc(0.9rem + 1.5vw), 1.44rem);
+
 }
 
 @font-face {
