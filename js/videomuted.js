@@ -1,40 +1,38 @@
 document.addEventListener('DOMContentLoaded', async () => {
+  // ======================
+  // 🔗 DOM REFERENZEN
+  // ======================
   const video = document.getElementById('video');
   const captions = document.getElementById('customCaptions');
-
   const playPauseBtn = document.getElementById('playPauseBtn');
   const seekBar = document.getElementById('seekBar');
-  const volume = document.getElementById('volume');
-  const speed = document.getElementById('speed');
+  const volumeSlider = document.getElementById('volume');
   const muteBtn = document.getElementById('muteBtn');
   const fullscreenBtn = document.getElementById('fullscreenBtn');
   const captionsBtn = document.getElementById('captionsBtn');
-
   const wrapper = document.getElementById('wrapper');
 
   // ======================
-  // 🔊 INITIAL STATE
+  // 🔊 INITIALZUSTAND
   // ======================
   video.muted = false;
   video.volume = 1;
+  console.log(video.muted, video.volume);
 
-  // 🔥 CC Zustand laden (Standard = AUS)
   let captionsEnabled = localStorage.getItem('captionsEnabled') === 'true';
+  let cues = [];
 
-  // UI synchronisieren
-  if (captionsEnabled) {
-    captionsBtn.classList.add('active');
-  } else {
-    captions.textContent = '';
-    captionsBtn.classList.remove('active');
+  captionsBtn.classList.toggle('active', captionsEnabled);
+
+  // ======================
+  // 📥 VTT LADEN & PARSEN
+  // ======================
+  try {
+    const vttText = await fetch('./captions.vtt').then((r) => r.text());
+    cues = parseVTT(vttText);
+  } catch (e) {
+    console.warn('Captions konnten nicht geladen werden:', e);
   }
-
-  // ======================
-  // 📥 LOAD VTT FILE
-  // ======================
-  const vttText = await fetch('./captions.vtt').then((r) => r.text());
-
-  const cues = parseVTT(vttText);
 
   function parseVTT(data) {
     const lines = data.split('\n');
@@ -43,12 +41,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     for (let i = 0; i < lines.length; i++) {
       if (lines[i].includes('-->')) {
         const [start, end] = lines[i].split('-->');
-        const text = lines[i + 1];
+
+        // Multiline-Cues: alle Zeilen bis zur nächsten Leerzeile sammeln
+        const textLines = [];
+        let j = i + 1;
+        while (j < lines.length && lines[j].trim() !== '') {
+          textLines.push(lines[j]);
+          j++;
+        }
 
         result.push({
           start: toSec(start),
           end: toSec(end),
-          text,
+          text: textLines.join('\n'),
         });
       }
     }
@@ -62,16 +67,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // ======================
-  // 🧾 CAPTIONS ENGINE
+  // ⏱ TIMEUPDATE (zusammengefasst)
   // ======================
   video.addEventListener('timeupdate', () => {
-    if (!captionsEnabled) return;
+    // Seekbar aktualisieren
+    seekBar.value = video.currentTime || 0;
 
-    const t = video.currentTime;
+    // Captions aktualisieren
+    if (captionsEnabled) {
+      const t = video.currentTime;
+      const cue = cues.find((c) => t >= c.start && t <= c.end);
+      captions.textContent = cue ? cue.text : '';
+    }
+  });
 
-    const cue = cues.find((c) => t >= c.start && t <= c.end);
-
-    captions.textContent = cue ? cue.text : '';
+  // seekBar.max nur einmal setzen, wenn Metadaten geladen sind
+  video.addEventListener('loadedmetadata', () => {
+    seekBar.max = video.duration;
   });
 
   // ======================
@@ -79,11 +91,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   // ======================
   playPauseBtn.addEventListener('click', () => {
     if (video.paused) {
-      // 🔥 Ton beim Start sicherstellen
+      // Ton explizit im selben User-Interaction-Kontext setzen
       video.muted = false;
-      video.volume = 1;
+      video.volume = volumeSlider.value;
 
-      video.play();
+      video.play().catch((e) => {
+        console.warn('Autoplay blockiert:', e);
+      });
       playPauseBtn.textContent = '⏸';
     } else {
       video.pause();
@@ -91,31 +105,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
+  // Button-Icon zurücksetzen wenn Video zu Ende
+  video.addEventListener('ended', () => {
+    playPauseBtn.textContent = '▶';
+  });
+
   // ======================
   // ⏩ SEEK BAR
   // ======================
-  video.addEventListener('timeupdate', () => {
-    seekBar.max = video.duration || 0;
-    seekBar.value = video.currentTime || 0;
-  });
-
   seekBar.addEventListener('input', () => {
     video.currentTime = seekBar.value;
   });
 
   // ======================
-  // 🔊 VOLUME
+  // 🔊 LAUTSTÄRKE
   // ======================
-  volume.addEventListener('input', () => {
-    video.volume = volume.value;
-
-    if (volume.value == 0) {
-      video.muted = true;
-      muteBtn.textContent = '🔇';
-    } else {
-      video.muted = false;
-      muteBtn.textContent = '🔊';
-    }
+  volumeSlider.addEventListener('input', () => {
+    video.volume = volumeSlider.value;
+    video.muted = volumeSlider.value == 0;
+    muteBtn.textContent = video.muted ? '🔇' : '🔊';
   });
 
   // ======================
@@ -123,41 +131,35 @@ document.addEventListener('DOMContentLoaded', async () => {
   // ======================
   muteBtn.addEventListener('click', () => {
     video.muted = !video.muted;
-
     muteBtn.textContent = video.muted ? '🔇' : '🔊';
-  });
 
-  // ======================
-  // ⚡ SPEED
-  // ======================
-  speed.addEventListener('change', () => {
-    video.playbackRate = speed.value;
+    // Slider visuell anpassen
+    volumeSlider.value = video.muted ? 0 : video.volume;
   });
 
   // ======================
   // ⛶ FULLSCREEN
   // ======================
   fullscreenBtn.addEventListener('click', async () => {
-    if (!document.fullscreenElement) {
-      await wrapper.requestFullscreen();
-    } else {
-      await document.exitFullscreen();
+    try {
+      if (!document.fullscreenElement) {
+        await wrapper.requestFullscreen();
+      } else {
+        await document.exitFullscreen();
+      }
+    } catch (e) {
+      console.warn('Fullscreen nicht verfügbar:', e);
     }
   });
 
   // ======================
-  // 🧾 CC BUTTON (MIT SPEICHER)
+  // 🧾 CAPTIONS BUTTON
   // ======================
   captionsBtn.addEventListener('click', () => {
     captionsEnabled = !captionsEnabled;
-
-    // 🔥 Zustand speichern
     localStorage.setItem('captionsEnabled', captionsEnabled);
-
-    // UI aktualisieren
     captionsBtn.classList.toggle('active', captionsEnabled);
 
-    // Text löschen wenn AUS
     if (!captionsEnabled) {
       captions.textContent = '';
     }
