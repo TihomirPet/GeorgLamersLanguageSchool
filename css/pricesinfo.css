@@ -25,7 +25,7 @@
 
 .prices-info-accordion {
   height: auto;
-  padding: 3vh 0vw 25vh 0vw  ;
+  padding: 20vh 0vw 30vh 0vw  ;
   /* background-color: var( --bg-bright-color); */
 }
 }
@@ -36,6 +36,11 @@
     padding: 3vh 0vw 21vh 0vw ;
     /* background-color: var(--bg-bright-color); */
 }
+    .prices-info-accordion {
+        height: auto;
+        padding: 18vh 0vw 30vh 0vw;
+        /* background-color: var(--bg-bright-color); */
+    }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
