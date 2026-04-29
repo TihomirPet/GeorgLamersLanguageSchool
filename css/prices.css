@@ -148,11 +148,7 @@
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .prices-info-accordion {
-    height: auto;
-    padding: 8vh 0vw 10vh 0vw !important;
-    /* background-color: var(--bg-bright-color); */
-  }
+ 
   .btnp {
     --bs-btn-padding-x: ;
     --bs-btn-padding-y: ;

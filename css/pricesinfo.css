@@ -1,21 +1,22 @@
-.prices-info {
+/* .prices-info {
   height: auto;
   padding: 2vh 0vw 6vh 0vw !important;
+} */
+.prices-info-accordion {
+    height: auto;
+    padding: 35vh 0vw 35vh 0vw;
+    /* background-color: var(--bg-bright-color); */
 }
 .prices-info-img {
   background-image: url(/images/SectonPricA.jpg);
-  height: 90vh;
+  height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   border-radius: 0.5vw;
 }
 
-.prices-info-accordion {
-  height: auto;
-  padding: 3vh 0vw 15vh 0vw ;
-  /* background-color: var( --bg-bright-color); */
-}
+
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 }
@@ -59,4 +60,17 @@
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+ .prices-info-accordion {
+    height: auto;
+    padding: 4vh 0vw 18vh 0vw !important;
+    /* background-color: var(--bg-bright-color); */
+  }
+    .prices-info-img {
+    background-image: url(/images/SectonPricA.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right -15vh;
+    border-radius: 0.5vw;
+  }
 }
