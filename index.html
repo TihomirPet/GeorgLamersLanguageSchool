@@ -674,9 +674,48 @@
 
         <div class="row d-flex justify-content-center w-100 mt-xl-5">
           <div
-            class="col-11 col-md-11 col-lg-5 d-flex flex-column ps-0 pe-0 mb-3 mb-md-2 mb-xl-5 mt-md-3"
+            class="col-11 col-md-11 col-lg-6 d-flex flex-column ps-0 pe-0 mb-3 mb-md-2 mb-xl-5 mt-md-3"
           >
-            <h3
+            <div class="video-wrapper d-flex align-items-center justify-content-center" id="wrapper">
+              <!-- 🎥 VIDEO -->
+              <video id="video">
+                <source src="/video/output.mp4" type="video/mp4" />
+              </video>
+
+              <!--CUSTOM CAPTIONS (WICHTIG) -->
+              <div  id="customCaptions"></div>
+
+              <!--  CONTROLS -->
+              <div class="controls">
+                <button id="playPauseBtn">▶</button>
+
+                <input id="seekBar" type="range" min="0" step="0.1" value="0" />
+
+                <button id="muteBtn">🔊</button>
+
+                <input
+                  id="volume"
+                  type="range"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <!-- 
+                <select id="speed">
+                  <option value="0.75">0.75x</option>
+                  <option value="1" selected>1x</option>
+                  <option value="1.25">1.25x</option>
+                  <option value="1.5">1.5x</option>
+                  <option value="2">2x</option>
+                </select> -->
+                <button id="captionsBtn">CC</button>
+                <button id="fullscreenBtn">⛶</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-11 col-lg-4 d-flex flex-column  ps-xl-5 mt-lg-5">
+             <h3
               class="font-size-h3 Bold third-colour courses-title line-height-titleSmall letter-spacing-title"
             >
               Das muss nicht so bleiben
@@ -688,13 +727,9 @@
               wir dich dabei, sicher und selbstbewusst<br />
               Deutsch zu sprechen.
             </h5>
-          </div>
-          <div class="col-11 col-lg-5 d-flex align-items-center ps-0 mt-lg-5">
-            <!-- ============== Button start =============-->
-            <a class="btn btn-contact-header animated-button" href="#contact">
+              <a class="btn btn-contact-header animated-button mt-xl-4" href="#contact">
               Lass uns starten
             </a>
-            <!-- ============== Button end ===============-->
           </div>
         </div>
       </section>
