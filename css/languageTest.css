@@ -1,5 +1,7 @@
 .language-card {
-  width: 70%;
+  width: 22vw;
+  /* border: 1px solid black; */
+  padding: 1rem;
 }
 .language-card-number {
   background-color: var(--main-bg-color);
@@ -54,26 +56,24 @@ video {
 
   /* 👉 HIER steuerst du die Position */
   bottom: 100px;
- padding: 8px 16px;
+  padding: 8px 16px;
   width: auto;
   height: auto;
   text-align: center;
   display: inline-block;
-  background: rgba(0, 0, 0, 0.7); 
+  background: rgba(0, 0, 0, 0.7);
   font-size: var(--font-video);
   color: var(--text-white-color);
   font-family: var(--montserat-bold);
   text-shadow: 0 2px 10px black;
   pointer-events: none;
-    line-height: 1.4;
+  line-height: 1.4;
   white-space: pre-line;
   border-radius: 8px;
-
 }
 #customCaptions:empty {
   display: none;
 }
-
 
 /* 🎛 CONTROLS */
 .controls {
@@ -290,24 +290,23 @@ select {
 
 @media (max-width: 767.98px) {
   #customCaptions {
-  position: absolute;
+    position: absolute;
 
-  /* 👉 HIER steuerst du die Position */
-  bottom: 70px;
- padding: 8px 16px;
-  width: auto;
-  text-align: center;
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.7); 
-  font-size: var(--font-video);
-  color: var(--text-white-color);
-  font-family: var(--montserat-bold);
-  text-shadow: 0 2px 10px black;
-  pointer-events: none;
+    /* 👉 HIER steuerst du die Position */
+    bottom: 70px;
+    padding: 8px 16px;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: var(--font-video);
+    color: var(--text-white-color);
+    font-family: var(--montserat-bold);
+    text-shadow: 0 2px 10px black;
+    pointer-events: none;
     line-height: 1.4;
-  white-space: pre-line;
-
-}
+    white-space: pre-line;
+  }
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
@@ -325,11 +324,13 @@ select {
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+
   video {
-  width: auto;
-  display: block;
-  height: 90vh;
-}
+    width: auto;
+    display: block;
+    height: 90vh;
+  }
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
@@ -351,6 +352,6 @@ select {
     border-radius: 50%;
   }
   .language-card {
-    width: 95%;
+    width: 80vw;
   }
 }
