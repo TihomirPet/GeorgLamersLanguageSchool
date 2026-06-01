@@ -127,7 +127,7 @@
 @media (max-width: 991.98px) {
   .contact {
     height: auto;
-    padding: 15vh 0vw 10vh 0vw !important;
+    padding: 0vh 0vw 10vh 0vw !important;
     background-color: var(--second-bg-color);
   }
  
@@ -166,7 +166,7 @@
   }
   .contact {
     height: auto;
-    padding: 10vh 0vw 10vh 0vw !important;
+    padding: 0vh 0vw 10vh 0vw !important;
     background-color: var(--second-bg-color);
   }
 
