@@ -115,8 +115,9 @@ body {
   font-size: 5.573rem;
 } */
 .font-size-h1 {
-  /* font-size: clamp(2.5rem, calc(1rem + 5vw), 7.43rem);  */
-  font-size: clamp(2.2rem, calc(1rem + 4.2vw), 7.43rem);
+  /* font-size: clamp(2.5rem, calc(1rem + 5vw), 7.43rem); 
+  font-size: clamp(2.2rem, calc(1rem + 4.2vw), 7.43rem); */
+    font-size: clamp(2.2rem, calc(1rem + 5vw), 7.43rem); 
 }
 
 .font-size-h2 {
