@@ -34,6 +34,21 @@
   justify-content: center;
   border-radius: 50%;
 }
+.language-test-imag{
+  position: relative;
+  background-image: url(/images/Help.png);
+  height: 70vh;
+
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.language-test-img-text{
+   background-color: var(  --second-bg-color);
+   height: 14vh;
+   border-radius: 0.5vw;
+}
 
 .video-wrapper {
   position: relative;
