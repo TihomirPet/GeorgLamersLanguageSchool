@@ -1,33 +1,147 @@
-.tile-video-holder{
+#tile {
+  position: relative;
+}
+.tile-video-holder {
   padding: 12vh 0 12vh 0;
 }
-.card-tile {
-  height: 26vh;
-  width: 20.2vw ;
-  background-color: var(--bg-bright-color);
+.card-tile-one {
+  height: 35vh;
+  width: 18vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
   border-radius: 8px;
-  color: var(--second-bg-color);
+  rotate: -5deg;
+  z-index: 2;
+}
+.card-tile-two {
+  height: 35vh;
+  width: 18vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
+  border-radius: 8px;
+  rotate: 5deg;
+  z-index: 2;
+}
+.card-tile-three {
+  height: 35vh;
+  width: 18vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
+  border-radius: 8px;
+  rotate: -5deg;
+  z-index: 2;
+}
+.card-tile-four {
+  height: 35vh;
+  width: 18vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
+  border-radius: 8px;
+  rotate: 5deg;
+  z-index: 2;
 }
 .card-tile-titleholder {
-  height: 53%;
+  height: 52%;
 }
 .tile-text {
   width: 90%;
-}.tile-title{text-shadow: 2px 2px 0px var(--second-bg-color);}
-
+}
+.tile-middle-holder {
+  background-color: var(--main-bg-color);
+  border-radius: 1.5vw;
+  z-index: 2;
+}
+.ring-outside {
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.ring-inside {
+  width: 1.5vw;
+  height: 1.5vw;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.tile-violet {
+  position: absolute;
+  left: 13vw;
+  top: 15vh;
+  background-color: var(--second-bg-color);
+  width: 30vw;
+  height: 75vh;
+  rotate: -10deg;
+  border-radius: 1.5vw;
+}
+.btn-start {
+  --bs-btn-color: var(--text-white-color) !important;
+  --bs-btn-bg: var(--second-bg-color) !important;
+  --bs-btn-border-color: var(--second-bg-color) !important;
+  --bs-btn-hover-color: var(--second-bg-color) !important;
+  --bs-btn-hover-bg: var(--text-white-color) !important;
+  --bs-btn-hover-border-color: var(--second-bg-color) !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--text-white-color) !important;
+  --bs-btn-active-bg: var(--text-white-color) !important;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px var(--second-bg-color) !important;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--second-bg-color) !important;
+  --bs-btn-disabled-border-color: var(--second-bg-color) !important;
+  width: clamp(12rem, 30em, 10vw) !important;
+}
+.btn {
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-font-family: var(--montserat-regular) !important;
+  --bs-btn-font-size: clamp(min(0.9rem, 0.9rem), 2.5vw, max(1rem, 1rem));
+  --bs-btn-font-weight: 700;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: var(--bs-border-radius);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: 30px !important;
+  background-color: var(--bs-btn-bg);
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-    .card-tile {
-  height: 44vh ;
-  width: 20.2vw !important;
-  background-color: var(--bg-bright-color);
-  border-radius: 20px;
-  color: var(--second-bg-color);
-}
+  .card-tile {
+    height: 44vh;
+
+    border-radius: 20px;
+  }
   .tile-text {
-  width: 100%;
-}
+    width: 100%;
+  }
 }
 
 /* Hochformat für iPad Pro 12.9 */
@@ -47,20 +161,18 @@
   .tile-holder {
     padding: 0vh 0vw 8vh 0vw !important;
   }
-     .card-tile {
-        height: 34vh;
-        width: 41.2vw !important;
-        background-color: var(--bg-bright-color);
-        border-radius: 9px;
-        color: var(--second-bg-color);
-    }
+  .card-tile {
+    height: 34vh;
+    width: 41.2vw !important;
+
+    border-radius: 9px;
+  }
   .card-tile-titleholder {
     height: 39%;
   }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  
   .tile-holder {
     padding: 10vh 0vw 20vh 0vw !important;
   }
@@ -74,12 +186,11 @@
     border-radius: 8px;
     color: var(--second-bg-color);
   } */
-   .card-tile {
+  .card-tile {
     height: 35vh;
     width: 45% !important;
-    background-color: var(--bg-bright-color);
+
     border-radius: 8px;
-    color: var(--second-bg-color);
   }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -90,23 +201,21 @@
   .card-tile {
     height: 20vh;
     width: 95% !important;
-    background-color: var(--bg-bright-color);
+
     border-radius: 8px;
-    color: var(--second-bg-color);
   }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .tile-video-holder{
-  padding: 8vh 0 8vh 0;
-}
+  .tile-video-holder {
+    padding: 8vh 0 8vh 0;
+  }
   .card-tile {
     padding: 1rem;
     height: 18vh !important;
     width: 100% !important;
-    background-color: var(--bg-bright-color);
+
     border-radius: 10px;
-    color: var(--second-bg-color);
   }
   .card-tile-titleholder {
     height: 48%;
