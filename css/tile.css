@@ -73,6 +73,15 @@
   rotate: -10deg;
   border-radius: 1.5vw;
 }
+.pen-holder {
+  position: absolute;
+  top:85vh;
+  right: 10vw;
+  
+  z-index: 3;
+
+}
+
 .btn-start {
   --bs-btn-color: var(--text-white-color) !important;
   --bs-btn-bg: var(--second-bg-color) !important;
