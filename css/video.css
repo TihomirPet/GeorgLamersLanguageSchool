@@ -1,0 +1,12 @@
+.video-play {
+  padding: 20vh 0 20vh 0;
+}
+.video-play-holder {
+transform: rotateZ(3deg);
+  border-radius: 1.5vw;
+  background-color: var(--second-bg-color);
+  padding: 3rem 7rem 3rem 7rem;
+}
+.video-play-content {
+transform: rotateZ(-3deg);
+}

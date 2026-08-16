@@ -88,6 +88,7 @@
     <link rel="stylesheet" href="/css/cookie.css" />
     <link rel="stylesheet" href="/css/tile.css" />
     <link rel="stylesheet" href="/css/languageTest.css" />
+    <link rel="stylesheet" href="/css/video.css" />
 
     <!-- ******************* CSS end ********************** -->
     <link
@@ -115,41 +116,6 @@
         class="container-fluid header section s-1"
         data-bg-class="bg-main-orange"
       >
-        <!-- ================= Row Title start ======================================-->
-        <!-- <div
-          class="row d-flex justify-content-center align-items-center row-height-title flex-column"
-          id="header"
-        >
-          <div
-            class="col-11 col-lg-10 col-xl-3 d-flex flex-column align-items-md-start mt-4 mt-xl-5 border"
-          >
-            <h5
-              class="Bold letter-spacing-title font-size-h5 mb-0 text-start animated-text"
-            >
-              Georg Lamers Sprachenschule
-            </h5>
-            <h1
-              id="animated-title"
-              class="font-size-h1 Bold line-height-titleSmall letter-spacing-title text-start w-100 animated-title mt-5 mt-md-0"
-            >
-              Sicher Deutsch sprechen
-            </h1>
-            <h4
-              class="Bold letter-spacing-title font-size-h4 mb-0 animated-text header-subtitle"
-            >
-              Wir helfen dir, Deutsch im Alltag besser zu verstehen, sicher zu
-              sprechen und im Unterricht mitzukommen.
-            </h4>
-            <a
-              class="btn btn-contact-header animated-button mt-xl-4 mt-3 mt-lg-2"
-              href="#contact"
-            >
-              Lass uns starten
-            </a>
-          </div>
-          <div class="col-11 col-lg-10 col-xl-10 mt-4 mt-lg-3"></div>
-        </div> -->
-        <!-- ============== Row Title end =============================================-->
         <!--=========================================================================  -->
         <!-- ============== Row card holder start =====================================-->
         <div class="row d-flex justify-content-center mt-5 hero-col-wrapper">
@@ -198,7 +164,7 @@
       <!--******************************************************************* Section Tile start *******************************************************-->
       <section
         id="tile"
-        class="container-fluid tile d-flex flex-column justify-content-center align-items-center p-0 section tile-holder"
+        class="container-fluid tile d-flex flex-column justify-content-center align-items-center p-0 section tile-holder pb-5"
         data-bg-class="bg-third-white"
       >
         <div class="row d-flex flex-column align-items-center w-100">
@@ -278,48 +244,10 @@
         </div>
         <!-- ------------------------------------------  row one end ---------------------------------------------------->
         <div class="tile-violet"></div>
-      <div class="pen-holder d-flex align-items-end justify-content-end">
+        <div class="pen-holder d-flex align-items-end justify-content-end">
           <img src="/images/Pen1.png" alt="Pen" width="50%" />
         </div>
         <div class="row d-flex justify-content-center w-100 mt-xl-1">
-          <!-- <div
-            class="col-11 col-md-11 col-lg-10 col-xl-6 d-flex flex-column ps-0 pe-0 mb-3 mb-md-2 mb-xl-5 mt-md-3"
-          >
-            <div
-              class="video-wrapper d-flex align-items-center justify-content-center"
-              id="wrapper"
-            >
-         
-              <video id="video">
-                <source src="/video/output.mp4" type="video/mp4" />
-              </video>
-
-            
-              <div id="customCaptions"></div>
-
-           
-              <div class="controls">
-                <button id="playPauseBtn">▶</button>
-
-                <input id="seekBar" type="range" min="0" step="0.1" value="0" />
-
-                <button id="muteBtn">🔊</button>
-
-                <input
-                  id="volume"
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.05"
-                  value="1"
-                />
-
-                <button id="captionsBtn">CC</button>
-                <button id="fullscreenBtn">⛶</button>
-              </div>
-            </div>
-          </div> -->
-
           <div class="col-8 d-flex tile-middle-holder p-xl-5">
             <div class="d-flex align-items-center justify-content-center pe-3">
               <div
@@ -354,8 +282,58 @@
             </div>
           </div>
         </div>
-  
       </section>
+      <!-- ================================ Video start ============================================= -->
+      <section class="video-play" data-bg-class="bg-third-white">
+        <div
+          class="row d-flex justify-content-center align-items-center  mt-xl-1 mt-5 "
+        >
+          <div class=" video-play-holder col-11 col-md-11 col-lg-10 col-xl-7  ">
+            <div
+              class="video-play-content  "
+            >
+              <div
+                class="video-wrapper d-flex align-items-center justify-content-center"
+                id="wrapper"
+              >
+                <video id="video">
+                  <source src="/video/output.mp4" type="video/mp4" />
+                </video>
+
+                <div id="customCaptions"></div>
+
+                <div class="controls">
+                  <button id="playPauseBtn">▶</button>
+
+                  <input
+                    id="seekBar"
+                    type="range"
+                    min="0"
+                    step="0.1"
+                    value="0"
+                  />
+
+                  <button id="muteBtn">🔊</button>
+
+                  <input
+                    id="volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.05"
+                    value="1"
+                  />
+
+                  <button id="captionsBtn">CC</button>
+                  <button id="fullscreenBtn">⛶</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================ Video end ============================================= -->
       <!--******************************************************************* Section Tile end *********************************************************-->
       <!--******************************************************************* Section language test start *******************************************************-->
       <section
