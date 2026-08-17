@@ -374,7 +374,7 @@ p {
   pointer-events: none; /* Verhindert Klicks auf das Video */
 }
 .bi-arrow-right-circle {
-  color: var(--main-bg-color);
+  /* color: var(--main-bg-color); */
 }
 .header-subtext {
   width: 75%;
