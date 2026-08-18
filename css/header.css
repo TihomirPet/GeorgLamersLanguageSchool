@@ -52,9 +52,9 @@ p {
 .header-textimage-holder {
   height: 60vh;
 }
-.header h1 {
+/* .header h1 {
   text-shadow: 2px 2px 0px var(--second-bg-color) !important;
-}
+} */
 .header-subtitle {
   width: 90%;
 }
