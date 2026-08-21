@@ -21,18 +21,18 @@ button:not(:disabled) {
   width: clamp(18.9rem, 9.022rem + 17vw, 26.75rem);
 }
 .forms-of-teaching-left {
-  border-bottom: 1px solid var(--second-bg-color);
+  /* border-bottom: 1px solid var(--second-bg-color);
   border-left: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color);
-  /* background-color: var( --bg-bright-color); */
+  border-top: 1px solid var(--second-bg-color); */
+  background-color: var( --bg-bright-color);
   border-top-left-radius: 1.5vw;
   border-bottom-left-radius: 1.5vw;
 }
 .forms-of-teaching-right {
   /* border-bottom:1px solid var(--text-black-color); */
-  border-bottom: 1px solid var(--second-bg-color);
+  /* border-bottom: 1px solid var(--second-bg-color);
   border-right: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color);
+  border-top: 1px solid var(--second-bg-color); */
   background-color: var(--bg-bright-color);
   border-top-right-radius: 1.5vw;
   border-bottom-right-radius: 1.5vw;

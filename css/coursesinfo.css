@@ -30,11 +30,11 @@
 
 .courses-info-img {
   position: relative;
-  background-image: url(/images/iStock-1384618716.jpg);
+  background-image: url(/images/Courses.png);
 
-  height: 40vw;
-  /* width: 100%; */
-  background-size: cover;
+  height: 39vw;
+  /* width: auto; */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
