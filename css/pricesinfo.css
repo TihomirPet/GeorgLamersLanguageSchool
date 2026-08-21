@@ -8,11 +8,11 @@
     /* background-color: var(--bg-bright-color); */
 }
 .prices-info-img {
-  background-image: url(/images/SectonPricA.jpg);
+  background-image: url(/images/SectionPricAPS.jpg);
   height: 80vh;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   border-radius: 0.5vw;
 }
 
