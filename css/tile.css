@@ -220,14 +220,51 @@
   .tile-video-holder {
     padding: 8vh 0 8vh 0;
   }
-  .card-tile {
-    padding: 1rem;
-    height: 18vh !important;
-    width: 100% !important;
+  .ring-outside {
+  width:5.5vw;
+  height: 5.5vw;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+    .card-tile-titleholder {
+    height: 38%;
+  }
+  .card-tile-one {
+   height: 25vh;
+  width: 86vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
+  border-radius: 8px;
+  rotate: -3deg;
+  z-index: 2;
+}
+  .card-tile-two {
+  height: 25vh;
+  width: 86vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
+  border-radius: 8px;
+  rotate: 3deg;
+  z-index: 2;
+}
+  .card-tile-three {
+  height: 25vh;
+  width: 86vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
+  border-radius: 8px;
+  rotate: -3deg;
+  z-index: 2;
+}
+  .card-tile-four{
+  height: 25vh;
+  width: 86vw;
+  background-color: #fff9ef;
+  border: 1px solid rgb(255, 115, 15, 0.3);
+  border-radius: 8px;
+  rotate: 3deg;
+  z-index: 2;
+}
 
-    border-radius: 10px;
-  }
-  .card-tile-titleholder {
-    height: 48%;
-  }
+
 }
