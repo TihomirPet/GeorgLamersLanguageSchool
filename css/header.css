@@ -168,7 +168,7 @@ p {
     border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
 
-  width: clamp(12rem, 30em, 15vw) !important;
+  width: clamp(90%, 30em, 15vw) !important;
 }
 
 .btn-course {
@@ -845,6 +845,16 @@ p {
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.9vw;
   }
+  .hero-img-holder {
+  position: relative;
+  background-image: url(/images/Frame\ 234\(1\).png);
+  height: 34.5vh;
+  width: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
   .btn-course:hover {
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 0.9vw;
@@ -899,6 +909,25 @@ p {
   .header {
     padding: 0vh 0vw 20vh 0vw;
   }
+ .hero-test-holder {
+  position: relative;
+  top: 0vh;
+  right: 0vw;
+  width: 90%;
+  height: 40vh;
+ border-radius: 5%;
+ background-color: #fff;
+}
+.hero-img-column {
+  width: 94%;
+}
+
+.header-subtitle {
+  width: 100%;
+}
+.hero-text-column {
+  width: 100vw;
+}
   .video {
     width: auto !important;
     height: 100%;
