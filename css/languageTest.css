@@ -326,7 +326,14 @@ select {
 @media (max-width: 575.98px) {
 
 
- 
+ .language-test-imag {
+  position: relative;
+  background-image: url(/images/Help.png);
+  height: 44vh;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
@@ -350,4 +357,9 @@ select {
   .language-card {
     width: 80vw;
   }
+  .language-test-img-text {
+  background-color: var( --second-bg-color);
+  height: 13vh;
+  border-radius: 1.5vw;
+}
 }

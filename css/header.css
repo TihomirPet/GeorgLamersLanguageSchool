@@ -168,7 +168,7 @@ p {
     border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
 
-  width: clamp(15vw, 30em, 90%) !important;
+  width: clamp(15vw, 30em, 100%) !important;
 }
 
 .btn-course {
