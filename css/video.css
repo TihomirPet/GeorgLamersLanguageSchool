@@ -2,11 +2,65 @@
   padding: 20vh 0 20vh 0;
 }
 .video-play-holder {
-transform: rotateZ(3deg);
+  transform: rotateZ(3deg);
   border-radius: 1.5vw;
   background-color: var(--second-bg-color);
   padding: 3rem 7rem 3rem 7rem;
 }
 .video-play-content {
-transform: rotateZ(-3deg);
+  transform: rotateZ(-3deg);
+}
+video {
+  width: auto;
+  display: block;
+  height: 90vh;
+}
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background: black;
+  overflow: hidden;
+  border-radius: 12px;
+}
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .video-play {
+  padding: 6vh 0 6vh 0;
+}
+  .video-play-holder {
+
+    padding: 0 0.8rem 0 0.8rem;
+    width: 90%;
+  }
+  video {
+    width: auto;
+    display: block;
+    height: 23vh;
+  }
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background: black;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .video-play-content {
+    transform: rotateZ(-3deg);
+    width: 100%;
+  }
 }

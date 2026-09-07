@@ -17,13 +17,8 @@
   height: auto;
   padding: 14vh 0vw 30vh 0vw;
 }
-.language-test-video {
-  width: 100%;
-  border-radius: 20px;
-}
-.language-test-video::-webkit-media-controls-timeline {
-  background-color: #555;
-}
+
+
 .language-card-number-fake {
   /* background-color: var(--main-bg-color);
     color: var(--text-white-color); */
@@ -50,20 +45,10 @@
    border-radius: 0.5vw;
 }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  background: black;
-  overflow: hidden;
-  border-radius: 12px;
-}
+
 
 /* 🎥 VIDEO */
-video {
-  width: 100%;
-  display: block;
-}
+
 
 /* 🧾 CUSTOM CAPTIONS */
 #customCaptions {
@@ -341,11 +326,7 @@ select {
 @media (max-width: 575.98px) {
 
 
-  video {
-    width: auto;
-    display: block;
-    height: 90vh;
-  }
+ 
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
