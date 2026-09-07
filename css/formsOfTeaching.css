@@ -232,6 +232,25 @@ button:not(:disabled) {
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .forms-of-teaching-left {
+  /* border-bottom: 1px solid var(--second-bg-color);
+  border-left: 1px solid var(--second-bg-color);
+  border-top: 1px solid var(--second-bg-color); */
+  background-color: var( --bg-bright-color);
+  border-top-left-radius: 1.5vw;
+  border-top-right-radius: 1.5vw;
+  border-bottom-left-radius: 0vw;
+}
+.forms-of-teaching-right {
+  /* border-bottom:1px solid var(--text-black-color); */
+  /* border-bottom: 1px solid var(--second-bg-color);
+  border-right: 1px solid var(--second-bg-color);
+  border-top: 1px solid var(--second-bg-color); */
+  background-color: var(--bg-bright-color);
+  border-top-right-radius: 0vw;
+  border-bottom-right-radius: 1.5vw;
+  border-bottom-left-radius: 1.5vw;
+}
   .forms-of-teaching {
     /* background-color: var(--bg-bright-color ); */
     height: auto;
