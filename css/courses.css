@@ -192,9 +192,23 @@ transform: rotateZ(5deg);
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .courses {
-    /* background-color: var(--second-bg-color); */
+  .courses-titel-wrapper {
+  top: 5vh;
+  position: absolute;
+  height: 65vh;
+  border-radius: 2vw;
+  border: 1px solid var( --main-bg-color);
+}
+  .courses-holder {
+  border: 1px solid hsl(350, 60%, 98%, 0.3);
+  border-radius: 2vw;
+  background-color: rgb(253, 247, 248, 0.1);
+  width: 100%;
+}
+    .courses {
+    background-color: var(--second-bg-color);
     height: auto;
-    padding: 0vh 0vw 10vh 0vw !important;
+    padding: 20vh 0vw 10vh 0vw !important;
   }
+
 }
