@@ -20,7 +20,7 @@
   pointer-events: none; /* Optional: Deaktiviert alle Maus-/Touch-Interaktionen */
 }
 .title-courseoffer-info {
-  text-shadow: 2px 2px 0px var(--second-bg-color) !important;
+  /* text-shadow: 2px 2px 0px var(--second-bg-color) !important; */
 }
 
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {

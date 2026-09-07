@@ -82,6 +82,9 @@
   z-index: 3;
 
 }
+.tile-pen{
+  width: 50%;
+}
 
 .btn-start {
   --bs-btn-color: var(--text-white-color) !important;
@@ -265,6 +268,23 @@
   rotate: 3deg;
   z-index: 2;
 }
-
-
+.tile-violet {
+  position: absolute;
+  left: 13vw;
+  top: 11vh;
+  background-color: var(--second-bg-color);
+  width: 76vw;
+  height: 111vh;
+  rotate: 0deg;
+  border-radius: 1.5vw;
+}
+.pen-holder {
+  position: absolute;
+  bottom: 5vh;
+  right: 3vw;
+  z-index: 3;
+}
+.tile-pen{
+  width: 100%;
+}
 }
