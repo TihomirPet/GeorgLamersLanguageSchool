@@ -198,6 +198,16 @@
     border-radius: 8px;
     color: var(--second-bg-color);
   } */
+   .tile-violet {
+  position: absolute;
+  left: 13vw;
+  top: 35vh;
+  background-color: var(--second-bg-color);
+  width: 71vw;
+  height: 138vh;
+  rotate: -8deg;
+  border-radius: 1.5vw;
+}
   .card-tile {
     height: 35vh;
     width: 45% !important;
@@ -290,10 +300,10 @@
   }
   .tile-violet {
     position: absolute;
-    left: 13vw;
-    top: 11vh;
+    left: 3vw;
+    top: 6vh;
     background-color: var(--second-bg-color);
-    width: 76vw;
+    width: 94vw;
     height: 111vh;
     rotate: 0deg;
     border-radius: 1.5vw;
