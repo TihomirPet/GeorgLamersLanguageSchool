@@ -126,6 +126,8 @@ p {
   transition: all 0.3s ease;
   cursor: pointer;
   padding: 1rem 1.5rem;
+ font-size: 0.833rem;
+
 }
 
 .btn-contact-header.animated-button:hover,
@@ -138,11 +140,6 @@ p {
 
 
 
-.header-video-text-holder {
-  background-color: var(--second-bg-color);
-  padding: 2rem;
-  height: 9vh;
-}
 
 .header-subtext {
   width: 75%;
@@ -412,24 +409,24 @@ p {
     height: 30vh;
   }
   .hero-img-column {
-    width: 93%;
+    width: 44%;
   }
   .header-subtitle {
-    width: 70%;
+    width: 90%;
   }
   .hero-text-column {
-    width: 92vw;
+    width: 50vw;
   }
   .header-mobile-text-holder {
     padding: 0.2rem;
     background-color: var(--second-bg-color);
     height: 15vh;
   }
-.hero-test-holder {
+ .hero-test-holder {
     position: absolute;
-    top: 85vh;
-    right: 8vw;
-    width: 41vw;
+    top: 5vh;
+    right: 5vw;
+    width: 36vw;
     height: 75vh;
     border-radius: 5%;
     background-color: #fff;
@@ -437,7 +434,7 @@ p {
   .hero-img-holder {
     position: relative;
     background-image: url(/images/Frame\ 234\(1\).png);
-    height: 64vh;
+    height: 47vh;
     width: 100%;
     background-size: auto 100%;
     background-repeat: no-repeat;
