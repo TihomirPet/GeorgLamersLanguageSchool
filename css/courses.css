@@ -34,18 +34,16 @@ width: clamp(10vw, 20em, 100vw) !important;
   position: absolute;
   height: 70vh;
   border-radius: 2vw;
-  border: 1px solid var(  --main-bg-color);
+  border: 1px solid var(--main-bg-color);
 }
 .courses-titel-holder {
   height: 60vh;
   border-radius: 2vw;
   transform: rotateZ(-5deg);
-  background-color: var( --bg-bright-color)
+  background-color: var(--bg-bright-color);
 }
 .courses-titel {
-  
-transform: rotateZ(5deg);
-
+  transform: rotateZ(5deg);
 }
 .btnc {
   --bs-btn-padding-x: ;
@@ -137,13 +135,22 @@ transform: rotateZ(5deg);
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .courses {
-    /* background-color: var(--second-bg-color); */
+    background-color: var(--second-bg-color);
     height: auto;
-    padding: 9vh 0vw 20vh 0vw !important;
+    padding: 52vh 0vw 20vh 0vw !important;
   }
-  .courses-link:hover {
-    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
-    padding: 0.6rem 0rem 0.6rem 0rem !important;
+  .courses-titel-wrapper {
+    top: 20vh;
+    position: absolute;
+    height: 100vh;
+    border-radius: 2vw;
+    border: 1px solid var(--main-bg-color);
+  }
+  .courses-holder {
+    border: 1px solid hsl(350, 60%, 98%, 0.3);
+    border-radius: 2vw;
+    background-color: rgb(253, 247, 248, 0.1);
+    width: 100%;
   }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -189,26 +196,34 @@ transform: rotateZ(5deg);
       border-color 0.15s ease-in-out,
       box-shadow 0.15s ease-in-out;
   }
+  .courses {
+    /* background-color: var(--second-bg-color); */
+    height: auto;
+    padding: 9vh 0vw 20vh 0vw !important;
+  }
+  .courses-link:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+    padding: 0.6rem 0rem 0.6rem 0rem !important;
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .courses-titel-wrapper {
-  top: 5vh;
-  position: absolute;
-  height: 65vh;
-  border-radius: 2vw;
-  border: 1px solid var( --main-bg-color);
-}
+    top: 5vh;
+    position: absolute;
+    height: 65vh;
+    border-radius: 2vw;
+    border: 1px solid var(--main-bg-color);
+  }
   .courses-holder {
-  border: 1px solid hsl(350, 60%, 98%, 0.3);
-  border-radius: 2vw;
-  background-color: rgb(253, 247, 248, 0.1);
-  width: 100%;
-}
-    .courses {
+    border: 1px solid hsl(350, 60%, 98%, 0.3);
+    border-radius: 2vw;
+    background-color: rgb(253, 247, 248, 0.1);
+    width: 100%;
+  }
+  .courses {
     background-color: var(--second-bg-color);
     height: auto;
     padding: 20vh 0vw 10vh 0vw !important;
   }
-
 }
