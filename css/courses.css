@@ -126,14 +126,25 @@ width: clamp(10vw, 20em, 100vw) !important;
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  .courses {
+      .courses {
+        /* background-color: var(--second-bg-color); */
+        height: auto;
+        padding: 30vh 0vw 20vh 0vw !important;
+    }
+ .courses-holder {
+    border: 1px solid hsl(350, 60%, 98%, 0.3);
+    border-radius: 2vw;
+    background-color: rgb(253, 247, 248, 0.1);
+    width: 100%;
+}
+}
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+   .courses {
     /* background-color: var(--second-bg-color); */
     height: auto;
     padding: 9vh 0vw 20vh 0vw !important;
   }
-}
-/* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
   .courses {
     background-color: var(--second-bg-color);
     height: auto;

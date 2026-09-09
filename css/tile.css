@@ -154,6 +154,17 @@
   .tile-text {
     width: 100%;
   }
+  .tile-violet {
+    position: absolute;
+    left: 10vw;
+    top: 16vh;
+    background-color: var(--second-bg-color);
+    width: 35vw;
+    height: 83vh;
+    rotate: -10deg;
+    border-radius: 1.5vw;
+}
+
 }
 
 /* Hochformat für iPad Pro 12.9 */
@@ -180,8 +191,49 @@
     border-radius: 9px;
   }
   .card-tile-titleholder {
-    height: 39%;
+    height: 42%;
   }
+.card-tile-one {
+   height: 53vh;
+    width: 23vw;
+ 
+}
+.card-tile-two{
+  height: 53vh;
+    width: 23vw;
+ 
+}
+.card-tile-three{
+    height: 53vh;
+    width: 23vw;
+ 
+}
+.card-tile-four{
+  height: 53vh;
+    width: 23vw;
+ 
+}
+.pen-holder {
+    position: absolute;
+    bottom: 0vh;
+    right: 10vw;
+    z-index: 3;
+}
+.tile-violet {
+    position: absolute;
+    left: 6vw;
+    top: 14vh;
+    background-color: var(--second-bg-color);
+    width: 36vw;
+    height: 106vh;
+    rotate: -7deg;
+    border-radius: 1.5vw;
+}
+#video {
+    width: auto;
+    display: block;
+    height: 66vh;
+}
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
