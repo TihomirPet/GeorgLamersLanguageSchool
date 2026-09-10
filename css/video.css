@@ -10,10 +10,10 @@
 .video-play-content {
   transform: rotateZ(-3deg);
 }
-video {
-  width: auto;
-  display: block;
-  height: 59vh;
+#video {
+    width: 100%;
+    display: block;
+    height: auto;
 }
 .video-wrapper {
   position: relative;
@@ -27,28 +27,19 @@ video {
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-  #video {
-    width: auto;
-    display: block;
-    height: 44vh;
-}
+
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  #video {
-    width: auto;
-    display: block;
-    height: 67vh;
+.video-wrapper {
+  
+    border-radius: 1.2rem;
 }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  #video {
-    width: auto;
-    display: block;
-    height: 68vh;
-  }
+
 
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -63,11 +54,8 @@ video {
     padding: 0 0.8rem 0 0.8rem;
     width: 90%;
   }
-  #video {
-    width: auto;
-    display: block;
-    height: 23vh;
-  }
+
+  
   .video-wrapper {
     position: relative;
     width: 100%;

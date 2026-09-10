@@ -23,7 +23,7 @@
   border-radius: 8px;
   rotate: 5deg;
   z-index: 2;
-    padding: 2rem;
+  padding: 2rem;
 }
 .card-tile-three {
   height: 35vh;
@@ -33,7 +33,7 @@
   border-radius: 8px;
   rotate: -5deg;
   z-index: 2;
-    padding: 2rem;
+  padding: 2rem;
 }
 .card-tile-four {
   height: 35vh;
@@ -43,7 +43,7 @@
   border-radius: 8px;
   rotate: 5deg;
   z-index: 2;
-    padding: 2rem;
+  padding: 2rem;
 }
 .card-tile-titleholder {
   height: 52%;
@@ -148,22 +148,26 @@
     box-shadow 0.15s ease-in-out;
 }
 
+@media (min-width: 1440px) and (max-width: 1770px) {
+  .card-tile-one {
+    padding: 1rem;
+  }
+  .card-tile-two {
+    padding: 1rem;
+  }
+  .card-tile-three {
+    padding: 1rem;
+  }
+  .card-tile-four {
+    padding: 1rem;
+  }
+  .pen-holder {
+    position: absolute;
+    bottom: -5%;
+    right: 10vw;
 
-
-
-@media  (min-width: 1440px) and (max-width: 1770px){
-
-.card-tile-one{padding: 1rem;}
-.card-tile-two{padding: 1rem;}
-.card-tile-three{padding: 1rem;}
-.card-tile-four{padding: 1rem;}
-.pen-holder {
-  position: absolute;
-  bottom: -5%;
-  right: 10vw;
-
-  z-index: 3;
-}
+    z-index: 3;
+  }
 }
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
@@ -185,8 +189,27 @@
     height: 83vh;
     rotate: -10deg;
     border-radius: 1.5vw;
-}
-
+  }
+  .card-tile-one {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  }
+  .card-tile-two {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  }
+  .card-tile-three {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  }
+  .card-tile-four {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  }
 }
 
 /* Hochformat für iPad Pro 12.9 */
@@ -213,35 +236,51 @@
     border-radius: 9px;
   }
   .card-tile-titleholder {
-    height: 42%;
+    height: 44%;
   }
-.card-tile-one {
-   height: 53vh;
-    width: 23vw;
- 
-}
-.card-tile-two{
-  height: 53vh;
-    width: 23vw;
- 
-}
-.card-tile-three{
+    /* .card-tile-one {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  }
+  .card-tile-two {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  }
+  .card-tile-three {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  }
+  .card-tile-four {
+    padding: 1rem;
+    height: 41vh;
+    width: 20vw;
+  } */
+  .card-tile-one {
     height: 53vh;
     width: 23vw;
- 
-}
-.card-tile-four{
-  height: 53vh;
+  }
+  .card-tile-two {
+    height: 53vh;
     width: 23vw;
- 
-}
-.pen-holder {
+  }
+  .card-tile-three {
+    height: 53vh;
+    width: 23vw;
+  }
+  .card-tile-four {
+    height: 53vh;
+    width: 23vw;
+  }
+  .pen-holder {
     position: absolute;
     bottom: 0vh;
     right: 10vw;
     z-index: 3;
-}
-.tile-violet {
+  }
+  .tile-violet {
     position: absolute;
     left: 6vw;
     top: 14vh;
@@ -250,8 +289,7 @@
     height: 106vh;
     rotate: -7deg;
     border-radius: 1.5vw;
-}
-
+  }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -268,16 +306,16 @@
     border-radius: 8px;
     color: var(--second-bg-color);
   } */
-   .tile-violet {
-  position: absolute;
-  left: 13vw;
-  top: 35vh;
-  background-color: var(--second-bg-color);
-  width: 71vw;
-  height: 138vh;
-  rotate: -8deg;
-  border-radius: 1.5vw;
-}
+  .tile-violet {
+    position: absolute;
+    left: 13vw;
+    top: 35vh;
+    background-color: var(--second-bg-color);
+    width: 71vw;
+    height: 138vh;
+    rotate: -8deg;
+    border-radius: 1.5vw;
+  }
   .card-tile {
     height: 35vh;
     width: 45% !important;
