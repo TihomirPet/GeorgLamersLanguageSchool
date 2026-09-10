@@ -149,7 +149,7 @@ body {
 }
 
 .font-size-p {
-  font-size: 1rem;
+  font-size: clamp(0.83rem, 0.7582rem + 0.3022vw, 1rem);
   
 }
 .font-size-p-small {

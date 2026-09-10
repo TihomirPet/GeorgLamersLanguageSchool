@@ -75,19 +75,8 @@ p {
   /* border: 1px solid var(--second-bg-color); */
 }
 .hero-img-holder {
-  position: relative;
-  background-image: url(/images/Frame\ 234\(1\).png);
-  height: 70vh;
   width: 100%;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -4vw 12vh !important;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease; */
+  height: auto;
 }
 .hero-col-wrapper {
   position: relative;
@@ -98,8 +87,6 @@ p {
   right: 8vw;
   width: 20vw;
   height: auto;
-  border-radius: 5%;
-  background-color: #fff;
 }
 .hero-text-column {
   width: 30vw;
@@ -145,55 +132,51 @@ p {
   .hero-img-column {
     width: 42.9vw;
   }
-.hero-img-holder {
-  position: relative;
-  background-image: url(/images/Frame\ 234\(1\).png);
-  height: 57vh;
-  width: 100%;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
 
-}
-.pen-holder {
+  .pen-holder {
     position: absolute;
     bottom: -3vh;
     right: 10vw;
     z-index: 3;
+  }
+
 }
+@media  (min-width: 1440px) and (max-width: 1770px){
+
+  .hero-test-holder {
+    position: absolute;
+    top: 18vh;
+    right: 8vw;
+    width: 24vw;
+    height: auto;
+  }
 }
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+   .hero-test-holder {
+    position: absolute;
+    top: 10vh;
+    right: 7vw;
+    width: 26vw;
+    height: auto;
+  }
+
   .hero-text-column {
     width: 37vw;
   }
   .hero-img-column {
     width: 42.9vw;
   }
-.hero-img-holder {
-  position: relative;
-  background-image: url(/images/Frame\ 234\(1\).png);
-  height: 57vh;
-  width: 100%;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -4vw 12vh !important;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease; */
-}
-.pen-holder {
+  .hero-img-holder {
+    width: 100%;
+  }
+  .pen-holder {
     position: absolute;
     bottom: -3vh;
     right: 10vw;
     z-index: 3;
+  }
 }
-}
-
-
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 /* @media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
@@ -227,24 +210,15 @@ p {
     /* background-color: rgb(253, 176, 176); */
   }
   .hero-img-holder {
-    position: relative;
-    background-image: url(/images/Frame\ 234\(1\).png);
-    height: 60vh;
     width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
-  .hero-test-holder {
-    position: absolute;
-    top: 16vh;
-    right: 8vw;
-    width: auto;
-    height: 55vh;
-    border-radius: 5%;
-    background-color: #fff;
-  }
+    .hero-test-holder {
+        position: absolute;
+        top: 10vh;
+        right: 8vw;
+        width: 30vw;
+    }
 }
 
 /* // `lg` applies to medium devices (tablets, less than 992px) */
@@ -323,21 +297,12 @@ p {
   }
   .hero-test-holder {
     position: absolute;
-    top: 5vh;
-    right: 5vw;
+    top: 8vh;
+    right: 8vw;
     width: 36vw;
-    height: auto;
-    border-radius: 5%;
-    background-color: #fff;
   }
   .hero-img-holder {
-    position: relative;
-    background-image: url(/images/Frame\ 234\(1\).png);
-    height: 47vh;
     width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: left;
   }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -349,13 +314,7 @@ p {
     border-radius: 0.9vw;
   }
   .hero-img-holder {
-    position: relative;
-    background-image: url(/images/Frame\ 234\(1\).png);
-    height: 34.5vh;
     width: 100%;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   .btn-course:hover {
     padding: 1rem 1rem 1rem 1rem;
@@ -400,11 +359,12 @@ p {
     background-color: var(--second-bg-color);
     height: 18vh;
   }
-  /* .header-video-text-holder {
-    background-color: var(--second-bg-color);
-    padding: 1rem;
-    height: 10vh;
-  } */
+   .hero-test-holder {
+    position: absolute;
+    top: 5vh;
+    right: 8vw;
+    width: 38vw;
+  }
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -416,9 +376,7 @@ p {
     top: 0vh;
     right: 0vw;
     width: 90%;
-    height:auto;
-    border-radius: 5%;
-    background-color: #fff;
+    height: auto;
   }
   .hero-img-column {
     width: 94%;
