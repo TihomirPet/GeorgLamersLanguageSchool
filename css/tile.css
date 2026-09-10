@@ -13,6 +13,7 @@
   border-radius: 8px;
   rotate: -5deg;
   z-index: 2;
+  padding: 2rem;
 }
 .card-tile-two {
   height: 35vh;
@@ -22,6 +23,7 @@
   border-radius: 8px;
   rotate: 5deg;
   z-index: 2;
+    padding: 2rem;
 }
 .card-tile-three {
   height: 35vh;
@@ -31,6 +33,7 @@
   border-radius: 8px;
   rotate: -5deg;
   z-index: 2;
+    padding: 2rem;
 }
 .card-tile-four {
   height: 35vh;
@@ -40,6 +43,7 @@
   border-radius: 8px;
   rotate: 5deg;
   z-index: 2;
+    padding: 2rem;
 }
 .card-tile-titleholder {
   height: 52%;
@@ -144,6 +148,24 @@
     box-shadow 0.15s ease-in-out;
 }
 
+
+
+
+@media  (min-width: 1440px) and (max-width: 1770px){
+
+.card-tile-one{padding: 1rem;}
+.card-tile-two{padding: 1rem;}
+.card-tile-three{padding: 1rem;}
+.card-tile-four{padding: 1rem;}
+.pen-holder {
+  position: absolute;
+  bottom: -5%;
+  right: 10vw;
+
+  z-index: 3;
+}
+}
+
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
   .card-tile {
@@ -229,11 +251,7 @@
     rotate: -7deg;
     border-radius: 1.5vw;
 }
-#video {
-    width: auto;
-    display: block;
-    height: 66vh;
-}
+
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {

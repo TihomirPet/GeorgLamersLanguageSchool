@@ -36,6 +36,11 @@ video {
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  #video {
+    width: auto;
+    display: block;
+    height: 67vh;
+}
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {

@@ -217,6 +217,16 @@ select {
 #captionsBtn.active {
   color: var(--main-bg-color);
 }
+
+
+
+@media  (min-width: 1440px) and (max-width: 1770px){
+.language-card {
+    width:100%;
+    /* border: 1px solid black; */
+    padding: 1rem;
+}
+}
 @media (max-width: 1399.98px) {
   .language-card-number {
     background-color: var(--main-bg-color);
@@ -233,17 +243,7 @@ select {
   }
 }
 
-/* Hochformat für iPad Pro 12.9 */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-}
 
-/* Hochformat für iPad Pro 11 Zoll */
-@media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
-}
-
-/* Querformat für iPad Pro 11 Zoll */
-@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
-}
 
 @media (max-width: 1199.98px) {
   .language-card-number {
@@ -297,20 +297,21 @@ select {
   .language-test-imag {
   position: relative;
   background-image: url(/images/Help.png);
-  height: 102vh;
+height:55%;
+width: auto;
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .language-test-img-text {
   background-color: var( --second-bg-color);
-  height: 26vh;
+  height: 24vh;
   border-radius: 0.5vw;
 }
 .language-card {
-    width: 22vw;
+    width: 100%;
     /* border: 1px solid black; */
-    padding: 1rem;
+    padding: 0.5rem;
 }
 }
 
