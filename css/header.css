@@ -97,7 +97,7 @@ p {
   top: 27vh;
   right: 8vw;
   width: 20vw;
-  height: 50vh;
+  height: auto;
   border-radius: 5%;
   background-color: #fff;
 }
@@ -153,12 +153,7 @@ p {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: -4vw 12vh !important;
-  border-bottom-left-radius: 0.9vw;
-  border-bottom-right-radius: 0.9vw;
-  transition: all 400ms ease; */
+
 }
 .pen-holder {
     position: absolute;
@@ -245,7 +240,7 @@ p {
     position: absolute;
     top: 16vh;
     right: 8vw;
-    width: 25vw;
+    width: auto;
     height: 55vh;
     border-radius: 5%;
     background-color: #fff;
@@ -331,7 +326,7 @@ p {
     top: 5vh;
     right: 5vw;
     width: 36vw;
-    height: 75vh;
+    height: auto;
     border-radius: 5%;
     background-color: #fff;
   }
@@ -421,7 +416,7 @@ p {
     top: 0vh;
     right: 0vw;
     width: 90%;
-    height: 40vh;
+    height:auto;
     border-radius: 5%;
     background-color: #fff;
   }

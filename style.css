@@ -67,10 +67,12 @@ body {
 }
 .line-height-titleSmall {
   line-height: 1.05;
+  overflow: inherit;
 }
 
 .line-height-title {
   line-height: 0.92;
+  overflow: inherit;
 }
 
 /* ######################### class Font family start ######################################################## */

@@ -70,9 +70,9 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Georg Lamers Sprachenschule in Köln Sprachkurse für alle</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
 
@@ -89,6 +89,7 @@
     <link rel="stylesheet" href="/css/tile.css" />
     <link rel="stylesheet" href="/css/languageTest.css" />
     <link rel="stylesheet" href="/css/video.css" />
+    <link rel="stylesheet" href="/css/leveltest.css" />
 
     <!-- ******************* CSS end ********************** -->
     <link
@@ -122,19 +123,19 @@
           class="row d-flex flex-column flex-md-row justify-content-md-center justify-content-lg-center align-items-center mt-3 mt-xl-5 hero-col-wrapper"
         >
           <div
-            class="col-11 d-flex flex-column align-items-md-start mt-3 mt-xl-5 hero-text-column"
+            class="col-11 d-flex flex-column align-items-md-start mt-3 mt-xl-3 mt-xxl-5 hero-text-column"
           >
             <h5 class="Bold letter-spacing-title font-size-h5 mb-0 text-start">
               Georg Lamers <br />Sprachenschule
             </h5>
             <h1
               id="animated-title"
-              class="font-size-h1 Semibold line-height-titleSmall letter-spacing-title mt-4 mt-md-3 mt-xl-5"
+              class="font-size-h1 Semibold line-height-title letter-spacing-title mt-4 mt-md-3 mt-xl-3 mt-xxl-5"
             >
               Sicher Deutsch sprechen
             </h1>
             <h4
-              class="Semibold letter-spacing-title font-size-h4 mb-0 header-subtitle mt-3 mt-md-2  mt-xl-4"
+              class="Semibold letter-spacing-title font-size-h4 mb-0 header-subtitle mt-3 mt-md-2 mt-xl-4"
             >
               Wir helfen dir, Deutsch im Alltag besser zu verstehen, sicher zu
               sprechen und im Unterricht mitzukommen.
@@ -143,13 +144,11 @@
               class="btn-contact-header animated-button mt-md-4 mt-xl-4 d-none d-md-block"
               href="#contact"
             >
-             Nachhilfe mit BuT-Förderung
+              Nachhilfe mit BuT-Förderung
             </a>
           </div>
           <!--=============== card holder desktop start  ===============================-->
-          <div
-            class="col-11  hero-img-column"
-          >
+          <div class="col-11 hero-img-column">
             <div class="hero-img-holder p-0 mt-4 mt-xl-5"></div>
           </div>
           <div class="col-1 hero-fill-colum d-none d-md-block"></div>
@@ -157,7 +156,294 @@
           <div
             class="col-11 col-lg-6 col-xl-1 p-0 d-flex flex-column mt-5 border hero-test-holder"
           >
-            <div class=""></div>
+            <div class="card">
+              <form id="quizForm" novalidate>
+                <!-- Step 1: Kategorie -->
+                <div class="step active" data-step="1">
+                  <h1>Für was interessierst du dich?</h1>
+                  <p class="subtext">
+                    Wir melden uns bei dir per E-Mail oder WhatsApp und beraten
+                    dich persönlich.
+                  </p>
+                  <div class="label">Kategorie <span class="req">*</span></div>
+                  <div class="options">
+                    <label class="option">
+                      <input
+                        type="checkbox"
+                        name="kategorie"
+                        value="Deutschkurs"
+                      />
+                      <span class="control-shape square"></span>
+                      <span class="option-text">Deutschkurs</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="checkbox"
+                        name="kategorie"
+                        value="Nachhilfe"
+                      />
+                      <span class="control-shape square"></span>
+                      <span class="option-text">Nachhilfe</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="checkbox"
+                        name="kategorie"
+                        value="Berufs- und Firmenkurse"
+                      />
+                      <span class="control-shape square"></span>
+                      <span class="option-text">Berufs- und Firmenkurse</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="checkbox"
+                        name="kategorie"
+                        value="Alphabetisierung"
+                      />
+                      <span class="control-shape square"></span>
+                      <span class="option-text">Alphabetisierung</span>
+                    </label>
+                  </div>
+                  <div class="error-msg">
+                    Bitte wähle mindestens eine Kategorie.
+                  </div>
+                </div>
+
+                <!-- Step 2: Sprachniveau -->
+                <div class="step" data-step="2">
+                  <h1>Wie gut sprichst du Deutsch?</h1>
+                  <p class="subtext">
+                    So können wir dich direkt dem passenden Kurs zuordnen.
+                  </p>
+                  <div class="label">
+                    Sprachniveau <span class="req">*</span>
+                  </div>
+                  <div class="options">
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="sprachniveau"
+                        value="A1 (Anfänger)"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">A1 (Anfänger)</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="sprachniveau"
+                        value="A2 (Grundlagen)"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">A2 (Grundlagen)</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="sprachniveau"
+                        value="B1 / B2 (Fortgeschritten)"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">B1 / B2 (Fortgeschritten)</span>
+                    </label>
+                  </div>
+                  <div class="error-msg">Bitte wähle dein Sprachniveau.</div>
+                </div>
+
+                <!-- Step 3: Zeitpunkt -->
+                <div class="step" data-step="3">
+                  <h1>Wann möchtest du starten?</h1>
+                  <p class="subtext">
+                    Damit wir dir den nächstmöglichen Kurstermin vorschlagen
+                    können.
+                  </p>
+                  <div class="label">Zeitpunkt <span class="req">*</span></div>
+                  <div class="options">
+                    <label class="option">
+                      <input type="radio" name="zeitpunkt" value="Sofort" />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">Sofort</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="zeitpunkt"
+                        value="In 2-3 Wochen"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">In 2-3 Wochen</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="zeitpunkt"
+                        value="In 2-3 Monaten"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">In 2-3 Monaten</span>
+                    </label>
+                  </div>
+                  <div class="error-msg">Bitte wähle einen Zeitpunkt.</div>
+                </div>
+
+                <!-- Step 4: Erreichbarkeit -->
+                <div class="step" data-step="4">
+                  <h1>Wann bist du telefonisch am besten erreichbar?</h1>
+                  <p class="subtext">
+                    Wir rufen dich zur passenden Uhrzeit für eine kurze Beratung
+                    an.
+                  </p>
+                  <div class="label">Uhrzeit <span class="req">*</span></div>
+                  <div class="options">
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="uhrzeit"
+                        value="Vormittags 8-11 Uhr"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">Vormittags 8-11 Uhr</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="uhrzeit"
+                        value="Mittags 11-14 Uhr"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">Mittags 11-14 Uhr</span>
+                    </label>
+                    <label class="option">
+                      <input
+                        type="radio"
+                        name="uhrzeit"
+                        value="Nachmittags 14-16 Uhr"
+                      />
+                      <span class="control-shape round"></span>
+                      <span class="option-text">Nachmittags 14-16 Uhr</span>
+                    </label>
+                  </div>
+                  <div class="error-msg">Bitte wähle eine Uhrzeit.</div>
+                </div>
+
+                <!-- Step 5: Kontaktdaten -->
+                <div class="step" data-step="5">
+                  <h1>Fast geschafft!</h1>
+                  <p class="subtext">
+                    Hinterlasse uns deine Kontaktdaten, wir melden uns
+                    schnellstmöglich bei dir.
+                  </p>
+
+                  <div class="field">
+                    <label for="fullname"
+                      >Vollständiger Name <span class="req">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="fullname"
+                      name="fullname"
+                      autocomplete="name"
+                      placeholder="Max Mustermann"
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="email">Email <span class="req">*</span></label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="max@beispiel.de"
+                    />
+                  </div>
+                  <div class="field" style="margin-bottom: 0">
+                    <label for="telefon"
+                      >Telefon <span class="req">*</span></label
+                    >
+                    <input
+                      type="tel"
+                      id="telefon"
+                      name="telefon"
+                      autocomplete="tel"
+                      placeholder="+49 176 12345678"
+                    />
+                  </div>
+
+                  <div class="consent">
+                    <input type="checkbox" id="consent" name="consent" />
+                    <label for="consent" class="consent-text">
+                      Ich stimme der Datenschutzerklärung und gelegentlichen
+                      Marketingmitteilungen zu, die vom Unternehmen ausgehen.
+                      <a
+                        href="https://www.sprachkursekoeln.com/privacyPolicy/dateprotection.html"
+                        target="_blank"
+                        rel="noopener"
+                        >Datenschutz</a
+                      >
+                    </label>
+                  </div>
+                  <div class="error-msg">
+                    Bitte fülle alle Pflichtfelder aus und stimme der
+                    Datenschutzerklärung zu.
+                  </div>
+                </div>
+
+                <!-- Step 6: Danke -->
+                <div class="step" data-step="6">
+                  <div class="success-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M4 12.5L9.5 18L20 6"
+                        stroke="#6C2BD9"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <h1>Danke, das war's!</h1>
+                  <p class="subtext">
+                    Wir haben deine Anfrage erhalten und melden uns in Kürze per
+                    E-Mail oder WhatsApp bei dir.
+                  </p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav-row" id="navRow">
+                  <button type="button" class="btn-back hidden" id="btnBack">
+                    <span class="arrow">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                          d="M19 12H5M5 12L11 6M5 12L11 18"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    <span>Zurück</span>
+                  </button>
+                  <div class="step-count-wrap">
+                    <span class="step-count" id="stepCount">1/5</span>
+                  </div>
+                  <button type="button" class="btn-next" id="btnNext">
+                    <span id="btnNextLabel">Weiter</span>
+                    <span class="arrow">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                          d="M5 12H19M19 12L13 6M19 12L13 18"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -171,7 +457,7 @@
       >
         <div class="row d-flex flex-column align-items-center w-100">
           <div
-            class="col-11 col-md-11 col-lg-10 d-flex  ps-0 ps-md-0 pe-0 mb-md-3 mb-xl-5 tile-title"
+            class="col-11 col-md-11 col-lg-10 d-flex ps-0 ps-md-0 pe-0 mb-md-3 mb-xl-5 tile-title"
           >
             <h2 class="font-size-h2 Bold letter-spacing-title">
               Kommt dir das bekannt vor?
@@ -180,9 +466,11 @@
         </div>
         <!-- ------------------------------------------  row one start -->
         <div
-          class="row d-flex flex-column flex-md-row flex-lg-row align-items-center justify-content-center w-100  mt-md-5  mt-xl-5 mb-xl-5 p-3 p-md-0"
+          class="row d-flex flex-column flex-md-row flex-lg-row align-items-center justify-content-center w-100 mt-md-5 mt-xl-5 mb-xl-5 p-3 p-md-0"
         >
-          <div class="col-12 col-lg-5 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-md-5 gap-xl-5 pe-xl-4">
+          <div
+            class="col-12 col-lg-5 d-flex flex-column flex-md-row justify-content-center justify-content-lg-end gap-md-5 gap-xl-5 pe-xl-4"
+          >
             <!-- Card one start -->
             <div class="card-tile-one p-3 p-md-3 p-xxl-5 mt-3 mt-md-0">
               <div class="card-tile-titleholder">
@@ -215,7 +503,9 @@
             </div>
             <!-- Card two ent -->
           </div>
-          <div class="col-12 col-lg-5 d-flex flex-column flex-md-row  justify-content-center justify-content-lg-start gap-md-5 gap-xl-5 mt-md-5 mt-lg-0">
+          <div
+            class="col-12 col-lg-5 d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-md-5 gap-xl-5 mt-md-5 mt-lg-0"
+          >
             <!-- Card three start-->
             <div class="card-tile-three p-3 p-md-3 p-xxl-5 mt-3 mt-md-0">
               <div class="card-tile-titleholder">
@@ -254,7 +544,7 @@
           <img src="/images/Pen1.png " alt="Pen" class="tile-pen" />
         </div>
         <div
-          class="row d-flex justify-content-center w-100 mt-md-5  mt-xl-1 ps-2 pe-2 p-md-0"
+          class="row d-flex justify-content-center w-100 mt-md-5 mt-xl-1 ps-2 pe-2 p-md-0"
         >
           <div
             class="col-12 col-md-11 col-xl-9 col-xxl-8 d-flex flex-column flex-md-row tile-middle-holder p-3 pb-4 p-xl-5"
@@ -424,7 +714,7 @@
             <!-- Card four end lg none -->
           </div>
           <div
-            class="col-md-11 col-lg-4 col-xl-5 d-flex align-items-end align-items-md-center  align-items-lg-end  align-items-xl-start justify-content-end language-test-imag pt-lg-5 pt-xl-5"
+            class="col-md-11 col-lg-4 col-xl-5 d-flex align-items-end align-items-md-center align-items-lg-end align-items-xl-start justify-content-end language-test-imag pt-lg-5 pt-xl-5"
           >
             <div class="language-test-img-text p-3 p-xl-3">
               <h4 class="font-size-h4 third-colour Bold line-height-titleSmall">
@@ -594,7 +884,12 @@
             <div
               class="col-10 d-flex align-items-center justify-content-center mt-3 p-4"
             >
-              <img src="/images/LaptopV.png" alt="Laptop" width="90%" class="img-laptop"/>
+              <img
+                src="/images/LaptopV.png"
+                alt="Laptop"
+                width="90%"
+                class="img-laptop"
+              />
             </div>
           </div>
 
@@ -1004,6 +1299,7 @@
     <script src="/js/toggle.js" type="module"></script>
     <script src="/js/videomuted.js" type="module"></script>
     <script src="/js/captionengen.js" type="module"></script>
+    <script src="/js/leveltest.js" type="module"></script>
 
     <script src="/js/smoothscroll.js" type="module"></script>
 
