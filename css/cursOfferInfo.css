@@ -1,17 +1,23 @@
 .corse-offer-info {
   height: auto;
-  padding: 4vh 0vw 30vh 0vw ;
+  padding: 4vh 0vw 30vh 0vw;
 }
 .course-offers-video {
   height: 110vh;
 
   border-radius: 0.5vw;
 }
+.course-offer-videoholder {
+  background-color: var(--second-bg-color);
+  transform: rotate(-5deg);
+  border-radius: 0.9vw;
+  width: 80%;
+}
 .course-offers-video {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   position: relative;
   height: 55vh;
-
+  transform: rotate(5deg);
   border-radius: 0.5vw;
   z-index: 1;
   touch-action: none; /* Verhindert Gesten wie Pinch-to-Zoom */
@@ -51,21 +57,32 @@
 }
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    .corse-offer-info {
+  .corse-offer-info {
     height: auto;
-    padding: 4vh 0vw 28vh 0vw ;
+    padding: 4vh 0vw 28vh 0vw;
+  }
+  .course-offer-videoholder {
+  background-color: var(--second-bg-color);
+  transform: rotate(-5deg);
+  border-radius: 0.9vw;
+  width: 92%;
 }
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .corse-offer-info {
+  .corse-offer-info {
     height: auto;
     padding: 4vh 0vw 25vh 0vw;
+  }
+  .course-offer-videoholder {
+  background-color: var(--second-bg-color);
+  transform: rotate(-5deg);
+  border-radius: 0.9vw;
+  width: 100%;
 }
 }
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
   .course-offers-video {
     height: auto;
     width: 100%;
@@ -78,10 +95,17 @@
   .corse-offer-info {
     height: auto;
     padding: 4vh 0vw 4vh 0vw;
-}
-    .course-offers-video {
-        height: auto;
-        width: 100%;
-        border-radius: 2.9vw;
-    }
+  }
+  .course-offers-video {
+    height: auto;
+    width: 100%;
+    border-radius: 2.9vw;
+  }
+  .course-offer-videoholder {
+    background-color: var(--second-bg-color);
+    transform: rotate(-5deg);
+    border-radius: 2vw;
+    width: 83%;
+  }
+
 }
