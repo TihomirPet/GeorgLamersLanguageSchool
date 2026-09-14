@@ -31,70 +31,70 @@
 
 // });
 // **********************************
-const videoContainers = document.querySelectorAll('.video-container');
-document.querySelector('video').canPlayType('video/mp4; codecs="avc1.42E01E"');
-// Füge Event-Listener für jeden Video-Container hinzu
-videoContainers.forEach((container) => {
-  // Selektiere Video und verwandte Elemente innerhalb des Containers
-  const videoPlay = container.querySelector('video');
-  const hoverText = container.querySelector('.hover-text');
-  const hoverCard = container.querySelector('.header-image-test');
+// const videoContainers = document.querySelectorAll('.video-container');
+// document.querySelector('video').canPlayType('video/mp4; codecs="avc1.42E01E"');
+// // Füge Event-Listener für jeden Video-Container hinzu
+// videoContainers.forEach((container) => {
+//   // Selektiere Video und verwandte Elemente innerhalb des Containers
+//   const videoPlay = container.querySelector('video');
+//   const hoverText = container.querySelector('.hover-text');
+//   const hoverCard = container.querySelector('.header-image-test');
 
-  // Wenn die Maus über den Container fährt
-  container.addEventListener('mouseenter', () => {
-    if (hoverCard) hoverCard.classList.remove('show'); // Header-Card ausblenden
-    if (videoPlay) videoPlay.play(); // Video abspielen
-    if (hoverText) hoverText.classList.add('active'); // Hover-Text anzeigen
-  });
+//   // Wenn die Maus über den Container fährt
+//   container.addEventListener('mouseenter', () => {
+//     if (hoverCard) hoverCard.classList.remove('show'); // Header-Card ausblenden
+//     if (videoPlay) videoPlay.play(); // Video abspielen
+//     if (hoverText) hoverText.classList.add('active'); // Hover-Text anzeigen
+//   });
 
-  // Wenn die Maus den Container verlässt
-  container.addEventListener('mouseleave', () => {
-    if (hoverCard) hoverCard.classList.add('show'); // Header-Card wieder einblenden
-    if (videoPlay) {
-      videoPlay.pause(); // Video stoppen
-      videoPlay.currentTime = 0; // Video zurücksetzen
-    }
-    if (hoverText) hoverText.classList.remove('active'); // Hover-Text ausblenden
-  });
-});
-
-// Stumm schalten und Videos programmatisch laden
-window.addEventListener('DOMContentLoaded', () => {
-  const videos = document.querySelectorAll('video');
-  videos.forEach((video) => {
-    video.muted = true; // Alle Videos stumm schalten
-    video.load(); // Programmatisch laden
-  });
-});
-
-// Klickevents auf Videos abfangen, um Verlinkung zu verhindern
-document.querySelectorAll('.video-container video').forEach((video) => {
-  video.addEventListener('click', (event) => {
-    event.stopPropagation(); // Verhindert, dass das Ereignis den Container-Link erreicht
-  });
-});
-// document.addEventListener('click', () => {
-//   document.querySelectorAll('video').forEach((video) => {
-//     if (video.paused) {
-//       video.play();
+//   // Wenn die Maus den Container verlässt
+//   container.addEventListener('mouseleave', () => {
+//     if (hoverCard) hoverCard.classList.add('show'); // Header-Card wieder einblenden
+//     if (videoPlay) {
+//       videoPlay.pause(); // Video stoppen
+//       videoPlay.currentTime = 0; // Video zurücksetzen
 //     }
+//     if (hoverText) hoverText.classList.remove('active'); // Hover-Text ausblenden
 //   });
 // });
-// Opera-spezifische Anpassungen
-if (
-  navigator.userAgent.includes('Opera') ||
-  navigator.userAgent.includes('OPR')
-) {
-  document.querySelectorAll('video').forEach((video) => {
-    video.disablePictureInPicture = true; // Bild-in-Bild deaktivieren
-    video.setAttribute(
-      'controlsList',
-      'nodownload nofullscreen noremoteplayback'
-    ); // Zusätzliche Steuerungen deaktivieren
-  });
-}
-  document.getElementById('customVideo').controlsList =
-    'nodownload nofullscreen noremoteplayback';
+
+// // Stumm schalten und Videos programmatisch laden
+// window.addEventListener('DOMContentLoaded', () => {
+//   const videos = document.querySelectorAll('video');
+//   videos.forEach((video) => {
+//     video.muted = true; // Alle Videos stumm schalten
+//     video.load(); // Programmatisch laden
+//   });
+// });
+
+// // Klickevents auf Videos abfangen, um Verlinkung zu verhindern
+// document.querySelectorAll('.video-container video').forEach((video) => {
+//   video.addEventListener('click', (event) => {
+//     event.stopPropagation(); // Verhindert, dass das Ereignis den Container-Link erreicht
+//   });
+// });
+// // document.addEventListener('click', () => {
+// //   document.querySelectorAll('video').forEach((video) => {
+// //     if (video.paused) {
+// //       video.play();
+// //     }
+// //   });
+// // });
+// // Opera-spezifische Anpassungen
+// if (
+//   navigator.userAgent.includes('Opera') ||
+//   navigator.userAgent.includes('OPR')
+// ) {
+//   document.querySelectorAll('video').forEach((video) => {
+//     video.disablePictureInPicture = true; // Bild-in-Bild deaktivieren
+//     video.setAttribute(
+//       'controlsList',
+//       'nodownload nofullscreen noremoteplayback'
+//     ); // Zusätzliche Steuerungen deaktivieren
+//   });
+// }
+//   document.getElementById('customVideo').controlsList =
+//     'nodownload nofullscreen noremoteplayback';
 
 // ********************************************************************
 // for (let i = 0; i < video.length; i++) {
@@ -111,3 +111,61 @@ if (
 // }
 
 // ********************************************************************
+const videoContainers = document.querySelectorAll('.video-container');
+
+// Entfernt: die ungenutzte, freistehende canPlayType-Testzeile war ohne Null-Check
+// und ohne jeden Effekt (Rückgabewert wurde nirgends verwendet)
+
+videoContainers.forEach((container) => {
+  const videoPlay = container.querySelector('video');
+  const hoverText = container.querySelector('.hover-text');
+  const hoverCard = container.querySelector('.header-image-test');
+
+  container.addEventListener('mouseenter', () => {
+    if (hoverCard) hoverCard.classList.remove('show');
+    if (videoPlay) videoPlay.play();
+    if (hoverText) hoverText.classList.add('active');
+  });
+
+  container.addEventListener('mouseleave', () => {
+    if (hoverCard) hoverCard.classList.add('show');
+    if (videoPlay) {
+      videoPlay.pause();
+      videoPlay.currentTime = 0;
+    }
+    if (hoverText) hoverText.classList.remove('active');
+  });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const videos = document.querySelectorAll('video');
+  videos.forEach((video) => {
+    video.muted = true;
+    video.load();
+  });
+});
+
+document.querySelectorAll('.video-container video').forEach((video) => {
+  video.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+});
+
+if (
+  navigator.userAgent.includes('Opera') ||
+  navigator.userAgent.includes('OPR')
+) {
+  document.querySelectorAll('video').forEach((video) => {
+    video.disablePictureInPicture = true;
+    video.setAttribute(
+      'controlsList',
+      'nodownload nofullscreen noremoteplayback',
+    );
+  });
+}
+
+// Nur setzen, wenn das Element wirklich existiert
+const customVideo = document.getElementById('customVideo');
+if (customVideo) {
+  customVideo.controlsList = 'nodownload nofullscreen noremoteplayback';
+}
