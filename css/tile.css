@@ -172,11 +172,11 @@
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-  .card-tile {
+  /* .card-tile {
     height: 44vh;
 
     border-radius: 20px;
-  }
+  } */
   .tile-text {
     width: 100%;
   }

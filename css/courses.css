@@ -140,11 +140,7 @@ width: clamp(10vw, 20em, 100vw) !important;
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-   .courses {
-    /* background-color: var(--second-bg-color); */
-    height: auto;
-    padding: 9vh 0vw 20vh 0vw !important;
-  }
+ 
   .courses {
     background-color: var(--second-bg-color);
     height: auto;
