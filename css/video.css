@@ -56,14 +56,6 @@
   }
 
   
-  .video-wrapper {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    background: black;
-    overflow: hidden;
-    border-radius: 12px;
-  }
   .video-play-content {
     transform: rotateZ(-3deg);
     width: 100%;
