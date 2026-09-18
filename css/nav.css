@@ -1,7 +1,4 @@
-/* body {
-    background-color: darkblue;
-} */
-/* Standard */
+
 
 .nav {
   -webkit-transition: left 0.5s ease;
@@ -54,7 +51,7 @@
 .nav a {
   text-decoration: none;
   color: var(--text-white-color);
-  /* border: 1px solid red; */
+
 }
 .nav .nav-link-desktop {
   text-decoration: none;
@@ -63,34 +60,24 @@
   font-family: 'MontserratBold';
   letter-spacing: -0.04em;
   width: 100% !important;
-  font-size: var(--nav-title);
+ 
   font-size: var(--h2);
-  /* border: 1px solid red; */
+
 }
 .nav-link-desktop:hover {
   text-decoration: none;
   font-weight: 500;
-  /* color: var(--text-white-color); */
+
   font-family: 'MontserratBold';
   letter-spacing: -0.04em;
   width: 100% !important;
-  font-size: var(--nav-title);
+
   padding-left: 1.2rem;
   color: var(--main-bg-color) !important;
   font-size: var(--h2);
 }
-.nav a:active {
-  text-decoration: none;
-  font-weight: 500;
-  /* color: var(--text-white-color); */
-  font-family: 'MontserratBold';
-  letter-spacing: -0.04em;
-  width: 100% !important;
-  font-size: var(--nav-title);
-  padding-left: 0rem;
-  color: var(--text-white-color);
-  font-size: var(--h2);
-}
+ 
+
 
 /* auf dunklem Hintergrund */
 .nav-toggle.nav-white {
@@ -217,81 +204,7 @@
   background: transparent;
 }
 
-/* .nav-toggle:hover .nav-toggle-bar {
- background-color: var(--main-bg-color);
-} */
 
-/* .nav-toggle .nav-toggle-bar,
-.nav-toggle .nav-toggle-bar::after,
-.nav-toggle .nav-toggle-bar::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background: var(--second-bg-color);
-  content: '';
-  height: 0.1rem;
-  width: 70%;
-}
-
-.nav-toggle .nav-toggle-bar {
-  margin-top: 0;
-}
-
-.nav-toggle .nav-toggle-bar::after {
-  margin-top: 0.8vh;
-  width: 100% !important;
-}
-
-.nav-toggle .nav-toggle-bar::before {
-  margin-top: -0.8vh;
-  width: 100% !important;
-}
-
-.nav-toggle.expanded .nav-toggle-bar {
-  background: transparent;
-}
-
-.nav-toggle.expanded .nav-toggle-bar::after,
-.nav-toggle.expanded .nav-toggle-bar::before {
-  background: var(--text-white-color);
-  background: var(--second-bg-color);
-  margin-top: 0;
-}
-
-.nav-toggle.expanded .nav-toggle-bar::after {
-  -ms-transform: rotate(45deg);
-
-  -webkit-transform: rotate(45deg);
-
-  transform: rotate(45deg);
-}
-
-.nav-toggle.expanded .nav-toggle-bar::before {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.nav-toggle:hover {
-
-  background-color: var(--second-bg-color);
-}
-
-.nav-toggle:hover .nav-toggle-bar::after {
- 
-  background-color: var(--main-bg-color);
-}
-.nav-toggle:hover .nav-toggle-bar::before {
-
-  background-color: var(--main-bg-color);
-} */
 
 /* ============= dropdown :hover ============================= */
 .dropdown-index {
@@ -370,288 +283,22 @@
   }
 }
 
-/* Querformat für iPad Pro 12.9 */
-/* @media only screen 
-and (min-width:1024px) 
-and (max-width:1366px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 2)
-{
 
- 
 
-   .a-mobile {
-    font-size: var(--h6) !important;
-  }
-  .btn-mobile {
-    background-color: transparent ;
-    border: none;
-  }
-  .nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--text-white-color);
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100%;
-    font-size: var(--nav-title);
-    font-size: var(--h2);
-  
-  }
 
-  .nav a:hover {
-    text-decoration: none;
-    font-weight: 500;
-
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100% !important;
-    font-size: var(--nav-title);
-    padding-left: 0rem;
-    color: var(--text-white-color);
-    font-size: var(--h2);
-  }
-  .nav a:active {
-    text-decoration: none;
-    font-weight: 500;
-
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100% !important;
-    font-size: var(--nav-title);
-    padding-left: 0rem;
-    color: var(--text-white-color);
-    font-size: var(--h2);
-  }
-  .nav ul {
-    position: absolute;
-    top: 60% !important;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100%;
-      border: 1px solid red;
-  }
-
-  .dropdown-index-content-mobile {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-  }
-
-  .dropdown-index-content-mobile.expanded {
-    max-height: 300px;
-    opacity: 1;
-  }
-  .nav-mobile {
-    display: block !important;
-  }
-  .nav-decktop {
-    display: none !important;
-  }
-  .nav-toggle .nav-toggle-bar {
-    margin-top: 0;
-  }
-
-  .nav-toggle .nav-toggle-bar::after {
-    margin-top: 0.5vh;
-    width: 100% !important;
-  }
-
-  .nav-toggle .nav-toggle-bar::before {
-    margin-top: -0.5vh;
-    width: 100% !important;
-  }
-} */
-
-/* Hochformat für iPad Pro 12.9 */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* CSS-Regeln für Hochformat */
-  .nav-mobile {
-    display: block !important;
-  }
-  .nav-decktop {
-    display: none !important;
-  }
-  .a-mobile {
-    font-size: var(--h6) !important;
-  }
-  .btn-mobile {
-    background-color: transparent;
-    border: none;
-  }
-  .nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--text-white-color);
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100%;
-    font-size: var(--nav-title);
-    font-size: var(--h2);
-  }
-
-  .nav a:hover {
-    text-decoration: none;
-    font-weight: 500;
-
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100% !important;
-    font-size: var(--nav-title);
-    padding-left: 0rem;
-    color: var(--text-white-color);
-    font-size: var(--h2);
-  }
-  .nav a:active {
-    text-decoration: none;
-    font-weight: 500;
-
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100% !important;
-    font-size: var(--nav-title);
-    padding-left: 0rem;
-    color: var(--text-white-color);
-    font-size: var(--h2);
-  }
-  .nav ul {
-    position: absolute;
-    top: 40% !important;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100%;
-  }
-  .nav-decktop {
-    display: none !important;
-  }
-  .nav-mobile {
-    display: block !important;
-  }
-
-  .dropdown-index-content-mobile {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition:
-      max-height 0.3s ease,
-      opacity 0.3s ease;
-  }
-
-  .dropdown-index-content-mobile.expanded {
-    max-height: 300px;
-    opacity: 1;
-  }
-  .nav-mobile {
-    display: block !important;
-  }
-  .nav-decktop {
-    display: none !important;
-  }
-  .nav-toggle .nav-toggle-bar {
-    margin-top: 0;
-  }
-
-  .nav-toggle .nav-toggle-bar::after {
-    margin-top: 0.3vh;
-    width: 100% !important;
-  }
-
-  .nav-toggle .nav-toggle-bar::before {
-    margin-top: -0.3vh;
-    width: 100% !important;
-  }
-}
-
-/* Hochformat für iPad Pro 11 Zoll */
-@media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
-  .nav-mobile {
-    display: block !important;
-  }
-  .nav-decktop {
-    display: none !important;
-  }
-  .nav-toggle .nav-toggle-bar {
-    margin-top: 0;
-  }
-
-  .nav-toggle .nav-toggle-bar::after {
-    margin-top: 0.4vh;
-    width: 100% !important;
-  }
-
-  .nav-toggle .nav-toggle-bar::before {
-    margin-top: -0.4vh;
-    width: 100% !important;
-  }
-}
-
-/* Querformat für iPad Pro 11 Zoll */
-@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
-  .nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--text-white-color);
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100%;
-    font-size: var(--nav-title);
-    font-size: var(--h2);
-  }
-
-  .nav-mobile {
-    display: block !important ;
-  }
-  .nav-decktop {
-    display: none !important;
-  }
-  .dropdown-index-content-mobile {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition:
-      max-height 0.3s ease,
-      opacity 0.3s ease;
-  }
-
-  .dropdown-index-content-mobile.expanded {
-    max-height: 300px;
-    opacity: 1;
-  }
-  .btn-mobile {
-    background-color: transparent;
-    border: none;
-  }
-}
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+
   .nav-toggle {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: pointer;
+  
     height: 4.3vw;
     right: 5.3rem;
     position: fixed;
     top: 3rem;
     width: 4.5vw;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--text-white-color);
+  
+  
   }
   .nav-mobile {
     display: none;
@@ -735,7 +382,7 @@ and (-webkit-min-device-pixel-ratio: 2)
     font-family: 'MontserratBold';
     letter-spacing: -0.04em;
     width: 100% !important;
-    font-size: var(--nav-title);
+   
     font-size: var(--h2);
   }
 
@@ -746,23 +393,13 @@ and (-webkit-min-device-pixel-ratio: 2)
     font-family: 'MontserratBold';
     letter-spacing: -0.04em;
     width: 100% !important;
-    font-size: var(--nav-title);
+
     padding-left: 0rem;
     color: var(--text-white-color);
     font-size: var(--h2);
   }
-  .nav a:active {
-    text-decoration: none;
-    font-weight: 500;
-    /* color: var(--text-white-color); */
-    font-family: 'MontserratBold';
-    letter-spacing: -0.04em;
-    width: 100% !important;
-    font-size: var(--nav-title);
-    padding-left: 0rem;
-    color: var(--text-white-color);
-    font-size: var(--h2);
-  }
+
+
   /* Standardmäßig Dropdown verstecken */
   .dropdown-index-content-mobile {
     max-height: 0;
@@ -779,24 +416,16 @@ and (-webkit-min-device-pixel-ratio: 2)
     max-height: 300px; /* Passe dies an die maximale Höhe deines Menüs an */
     opacity: 1;
   }
+  
 
   .nav-toggle {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: pointer;
+   
     height: 5.3vw;
     position: fixed;
     left: 90vw;
     top: 2rem;
     width: 5.5vw;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--text-white-color);
-  }
+ 
   .nav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
@@ -881,22 +510,16 @@ and (-webkit-min-device-pixel-ratio: 2)
     width: 100%;
     z-index: 5;
   }
+
+  
   .nav-toggle {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: pointer;
+  
     height: 6vw;
     position: fixed;
     left: 86vw;
     top: 2rem;
     width: 6vw;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--text-white-color);
+ 
   }
   /* =========================
    POSITION (perfekt zentriert)
@@ -918,28 +541,16 @@ and (-webkit-min-device-pixel-ratio: 2)
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  /* .nav-mobile {
-    display: block !important;
-  }
-  .nav-decktop {
-    display: none !important;
-  } */
+
   .nav-toggle {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: pointer;
+
 
     height: 10.2vw;
     position: fixed;
     top: 2rem;
     width: 10.5vw;
     left: 84vw;
-    z-index: 6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--text-white-color);
+
   }
+}
 }

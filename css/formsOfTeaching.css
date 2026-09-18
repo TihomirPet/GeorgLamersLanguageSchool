@@ -103,6 +103,12 @@ button:not(:disabled) {
   background-image: var(--bs-accordion-btn-active-icon);
   transform: var(--bs-accordion-btn-icon-transform);
 }
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none;
+}
 
 .accordion-item {
   color: var(--bs-accordion-color);
@@ -137,19 +143,14 @@ button:not(:disabled) {
     display: none !important;
   }
    .forms-of-teaching-left {
-    /* border-bottom: 1px solid var(--second-bg-color);
-  border-left: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color); */
+
     background-color: var(--bg-bright-color);
     border-top-left-radius: 1.5vw;
     border-top-right-radius: 1.5vw;
     border-bottom-left-radius: 0vw;
   }
   .forms-of-teaching-right {
-    /* border-bottom:1px solid var(--text-black-color); */
-    /* border-bottom: 1px solid var(--second-bg-color);
-  border-right: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color); */
+  
     background-color: var(--bg-bright-color);
     border-top-right-radius: 0vw;
     border-bottom-right-radius: 1.5vw;
@@ -161,25 +162,7 @@ button:not(:disabled) {
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .forms-of-teaching-left {
-    /* border-bottom: 1px solid var(--second-bg-color);
-  border-left: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color); */
-    background-color: var(--bg-bright-color);
-    border-top-left-radius: 1.5vw;
-    border-top-right-radius: 1.5vw;
-    border-bottom-left-radius: 0vw;
-  }
-  .forms-of-teaching-right {
-    /* border-bottom:1px solid var(--text-black-color); */
-    /* border-bottom: 1px solid var(--second-bg-color);
-  border-right: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color); */
-    background-color: var(--bg-bright-color);
-    border-top-right-radius: 0vw;
-    border-bottom-right-radius: 1.5vw;
-    border-bottom-left-radius: 1.5vw;
-  }
+
   .img-laptop {
     width: 60%;
   }
@@ -227,40 +210,7 @@ button:not(:disabled) {
     letter-spacing: -0.04em;
     font-family: 'MontserratSemiBold';
   }
-  .accordion-button :checked {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 1.3rem 0rem 1.3rem 0rem !important;
-    font-size: var(--h6) !important;
-    color: var(--bs-accordion-btn-color);
-    text-align: left;
-    background-color: transparent !important;
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
-    letter-spacing: -0.04em;
-    font-family: 'MontserratSemiBold';
-  }
-  .accordion-button :active {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 1.3rem 0rem 1.3rem 0rem !important;
-    font-size: var(--h6) !important;
-    color: var(--bs-accordion-btn-color);
-    text-align: left;
-    background-color: transparent !important;
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
-    letter-spacing: -0.04em;
-    font-family: 'MontserratSemiBold';
-  }
+ 
   .main-colour-small {
     display: none !important;
     color: var(--main-bg-color);
@@ -268,25 +218,7 @@ button:not(:disabled) {
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .forms-of-teaching-left {
-    /* border-bottom: 1px solid var(--second-bg-color);
-  border-left: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color); */
-    background-color: var(--bg-bright-color);
-    border-top-left-radius: 1.5vw;
-    border-top-right-radius: 1.5vw;
-    border-bottom-left-radius: 0vw;
-  }
-  .forms-of-teaching-right {
-    /* border-bottom:1px solid var(--text-black-color); */
-    /* border-bottom: 1px solid var(--second-bg-color);
-  border-right: 1px solid var(--second-bg-color);
-  border-top: 1px solid var(--second-bg-color); */
-    background-color: var(--bg-bright-color);
-    border-top-right-radius: 0vw;
-    border-bottom-right-radius: 1.5vw;
-    border-bottom-left-radius: 1.5vw;
-  }
+
   .forms-of-teaching {
     /* background-color: var(--bg-bright-color ); */
     height: auto;
