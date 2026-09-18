@@ -67,7 +67,7 @@
 .nav-link-desktop:hover {
   text-decoration: none;
   font-weight: 500;
-
+  /* color: var(--text-white-color); */
   font-family: 'MontserratBold';
   letter-spacing: -0.04em;
   width: 100% !important;
@@ -76,8 +76,18 @@
   color: var(--main-bg-color) !important;
   font-size: var(--h2);
 }
- 
+.nav a:active {
+  text-decoration: none;
+  font-weight: 500;
+  /* color: var(--text-white-color); */
+  font-family: 'MontserratBold';
+  letter-spacing: -0.04em;
+  width: 100% !important;
 
+  padding-left: 0rem;
+  color: var(--text-white-color);
+  font-size: var(--h2);
+}
 
 /* auf dunklem Hintergrund */
 .nav-toggle.nav-white {
@@ -289,16 +299,15 @@
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
   .nav-toggle {
-  
+
     height: 4.3vw;
     right: 5.3rem;
     position: fixed;
     top: 3rem;
     width: 4.5vw;
-  
-  
+    z-index: 6;
+   
   }
   .nav-mobile {
     display: none;
@@ -309,7 +318,6 @@
   .nav ul {
     position: absolute;
     top: 45%;
-    left: 0;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -399,8 +407,18 @@
     color: var(--text-white-color);
     font-size: var(--h2);
   }
-
-
+  .nav a:active {
+    text-decoration: none;
+    font-weight: 500;
+    /* color: var(--text-white-color); */
+    font-family: 'MontserratBold';
+    letter-spacing: -0.04em;
+    width: 100% !important;
+   
+    padding-left: 0rem;
+    color: var(--text-white-color);
+    font-size: var(--h2);
+  }
   /* Standardmäßig Dropdown verstecken */
   .dropdown-index-content-mobile {
     max-height: 0;
@@ -417,16 +435,16 @@
     max-height: 300px; /* Passe dies an die maximale Höhe deines Menüs an */
     opacity: 1;
   }
-  
 
   .nav-toggle {
-   
+
     height: 5.3vw;
     position: fixed;
     left: 90vw;
     top: 2rem;
     width: 5.5vw;
- 
+  
+  }
   .nav {
     -webkit-transition: left 0.5s ease;
     -moz-transition: left 0.5s ease;
@@ -511,16 +529,15 @@
     width: 100%;
     z-index: 5;
   }
-
-  
   .nav-toggle {
-  
+    
     height: 6vw;
     position: fixed;
     left: 86vw;
     top: 2rem;
     width: 6vw;
- 
+  
+  
   }
   /* =========================
    POSITION (perfekt zentriert)
@@ -542,9 +559,14 @@
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+  /* .nav-mobile {
+    display: block !important;
+  }
+  .nav-decktop {
+    display: none !important;
+  } */
   .nav-toggle {
-
+   
 
     height: 10.2vw;
     position: fixed;
@@ -553,5 +575,4 @@
     left: 84vw;
 
   }
-}
 }

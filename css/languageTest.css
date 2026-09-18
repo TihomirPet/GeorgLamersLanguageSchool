@@ -18,7 +18,6 @@
   padding: 14vh 0vw 30vh 0vw;
 }
 
-
 .language-card-number-fake {
   /* background-color: var(--main-bg-color);
     color: var(--text-white-color); */
@@ -29,26 +28,22 @@
   justify-content: center;
   border-radius: 50%;
 }
-.language-test-image{
+.language-test-image-holder {
   position: relative;
-  background-image: url(/images/Help.png);
-  height: 70vh;
-
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-
 }
-.language-test-img-text{
-   background-color: var(  --second-bg-color);
-   height: 14vh;
-   border-radius: 0.5vw;
+.language-test-image {
+  width: auto;
 }
-
-
+.language-test-img-text {
+  position: absolute;
+  top: 7vh;
+  right: -3vw;
+  background-color: var(--second-bg-color);
+  height: 14vh;
+  border-radius: 0.5vw;
+}
 
 /* 🎥 VIDEO */
-
 
 /* 🧾 CUSTOM CAPTIONS */
 #customCaptions {
@@ -218,13 +213,19 @@ select {
   color: var(--main-bg-color);
 }
 
-
-
-@media  (min-width: 1440px) and (max-width: 1770px){
-.language-card {
-    width:100%;
+@media (min-width: 1440px) and (max-width: 1770px) {
+  .language-card {
+    width: 100%;
     /* border: 1px solid black; */
     padding: 1rem;
+  }
+  .language-test-img-text {
+  position: absolute;
+  top: 7vh;
+  right: -3vw;
+  background-color: var(--second-bg-color);
+  height: 18vh;
+  border-radius: 0.5vw;
 }
 }
 @media (max-width: 1399.98px) {
@@ -241,9 +242,18 @@ select {
   .language-card {
     width: 100%;
   }
+    .language-test-img-text {
+  
+    height: 18vh;
+  position: absolute;
+   top: 5vh;
+   right: 0vw;
+  background-color: var(--second-bg-color);
+
+ 
+
+  }
 }
-
-
 
 @media (max-width: 1199.98px) {
   .language-card-number {
@@ -259,23 +269,23 @@ select {
   .language-card {
     width: 90%;
   }
-  .language-test-img-text {
-    background-color: var(--second-bg-color);
-    height: 20vh;
-    border-radius: 0.5vw;
-}
-.language-test-image {
-    position: relative;
-    background-image: url(/images/Help.png);
-    height: 68vh;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.language-card {
+    .language-test-img-text {
+  
+    height: 18vh;
+  position: absolute;
+   top: 55vh;
+   right: 0vw;
+  background-color: var(--second-bg-color);
 
+ 
+
+  }
+  .language-test-image {
+    width: auto;
+  }
+  .language-card {
     padding: 0.8rem;
-}
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -295,24 +305,20 @@ select {
   }
 
   .language-test-image {
-  position: relative;
-  background-image: url(/images/Help.png);
-height:55%;
-width: auto;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.language-test-img-text {
-  background-color: var( --second-bg-color);
-  height: 24vh;
-  border-radius: 0.5vw;
-}
-.language-card {
+    width: auto;
+  }
+  .language-test-img-text {
+    height: 24vh;
+    position: absolute;
+    top: 57vh;
+    right: 0vw;
+    background-color: var(--second-bg-color);
+  }
+  .language-card {
     width: 100%;
     /* border: 1px solid black; */
     padding: 0.5rem;
-}
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -351,16 +357,17 @@ width: auto;
 }
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
-
- .language-test-image {
-  position: relative;
-  background-image: url(/images/Help.png);
-  height: 44vh;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .language-test-image {
+    width: auto;
+  }
+  .language-test-img-text {
+    position: absolute;
+    top: 30vh !important;
+    right: 0vw;
+    background-color: var(--second-bg-color);
+    height: 14vh;
+    border-radius: 0.5vw;
+  }
   .language-card-number {
     background-color: var(--main-bg-color);
     color: var(--text-white-color);
@@ -384,9 +391,4 @@ width: auto;
   .language-card {
     width: 80vw;
   }
-  .language-test-img-text {
-  background-color: var( --second-bg-color);
-  height: 13vh;
-  border-radius: 1.5vw;
-}
 }

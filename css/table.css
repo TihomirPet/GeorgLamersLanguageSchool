@@ -20,10 +20,10 @@
     var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
 }
 
-th {
+/* th {
   background-color: var(--second-bg-color) !important;
   color: white !important;
-}
+} */
 table {
   /* border: 2px solid var(  --second-bg-color); */
   border-collapse: collapse;
@@ -46,7 +46,7 @@ table {
   --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
   --bs-table-hover-color: var(--bs-emphasis-color);
   --bs-table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.075);
-  width: 100%;
+
   margin-bottom: 0rem !important;
   vertical-align: top;
   border-color: transparent !important;
@@ -69,9 +69,7 @@ table td {
 }
 
 table th {
-  /* font-size: .85em; */
-  /* letter-spacing: .1em; */
-  /* text-transform: uppercase; */
+
   background-color: var(--second-bg-color);
   color: var(--text-white-color);
   font-size: var(--font-p) !important;
