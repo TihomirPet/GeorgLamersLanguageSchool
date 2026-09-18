@@ -1,4 +1,4 @@
-.corse-offer-info {
+.course-offer-info {
   height: auto;
   padding: 4vh 0vw 30vh 0vw;
 }
@@ -57,7 +57,7 @@
 }
 /* // `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  .corse-offer-info {
+  .course-offer-info {
     height: auto;
     padding: 4vh 0vw 28vh 0vw;
   }
@@ -70,7 +70,7 @@
 }
 /* // `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .corse-offer-info {
+  .course-offer-info {
     height: auto;
     padding: 4vh 0vw 25vh 0vw;
   }
@@ -92,7 +92,7 @@
 
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .corse-offer-info {
+  .course-offer-info {
     height: auto;
     padding: 4vh 0vw 4vh 0vw;
   }

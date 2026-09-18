@@ -29,7 +29,7 @@
   justify-content: center;
   border-radius: 50%;
 }
-.language-test-imag{
+.language-test-image{
   position: relative;
   background-image: url(/images/Help.png);
   height: 70vh;
@@ -264,7 +264,7 @@ select {
     height: 20vh;
     border-radius: 0.5vw;
 }
-.language-test-imag {
+.language-test-image {
     position: relative;
     background-image: url(/images/Help.png);
     height: 68vh;
@@ -294,7 +294,7 @@ select {
     border-radius: 50%;
   }
 
-  .language-test-imag {
+  .language-test-image {
   position: relative;
   background-image: url(/images/Help.png);
 height:55%;
@@ -353,7 +353,7 @@ width: auto;
 @media (max-width: 575.98px) {
 
 
- .language-test-imag {
+ .language-test-image {
   position: relative;
   background-image: url(/images/Help.png);
   height: 44vh;

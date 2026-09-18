@@ -5,45 +5,28 @@
 .tile-video-holder {
   padding: 12vh 0 12vh 0;
 }
-.card-tile-one {
-  height: 35vh;
-  width: 18vw;
-  background-color: #fff9ef;
-  border: 1px solid rgb(255, 115, 15, 0.3);
-  border-radius: 8px;
-  rotate: -5deg;
-  z-index: 2;
-  padding: 2rem;
-}
-.card-tile-two {
-  height: 35vh;
-  width: 18vw;
-  background-color: #fff9ef;
-  border: 1px solid rgb(255, 115, 15, 0.3);
-  border-radius: 8px;
-  rotate: 5deg;
-  z-index: 2;
-  padding: 2rem;
-}
-.card-tile-three {
-  height: 35vh;
-  width: 18vw;
-  background-color: #fff9ef;
-  border: 1px solid rgb(255, 115, 15, 0.3);
-  border-radius: 8px;
-  rotate: -5deg;
-  z-index: 2;
-  padding: 2rem;
-}
+/* Neu: gemeinsame Basis */
+.card-tile-one,
+.card-tile-two,
+.card-tile-three,
 .card-tile-four {
   height: 35vh;
   width: 18vw;
   background-color: #fff9ef;
   border: 1px solid rgb(255, 115, 15, 0.3);
   border-radius: 8px;
-  rotate: 5deg;
   z-index: 2;
   padding: 2rem;
+}
+
+/* Nur die Rotation bleibt einzeln */
+.card-tile-one,
+.card-tile-three {
+  rotate: -5deg;
+}
+.card-tile-two,
+.card-tile-four {
+  rotate: 5deg;
 }
 .card-tile-titleholder {
   height: 52%;
@@ -172,11 +155,6 @@
 
 /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
-  /* .card-tile {
-    height: 44vh;
-
-    border-radius: 20px;
-  } */
   .tile-text {
     width: 100%;
   }
@@ -190,38 +168,14 @@
     rotate: -10deg;
     border-radius: 1.5vw;
   }
-  .card-tile-one {
-    padding: 1rem;
-    height: 41vh;
-    width: 20vw;
-  }
-  .card-tile-two {
-    padding: 1rem;
-    height: 41vh;
-    width: 20vw;
-  }
-  .card-tile-three {
-    padding: 1rem;
-    height: 41vh;
-    width: 20vw;
-  }
+  .card-tile-one,
+  .card-tile-two,
+  .card-tile-three,
   .card-tile-four {
     padding: 1rem;
     height: 41vh;
     width: 20vw;
   }
-}
-
-/* Hochformat für iPad Pro 12.9 */
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* Hochformat für iPad Pro 11 Zoll */
-@media only screen and (min-width: 834px) and (max-width: 1194px) and (orientation: portrait) {
-}
-
-/* Querformat für iPad Pro 11 Zoll */
-@media only screen and (min-height: 832px) and (max-width: 1194.98px) and (orientation: landscape) {
 }
 
 /* // `xl` applies to large devices (desktops, less than 1200px) */
@@ -238,26 +192,7 @@
   .card-tile-titleholder {
     height: 44%;
   }
-    /* .card-tile-one {
-    padding: 1rem;
-    height: 41vh;
-    width: 20vw;
-  }
-  .card-tile-two {
-    padding: 1rem;
-    height: 41vh;
-    width: 20vw;
-  }
-  .card-tile-three {
-    padding: 1rem;
-    height: 41vh;
-    width: 20vw;
-  }
-  .card-tile-four {
-    padding: 1rem;
-    height: 41vh;
-    width: 20vw;
-  } */
+
   .card-tile-one {
     height: 53vh;
     width: 23vw;
@@ -299,13 +234,7 @@
   .card-tile-titleholder {
     height: 45%;
   }
-  /* .card-tile {
-    height: 25vh;
-    width: 90% !important;
-    background-color: var(--bg-bright-color);
-    border-radius: 8px;
-    color: var(--second-bg-color);
-  } */
+
   .tile-violet {
     position: absolute;
     left: 13vw;
@@ -321,22 +250,14 @@
     width: 45% !important;
     border-radius: 8px;
   }
-  .card-tile-one {
-    height: 60vh;
-    width: 32vw;
-  }
-  .card-tile-two {
-    height: 60vh;
-    width: 32vw;
-  }
-  .card-tile-three {
-    height: 60vh;
-    width: 32vw;
-  }
+  .card-tile-one,
+  .card-tile-two,
+  .card-tile-three,
   .card-tile-four {
     height: 60vh;
     width: 32vw;
   }
+
   .pen-holder {
     position: absolute;
     bottom: 5%;
@@ -370,41 +291,26 @@
   .card-tile-titleholder {
     height: 38%;
   }
-  .card-tile-one {
-    height: 25vh;
-    width: 86vw;
-    background-color: #fff9ef;
-    border: 1px solid rgb(255, 115, 15, 0.3);
-    border-radius: 8px;
-    rotate: -3deg;
-    z-index: 2;
-  }
-  .card-tile-two {
-    height: 25vh;
-    width: 86vw;
-    background-color: #fff9ef;
-    border: 1px solid rgb(255, 115, 15, 0.3);
-    border-radius: 8px;
-    rotate: 3deg;
-    z-index: 2;
-  }
-  .card-tile-three {
-    height: 25vh;
-    width: 86vw;
-    background-color: #fff9ef;
-    border: 1px solid rgb(255, 115, 15, 0.3);
-    border-radius: 8px;
-    rotate: -3deg;
-    z-index: 2;
-  }
+  .card-tile-one,
+  .card-tile-two,
+  .card-tile-three,
   .card-tile-four {
     height: 25vh;
     width: 86vw;
     background-color: #fff9ef;
     border: 1px solid rgb(255, 115, 15, 0.3);
     border-radius: 8px;
-    rotate: 3deg;
+    rotate: -3deg;
     z-index: 2;
+  }
+
+  .card-tile-one,
+  .card-tile-three {
+    rotate: -3deg;
+  }
+  .card-tile-two,
+  .card-tile-four {
+    rotate: 3deg;
   }
   .tile-violet {
     position: absolute;
