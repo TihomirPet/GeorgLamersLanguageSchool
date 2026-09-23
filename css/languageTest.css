@@ -220,13 +220,13 @@ select {
     padding: 1rem;
   }
   .language-test-img-text {
-  position: absolute;
-  top: 7vh;
-  right: -3vw;
-  background-color: var(--second-bg-color);
-  height: 18vh;
-  border-radius: 0.5vw;
-}
+    position: absolute;
+    top: 7vh;
+    right: -3vw;
+    background-color: var(--second-bg-color);
+    height: 18vh;
+    border-radius: 0.5vw;
+  }
 }
 @media (max-width: 1399.98px) {
   .language-card-number {
@@ -242,16 +242,12 @@ select {
   .language-card {
     width: 100%;
   }
-    .language-test-img-text {
-  
+  .language-test-img-text {
     height: 18vh;
-  position: absolute;
-   top: 5vh;
-   right: 0vw;
-  background-color: var(--second-bg-color);
-
- 
-
+    position: absolute;
+    top: 5vh;
+    right: 0vw;
+    background-color: var(--second-bg-color);
   }
 }
 
@@ -269,16 +265,12 @@ select {
   .language-card {
     width: 90%;
   }
-    .language-test-img-text {
-  
+  .language-test-img-text {
     height: 18vh;
-  position: absolute;
-   top: 55vh;
-   right: 0vw;
-  background-color: var(--second-bg-color);
-
- 
-
+    position: absolute;
+    top: 55vh;
+    right: 0vw;
+    background-color: var(--second-bg-color);
   }
   .language-test-image {
     width: auto;
