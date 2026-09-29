@@ -17,7 +17,7 @@
             ${niveau.label}
           </button>
         </h2>
-        <div id="flush-collapse${i}" class="accordion-collapse collapse">
+        <div id="flush-collapse${i}" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExampleOne">
           <div class="accordion-body">
             ${niveau.termine
               .map(
