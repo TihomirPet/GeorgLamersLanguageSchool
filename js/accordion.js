@@ -22,26 +22,41 @@ document.addEventListener('navLoaded', () => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const currentPage = window.location.pathname.split('/').pop();
+// document.addEventListener('DOMContentLoaded', () => {
+//   const currentPage = window.location.pathname.split('/').pop();
+//   const accordionId = localStorage.getItem('accordionToOpen');
+
+//   if (
+//     accordionId &&
+//     (currentPage === 'prices.html' || currentPage === 'courses.html')
+//   ) {
+//     const targetAccordion = document.getElementById(accordionId);
+
+//     if (targetAccordion) {
+//       const button = document.querySelector(
+//         `[data-bs-target="#${accordionId}"]`
+//       );
+//       if (button) {
+//         button.classList.remove('collapsed');
+//         targetAccordion.classList.add('show');
+//       }
+//     }
+
+//     localStorage.removeItem('accordionToOpen');
+//   }
+// });
+function openAccordionFromLocalStorage() {
   const accordionId = localStorage.getItem('accordionToOpen');
+  if (!accordionId) return;
 
-  if (
-    accordionId &&
-    (currentPage === 'prices.html' || currentPage === 'courses.html')
-  ) {
-    const targetAccordion = document.getElementById(accordionId);
-
-    if (targetAccordion) {
-      const button = document.querySelector(
-        `[data-bs-target="#${accordionId}"]`
-      );
-      if (button) {
-        button.classList.remove('collapsed');
-        targetAccordion.classList.add('show');
-      }
+  const targetAccordion = document.getElementById(accordionId);
+  if (targetAccordion) {
+    const button = document.querySelector(`[data-bs-target="#${accordionId}"]`);
+    if (button) {
+      button.classList.remove('collapsed');
+      targetAccordion.classList.add('show');
     }
-
-    localStorage.removeItem('accordionToOpen');
   }
-});
+  localStorage.removeItem('accordionToOpen');
+}
+window.openAccordionFromLocalStorage = openAccordionFromLocalStorage;

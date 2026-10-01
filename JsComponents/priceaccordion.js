@@ -57,6 +57,7 @@
     `,
       )
       .join('');
+      openAccordionFromLocalStorage();
   }
 
   renderPreise();
