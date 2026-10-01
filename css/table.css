@@ -20,10 +20,10 @@
     var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
 }
 
-/* th {
+th {
   background-color: var(--second-bg-color) !important;
   color: white !important;
-} */
+}
 table {
   /* border: 2px solid var(  --second-bg-color); */
   border-collapse: collapse;

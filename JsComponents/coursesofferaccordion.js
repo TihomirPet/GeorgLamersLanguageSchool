@@ -1,14 +1,15 @@
+async function renderKursplan() {
+  const res = await fetch(
+    'https://api.storyblok.com/v2/cdn/stories/kursplan?token=QmVkDiJSgLsaP7qzh2EIGAtt&version=published',
+  );
+  const data = await res.json();
+  const niveaus = data.story.content.niveaus;
 
-  async function renderKursplan() {
-    const res = await fetch('https://api.storyblok.com/v2/cdn/stories/kursplan?token=QmVkDiJSgLsaP7qzh2EIGAtt&version=published');
-    const data = await res.json();
-    const niveaus = data.story.content.niveaus;
+  const accordion = document.getElementById('accordionFlushExampleOne');
 
-    const accordion = document.getElementById('accordionFlushExampleOne');
-
-    accordion.innerHTML = niveaus
-      .map(
-        (niveau, i) => `
+  accordion.innerHTML = niveaus
+    .map(
+      (niveau, i) => `
       <div class="accordion-item-info">
         <h2 class="accordion-header">
           <button class="accordion-button text-black collapsed" type="button"
@@ -49,8 +50,8 @@
         </div>
       </div>
     `,
-      )
-      .join('');
-  }
+    )
+    .join('');
+}
 
-  renderKursplan();
+renderKursplan();
