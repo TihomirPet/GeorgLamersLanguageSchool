@@ -185,6 +185,7 @@ body {
 .bg-third-white {
   background-color: var(--bg-bright-color);
 }
+
 @media (max-width: 991.98px) {
   h1 {
     font-size: clamp(2.5rem, 0.6rem + 5vw, 7.43rem) !important;
