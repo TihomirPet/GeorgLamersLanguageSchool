@@ -168,6 +168,22 @@
           >
             <div class="card">
               <form id="quizForm" novalidate>
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="4d0d38ff-68d5-4dec-bdf4-003f290702a5"
+                />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="Neue Kursanfrage von der Website"
+                />
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
                 <!-- Step 1: Kategorie -->
                 <div class="step active" data-step="1">
                   <h5 class="font-size-h5 Bold text-black">
@@ -732,7 +748,7 @@
             <!-- Card four end lg none -->
           </div>
           <div
-            class="col-sm-11  col-md-6 col-lg-4 col-xl-5 col-xxl-4 d-flex flex-column language-test-image-holder pt-lg-5 pt-xl-5"
+            class="col-sm-11 col-md-6 col-lg-4 col-xl-5 col-xxl-4 d-flex flex-column language-test-image-holder pt-lg-5 pt-xl-5"
           >
             <img src="/images/Help.png" alt="" class="language-test-image" />
             <div class="language-test-img-text p-3 p-xl-3">
@@ -1319,8 +1335,9 @@
     <script src="/js/videomuted.js" type="module"></script>
     <script src="/js/captionengen.js" type="module"></script>
     <script src="/js/leveltest.js" type="module"></script>
+    <script src="/js/leveltest.js" type="module"></script>
 
-    <script src="/js/smoothscroll.js" type="module"></script>
+    <script src="/js/form.js" ></script>
 
     <script src="/js/sendAccordionId.js" type="module"></script>
     <script src="/js/cookie.js" type="module"></script>

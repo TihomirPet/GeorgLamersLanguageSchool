@@ -6,6 +6,15 @@ body {
   line-height: 1;
   /* overflow: hidden; */
 }
+.step {
+  display: none;
+}
+.step.active {
+  display: block;
+}
+.hidden {
+  display: none !important;
+}
 .main {
   overflow: hidden;
 

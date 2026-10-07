@@ -122,7 +122,9 @@ function richtextToHtml(doc) {
         const linkMark = node.marks?.find((m) => m.type === 'link');
         if (linkMark) {
           const href = linkMark.attrs?.href || linkMark.attrs?.url || '#';
-          const target = linkMark.attrs?.target ? `target="${linkMark.attrs.target}"` : '';
+          const target = linkMark.attrs?.target
+            ? `target="${linkMark.attrs.target}"`
+            : '';
           text = `<a href="${href}" ${target} class="courses-link-tutoring">${text}</a>`;
         }
 
@@ -148,7 +150,7 @@ function richtextToHtml(doc) {
 
 async function renderKursangebote() {
   const res = await fetch(
-    'https://api.storyblok.com/v2/cdn/stories/kursangebote?token=QmVkDiJSgLsaP7qzh2EIGAtt&version=published'
+    'https://api.storyblok.com/v2/cdn/stories/kursangebote?token=QmVkDiJSgLsaP7qzh2EIGAtt&version=published',
   );
   const data = await res.json();
   const angebote = data.story.content.angebote;
@@ -197,7 +199,7 @@ async function renderKursangebote() {
               <a class="courses-link-plan d-flex align-items-center justify-content-between mt-3" href="${getStoryblokUrl(l.link || l.url)}">
                 <p class="courses-link-test">${l.text || l.label || 'Link'}</p>
                 <i class="bi bi-arrow-right-circle icon-coursesinfo font-size-h5 Bold"></i>
-              </a>`
+              </a>`,
                     )
                     .join('')
                 : ''
@@ -206,7 +208,7 @@ async function renderKursangebote() {
         </div>
       </div>
     </div>
-  `
+  `,
     )
     .join('');
 
