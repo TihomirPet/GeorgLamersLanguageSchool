@@ -1,189 +1,242 @@
-// // Funktion, um das passende Formular einzufügen
-// function loadForm() {
-//   const container = document.getElementById('form-container');
-//   container.innerHTML = ''; // Leeren, falls schon was drin ist
+// form.js
+// Mehrstufiges Anfrage-Formular (Versand über Web3Forms).
+// Kann beliebig oft auf einer Seite vorkommen. Platzhalter im HTML:
+//   <div data-quiz-form data-quelle="Header"></div>
+// Das Formular selbst liegt in /pages/quizform.html.
 
-//   const isMobile = window.innerWidth <= 768; // Mobil bis 768px Breite
-//   let iframe = document.createElement('iframe');
-//   let script = document.createElement('script');
-//   script.src = 'https://link.msgsndr.com/js/form_embed.js';
+const QUIZ_FORM_URL = '/pages/quizform.html';
+const WEB3FORMS_URL = 'https://api.web3forms.com/submit';
+const TOTAL_STEPS = 5; // Schritt 6 ist der Danke-Screen und zählt nicht mit
 
-//   if (isMobile) {
-//     iframe.src =
-//       'https://api.leadconnectorhq.com/widget/form/RqrtsuwvO6WK1lPpQkdv';
-//     iframe.style = 'width:100%;height:100%;border:none;border-radius:3px';
-//     iframe.id = 'inline-RqrtsuwvO6WK1lPpQkdv';
-//     iframe.setAttribute('data-layout', "{'id':'INLINE'}");
-//     iframe.setAttribute('data-trigger-type', 'alwaysShow');
-//     iframe.setAttribute('data-activation-type', 'alwaysActivated');
-//     iframe.setAttribute('data-deactivation-type', 'neverDeactivate');
-//     iframe.setAttribute('data-form-name', 'Homepage Form - mobil');
-//     iframe.setAttribute('data-height', '744');
-//     iframe.setAttribute('data-layout-iframe-id', 'inline-RqrtsuwvO6WK1lPpQkdv');
-//     iframe.setAttribute('data-form-id', 'RqrtsuwvO6WK1lPpQkdv');
-//     iframe.title = 'Homepage Form - mobil';
-//   } else {
-//     iframe.src = '/widget/form/YakqhyDE9e6Hk7kcixy2';
-//     iframe.style = 'width:100%;height:100%;border:none;border-radius:4px';
-//     iframe.id = 'inline-YakqhyDE9e6Hk7kcixy2';
-//     iframe.setAttribute('data-layout', "{'id':'INLINE'}");
-//     iframe.setAttribute('data-trigger-type', 'alwaysShow');
-//     iframe.setAttribute('data-activation-type', 'alwaysActivated');
-//     iframe.setAttribute('data-deactivation-type', 'neverDeactivate');
-//     iframe.setAttribute('data-form-name', '');
-//     iframe.setAttribute('data-height', 'undefined');
-//     iframe.setAttribute('data-layout-iframe-id', 'inline-YakqhyDE9e6Hk7kcixy2');
-//     iframe.setAttribute('data-form-id', 'YakqhyDE9e6Hk7kcixy2');
-//     iframe.title = '';
-//   }
+let quizFormPromise = null;
+let formCounter = 0;
 
-//   container.appendChild(iframe);
-//   container.appendChild(script);
-// }
+function sanitizeInput(str) {
+  if (!str) return '';
+  return str.replace(/[<>]/g, '');
+}
 
-// // Beim Laden und beim Ändern der Fenstergröße prüfen
-// window.addEventListener('load', loadForm);
-// window.addEventListener('resize', loadForm);
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('quizForm');
-  if (!form) return;
+// ======================================================
+// Formular-Partial in alle Platzhalter laden
+// ======================================================
+window.loadQuizForms = async function () {
+  const slots = Array.from(
+    document.querySelectorAll('[data-quiz-form]:not([data-loaded])'),
+  );
+  if (slots.length === 0) return;
 
-  const steps = Array.from(form.querySelectorAll('.step'));
-  const btnNext = document.getElementById('btnNext');
-  const btnBack = document.getElementById('btnBack');
-  const btnNextLabel = document.getElementById('btnNextLabel');
-  const stepCount = document.getElementById('stepCount');
-  const navRow = document.getElementById('navRow');
+  // Sofort markieren, damit ein zweiter Aufruf (z. B. aus contact.js)
+  // dieselben Platzhalter nicht noch einmal befüllt
+  slots.forEach((slot) => {
+    slot.dataset.loaded = 'true';
+  });
 
-  let currentStep = 1;
-  const totalInteractiveSteps = 5;
+  try {
+    if (!quizFormPromise) {
+      quizFormPromise = fetch(QUIZ_FORM_URL).then((res) => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.text();
+      });
+    }
+    const html = await quizFormPromise;
 
-  function updateSteps() {
-    steps.forEach((step) => {
-      const stepNum = parseInt(step.getAttribute('data-step'), 10);
-      step.classList.toggle('active', stepNum === currentStep);
+    slots.forEach((slot) => {
+      slot.innerHTML = html;
+      const quelle = slot.querySelector('input[name="quelle"]');
+      if (quelle) quelle.value = slot.dataset.quelle || '';
     });
 
-    if (currentStep <= totalInteractiveSteps) {
-      if (stepCount)
-        stepCount.textContent = `${currentStep}/${totalInteractiveSteps}`;
-      if (btnBack) btnBack.classList.toggle('hidden', currentStep === 1);
-      if (btnNextLabel) {
-        btnNextLabel.textContent =
-          currentStep === totalInteractiveSteps ? 'Absenden' : 'Weiter';
-      }
-    } else {
-      if (navRow) navRow.style.display = 'none';
-    }
+    window.initQuizForm();
+  } catch (err) {
+    console.error('Formular konnte nicht geladen werden:', err);
+    quizFormPromise = null;
+    slots.forEach((slot) => {
+      delete slot.dataset.loaded;
+    });
   }
+};
 
-  function validateCurrentStep() {
-    const activeStepEl = form.querySelector(
-      `.step[data-step="${currentStep}"]`,
-    );
-    if (!activeStepEl) return true;
+// ======================================================
+// IDs pro Formular eindeutig machen (fullname -> fullname-1 usw.)
+// und die zugehörigen <label for="..."> mitziehen
+// ======================================================
+function makeIdsUnique(form) {
+  formCounter++;
+  form.querySelectorAll('[id]').forEach((el) => {
+    const oldId = el.id;
+    const newId = `${oldId}-${formCounter}`;
+    form.querySelectorAll(`label[for="${oldId}"]`).forEach((label) => {
+      label.htmlFor = newId;
+    });
+    el.id = newId;
+  });
+}
 
-    const errorMsg = activeStepEl.querySelector('.error-msg');
-    let isValid = true;
+// ======================================================
+// Alle noch nicht initialisierten Formulare starten
+// ======================================================
+window.initQuizForm = function () {
+  document.querySelectorAll('form.quiz-form').forEach((form) => {
+    if (form.dataset.initialized === 'true') return;
+    form.dataset.initialized = 'true';
 
-    if (errorMsg) errorMsg.style.display = 'none';
+    makeIdsUnique(form);
 
-    if (currentStep === 1) {
-      const checked = activeStepEl.querySelectorAll(
-        'input[name="kategorie"]:checked',
-      );
-      if (checked.length === 0) isValid = false;
-    } else if (currentStep === 2) {
-      const checked = activeStepEl.querySelector(
-        'input[name="sprachniveau"]:checked',
-      );
-      if (!checked) isValid = false;
-    } else if (currentStep === 3) {
-      const checked = activeStepEl.querySelector(
-        'input[name="zeitpunkt"]:checked',
-      );
-      if (!checked) isValid = false;
-    } else if (currentStep === 4) {
-      const checked = activeStepEl.querySelector(
-        'input[name="uhrzeit"]:checked',
-      );
-      if (!checked) isValid = false;
-    } else if (currentStep === 5) {
-      const fullname = activeStepEl.querySelector('#fullname')?.value.trim();
-      const email = activeStepEl.querySelector('#email')?.value.trim();
-      const telefon = activeStepEl.querySelector('#telefon')?.value.trim();
-      const consent = activeStepEl.querySelector('#consent')?.checked;
+    const steps = Array.from(form.querySelectorAll('.step'));
+    const btnNext = form.querySelector('.btn-next');
+    const btnBack = form.querySelector('.btn-back');
+    const btnNextLabel = form.querySelector('.btn-next span:first-child');
+    const stepCount = form.querySelector('.step-count');
+    const navRow = form.querySelector('.nav-row');
 
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (
-        !fullname ||
-        !email ||
-        !emailPattern.test(email) ||
-        !telefon ||
-        !consent
-      ) {
-        isValid = false;
+    // Felder über das name-Attribut finden (IDs sind pro Formular verschieden)
+    const field = (name) => form.querySelector(`[name="${name}"]`);
+
+    let currentStep = 1;
+
+    function updateSteps() {
+      steps.forEach((step) => {
+        const stepNum = parseInt(step.getAttribute('data-step'), 10);
+        step.classList.toggle('active', stepNum === currentStep);
+      });
+
+      if (currentStep <= TOTAL_STEPS) {
+        if (stepCount) stepCount.textContent = `${currentStep}/${TOTAL_STEPS}`;
+
+        if (btnBack) {
+          const hideBack = currentStep === 1;
+          btnBack.classList.toggle('hidden', hideBack);
+          btnBack.style.display = hideBack ? 'none' : 'flex';
+        }
+
+        if (btnNextLabel) {
+          btnNextLabel.textContent =
+            currentStep === TOTAL_STEPS ? 'Absenden' : 'Weiter';
+        }
+      } else if (navRow) {
+        navRow.style.display = 'none';
       }
     }
 
-    if (!isValid && errorMsg) {
-      errorMsg.style.display = 'block';
+    function validateCurrentStep() {
+      const activeStepEl = form.querySelector(
+        `.step[data-step="${currentStep}"]`,
+      );
+      if (!activeStepEl) return true;
+
+      const errorMsg = activeStepEl.querySelector('.error-msg');
+      let isValid = true;
+
+      if (currentStep === 1) {
+        isValid =
+          activeStepEl.querySelectorAll('input[name="kategorie"]:checked')
+            .length > 0;
+      } else if (currentStep === 2) {
+        isValid = !!activeStepEl.querySelector(
+          'input[name="sprachniveau"]:checked',
+        );
+      } else if (currentStep === 3) {
+        isValid = !!activeStepEl.querySelector(
+          'input[name="zeitpunkt"]:checked',
+        );
+      } else if (currentStep === 4) {
+        isValid = !!activeStepEl.querySelector('input[name="uhrzeit"]:checked');
+      } else if (currentStep === 5) {
+        const fullname = sanitizeInput(field('fullname')?.value.trim());
+        const email = field('email')?.value.trim() || '';
+        const telefon = sanitizeInput(field('telefon')?.value.trim());
+        const consent = field('consent')?.checked;
+        const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+        // Fehlerhafte Felder rot markieren (CSS: .field input.invalid)
+        field('fullname')?.classList.toggle('invalid', !fullname);
+        field('email')?.classList.toggle('invalid', !emailOk);
+        field('telefon')?.classList.toggle('invalid', !telefon);
+
+        isValid = !!fullname && emailOk && !!telefon && !!consent;
+      }
+
+      if (errorMsg) errorMsg.classList.toggle('show', !isValid);
+      return isValid;
     }
 
-    return isValid;
-  }
+    async function submitForm() {
+      btnNext.disabled = true;
+      if (btnNextLabel) btnNextLabel.textContent = 'Wird gesendet…';
 
-  if (btnNext) {
-    btnNext.addEventListener('click', async () => {
-      if (!validateCurrentStep()) return;
+      const formData = new FormData(form);
 
-      if (currentStep === totalInteractiveSteps) {
-        btnNext.disabled = true;
-        if (btnNextLabel) btnNextLabel.textContent = 'Wird gesendet...';
+      // Eingaben bereinigen
+      formData.set('fullname', sanitizeInput(field('fullname')?.value || ''));
+      formData.set('telefon', sanitizeInput(field('telefon')?.value || ''));
 
-        const formData = new FormData(form);
+      // Mehrfachauswahl zu einem Wert zusammenfassen
+      const kategorien = Array.from(
+        form.querySelectorAll('input[name="kategorie"]:checked'),
+      ).map((input) => input.value);
+      formData.delete('kategorie');
+      formData.set('kategorie', kategorien.join(', '));
 
-        try {
-          // Echtes Absenden an die Web3Forms API
-          const response = await fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            body: formData,
-          });
+      try {
+        const response = await fetch(WEB3FORMS_URL, {
+          method: 'POST',
+          body: formData,
+        });
+        const result = await response.json();
 
-          const result = await response.json();
-
-          if (result.success) {
-            currentStep = 6;
-            updateSteps();
-          } else {
-            alert(
-              'Fehler beim Absenden: ' +
-                (result.message || 'Bitte erneut versuchen.'),
-            );
-            btnNext.disabled = false;
-            if (btnNextLabel) btnNextLabel.textContent = 'Absenden';
-          }
-        } catch (error) {
-          console.error('Web3Forms Fehler:', error);
-          alert('Netzwerkfehler! Bitte überprüfe deine Internetverbindung.');
+        if (result.success) {
+          currentStep = 6;
+          updateSteps();
+        } else {
+          alert(
+            'Fehler beim Absenden: ' +
+              (result.message || 'Bitte versuche es erneut.'),
+          );
           btnNext.disabled = false;
           if (btnNextLabel) btnNextLabel.textContent = 'Absenden';
         }
-      } else {
-        currentStep++;
-        updateSteps();
+      } catch (error) {
+        console.error('Web3Forms Fehler:', error);
+        alert(
+          'Das Senden hat leider nicht geklappt. Bitte prüfe deine Internetverbindung oder ruf uns an: 0221 331 8191',
+        );
+        btnNext.disabled = false;
+        if (btnNextLabel) btnNextLabel.textContent = 'Absenden';
       }
-    });
-  }
+    }
 
-  if (btnBack) {
-    btnBack.addEventListener('click', () => {
-      if (currentStep > 1) {
-        currentStep--;
-        updateSteps();
-      }
-    });
-  }
+    // Enter-Taste darf das Formular nicht normal absenden
+    form.addEventListener('submit', (e) => e.preventDefault());
 
-  updateSteps();
+    if (btnNext) {
+      btnNext.addEventListener('click', () => {
+        if (!validateCurrentStep()) return;
+
+        if (currentStep === TOTAL_STEPS) {
+          submitForm();
+        } else {
+          currentStep++;
+          updateSteps();
+        }
+      });
+    }
+
+    if (btnBack) {
+      btnBack.addEventListener('click', () => {
+        if (currentStep > 1) {
+          currentStep--;
+          updateSteps();
+        }
+      });
+    }
+
+    updateSteps();
+  });
+};
+
+// Platzhalter auf der Seite befüllen. Platzhalter, die erst später
+// durch contact.js ins DOM kommen, werden von dort nachgeladen.
+document.addEventListener('DOMContentLoaded', () => {
+  window.loadQuizForms();
+  window.initQuizForm();
 });

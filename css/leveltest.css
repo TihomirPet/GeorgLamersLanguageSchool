@@ -18,9 +18,9 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: 'Montserrat', 'sans-serif';
-}
+} */
 
 .card {
   width: 100%;
@@ -31,6 +31,7 @@ body {
   padding: 36px 30px 28px;
   position: relative;
   overflow: hidden;
+    color: var(--text-dark);
 }
 
 .step {
