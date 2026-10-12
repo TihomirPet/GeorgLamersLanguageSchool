@@ -1,0 +1,48 @@
+
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = `${name}=${value}; ${expires}; path=/`;
+}
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+}
+
+function checkCookie() {
+    const cookieBanner = document.getElementById("cookie-banner");
+    if (!cookieBanner) return; // Kein Banner auf dieser Seite -> nichts tun
+
+    const cookieAccepted = getCookie("cookies_accepted");
+
+    if (cookieAccepted === "true" || cookieAccepted === "false") {
+        cookieBanner.style.display = "none";
+    } else {
+        cookieBanner.style.display = "flex";
+    }
+}
+
+// Event Listener für Buttons (nur setzen, wenn die Buttons existieren)
+const acceptBtn = document.getElementById("accept-cookies");
+const declineBtn = document.getElementById("decline-cookies");
+
+if (acceptBtn) {
+    acceptBtn.addEventListener("click", function () {
+        setCookie("cookies_accepted", "true", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    });
+}
+
+if (declineBtn) {
+    declineBtn.addEventListener("click", function () {
+        setCookie("cookies_accepted", "false", 365);
+        document.getElementById("cookie-banner").style.display = "none";
+    });
+}
+
+// Beim Laden der Seite prüfen
+checkCookie();
