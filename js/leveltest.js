@@ -1,7 +1,7 @@
 // === Konfiguration ===
 // Kostenloser Formular-Versand ohne eigenes Backend via Web3Forms.
 // Access Key hier eintragen: https://web3forms.com (kostenlos registrieren, Key kopieren)
-const WEB3FORMS_ACCESS_KEY = '4d0d38ff-68d5-4dec-bdf4-003f290702a5';
+const WEB3FORMS_ACCESS_KEY = 'DEIN_ACCESS_KEY_HIER';
 
 const totalSteps = 5; // Kontaktdaten ist Schritt 5, Danke-Screen zählt nicht mit
 let currentStep = 1;
@@ -117,7 +117,7 @@ async function submitForm() {
   try {
     if (
       WEB3FORMS_ACCESS_KEY &&
-      WEB3FORMS_ACCESS_KEY !== 'DEIN_ACCESS_KEY_HIER'
+      WEB3FORMS_ACCESS_KEY !== '4d0d38ff-68d5-4dec-bdf4-003f290702a5'
     ) {
       await fetch('https://api.web3forms.com/submit', {
         method: 'POST',

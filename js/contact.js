@@ -12,22 +12,22 @@
 //       // nav.insertAdjacentHTML('beforeend', data);
 //   });
 
-function elm(css) {
-  return document.querySelector(css);
-}
+// function elm(css) {
+//   return document.querySelector(css);
+// }
 
-let contact = elm('.contact');
+// let contact = elm('.contact');
 
-if (contact) {
-  fetch('/pages/contact.html')
-    .then((res) => res.text())
-    .then((data) => {
-      contact.innerHTML = data;
+// if (contact) {
+//   fetch('/pages/contact.html')
+//     .then((res) => res.text())
+//     .then((data) => {
+//       contact.innerHTML = data;
 
-      // Falls initQuizForm existiert (aus script.js), rufe es für die dynamisch geladenen Formulare auf:
-     if (typeof window.loadQuizForms === 'function') {
-       window.loadQuizForms();
-     }
-    })
-    .catch((err) => console.error('Fehler beim Laden von contact.html:', err));
-}
+//       // Falls initQuizForm existiert (aus script.js), rufe es für die dynamisch geladenen Formulare auf:
+//      if (typeof window.loadQuizForms === 'function') {
+//        window.loadQuizForms();
+//      }
+//     })
+//     .catch((err) => console.error('Fehler beim Laden von contact.html:', err));
+// }
